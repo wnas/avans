@@ -1,0 +1,41 @@
+.avans-listpage * {
+    outline: 1px solid #ccc;
+}
+.top-bar {
+    margin: 0 $content__margin;
+}
+.top-bar__content {
+    display:flex;
+    justify-content: space-between;
+    max-width: $width__overal;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav__item {
+    outline: 1px solid red;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.logo {
+    width: 163px;
+    height: 48px;
+
+}
+
+.logo__img {
+    width: 100%;
+    height: 100%;
+}

@@ -1,4 +1,10 @@
 // avans
+@import "variables";
+@import "layout";
+@import "typography";
 body {
     padding: 0;
+    margin: 0;
 }
+
+@import "../_patterns/04-templates/list-page/list-page";
