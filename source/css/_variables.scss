@@ -1,2 +1,18 @@
 $width__overal : 1140px;
-$content__margin: 15px;
+
+$spacing    : 15px;
+$spacing-l  : 20px;
+$spacing-xl : 30px;
+
+$content__margin: $spacing;
+$hero__padding: calc($spacing * 2);
+
+
+/*
+    breakpoints
+*/
+$bp-xl : 1280px;
+$bp-l  : 1024px;
+$bp-m  : 800px;
+$bp-s  : 400px;
+$bp-xs : 300px;    

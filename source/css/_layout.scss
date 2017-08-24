@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff; 
+}
+@media all and (min-width: $bp-m) {
+    .top-bar,
+    .hero {
+        margin: 0 $content__margin;
+    }
+}
+.top-bar__content,
+.hero__content {
+    max-width: $width__overal;
+    margin: 0 auto;
+}
+
+.hero__content {
+    padding: 0 $spacing-l;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
