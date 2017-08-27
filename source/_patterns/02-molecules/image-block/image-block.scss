@@ -1,14 +1,33 @@
 .image-block {
   background-color: $avans-red;
-
+}
+.image-block--sans-footer {
+  background: transparent;
 }
 .image-block__figure {
   margin: 0;
+  position: relative;
+}
+.image-block__image {
+  width: 100%;
+}
+.image-block__header-block {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  .image-block--sans-footer & {
+    bottom: 100px;
+  }
+}
+.image-block--sans-footer .btn--image-block {
+  position: absolute;
+  bottom: $spacing-xl;
+  margin: 0 $spacing-xl;
 }
 .image-block__header-block,
 .image-block__footer {
-  padding: $spacing;
+  padding: $spacing-xl;
 }
 .image-block__footer {
-  margin-bottom: $spacing;
+  margin: $spacing-xl 0;
 }

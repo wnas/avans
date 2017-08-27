@@ -31,4 +31,17 @@ body {
 .layout-full-width-block__content {
   display: flex;
   position: relative;
+  margin-bottom: $spacing-xl;
+  .image-block  {
+    width: 40%;
+  }
+}
+
+.layout-full-width-block__content--image-blocks {
+  .image-block {
+    width: 50%;
+    &:first-child {
+      margin-right: $spacing-xl;
+    }
+  }
 }
