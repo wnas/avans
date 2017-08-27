@@ -1,4 +1,5 @@
 // avans
+@import "base";
 @import "variables";
 @import "layout";
 @import "typography";
@@ -6,9 +7,11 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: $default-background;
 }
 
+@import "../_patterns/01-atoms/button/button";
+@import "../_patterns/02-molecules/button-bar/button-bar";
 @import "../_patterns/02-molecules/image-block/image-block";
 @import "../_patterns/03-organisms/link-box/link-box";
 @import "../_patterns/04-templates/list-page/list-page";

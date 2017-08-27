@@ -1,0 +1,14 @@
+.image-block {
+  background-color: $avans-red;
+
+}
+.image-block__figure {
+  margin: 0;
+}
+.image-block__header-block,
+.image-block__footer {
+  padding: $spacing;
+}
+.image-block__footer {
+  margin-bottom: $spacing;
+}
