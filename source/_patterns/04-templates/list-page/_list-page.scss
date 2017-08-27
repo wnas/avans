@@ -1,11 +1,13 @@
 .avans-listpage * {
 
 }
-
+.top-bar__content {
+  justify-content: space-between;
+}
 .top-bar__content,
 .hero__content {
     display: flex;
-    justify-content: space-between;
+
 }
 
 .hero {
@@ -81,6 +83,7 @@
     max-width: 80vw;
     position: relative;
     z-index: 5;
+    margin-left: $spacing-xl;
 }
 
 .link-box {

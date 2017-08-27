@@ -24,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: calc(100% - 100px);
 }
 .main-content {
   margin-top: -100px;

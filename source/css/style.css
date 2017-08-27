@@ -26,7 +26,8 @@ body {
   padding: 0 20px;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  height: calc(100% - 100px); }
 
 .main-content {
   margin-top: -100px; }
@@ -131,10 +132,12 @@ body {
   background-image: url("../../../images/icons/ICON-Arrow-Right-Blue.svg");
   background-position: 0 50%; }
 
+.top-bar__content {
+  justify-content: space-between; }
+
 .top-bar__content,
 .hero__content {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
 
 .hero {
   background-image: url("../../../images/hero/1920.png");
@@ -195,7 +198,8 @@ body {
   width: calc( 900px / 2);
   max-width: 80vw;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  margin-left: 30px; }
 
 .link-box {
   width: 60%;
