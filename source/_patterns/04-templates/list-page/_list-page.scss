@@ -90,3 +90,20 @@
     width :60%;
     margin-right: $spacing-xl;
 }
+
+.link-block__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-block__item {
+  outline: 1px solid red;
+  flex: 1 0 50%;
+}
+.link-block__link {
+  color: #000;
+  padding: $spacing-xl;
+}
