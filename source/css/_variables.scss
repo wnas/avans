@@ -17,3 +17,13 @@ $bp-l  : 1024px;
 $bp-m  : 800px;
 $bp-s  : 400px;
 $bp-xs : 300px;
+
+
+/*
+  mixins
+  */
+  .blue-arrow {
+    background-repeat: no-repeat;
+    background-image: url('../../../images/icons/ICON-Arrow-Right-Blue.svg');
+    background-position: 0 50%;
+  }
