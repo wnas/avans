@@ -1,43 +1,19 @@
-<ul class="link-box__list">
+<div class="link-box__header-container">
+  <h2 class="link-box__header">{{ header }}</h2>
+  {{# sub-header }}
+  <p class="link-box__header-payoff">{{ sub-header }}</p>
+  {{/ sub-header }}
+</div>
+<!-- /link-box__header -->
+<ul class="link-box__list {{ class }}">
+  {{# items }}
   <li class="link-box__item">
-    <a class="link-box__link" href="#">Aarde en Milieu</a>
+    <a class="link-box__link" href=" {{ link }}">
+      <p class="link-box__content">{{ content }}</p>
+      {{# date }}<strong class="link-box__date">{{ date }}</strong>{{/ date }}
+  </a>
   </li>
   <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Economie en Bedrijf</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Exact en Informatica</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Gedrag en Maatschappij</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Gezondheid</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Kunst en Cultuur</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Onderwijs en Opvoeding</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Recht en Bestuur</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Taal en Communicatie</a>
-  </li>
-  <!-- /link-box__item -->
-  <li class="link-box__item">
-    <a class="link-box__link" href="#">Techniek</a>
-  </li>
-  <!-- /link-box__item -->
+  {{/ items }}
 </ul>
 <!-- /link-box__list -->

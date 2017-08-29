@@ -1,0 +1,101 @@
+<header>
+  <div class="top-bar layout-full-width-block">
+    <!-- div to span the whole page -->
+    <div class="top-bar__content">
+      <!-- div to contain the top nav and the logo -->
+      <nav class="nav">
+        <!-- navigation element, doh -->
+        <ul class="main-nav nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Studeren</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Bedrijven &amp; instellingen</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Onderzoek</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Over avans</a></li>
+        </ul>
+        <!-- / main nav -->
+        <ul class="util-nav nav__list">
+          <li class="nav__item"><a class="nav__link" href="#">NL</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Zoek</a></li>
+        </ul>
+        <!-- / util nav -->
+      </nav>
+      <!-- / of top nav -->
+      <div class="logo">
+        <img class="logo__img" src="../../../images/XL-Logo.svg" alt="Avans hogeschool" />
+      </div>
+      <!-- /  of logo -->
+    </div>
+    <!-- / nav/logo div -->
+  </div>
+  <!-- / contain div -->
+</header>
+<!-- / header -->
+<div class="hero layout-full-width-block">
+  <div class="hero__content">
+    <h1 class="header--hero header">
+      <span class="header__text">
+        Ervaar hoe het is om te studeren bij avans
+       </span>
+       <!-- / header text -->
+     </h1>
+    <!-- / hero header -->
+    < </div>
+      <!-- / hero content -->
+  </div>
+  <!-- / hero -->
+  <main class="layout-full-width-block main-content">
+    <div class="layout-full-width-block__content">
+
+
+      <article class="link-box link-box--top">
+
+        {{# link-box-top }}
+          {{> organisms-link-box }}
+        {{/ link-box-top }}
+        <div class="btn-bar">
+          <a href="#" class="btn btn--primary">Bekijk alle 111 opleidingen</a>
+          <a href="#" class="link">Hulp bij je studiekeuze</a>
+      </article>
+
+      <!-- /link box -->
+      {{> molecules-image-block }}
+
+      </div>
+      <div class="layout-full-width-block__content layout-full-width-block__content--image-blocks">
+        {{> molecules-image-block-sans-footer }}
+        {{> molecules-image-block-sans-footer }}
+      </div>
+      <div class="layout-full-width-block__content ">
+        <div class="link-block">
+          <h3 class="link-block__header">Meer avans</h3>
+          <ul class="link-block__list">
+            <li class="link-block__item">
+              <a class="link-block__link" href="#">
+                 <span class="link-block__text">Vacatures</span>
+                 <img class='link-block__image' src="../../../images/link-block/link-block__lady@1x.png"
+                 alt="lady" />
+              </a>
+           </li>
+            <li class="link-block__item"> <a class="link-block__link" href="#">
+            <span class="link-block__text">Avans duurzaam</span>
+            <img class='link-block__image' src="../../../images/link-block/link-block__lady@1x.png"
+             alt="lady" />
+          </a></li>
+            <li class="link-block__item"> <a class="link-block__link" href="#">
+             <span class="link-block__text">Ambitie 2020</span>
+             <img class='link-block__image' src="../../../images/link-block/link-block__lady@1x.png" alt="lady" />
+           </a></li>
+            <li class="link-block__item"> <a class="link-block__link" href="#">
+              <span class="link-block__text">Evenementen</span>
+              <img class='link-block__image' src="../../../images/link-block/link-block__lady@1x.png" alt="lady" />
+            </a></li>
+          </ul>
+
+        </div>
+        <article class="link-box link-box--news">
+          {{# link-box-news }}
+            {{> organisms-link-box }}
+          {{/ link-box-news }}
+        </article>
+  </main>
+  <!-- /main -->

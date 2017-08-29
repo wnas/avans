@@ -1,0 +1,10 @@
+<li class="link-block__item">
+  <a class="link-block__link" href="{{ link }}">
+     <span class="link-block__text">{{ Content }}</span>
+     <img class='link-block__image' src="{{ src }}"
+      {{# srcset }}
+        srcset="../../../images/link-block/link-block__lady@1.png 1x, ../../../images/link-block/link-block__lady@2.png 2x, ../../../images/link-block/link-block__lady@3.png 3x"
+      {{/ srcset }}
+     alt="{{ alt }}" />
+  </a>
+</li>

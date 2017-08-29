@@ -1,0 +1,39 @@
+{
+    "bodyClass": "avans-homepage",
+    "title": "home page avans",
+    "link-box-top": {
+      "class": "col-2",
+      "header": "Kies je opleiding",
+      "sub-header": "Zoek op interessegebied",
+      "items":[
+        {"link": "avans.nl","content": "Aarde en Milieu"},
+        {"link": "avans.nl","content": "Kunst en Cultuur"},
+        {"link": "avans.nl","content": "Economie en Bedrijf"},
+        {"link": "avans.nl","content": "Onderwijs en Opvoeding"},
+        {"link": "avans.nl","content": "Exact en Informatica"},
+        {"link": "avans.nl","content": "Recht en Bestuur"},
+        {"link": "avans.nl","content": "Gedrag en Maatschappij"},
+        {"link": "avans.nl","content": "Taal en Communicatie"},
+        {"link": "avans.nl","content": "Gezondheid"},
+        {"link": "avans.nl","content": "Techniek"}
+      ]
+    },
+    "link-box-news": {
+      "header": "Nieuws",
+      "items":[
+        {"link": "avans.nl",
+          "content": "Energie winnen via de uitlaat",
+        "date": "9 mei 2017"},
+        {"link": "avans.nl","content": "Kunst en Cultuur"},
+        {"link": "avans.nl","content": "Economie en Bedrijf"},
+        {"link": "avans.nl","content": "Onderwijs en Opvoeding"},
+        {"link": "avans.nl","content": "Exact en Informatica"},
+        {"link": "avans.nl","content": "Recht en Bestuur"},
+        {"link": "avans.nl","content": "Gedrag en Maatschappij"},
+        {"link": "avans.nl","content": "Taal en Communicatie"},
+        {"link": "avans.nl","content": "Gezondheid"},
+        {"link": "avans.nl","content": "Techniek"}
+      ]
+    }
+
+}

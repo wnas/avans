@@ -36,6 +36,7 @@ body {
   .image-block  {
     width: 40%;
   }
+
 }
 
 .layout-full-width-block__content--image-blocks {
@@ -46,3 +47,7 @@ body {
     }
   }
 }
+
+.home-page .layout-full-width-block__content:first-child {
+     background-color: orange;
+ }

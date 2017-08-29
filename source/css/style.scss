@@ -1,3 +1,22 @@
+.testing {
+    outline: 1px solid red;
+    * {
+        outline: 1px solid green;
+        * {
+            outline: 1px solid pink;
+            * {
+                outline: 1px solid blue;
+                * {
+                    outline: 1px solid orange;
+                    * {
+                        outline: 1px solid teal;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // avans
 @import "base";
 @import "variables";
@@ -8,10 +27,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: $default-background;
+    @extend .testing;
 }
 
 @import "../_patterns/01-atoms/button/button";
 @import "../_patterns/02-molecules/button-bar/button-bar";
+
+@import "../_patterns/02-molecules/link-block/link-block";
 @import "../_patterns/02-molecules/image-block/image-block";
 @import "../_patterns/03-organisms/link-box/link-box";
 @import "../_patterns/04-templates/list-page/list-page";
+@import "../_patterns/04-templates/home-page/home-page";
