@@ -1,19 +1,18 @@
-.avans-listpage * {
+.avans-listpage * {}
 
-}
 .top-bar__content {
-  justify-content: space-between;
+    justify-content: space-between;
 }
+
 .top-bar__content,
 .hero__content {
     display: flex;
-
 }
 
 .hero {
     background-image: url('../../../images/hero/1920.png');
     background-position: 50% 50%;
-//    background-color: #fff;
+    //    background-color: #fff;
     background-repeat: no-repeat;
     height: 600px;
     position: relative;
@@ -24,16 +23,15 @@
     display: block;
     position: absolute;
     top: 0;
-    left:calc(50% - (1920px / 2));
+    left: calc(50% - (1920px / 2));
     width: 100%;
     max-width: 1920px;
     height: 600px;
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .nav {
     display: flex;
-
 }
 
 .nav__list {
@@ -50,7 +48,6 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 $spacing-l;
-
     .util-nav &:last-child {
         border-right: 0;
     }
@@ -60,7 +57,6 @@
     text-decoration: none;
     font-weight: bold;
     color: #000;
-
 }
 
 .logo {
@@ -87,10 +83,45 @@
 }
 
 .link-box--top {
-    width :60%;
+    width: 60%;
     margin-right: $spacing-xl;
 }
+
 .link-box--news {
-  width: 50%;
-  margin-left: $spacing-l;
+    width: 50%;
+    margin-left: $spacing-l;
+}
+
+@media all and (max-width: $bp-m) {
+    .layout-full-width-block__content--intro {
+        flex-direction: column;
+    }
+    .link-box--top {
+        width: 100%;
+    }
+    .main-content .fooBar {
+        outline: 1px dotted red;
+        display: flex;
+        width: 100%;
+        .image-block__header-block {
+            right: -110%;
+            bottom: initial;
+            top: 5%;
+        }
+    }
+    .link-block__item {
+        width: 100%;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    .link-block__link {
+        flex-direction: row-reverse;
+    }
+    .link-block__text {
+        width: 50%;
+    }
+    .link-block__item:nth-child(odd) {
+        margin-right: 0;
+    }
 }
