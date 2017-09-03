@@ -1,0 +1,15 @@
+.btn {
+  padding: $spacing;
+  margin-right: $spacing;
+}
+
+.btn--image-block,
+.btn--primary {
+  color: #fff;
+}
+.btn--primary {
+  background-color: $avans-red;
+}
+.btn--image-block {
+  background-color: #000;
+}

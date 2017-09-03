@@ -1,0 +1,19 @@
+<div class="link-box__header-container">
+  <h2 class="link-box__header">{{ header }}</h2>
+  {{# sub-header }}
+  <p class="link-box__header-payoff">{{ sub-header }}</p>
+  {{/ sub-header }}
+</div>
+<!-- /link-box__header -->
+<ul class="link-box__list {{ class }}">
+  {{# items }}
+  <li class="link-box__item">
+    <a class="link-box__link" href=" {{ link }}">
+      <p class="link-box__content">{{ content }}</p>
+      {{# date }}<strong class="link-box__date">{{ date }}</strong>{{/ date }}
+  </a>
+  </li>
+  <!-- /link-box__item -->
+  {{/ items }}
+</ul>
+<!-- /link-box__list -->

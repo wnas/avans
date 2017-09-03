@@ -1,0 +1,41 @@
+.link-box {
+    padding: $spacing-xl;
+    background-color: #fff;
+}
+.link-box__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+}
+.link-box__item {
+    width: 100%;
+    .col-2 & {
+        width: 50%;
+    }
+    flex: 1 0 auto;
+    padding-left: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.link-box__link {
+  text-decoration: none;
+  color: #000;
+  display: block;
+    padding: $spacing 0 0
+}
+
+.link-box__content {
+    padding: 0 $spacing 0 $spacing-l;
+    margin-left: $spacing;
+    margin-bottom: $spacing;
+    @extend .blue-arrow;
+}
+.link-box__date {
+    display: block;
+    padding: 0 $spacing $spacing $spacing-xl;
+    color: $light-gray;
+    font-weight: normal;
+}
