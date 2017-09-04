@@ -7,34 +7,11 @@
 
 
 
-
-.header--hero {
-    color: #fff;
-    text-transform: uppercase;
-    width: calc( 900px / 2);
-    max-width: 80vw;
-    position: relative;
-    z-index: 5;
-    margin-left: $spacing-xl;
-}
-
-.link-box--top {
-    width: 60%;
-    margin-right: $spacing-xl;
-}
-
-.link-box--news {
-    width: 50%;
-    margin-left: $spacing-l;
-}
-
 @media all and (max-width: $bp-m) {
     .layout-full-width-block__content--intro {
         flex-direction: column;
     }
-    .link-box--top {
-        width: 100%;
-    }
+
     .main-content .fooBar {
         outline: 1px dotted red;
         display: flex;

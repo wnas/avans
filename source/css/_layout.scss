@@ -19,13 +19,7 @@ body {
     margin: 0 auto;
 }
 
-.hero__content {
-    padding: 0 $spacing-l;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: calc(100% - 100px);
-}
+
 .layout-full-width-block__content {
   display: flex;
   position: relative;
