@@ -1,0 +1,32 @@
+
+.hero {
+    background-image: url('../../../images/hero/1920.png');
+    background-position: 50% 50%;
+//    background-color: #fff;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+.hero:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left:calc(50% - (1920px / 2));
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    background-color: rgba(0,0,0,.4);
+}
+
+
+.header--hero {
+    color: #fff;
+    text-transform: uppercase;
+    width: calc( 900px / 2);
+    max-width: 80vw;
+    position: relative;
+    z-index: 5;
+    margin-left: $spacing-xl;
+}

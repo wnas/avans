@@ -4,13 +4,13 @@ body {
     background-color: #fff;
 }
 
-@media all and (min-width: $bp-m) {
+
     .layout-full-width-block,
     .top-bar,
     .hero {
-        margin: 0 $content__margin;
+        padding: 0 $content__margin;
     }
-}
+
 
 .layout-full-width-block__content,
 .top-bar__content,
@@ -25,9 +25,6 @@ body {
     justify-content: center;
     flex-direction: column;
     height: calc(100% - 100px);
-}
-.main-content {
-  margin-top: -100px;
 }
 .layout-full-width-block__content {
   display: flex;

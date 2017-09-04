@@ -1,0 +1,24 @@
+<header>
+  <div class="top-bar layout-full-width-block">
+  <!-- div to span the whole page -->
+    <div class="top-bar__content">
+      <div class="top-bar__container"  id="{{ search-id }}">
+    <!-- div to contain the top nav and the logo -->
+      <a class="skip-link nav-link" href="#{{nav-id}}">{{ nav-link }}</a>
+
+      <a class="skip-link search-link" href="#{{ search-id }}">{{ search-link }}</a>
+
+      <nav class="nav" id="nav">
+      <!-- navigation element, doh -->
+        {{> organisms-main-nav }}
+      </nav>
+      {{> molecules-top-search }}
+      <!-- / of top nav -->
+    </div>
+      {{> atoms-logo }}
+    </div>
+    <!-- / nav/logo div -->
+  </div>
+  <!-- / contain div -->
+</header>
+<!-- / header -->

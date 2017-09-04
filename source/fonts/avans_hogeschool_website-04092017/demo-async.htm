@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    
+    </style>
+    <style type="text/css">
+    @font-face{
+        font-family:"FrutigerLTW01-55Roman";
+        src:url("Fonts/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix");
+        src:url("Fonts/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix") format("eot"),url("Fonts/9b1fae67-8764-448a-a926-54b09bd0b06b.woff2") format("woff2"),url("Fonts/3fbbd6b1-cfa7-4ff0-97ea-af1b2c489f15.woff") format("woff"),url("Fonts/076311f8-a01b-4389-a5eb-334a62e62d45.ttf") format("truetype"),url("Fonts/c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877.svg#c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW01-56Italic";
+        src:url("Fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix");
+        src:url("Fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix") format("eot"),url("Fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"),url("Fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"),url("Fonts/19fe9614-8825-4e7d-b8c3-230d2561e0e2.ttf") format("truetype"),url("Fonts/c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3.svg#c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3") format("svg");
+    }
+    @font-face{
+        font-family:"Frutiger LT W01 65 Bold";
+        src:url("Fonts/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix");
+        src:url("Fonts/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix") format("eot"),url("Fonts/6e7f04cb-3b30-43a5-b79d-25b4c1178700.woff2") format("woff2"),url("Fonts/9aa32a81-1124-4c43-b3db-15bfb1f7aed2.woff") format("woff"),url("Fonts/6faffbf4-f8e8-4817-b24b-a390e166be7e.ttf") format("truetype"),url("Fonts/fc09de64-de25-425e-90dc-a0cae29b02c4.svg#fc09de64-de25-425e-90dc-a0cae29b02c4") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW01-75Black";
+        src:url("Fonts/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix");
+        src:url("Fonts/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix") format("eot"),url("Fonts/a11b4e58-71a2-4f70-bda7-242c1305efd0.woff2") format("woff2"),url("Fonts/70ad2f15-9e1e-4a42-8fdc-30327ef510c3.woff") format("woff"),url("Fonts/ed897ec7-c1b8-4bd4-9d2a-0a7b09661bdc.ttf") format("truetype"),url("Fonts/63e3258b-8e81-4153-ba11-ab8f4b2aa7a3.svg#63e3258b-8e81-4153-ba11-ab8f4b2aa7a3") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-47LightCn";
+        src:url("Fonts/16287d1e-35c2-48f5-8e23-53345e052ca7.eot?#iefix");
+        src:url("Fonts/16287d1e-35c2-48f5-8e23-53345e052ca7.eot?#iefix") format("eot"),url("Fonts/710ce708-2f2b-4530-a455-a161ccf7b3d2.woff2") format("woff2"),url("Fonts/18e289e9-d1cf-49c2-9e2b-443f187c1f87.woff") format("woff"),url("Fonts/23a04561-390f-4346-9287-d05ec4f6f542.ttf") format("truetype"),url("Fonts/4f7e6038-e429-4d6d-b74f-43498d868495.svg#4f7e6038-e429-4d6d-b74f-43498d868495") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-48LightCn";
+        src:url("Fonts/0736c3b3-f2f1-466e-8a25-45fc84ab3845.eot?#iefix");
+        src:url("Fonts/0736c3b3-f2f1-466e-8a25-45fc84ab3845.eot?#iefix") format("eot"),url("Fonts/2ae8be2a-ce37-4269-b6f3-a3434707f841.woff2") format("woff2"),url("Fonts/905db536-c069-4744-ae6f-6b3988ebaaed.woff") format("woff"),url("Fonts/f6e9edda-7496-48a5-ba31-fc5f73bff6fe.ttf") format("truetype"),url("Fonts/b90ef7cb-c6d6-4eca-916a-2abf35c536c1.svg#b90ef7cb-c6d6-4eca-916a-2abf35c536c1") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-57Condens";
+        src:url("Fonts/a267d8d4-3e11-4eb4-a4a8-f109ddc63706.eot?#iefix");
+        src:url("Fonts/a267d8d4-3e11-4eb4-a4a8-f109ddc63706.eot?#iefix") format("eot"),url("Fonts/6fe059b8-9cdc-4d35-ab14-8244f8ce6a90.woff2") format("woff2"),url("Fonts/ef9a4f38-e55d-40e8-aa22-b4510adec541.woff") format("woff"),url("Fonts/dbe27c12-f5c5-449d-88b8-330313bf5865.ttf") format("truetype"),url("Fonts/720956b5-5e1e-47f5-a115-34296dc4cbf1.svg#720956b5-5e1e-47f5-a115-34296dc4cbf1") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-77BlackCn";
+        src:url("Fonts/0fcc6fcb-3952-4444-b734-818ca618d1d9.eot?#iefix");
+        src:url("Fonts/0fcc6fcb-3952-4444-b734-818ca618d1d9.eot?#iefix") format("eot"),url("Fonts/a39aed4a-7c2e-43ba-a169-19a28c9bbf11.woff2") format("woff2"),url("Fonts/f3b37111-01e6-4bd9-98d0-c062e502de57.woff") format("woff"),url("Fonts/2c930f2b-7b42-42f9-a274-1a7465f7d380.ttf") format("truetype"),url("Fonts/6d98ed41-f5db-47c2-add1-bda582529ae8.svg#6d98ed41-f5db-47c2-add1-bda582529ae8") format("svg");
+    }
+    @font-face{
+        font-family:"LCD W01";
+        src:url("Fonts/aaebf916-011b-4666-82b0-c37f6507a5d6.eot?#iefix");
+        src:url("Fonts/aaebf916-011b-4666-82b0-c37f6507a5d6.eot?#iefix") format("eot"),url("Fonts/d9d7ff01-52cf-4a5f-abe5-709f42b301d1.woff2") format("woff2"),url("Fonts/ea447350-0184-4cd2-b9d1-1c0200254e09.woff") format("woff"),url("Fonts/571ac562-377c-4f61-b8a5-6a23e35bacc3.ttf") format("truetype"),url("Fonts/5e16e4b6-79fd-4dd3-ace9-004a4ce23fd4.svg#5e16e4b6-79fd-4dd3-ace9-004a4ce23fd4") format("svg");
+    }
+</style>
+<script type="text/javascript">
+var MTIProjectId='6d894756-b42b-43a8-8e2f-dddee93376e2';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top: -10px; font-size: 1.5em; color: #666"><b>@font-face implementation instructions</b></p>
+        <p>The asynchronous script loads in the background allowing the other elements of your website to load first and undeterred.</p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+            <div style="font-family:'FrutigerLTW01-55Roman';"> Frutiger® W01 55 Roman </div>
+<div style="font-family:'FrutigerLTW01-56Italic';"> Frutiger® W01 56 Italic </div>
+<div style="font-family:'Frutiger LT W01 65 Bold';"> Frutiger® W01 65 Bold </div>
+<div style="font-family:'FrutigerLTW01-75Black';"> Frutiger® W01 75 Black </div>
+<div style="font-family:'FrutigerLTW02-47LightCn';"> Frutiger® W02 47 Condensed Light </div>
+<div style="font-family:'FrutigerLTW02-48LightCn';"> Frutiger® W02 48 Condensed Light Italic </div>
+<div style="font-family:'FrutigerLTW02-57Condens';"> Frutiger® W02 57 Condensed </div>
+<div style="font-family:'FrutigerLTW02-77BlackCn';"> Frutiger® W02 77 Condensed Black </div>
+<div style="font-family:'LCD W01';"> LCD™ W01 Regular </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo.htm">css only</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://www.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <h2>Asynchronous Implementation (Requires JavaScript)</h2>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+                
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width: 830px; height: 350px; border: 1 #fff solid; background-color: #fcfcfc;"><style type="text/css">
+    @font-face{
+        font-family:"FrutigerLTW01-55Roman";
+        src:url("Fonts/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix");
+        src:url("Fonts/af97a512-f55a-4f61-b2ce-659c883930fc.eot?#iefix") format("eot"),url("Fonts/9b1fae67-8764-448a-a926-54b09bd0b06b.woff2") format("woff2"),url("Fonts/3fbbd6b1-cfa7-4ff0-97ea-af1b2c489f15.woff") format("woff"),url("Fonts/076311f8-a01b-4389-a5eb-334a62e62d45.ttf") format("truetype"),url("Fonts/c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877.svg#c59a36ab-4ef8-4ee1-a2f8-48aa79d4f877") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW01-56Italic";
+        src:url("Fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix");
+        src:url("Fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix") format("eot"),url("Fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"),url("Fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"),url("Fonts/19fe9614-8825-4e7d-b8c3-230d2561e0e2.ttf") format("truetype"),url("Fonts/c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3.svg#c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3") format("svg");
+    }
+    @font-face{
+        font-family:"Frutiger LT W01 65 Bold";
+        src:url("Fonts/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix");
+        src:url("Fonts/fbd7c0fb-f004-4e83-81d2-1d400413a873.eot?#iefix") format("eot"),url("Fonts/6e7f04cb-3b30-43a5-b79d-25b4c1178700.woff2") format("woff2"),url("Fonts/9aa32a81-1124-4c43-b3db-15bfb1f7aed2.woff") format("woff"),url("Fonts/6faffbf4-f8e8-4817-b24b-a390e166be7e.ttf") format("truetype"),url("Fonts/fc09de64-de25-425e-90dc-a0cae29b02c4.svg#fc09de64-de25-425e-90dc-a0cae29b02c4") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW01-75Black";
+        src:url("Fonts/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix");
+        src:url("Fonts/9b0d3be7-4ec5-4a72-8cc6-89b8b0f0b193.eot?#iefix") format("eot"),url("Fonts/a11b4e58-71a2-4f70-bda7-242c1305efd0.woff2") format("woff2"),url("Fonts/70ad2f15-9e1e-4a42-8fdc-30327ef510c3.woff") format("woff"),url("Fonts/ed897ec7-c1b8-4bd4-9d2a-0a7b09661bdc.ttf") format("truetype"),url("Fonts/63e3258b-8e81-4153-ba11-ab8f4b2aa7a3.svg#63e3258b-8e81-4153-ba11-ab8f4b2aa7a3") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-47LightCn";
+        src:url("Fonts/16287d1e-35c2-48f5-8e23-53345e052ca7.eot?#iefix");
+        src:url("Fonts/16287d1e-35c2-48f5-8e23-53345e052ca7.eot?#iefix") format("eot"),url("Fonts/710ce708-2f2b-4530-a455-a161ccf7b3d2.woff2") format("woff2"),url("Fonts/18e289e9-d1cf-49c2-9e2b-443f187c1f87.woff") format("woff"),url("Fonts/23a04561-390f-4346-9287-d05ec4f6f542.ttf") format("truetype"),url("Fonts/4f7e6038-e429-4d6d-b74f-43498d868495.svg#4f7e6038-e429-4d6d-b74f-43498d868495") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-48LightCn";
+        src:url("Fonts/0736c3b3-f2f1-466e-8a25-45fc84ab3845.eot?#iefix");
+        src:url("Fonts/0736c3b3-f2f1-466e-8a25-45fc84ab3845.eot?#iefix") format("eot"),url("Fonts/2ae8be2a-ce37-4269-b6f3-a3434707f841.woff2") format("woff2"),url("Fonts/905db536-c069-4744-ae6f-6b3988ebaaed.woff") format("woff"),url("Fonts/f6e9edda-7496-48a5-ba31-fc5f73bff6fe.ttf") format("truetype"),url("Fonts/b90ef7cb-c6d6-4eca-916a-2abf35c536c1.svg#b90ef7cb-c6d6-4eca-916a-2abf35c536c1") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-57Condens";
+        src:url("Fonts/a267d8d4-3e11-4eb4-a4a8-f109ddc63706.eot?#iefix");
+        src:url("Fonts/a267d8d4-3e11-4eb4-a4a8-f109ddc63706.eot?#iefix") format("eot"),url("Fonts/6fe059b8-9cdc-4d35-ab14-8244f8ce6a90.woff2") format("woff2"),url("Fonts/ef9a4f38-e55d-40e8-aa22-b4510adec541.woff") format("woff"),url("Fonts/dbe27c12-f5c5-449d-88b8-330313bf5865.ttf") format("truetype"),url("Fonts/720956b5-5e1e-47f5-a115-34296dc4cbf1.svg#720956b5-5e1e-47f5-a115-34296dc4cbf1") format("svg");
+    }
+    @font-face{
+        font-family:"FrutigerLTW02-77BlackCn";
+        src:url("Fonts/0fcc6fcb-3952-4444-b734-818ca618d1d9.eot?#iefix");
+        src:url("Fonts/0fcc6fcb-3952-4444-b734-818ca618d1d9.eot?#iefix") format("eot"),url("Fonts/a39aed4a-7c2e-43ba-a169-19a28c9bbf11.woff2") format("woff2"),url("Fonts/f3b37111-01e6-4bd9-98d0-c062e502de57.woff") format("woff"),url("Fonts/2c930f2b-7b42-42f9-a274-1a7465f7d380.ttf") format("truetype"),url("Fonts/6d98ed41-f5db-47c2-add1-bda582529ae8.svg#6d98ed41-f5db-47c2-add1-bda582529ae8") format("svg");
+    }
+    @font-face{
+        font-family:"LCD W01";
+        src:url("Fonts/aaebf916-011b-4666-82b0-c37f6507a5d6.eot?#iefix");
+        src:url("Fonts/aaebf916-011b-4666-82b0-c37f6507a5d6.eot?#iefix") format("eot"),url("Fonts/d9d7ff01-52cf-4a5f-abe5-709f42b301d1.woff2") format("woff2"),url("Fonts/ea447350-0184-4cd2-b9d1-1c0200254e09.woff") format("woff"),url("Fonts/571ac562-377c-4f61-b8a5-6a23e35bacc3.ttf") format("truetype"),url("Fonts/5e16e4b6-79fd-4dd3-ace9-004a4ce23fd4.svg#5e16e4b6-79fd-4dd3-ace9-004a4ce23fd4") format("svg");
+    }
+</style>
+<script type="text/javascript">
+var MTIProjectId='6d894756-b42b-43a8-8e2f-dddee93376e2';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script></textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>

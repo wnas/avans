@@ -1,0 +1,39 @@
+.top-bar {
+  background-color: #fff;
+}
+.top-bar__content,
+.top-bar__container {
+  display: flex;
+}
+.top-bar__container {
+  width: calc(100% - 163px);
+}
+.skip-link {
+  width: 3rem;
+  height: 3rem;
+  text-indent: 4rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: 1.5rem 1.5rem;
+}
+.nav-link {
+  background-image: url(../../../images/icons/nav-icon.svg);
+}
+.search-link {
+  background-image: url(../../../images/icons/search-icon.svg);
+}
+.search__close {
+  background-image: url(../../../images/icons/close-search-icon.svg);
+}
+
+
+
+.top-search,
+.nav {
+  width: 0;
+  overflow: hidden;
+  transition: width .5s easein;
+}
