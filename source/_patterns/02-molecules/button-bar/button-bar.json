@@ -1,0 +1,7 @@
+{
+  "buttons": [
+    {"text":"text on button 1",
+    "class":"btn--primary"},
+      {"text":"text on button 2"}
+  ]
+}
