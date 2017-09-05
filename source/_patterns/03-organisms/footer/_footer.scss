@@ -9,6 +9,8 @@
   flex-direction: row;
   color: #999;
   justify-content: space-between;
+  padding: 0 $spacing-xl;
+
 }
 .footer-links__list {
   padding-left: 0;
@@ -30,4 +32,10 @@
  display: block;
  background-color: #000;
  color: #ccc;
+ padding: $spacing-xl 0;
+}
+.disclaimer__text {
+  max-width: $width__overal;
+  margin: 0 auto;
+  padding: 0 $spacing-xl;
 }
