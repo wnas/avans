@@ -22,6 +22,12 @@ header {
   background-position: center;
   background-size: 1.5rem 1.5rem;
 }
+
+.nav:target .skip-link {
+  position: absolute;
+  top: -1rem;
+  right: .5rem;
+}
 .nav-link {
   background-image: url(../../../images/icons/nav-icon.svg);
 }
@@ -38,5 +44,5 @@ header {
 .nav {
   width: 0;
   overflow: hidden;
-  transition: width .5s easein;
+  transition: width .2s easein;
 }
