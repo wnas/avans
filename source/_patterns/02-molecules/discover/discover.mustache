@@ -1,9 +1,11 @@
 <div class="footer-links__list-block">
-  <h4 class="footer-links__header">Ontdek meer Avans</h4>
+  <h4 class="footer-links__header">{{ discover-header }}</h4>
   <ul class="footer-links__list">
-    <li><a href="#">Avans international</a></li>
-    <li><a href="#">Avans Alumi portal</a></li>
-    <li><a href="#">iAvans </a></li>
-    <li><a href="#">Contact</a></li>
+    {{# discover }}
+      <li class="footer-link__item">
+        <a
+          href="{{ href }}"
+          class="footer-link__link">{{ item }}</a></li>
+    {{/ discover }}
   </ul>
 </div>

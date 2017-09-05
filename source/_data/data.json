@@ -2,5 +2,30 @@
     "title": "title",
     "type": "checkbox",
     "label-text": "label-text",
-    "link": "link"
+    "link": "link",
+    "href": "#",
+    "follow-header": "Volg Avans op sociale media",
+    "follow": [
+      {"item": "facebook"},
+      {"item": "instagram"},
+      {"item": "snapchat"},
+      {"item": "twitter"},
+      {"item": "linkedin"},
+      {"item": "youtube"}
+    ],
+    "share-header": "Deel deze pagina",
+    "share": [
+      {"item": "facebook"},
+      {"item": "instagram"},
+      {"item": "twitter"},
+      {"item": "linkedin"}
+    ],
+    "discover-header": "Ontdek meer Avans",
+    "discover": [
+      {"item": "Avans International"},
+      {"item": "Avans Alumni portaal"},
+      {"item": "iAvans"},
+      {"item": "Contact"}
+    ]
+
 }

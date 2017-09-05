@@ -1,9 +1,11 @@
 <div class="footer-links__list-block">
-  <h4 class="footer-links__header">Share</h4>
+  <h4 class="footer-links__header">{{ share-header }}</h4>
   <ul class="footer-links__list">
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">LinkedIn</a></li>
-    <li><a href="#">Instagram</a></li>
+    {{# share }}
+      <li class="footer-link__item">
+        <a
+          href="{{ href }}"
+          class="footer-link__link footer-link__link--icon footer-link__link--{{ item }}">{{ item }}</a></li>
+    {{/ share }}
   </ul>
 </div>
