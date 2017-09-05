@@ -1,6 +1,6 @@
 // search stuff
 :target .top-search {
-  width: 100%;
+  width: calc(100% - 1rem);
   transition: width .5s;
   background-color: #fff;
 }

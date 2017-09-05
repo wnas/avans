@@ -2,6 +2,7 @@
   width: 100%;
   height: calc(100vh - 100px);
   position: absolute;
+  z-index: 20;
   top: 100px;
   transition: height .5s;
 }
@@ -23,8 +24,7 @@
 }
 
 .nav__sub {
-  position: absolute;
-  left: -999em;
+
 }
 
 .nav__item {
@@ -32,18 +32,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: $spacing $spacing-l;
+    position: relative;
+    padding: 0 $spacing-l;
     .util-nav &:last-child {
         border-right: 0;
     }
 }
+
+.nav__item--sub {
+  border-bottom: none;
+}
+
+.nav__item:hover {
+
+}
 .nav__item:hover .nav_sub {
-  position: static;
-  left: 0;
+  height: auto;
 }
 
 .nav__link {
     text-decoration: none;
     font-weight: bold;
     color: #000;
+    padding: $spacing 0;
+}
+.nav__link--sub {
+  @extend .blue-arrow;
+  padding-left: $spacing-xl;
+  font-weight: normal;
 }

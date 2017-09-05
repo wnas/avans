@@ -10,8 +10,8 @@
         "alt": "Avans hogeschool"
         }
     },
-    "search-id": "searchid",
-    "nav-id": "navid",
+    "search-id": "search-id",
+    "nav-id": "nav-id",
     "main-nav": [
         { "content": "Home"},
         { "content": "Studeren",
