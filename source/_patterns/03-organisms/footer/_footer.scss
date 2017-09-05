@@ -1,3 +1,33 @@
+
+.page-footer__content {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  color: #999;
+  justify-content: space-between;
+}
+.footer-links__list {
+  padding-left: 0;
+}
+.footer-links__list li {
+  list-style: none;
+}
+.footer-links__list a {
+  color: #999;
+
+}
+.footer-links__list-block {
+
+}
+.footer-links__header {
+  color: #999;
+}
 .disclaimer {
  display: block;
+ background-color: #000;
+ color: #ccc;
 }
