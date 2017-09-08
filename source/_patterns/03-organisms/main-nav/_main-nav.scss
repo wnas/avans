@@ -1,13 +1,14 @@
-@media all and (min-width: $bp-l) {
-  .nav:target {
-    width: 100%;
-    opacity: 100%;
-    height: calc(100vh - 100px);
-    position: absolute;
-    z-index: 20;
-    top: 100px;
-    transition: height .5s;
-  }
+@media all and (max-width: $bp-l) {
+    .nav:target {
+        width: 100%;
+        opacity: 100%;
+        overflow: visible;
+        height: calc(100vh - 100px);
+        position: absolute;
+        z-index: 20;
+        top: 100px;
+        transition: height .5s;
+    }
 }
 .nav {
   height: 0;
@@ -23,39 +24,6 @@
     flex-direction: column;
     padding: 0;
     margin: 0;
-
-}
-
-@media all and (min-width: $bp-l) {
-  .nav {
-    height: auto;
-    width: auto;
-    flex-direction: row;
-    order: 1;
-    overflow: visible;
-  }
-  .nav__list {
-    flex-direction: row;
-  }
-  .nav__sub {
-    position: absolute;
-    left: -999em;
-    background-color: $avans-blue;
-    color: #fff;
-    top: 100px;
-    flex-direction: column;
-  }
-  .nav__item:hover .nav__sub {
-    left: 0;
-  }
-  .nav__link {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-  }
-}
-
-.nav__sub {
-
 }
 
 .nav__item {
@@ -74,13 +42,6 @@
   border-bottom: none;
 }
 
-.nav__item:hover {
-
-}
-.nav__item:hover .nav_sub {
-  height: auto;
-}
-
 .nav__link {
     text-decoration: none;
     font-weight: bold;
@@ -91,4 +52,60 @@
   @extend .blue-arrow;
   padding-left: $spacing-xl;
   font-weight: normal;
+}
+
+// big screen
+@media all and (min-width: $bp-l) {
+  .nav {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    order: 1;
+    overflow: visible;
+  }
+  .nav__list {
+    flex-direction: row;
+  }
+  .nav__sub {
+    position: absolute;
+    left: -999em;
+    background-color: $avans-blue;
+    top: 100px;
+    flex-direction: column;
+  }
+  .nav__sub:after {
+    content: '';
+    display: block;
+    width: 11px;
+    height: 11px;
+    transform: rotate(45deg);
+    background-color: $avans-blue;
+    position: absolute;
+    left: $spacing-xl;
+    top: -5px;
+  }
+  .nav__item:hover .nav__sub {
+    left: -$spacing-s;
+  }
+  .nav__link--sub {
+    color: #fff;
+    background-image: url('../../../images/icons/ICON-Arrow-Right-White.svg');
+  }
+  .nav__item--sub {
+    margin: 0 $spacing-l;
+    border-bottom: 1px solid rgba(255,255,255,.4);
+  }
+  .nav__item--sub:last-child {
+    border-bottom: 0;
+  }
+}
+
+.nav__sub {
+
+}
+
+
+
+.nav__item:hover .nav_sub {
+  height: auto;
 }

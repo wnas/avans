@@ -25,14 +25,18 @@ header {
 
 .nav:target .skip-link {
   position: absolute;
-  top: -1rem;
-  right: .5rem;
+  top: -6rem;
+  left: 1rem;
+  background-color: #fff;
 }
 @media all and (min-width: $bp-l) {
   .nav {
     order: 1;
   }
   .nav .skip-link {
+    display: none;
+  }
+  .nav-link {
     display: none;
   }
 }
@@ -46,6 +50,10 @@ header {
 @media all and (min-width: $bp-l) {
   .search-link {
     order: 2;
+  }
+
+  :target .search-link {
+    order: 0;
   }
 }
 .close-icon {

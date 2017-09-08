@@ -5,6 +5,7 @@ $spacing-s    : 10px;
 $spacing    : 15px;
 $spacing-l  : 20px;
 $spacing-xl : 30px;
+$spacing-xxl : 60px;
 
 $content__margin: $spacing;
 $hero__padding: calc($spacing * 2);
@@ -19,12 +20,7 @@ $bp-m  : 768px;
 $bp-s  : 540px;
 $bp-xs : 320px;
 
-
 /*
-  mixins
-  */
-  .blue-arrow {
-    background-repeat: no-repeat;
-    background-image: url('../../../images/icons/ICON-Arrow-Right-Blue.svg');
-    background-position: 0 50%;
-  }
+  timing
+*/
+$time-s: .1s;

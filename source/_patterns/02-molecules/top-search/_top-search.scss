@@ -2,8 +2,16 @@
 
 :target .top-search {
   width: calc(100% - 1rem);
-  // transition: width .5s;
+ transition: width $time-s;
   background-color: #fff;
+}
+:target .search-link {
+  order: 0;
+}
+
+:target .nav {
+  outline: 1px solid red;
+  display: none;
 }
 
 .top-search__container {
