@@ -15,7 +15,7 @@ header {
   width: 3rem;
   height: 3rem;
   text-indent: 4rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   background-repeat:no-repeat;
@@ -28,11 +28,25 @@ header {
   top: -1rem;
   right: .5rem;
 }
+@media all and (min-width: $bp-l) {
+  .nav {
+    order: 1;
+  }
+  .nav .skip-link {
+    display: none;
+  }
+}
 .nav-link {
   background-image: url("../../../images/icons/nav-icon.svg");
+  order: 0;
 }
 .search-link {
   background-image: url("../../../images/icons/search-icon.svg");
+}
+@media all and (min-width: $bp-l) {
+  .search-link {
+    order: 2;
+  }
 }
 .close-icon {
   background-image: url("../../../images/icons/close-search-icon.svg");
@@ -45,4 +59,10 @@ header {
   width: 0;
   overflow: hidden;
   transition: width .2s easein;
+}
+@media all and (min-width: $bp-l) {
+  .nav {
+    width: auto;
+  order: 1;
+  }
 }
