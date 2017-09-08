@@ -115,10 +115,26 @@
  color: #ccc;
  padding: $spacing-xl 0;
 }
+@media all and (max-width: $bp-m) {
+  .disclaimer {
+    background-position: $spacing-l $spacing-xl;
+    padding-top: 100px;
+  }
+}
 .disclaimer__text {
   max-width: $width__overal;
   margin: 0 auto;
   padding: 0 $spacing-xl;
+}
+@media all and (max-width: $bp-s) {
+  .disclaimer__text {
+    display: flex;
+    flex-direction: column;
+  }
+  .disclaimer__link {
+    padding-top: $spacing;
+    display: inline-block;
+  }
 }
 .disclaimer__link {
   color: #ccc;
