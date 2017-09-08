@@ -16,9 +16,9 @@
     "share-header": "Deel deze pagina",
     "share": [
       {"item": "facebook"},
-      {"item": "instagram"},
       {"item": "twitter"},
-      {"item": "linkedin"}
+      {"item": "linkedin"},
+      {"item": "mail"}
     ],
     "discover-header": "Ontdek meer Avans",
     "discover": [
