@@ -2,6 +2,24 @@
     padding: $spacing-xl;
     background-color: #fff;
 }
+
+.link-box--top {
+    width: 60%;
+    margin-right: $spacing-xl;
+}
+
+@media all and (max-width: $bp-m) {
+
+    .link-box--top {
+        width: 100%;
+    }
+  }
+
+.link-box--news {
+    width: 50%;
+    margin-left: $spacing-l;
+}
+
 .link-box__list {
   list-style: none;
   margin: 0;

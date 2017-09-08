@@ -1,0 +1,20 @@
+<li
+  class="nav__item">
+  <a
+    class="nav__link"
+    href="{{ href }}">
+    {{ content }}
+  </a>
+  {{# sub }}
+    <ul class="nav__sub nav__list">
+      {{# items }}
+      <li class="nav__item nav__item--sub"><a
+        class="nav__link nav__link--sub"
+        href="{{ href }}">
+        {{ content }}
+      </a></li>
+      {{/ items }}
+    </ul>
+    {{/ sub }}
+</li>
+<!-- /nav-item -->

@@ -1,0 +1,18 @@
+.testing {
+    outline: 1px solid red;
+    * {
+        outline: 1px solid green;
+        * {
+            outline: 1px solid pink;
+            * {
+                outline: 1px solid blue;
+                * {
+                    outline: 1px solid orange;
+                    * {
+                        outline: 1px solid teal;
+                    }
+                }
+            }
+        }
+    }
+}

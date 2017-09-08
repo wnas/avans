@@ -2,5 +2,33 @@
     "title": "title",
     "type": "checkbox",
     "label-text": "label-text",
-    "link": "link"
+    "link": "link",
+    "link-text": "link text",
+    "href": "#",
+    "header": {
+      "logo": {
+        "src":"../../../images/XL-Logo.svg",
+        "alt": "Avans hogeschool"
+        }
+    },
+    "search-id": "search-id",
+    "nav-id": "nav-id",
+    "main-nav": [
+        { "content": "Home"},
+        { "content": "Studeren",
+            "sub": {
+                "items": [
+                    {"content": "Opleidingen"},
+                    {"content": "Interessegebieden"}
+                ]
+            }
+        },
+        { "content": "Bedrijven & Instellingen"},
+        { "content": "Onderzoek"},
+        { "content": "Over avans"}
+    ],
+    "lang-nav": [
+        { "content": "NL"},
+        { "content": "EN"}
+    ]
 }
