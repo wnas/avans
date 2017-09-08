@@ -37,6 +37,13 @@
   color: #999;
 }
 
+.footer-link__item--discover {
+  background-repeat: no-repeat;
+  background-image: url('../../../images/icons/ICON-Arrow-Right-Black.svg');
+  background-position: 0 50%;
+  padding-left: $spacing;
+}
+
 .footer-link__link--icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -102,6 +109,9 @@
 .disclaimer {
  display: block;
  background-color: #000;
+ background-image: url('../../../images/Logo-Avans-White.svg');
+ background-repeat: no-repeat;
+ background-position: calc(100% - 30px) 50%;
  color: #ccc;
  padding: $spacing-xl 0;
 }
@@ -109,4 +119,8 @@
   max-width: $width__overal;
   margin: 0 auto;
   padding: 0 $spacing-xl;
+}
+.disclaimer__link {
+  color: #ccc;
+  text-decoration: underline;
 }
