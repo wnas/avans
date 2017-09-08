@@ -1,8 +1,8 @@
 {
     "title": "title",
-    "type": "checkbox",
+    "type": "url",
     "label-text": "label-text",
-    "link": "link",
+    "link-text": "link-text",
     "href": "#",
     "header": {
       "logo": {
@@ -30,6 +30,21 @@
         { "content": "NL"},
         { "content": "EN"}
     ],
+    "searchbox": {
+    "type": "search",
+    "class": "top-search__input",
+    "attributes": [
+      {
+        "name": "placeholder",
+        "value": "Type hier je zoekvraag..."
+      },
+      {
+        "name": "required",
+        "value": "required"
+      }
+    ]
+},
+
     "follow-header": "Volg Avans op sociale media",
     "follow": [
       {"item": "facebook"},

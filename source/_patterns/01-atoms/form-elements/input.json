@@ -1,0 +1,14 @@
+{
+  "type": "tel",
+  "id": "id",
+  "attributes": [
+    {
+      "name": "required",
+      "value": "required"
+    },
+    {
+      "name": "placeholder",
+      "value": "placeholder value"
+    }
+  ]
+}

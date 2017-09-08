@@ -1,6 +1,11 @@
 {
     "bodyClass": "avans-homepage",
     "title": "home page avans",
+    "searchlabel": {
+      "for": "for",
+      "label-text": "Zoek binnen avans",
+      "class": "top-search__label"
+    },
     "link-box-top": {
         "class": "col-2",
         "header": "Kies je opleiding",

@@ -1,6 +1,6 @@
 <input
+  class="input {{# type }}input--{{ type }}{{/ type }} {{ class }}"
   type="{{ type }}"
   {{# id }} id="{{ id }}" {{/ id }}
-  {{# required }} {{ required }} {{/ required }}
-  {{# pattern }} pattern="{{ pattern }}" {{/ pattern }}
-  {{# disabled }} {{ disabled }} {{/ disabled }} />
+  {{# attributes }} {{ name }}="{{ value }}" {{/ attributes }}
+   />

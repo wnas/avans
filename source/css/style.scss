@@ -13,6 +13,7 @@ body {
   //  @extend .testing;
 }
 
+@import "../_patterns/01-atoms/form-elements/input";
 @import "../_patterns/01-atoms/button/button";
 @import "../_patterns/01-atoms/logo/logo";
 @import "../_patterns/02-molecules/button-bar/button-bar";
