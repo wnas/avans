@@ -1,0 +1,27 @@
+{
+	"header": "Vorm",
+	"filters": [
+		{
+			"label-text": "Voltijd",
+			"input-class": "input--filter",
+			"for": "voltijd",
+			"id": "voltijd",
+			"type":"checkbox"
+		},
+		{
+			"label-text": "Deeltijd",
+			"input-class": "input--filter",
+			"for": "deeltijd",
+			"id": "deeltijd",
+			"type":"checkbox"
+		},
+		{
+			"label-text": "Duaal",
+			"input-class": "input--filter",
+			"for": "duaal",
+			"id": "duaal",
+			"type":"checkbox"
+		}
+
+	]
+}

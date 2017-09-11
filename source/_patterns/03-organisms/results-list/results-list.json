@@ -1,5 +1,4 @@
 {
-	"bodyClass": "avans-listpage",
 	"results-list": [{
 			"header": "Accountancy",
 			"location": "Den Bosch",
@@ -38,12 +37,5 @@
 				}
 			]
 		}
-	],
-	"filters": {
-		"action": "hi.jsp",
-
-		"type": "submit",
-		"text": "go girl"
-
-	}
+	]
 }

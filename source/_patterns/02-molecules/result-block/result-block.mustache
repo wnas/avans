@@ -1,11 +1,20 @@
 <li class="result-block">
-  <div>
-    <a href="{{ link }}">
-      <h3 class="result-block__header">{{ header }}</h3>
-      <span class="result-block__location">{{ location }}</span>
-      <div class="result-block__content">
-        {{{ content }}}
-      </div>
-      <img src="{{ img }}" srcset="{{ srcset }}" />
-    </a>
+	<a class="result-block__link" href="{{ href }}">
+		<div class="result-block__content-container">
+	 		<h3 class="result-block__header">
+				{{ header }}
+			</h3>
+			<span class="result-block__location">
+				{{ location }}
+			</span>
+			<div class="result-block__content">
+				{{{ content }}}
+			</div>
+		</div>
+		<div class="result-block__image-container">
+			<img class="result-block__image"
+				src="{{ src }}"
+				srcset="{{# srcset }} {{src}} {{res}},  {{/ srcset }}" />
+		</div>
+	</a>
 </li>

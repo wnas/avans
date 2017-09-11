@@ -1,3 +1,17 @@
 .avans-listpage * {
 
 }
+
+.resultpage {
+
+}
+.resultpage__content {
+	display: flex;
+	flex-direction: column-reverse;
+}
+@media all and (min-width: $bp-l) {
+	.resultpage__content {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+}

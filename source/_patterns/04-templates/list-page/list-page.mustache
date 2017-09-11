@@ -1,17 +1,23 @@
 {{> organisms-header }}
 
-
 <main class="layout-full-width-block main-content">
-  <div class="layout-full-width-block__content">
-    <article>
+  <div class="layout-full-width-block__content resultpage__content">
+    <article class="resultpage__list">
       <div class="header__block">
         <h1>1-10 van de 141 opleidingen</h1>
       </div>
       {{> organisms-results-list }}
     </article>
+	<aside class="resultpage__filters">
+
+			<form action="{{ action }}" method="get">
+				{{# filters }}
+
+					{{> organisms-results-filters }}
+				{{/ filters }}
+				{{> atoms-button }}
+			</form>
+	</aside>
   </div>
-
-
-
 </main>
 <!-- /main -->

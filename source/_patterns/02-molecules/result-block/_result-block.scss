@@ -1,0 +1,30 @@
+.result-block {
+	list-style: none;
+}
+
+.result-block__link {
+	color: #000;
+	display: flex;
+}
+
+.result-block__content-container {
+	order: 1;
+	margin-left: $spacing-xl;
+}
+.result-block__image-container {
+	order: 0;
+}
+
+.result-block__image {
+	max-width: 200px;
+}
+
+.result-block__header {
+	margin-top: 0;
+	font-size: 1.25rem;
+}
+@media all and (max-width: $bp-m) {
+	.result-block__content {
+		display: none;
+	}
+}
