@@ -1,16 +1,19 @@
 // search stuff
 
+.js-open .top-search,
 :target .top-search {
   width: calc(100% - 1rem);
  transition: width $time-s;
   background-color: #fff;
 }
+
+.js-open .search-link,
 :target .search-link {
   order: 0;
 }
 
+.js-open .nav,
 :target .nav {
-  outline: 1px solid red;
   display: none;
 }
 
@@ -21,7 +24,7 @@
 .top-search__input {
 
 }
-
+.js-open .nav-link,
 :target .nav-link,
 .top-search__button,
 .top-search__label {

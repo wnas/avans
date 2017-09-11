@@ -4,26 +4,28 @@ var avans = (function(){
 		"topSearch": {
 			"buttonOpen": document.querySelector('.search-link'),
 			"buttonClose": document.querySelector('.top-search .close-icon'),
-			"container": document.querySelector('.top-search'),
-			"class": "js-menu-open"
+			"container": document.querySelector('.top-bar__container'),
+			"class": "js-open"
 		},
 		"topMenu": {
 			"buttonOpen": document.querySelector('.nav-link'),
 			"buttonClose": document.querySelector('.nav .close-icon'),
 			"container": document.querySelector('.nav'),
-			"class": "js-menu-open"
+			"class": "js-open"
 		}
 	},	toggle = function(elem){
-		var openButton = config.topMenu.buttonOpen;
-		openButton.addEventListener('click'	,function(e){toggleClass(e)});
+		var buttonOpen = elem.buttonOpen,
+			buttonClose = elem.buttonClose;
+		buttonOpen.addEventListener('click'	,function(evt){toggleClass(evt,elem)}, false);
+		buttonClose.addEventListener('click',function(evt){toggleClass(evt,elem)}, false);
 
+	},	toggleClass = function(evt,elem){
+		evt.preventDefault();
+		elem.container.classList.toggle( elem.class );
 
-	},	toggleClass = function(e){
-		e.preventDefault;
-		console.log('hi',e);
-		return false;
 	},	init = function(){
-		toggle('top-menu');
+		toggle(config.topMenu);
+		toggle(config.topSearch);
 	};
 	return {
 		init: init

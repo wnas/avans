@@ -24,6 +24,7 @@ header {
   background-size: 1.5rem 1.5rem;
 }
 
+.nav.js-open .skip-link,
 .nav:target .skip-link {
   position: absolute;
   top: -6rem;
