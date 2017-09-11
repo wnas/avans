@@ -18,7 +18,8 @@
             "sub": {
                 "items": [
                     {"content": "Opleidingen"},
-                    {"content": "Interessegebieden"}
+                    {"content": "Interessegebieden"},
+                    {"content": "Stages en opdrachten"}
                 ]
             }
         },

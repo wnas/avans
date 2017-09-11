@@ -70,6 +70,7 @@
   }
   .nav__sub {
     position: absolute;
+    width: auto;
     left: -999em;
     background-color: $avans-blue;
     top: 100px;
@@ -92,6 +93,7 @@
   .nav__link--sub {
     color: #fff;
     background-image: url('../../../images/icons/ICON-Arrow-Right-White.svg');
+    white-space: nowrap;
   }
   .nav__item--sub {
     margin: 0 $spacing-l;
