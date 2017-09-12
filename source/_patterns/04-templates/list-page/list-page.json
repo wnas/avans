@@ -90,5 +90,10 @@
 				}
 
 			]}
-	]
+	],
+	"button": {
+		"text": "go on the button",
+		"type": "submit",
+		"class": "btn--hidden"
+	}
 }

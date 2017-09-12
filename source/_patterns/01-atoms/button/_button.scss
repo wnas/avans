@@ -15,3 +15,7 @@
 .btn--image-block {
   background-color: #000;
 }
+.btn--hidden {
+	position: absolute;
+	left:-999em;
+}

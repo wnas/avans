@@ -15,3 +15,20 @@
 		flex-direction: row-reverse;
 	}
 }
+.resultpage__list {
+	width: 70%;
+}
+.resultpage__filters {
+	width: 30%;
+	outline: 1px solid red;
+}
+@media all and (max-width: $bp-l) {
+	.resultpage__list,
+	.resultpage__filters {
+		width: 100%;
+	}
+
+	.resultpage__filters {
+		column-count: 2;
+	}
+}
