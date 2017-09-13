@@ -1,78 +1,175 @@
 {
-    "title": "title",
-    "type": "url",
-    "label-text": "label-text",
-    "link-text": "link-text",
-    "href": "#",
-    "header": {
-      "logo": {
-        "src":"../../images/XL-Logo.svg",
-        "alt": "Avans hogeschool"
-        }
-    },
-    "search-id": "search-id",
-    "nav-id": "nav-id",
-    "main-nav": [
-        { "content": "Home",
-		"active": "true"},
-        { "content": "Studeren",
-            "sub": {
-                "items": [
-                    {"content": "Opleidingen"},
-                    {"content": "Interessegebieden"},
-                    {"content": "Stages en opdrachten"}
-                ]
-            }
-        },
-        { "content": "Bedrijven & Instellingen"},
-        { "content": "Onderzoek"},
-        { "content": "Over avans"}
-    ],
-    "lang-nav": [
-        { "content": "NL",
+	"title": "title",
+	"type": "url",
+	"label-text": "label-text",
+	"link-text": "link-text",
+	"href": "#",
+	"header": {
+		"logo": {
+			"src": "../../images/XL-Logo.svg",
+			"alt": "Avans hogeschool"
+		}
+	},
+	"search-id": "search-id",
+	"nav-id": "nav-id",
+	"main-nav": [{
+			"content": "Home",
+			"active": "true"
+		},
+		{
+			"content": "Studeren",
+			"sub": {
+				"items": [{
+						"content": "Opleidingen"
+					},
+					{
+						"content": "Interessegebieden"
+					},
+					{
+						"content": "Stages en opdrachten"
+					}
+				]
+			}
+		},
+		{
+			"content": "Bedrijven & Instellingen",
+			"sub": {
+				"items": [{
+						"content": "Ondernemerscentrum"
+					},
+					{
+						"content": "Stages en opdrachten"
+					},
+					{
+						"content": "Samenwerken in de regio"
+					}
+				]
+			}
+		},
+		{
+			"content": "Onderzoek",
+			"sub": {
+				"items": [{
+						"content": "Biobased Economy"
+					},
+					{
+						"content": "Caring Society"
+					},
+					{
+						"content": "Duurzame Innovatie"
+					},
+					{
+						"content": "Kunst en Vormgeving"
+					},
+					{
+						"content": "Sustainable Business"
+					},
+					{
+						"content": "Veiligheid"
+					},
+					{
+						"content": "Stand-alone-lectoraten"
+					},
+					{
+						"content": "Projecten"
+					}
+				]
+			}
+		},
+		{
+			"content": "Over avans",
+			"sub": {
+				"items": [{
+						"content": "Visie"
+					},
+					{
+						"content": "Organisatie"
+					},
+					{
+						"content": "Contact en Locaties"
+					},
+					{
+						"content": "Agenda"
+					},
+					{
+						"content": "Nieuws en Pers"
+					},
+					{
+						"content": "Werken bij Avans"
+					}
+				]
+			}
+		}
+	],
+	"lang-nav": [{
+		"content": "NL",
 		"sub": {
-			"items": [
-				{ "content": "INT"}
-			]
-			}}
-    ],
-    "searchbox": {
-    "type": "search",
-    "class": "top-search__input",
-    "attributes": [
-      {
-        "name": "placeholder",
-        "value": "Type hier je zoekvraag..."
-      },
-      {
-        "name": "required",
-        "value": "required"
-      }
-    ]
-},
+			"items": [{
+				"content": "INT"
+			}]
+		}
+	}],
+	"searchbox": {
+		"type": "search",
+		"class": "top-search__input",
+		"attributes": [{
+				"name": "placeholder",
+				"value": "Type hier je zoekvraag..."
+			},
+			{
+				"name": "required",
+				"value": "required"
+			}
+		]
+	},
 
-    "follow-header": "Volg Avans op sociale media",
-    "follow": [
-      {"item": "facebook"},
-      {"item": "instagram"},
-      {"item": "snapchat"},
-      {"item": "twitter"},
-      {"item": "linkedin"},
-      {"item": "youtube"}
-    ],
-    "share-header": "Deel deze pagina",
-    "share": [
-      {"item": "facebook"},
-      {"item": "twitter"},
-      {"item": "linkedin"},
-      {"item": "mail"}
-    ],
-    "discover-header": "Ontdek meer Avans",
-    "discover": [
-      {"item": "Avans International"},
-      {"item": "Avans Alumni portaal"},
-      {"item": "iAvans"},
-      {"item": "Contact"}
-    ]
+	"follow-header": "Volg Avans op sociale media",
+	"follow": [{
+			"item": "facebook"
+		},
+		{
+			"item": "instagram"
+		},
+		{
+			"item": "snapchat"
+		},
+		{
+			"item": "twitter"
+		},
+		{
+			"item": "linkedin"
+		},
+		{
+			"item": "youtube"
+		}
+	],
+	"share-header": "Deel deze pagina",
+	"share": [{
+			"item": "facebook"
+		},
+		{
+			"item": "twitter"
+		},
+		{
+			"item": "linkedin"
+		},
+		{
+			"item": "mail"
+		}
+	],
+	"discover-header": "Ontdek meer Avans",
+	"discover": [{
+			"item": "Avans International"
+		},
+		{
+			"item": "Avans Alumni portaal"
+		},
+		{
+			"item": "iAvans"
+		},
+		{
+			"item": "Contact"
+		}
+	]
 
 }
