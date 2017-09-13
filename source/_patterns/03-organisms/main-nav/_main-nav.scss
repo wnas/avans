@@ -76,7 +76,19 @@
     top: 100px;
     flex-direction: column;
   }
-  .nav__sub:after {
+  .nav__item--has-sub:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+	border: 1px solid #ccc;
+	border-width: 0 1px 1px 0;
+    position: absolute;
+    left: calc(50% - 8px);
+    bottom: 20px;
+  }
+  .nav__item--has-sub:hover:after {
     content: '';
     display: block;
     width: 11px;
@@ -84,23 +96,41 @@
     transform: rotate(45deg);
     background-color: $avans-blue;
     position: absolute;
-    left: $spacing-xl;
-    top: -5px;
+    left: calc(50% - 8px);
+    bottom: -5px;
+  }
+
+	.nav__item--top-level {
+		border-right: 1px solid #ccc;
+	}
+
+  .nav__item--top-level:hover > .nav__link {
+	  color: $avans-blue;
   }
   .nav__item:hover .nav__sub {
     left: -$spacing-s;
   }
+
+  .nav__item--sub {
+	margin: 0 $spacing-l;
+	border-bottom: 1px solid rgba(255,255,255,.4);
+  }
+  .nav__item--sub:last-child {
+	border-bottom: 0;
+  }
+
   .nav__link--sub {
     color: #fff;
     background-image: url('../../../images/icons/ICON-Arrow-Right-White.svg');
     white-space: nowrap;
   }
-  .nav__item--sub {
-    margin: 0 $spacing-l;
-    border-bottom: 1px solid rgba(255,255,255,.4);
+  .nav__link--sub:hover {
+	  text-decoration: underline;
   }
-  .nav__item--sub:last-child {
-    border-bottom: 0;
+
+
+  .lang-nav {
+
   }
 }
 

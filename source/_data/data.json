@@ -6,7 +6,7 @@
     "href": "#",
     "header": {
       "logo": {
-        "src":"../../../images/XL-Logo.svg",
+        "src":"../../images/XL-Logo.svg",
         "alt": "Avans hogeschool"
         }
     },
@@ -28,8 +28,12 @@
         { "content": "Over avans"}
     ],
     "lang-nav": [
-        { "content": "NL"},
-        { "content": "EN"}
+        { "content": "NL",
+		"sub": {
+			"items": [
+				{ "content": "INT"}
+			]
+			}}
     ],
     "searchbox": {
     "type": "search",
