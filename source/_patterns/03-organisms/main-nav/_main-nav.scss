@@ -47,8 +47,11 @@
 .nav__link {
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #999;
     padding: $spacing 0;
+}
+.nav__link--active {
+	color: #000;
 }
 .nav__link--sub {
   @extend .blue-arrow;

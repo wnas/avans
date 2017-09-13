@@ -11,6 +11,11 @@ body {
         padding: 0 $content__margin;
     }
 
+@media all and (max-width: $bp-m) {
+	.top-bar {
+		padding: 0;
+	}
+}
 
 .layout-full-width-block__content,
 .top-bar__content,

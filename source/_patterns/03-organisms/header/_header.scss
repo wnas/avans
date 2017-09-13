@@ -13,15 +13,17 @@ header {
   width: calc(100% - 163px);
 }
 .skip-link {
-  width: 3rem;
+  width: 5rem;
   height: 100%;
-  text-indent: 4rem;
+  text-indent: 6rem;
   padding-top: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   background-repeat:no-repeat;
   background-position: center;
   background-size: 1.5rem 1.5rem;
+display: inline-block;
+  border-right: 1px solid #ccc;
 }
 
 .nav.js-open .skip-link,
@@ -46,9 +48,11 @@ header {
   background-image: url("../images/icons/nav-icon.svg");
   order: 0;
 }
+.nav-link:hover {
+  background-image: url("../images/icons/nav-icon-blue.svg");
+}
 .search-link {
   background-image: url("../images/icons/search-icon.svg");
-  border-right: 1px solid #ccc;
 }
 
 .search-link:hover {
@@ -63,6 +67,7 @@ header {
   :target .search-link {
     order: 0;
 	border-right: 0;
+	border-left: 1px solid #ccc;
   }
   :target .input--search {
 	  max-width: 37.5rem;

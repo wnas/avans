@@ -13,7 +13,8 @@
     "search-id": "search-id",
     "nav-id": "nav-id",
     "main-nav": [
-        { "content": "Home"},
+        { "content": "Home",
+		"active": "true"},
         { "content": "Studeren",
             "sub": {
                 "items": [
