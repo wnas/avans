@@ -1,11 +1,11 @@
 $width__overal : 1140px;
 
-$spacing-xs    : 5px;
-$spacing-s    : 10px;
-$spacing    : 15px;
-$spacing-l  : 20px;
-$spacing-xl : 30px;
-$spacing-xxl : 60px;
+$spacing-xs    : 0.3125rem ;
+$spacing-s    : .625rem;
+$spacing    : 1rem;
+$spacing-l  : 1.25rem;
+$spacing-xl : 2rem;
+$spacing-xxl : 4rem;
 
 $content__margin: $spacing;
 $hero__padding: calc($spacing * 2);

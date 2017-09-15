@@ -1,143 +1,211 @@
-
+/*
+	for testing purposes
+*/
+.page-footer {
+	// background-image: url('../images/test-bgs/Footer-XL.png');
+	// background-position: center 0;
+	background-color: #F6F6F6; //	outline: 3px solid green;
+	//	margin-top: 50px;
+	//@extend .testing;
+}
+/*
+	/ end testing
+*/
 .page-footer__content {
-  display: flex;
-  flex-direction: column;
-  background-color: #F6F6F6;
+	display: flex;
+	flex-direction: column;
 }
+
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  color: #999;
-  justify-content: space-between;
-  padding: 0 $spacing-xl;
-}
-@media all and (min-width: 800px) {
-  .footer-links {
-    flex-direction: row;
-  }
-}
-.footer-links__list {
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-}
-@media all and (max-width: $bp-xs) {
-  .footer-links__list {
-    flex-direction: column;
-  }
-}
-.footer-links__list--discover {
-  flex-direction: column;
-}
-.footer-link__item {
-  list-style: none;
-  padding: $spacing-s $spacing-s $spacing-s 0;
-
-}
-.footer-link__link {
-  color: #999;
-}
-
-.footer-link__item--discover {
-  background-repeat: no-repeat;
-  background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
-  background-position: 0 50%;
-  padding-left: $spacing;
-}
-
-.footer-link__link--icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-indent: 3rem;
-  margin: 0 $spacing-xs $spacing-xs 0;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  display: inline-block;
-  position: relative;
-}
-.footer-link__item--share.footer-link__link--icon:after {
-  content: '';
-  width: 100%;
-  height: .125rem;
-  background-color: red;
-  position: absolute;
-  bottom: 0;
-
-}
-@media all and (max-width: $bp-xs) {
-  .footer-link__link--icon {
-    width: 100%;
-    overflow: visible;
-  }
-}
-
-.footer-link__link--mail {
-  background-image: url('../images/icons/Icon-Social-Mail-White.svg')
-}
-
-.footer-link__link--linkedin {
-  background-image: url('../images/icons/Icon-Social-Linkedin.svg')
-}
-
-.footer-link__link--snapchat {
-  background-image: url('../images/icons/Icon-Social-Snapchat.svg')
-}
-
-.footer-link__link--twitter {
-  background-image: url('../images/icons/Icon-Social-Twitter.svg')
-}
-
-.footer-link__link--instagram {
-  background-image: url('../images/icons/Icon-Social-Instagram.svg')
-}
-
-.footer-link__link--youtube {
-  background-image: url('../images/icons/Icon-Social-Youtube.svg')
-}
-
-.footer-link__link--facebook {
-  background-image: url('../images/icons/Icon-Social-Facebook.svg')
+	display: flex;
+	flex-direction: column;
+	color: #999;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 1rem;
 }
 
 .footer-links__list-block {
+	flex: 1;
+}
+@media all and (min-width: 800px) {
+	.footer-links {
+		flex-direction: row;
+	}
+
+	.footer-links__list-block {
+		flex: 1;
+		margin-left: $spacing;
+	}
+
+	.footer-links__list-block:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer-links__list {
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+}
+@media all and (max-width: $bp-xl) {
+	.footer-links__list-block {
+		padding: 0 $spacing;
+	}
+}
+
+.footer-links__list--discover {
+	flex-direction: column;
+}
+
+.footer-link__item {
+	list-style: none;
+	padding: 0 0.625rem 0.625rem 0;
+}
+
+.footer-link__link {
+	color: #999;
+	font-size: 0.8125rem;
+}
+
+.footer-link__item--discover {
+	background-repeat: no-repeat;
+	background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
+	background-position: 0.2rem 0.3rem;
+	padding-left: $spacing;
+}
+
+.footer-link__link--icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 3rem;
+	margin: 0 $spacing-xs $spacing-xs 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+	position: relative;
+}
+
+.footer-link__item--share {
+	position: relative;
+}
+.footer-link__item--share:after {
+	content: '';
+	width: 2.5rem;
+	height: 0.125rem;
+	position: absolute;
+	z-index: 5;
+	bottom: $spacing-l;
+	left: 0;
+}
+
+.footer-link__item--linkedin:after {
+	background-color: #0077B5;
+}
+
+.footer-link__item--twitter:after {
+	background-color: #1DA1F2;
+}
+
+.footer-link__item--mail:after {
+	background-color: #000000;
+}
+
+.footer-link__item--facebook:after {
+	background-color: #3B5998;
+}
+// if the screen is really tiny :)
+@media all and (max-width: $bp-xs) {
+	.footer-links__list {
+		flex-wrap: wrap;
+	}
+}
+
+.footer-link__link--mail {
+	background-image: url('../images/icons/Icon-Social-Mail-White.svg');
+}
+
+.footer-link__link--linkedin {
+	background-image: url('../images/icons/Icon-Social-Linkedin.svg');
 
 }
-.footer-links__header {
-  color: #999;
+
+.footer-link__link--snapchat {
+	background-image: url('../images/icons/Icon-Social-Snapchat.svg');
 }
+
+.footer-link__link--twitter {
+	background-image: url('../images/icons/Icon-Social-Twitter.svg');
+}
+
+.footer-link__link--instagram {
+	background-image: url('../images/icons/Icon-Social-Instagram.svg');
+}
+
+.footer-link__link--youtube {
+	background-image: url('../images/icons/Icon-Social-Youtube.svg');
+}
+
+.footer-link__link--facebook {
+	background-image: url('../images/icons/Icon-Social-Facebook.svg');
+}
+
+.footer-links__list-block {}
+
+.footer-links__header {
+	color: #999;
+	margin: 1.3rem 0 0.4rem;
+}
+
 .disclaimer {
- display: block;
- background-color: #000;
- background-image: url('../../../images/Logo-Avans-White.svg');
- background-repeat: no-repeat;
- background-position: calc(100% - 30px) 50%;
- color: #ccc;
- padding: $spacing-xl 0;
+	display: block;
+	background-color: #000;
+	color: #ccc;
+	padding: 1rem 0;
 }
 @media all and (max-width: $bp-m) {
-  .disclaimer {
-    background-position: $spacing-l $spacing-xl;
-    padding-top: 100px;
-  }
+	.disclaimer__container {
+		flex-direction: column;
+		padding: $spacing-l;
+		text-align: left;
+	}
 }
-.disclaimer__text {
-  max-width: $width__overal;
-  margin: 0 auto;
-  padding: 0 $spacing-xl;
+@media all and (max-width: $bp-xl) {
+	.disclaimer__container {
+		padding: $spacing-l;
+	}
+}
+
+.disclaimer__container {
+	display: flex;
+	margin: 0 auto;
+	max-width: $width__overal;
+	justify-content: space-between;
+}
+
+.page-footer__logo {
+	width: 125px;
+	height: 36px;
 }
 @media all and (max-width: $bp-s) {
-  .disclaimer__text {
-    display: flex;
-    flex-direction: column;
-  }
-  .disclaimer__link {
-    padding-top: $spacing;
-    display: inline-block;
-  }
+	.disclaimer__text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.disclaimer__link {
+		padding-top: $spacing;
+		display: inline-block;
+	}
+
+	.page-footer__logo {
+		margin-top: $spacing-l;
+	}
 }
+
 .disclaimer__link {
-  color: #ccc;
-  text-decoration: underline;
+	color: #ccc;
+	text-decoration: underline;
 }
