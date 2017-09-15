@@ -99,16 +99,17 @@
 					}
 				]
 			}
+		},
+		{
+			"content": "NL",
+			"sub": {
+				"items": [{
+					"content": "INT"
+				}]
+			}
 		}
 	],
-	"lang-nav": [{
-		"content": "NL",
-		"sub": {
-			"items": [{
-				"content": "INT"
-			}]
-		}
-	}],
+
 	"searchbox": {
 		"type": "search",
 		"class": "top-search__input",
