@@ -14,6 +14,7 @@ var avans = (function(){
 			"class": "js-open"
 		}
 	},	toggle = function(elem){
+
 		var buttonOpen = elem.buttonOpen,
 			buttonClose = elem.buttonClose;
 		buttonOpen.addEventListener('click'	,function(evt){toggleClass(evt,elem)}, false);
@@ -32,4 +33,4 @@ var avans = (function(){
 	};
 }());
 
-avans.init();
+//avans.init();

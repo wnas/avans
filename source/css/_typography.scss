@@ -1,6 +1,63 @@
+/* Define a custom web font */
+@font-face{
+	 font-family:"FrutigerLTW01-55Roman";
+	 src: 	url("../fonts/9b1fae67-8764-448a-a926-54b09bd0b06b.woff2") format("woff2"),
+	 		url("../fonts/3fbbd6b1-cfa7-4ff0-97ea-af1b2c489f15.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW01-56Italic";
+	 src:url("../fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix");
+	 src:url("../fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix") format("eot"),url("../fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"),url("../fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"),url("../fonts/19fe9614-8825-4e7d-b8c3-230d2561e0e2.ttf") format("truetype"),url("../fonts/c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3.svg#c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3") format("svg");
+ }
+ @font-face{
+	 font-family:"Frutiger LT W01 65 Bold";
+	 src:url("../fonts/6e7f04cb-3b30-43a5-b79d-25b4c1178700.woff2") format("woff2"),url("../fonts/9aa32a81-1124-4c43-b3db-15bfb1f7aed2.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW01-75Black";
+	 src:url("../fonts/a11b4e58-71a2-4f70-bda7-242c1305efd0.woff2") format("woff2"),url("../fonts/70ad2f15-9e1e-4a42-8fdc-30327ef510c3.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW02-47LightCn";
+	 src: url("../fonts/710ce708-2f2b-4530-a455-a161ccf7b3d2.woff2") format("woff2"),url("../fonts/18e289e9-d1cf-49c2-9e2b-443f187c1f87.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW02-48LightCn";
+	 src:url("../fonts/2ae8be2a-ce37-4269-b6f3-a3434707f841.woff2") format("woff2"),url("../fonts/905db536-c069-4744-ae6f-6b3988ebaaed.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW02-57Condens";
+	 src: url("../fonts/6fe059b8-9cdc-4d35-ab14-8244f8ce6a90.woff2") format("woff2"),url("../fonts/ef9a4f38-e55d-40e8-aa22-b4510adec541.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"FrutigerLTW02-77BlackCn";
+	 src: url("../fonts/a39aed4a-7c2e-43ba-a169-19a28c9bbf11.woff2") format("woff2"),url("../fonts/f3b37111-01e6-4bd9-98d0-c062e502de57.woff") format("woff");
+ }
+ @font-face{
+	 font-family:"LCD W01";
+	 src: url("../fonts/d9d7ff01-52cf-4a5f-abe5-709f42b301d1.woff2") format("woff2"),url("../fonts/ea447350-0184-4cd2-b9d1-1c0200254e09.woff") format("woff");
+ }
+
+
+
+body,
+input {
+    font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+.nav__link,
+.header-font {
+	font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif;
+}
+// fonts-loaded body {
+//     font-family: Source Sans Pro, sans-serif;
+// }
+
 html,
 body,
 input {
     font-size: 1em;
-    font-family: helvetica, sans-serif;
 }
