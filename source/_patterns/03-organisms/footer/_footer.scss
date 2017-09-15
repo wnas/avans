@@ -1,16 +1,13 @@
 /*
 	for testing purposes
 */
-.page-footer {
-	// background-image: url('../images/test-bgs/Footer-XL.png');
-	// background-position: center 0;
-	background-color: #F6F6F6; //	outline: 3px solid green;
-	//	margin-top: 50px;
-	//@extend .testing;
-}
 /*
 	/ end testing
 */
+.page-footer {
+	background-color: #F6F6F6;
+}
+
 .page-footer__content {
 	display: flex;
 	flex-direction: column;
@@ -91,6 +88,7 @@
 .footer-link__item--share {
 	position: relative;
 }
+
 .footer-link__item--share:after {
 	content: '';
 	width: 2.5rem;
@@ -129,7 +127,6 @@
 
 .footer-link__link--linkedin {
 	background-image: url('../images/icons/Icon-Social-Linkedin.svg');
-
 }
 
 .footer-link__link--snapchat {
