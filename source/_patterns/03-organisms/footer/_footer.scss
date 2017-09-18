@@ -26,15 +26,16 @@
 	flex: 1;
 }
 @media all and (min-width: 800px) {
+	// blokken naast elkaar
 	.footer-links {
 		flex-direction: row;
 	}
 
+	// vul de ruimte en zet een beetje marge links
 	.footer-links__list-block {
 		flex: 1;
 		margin-left: $spacing;
 	}
-
 	.footer-links__list-block:first-child {
 		margin-left: 0;
 	}
@@ -126,7 +127,7 @@
 }
 
 .footer-link__link--linkedin {
-	background-image: url('../images/icons/Icon-Social-Linkedin.svg');
+	background-image: url('../images/icons/Icon-Social-LinkedIn.svg');
 }
 
 .footer-link__link--snapchat {
