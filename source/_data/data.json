@@ -11,6 +11,7 @@
 		}
 	},
 	"search-id": "search-id",
+	"searchaction": "http://avans.nl/zoeken",
 	"nav-id": "nav-id",
 	"main-nav": [{
 			"content": "Home"

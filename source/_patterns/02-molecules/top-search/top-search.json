@@ -1,20 +1,20 @@
 {
-  "label": "label for search",
-  "placeholder": "Wat zoek je",
-  "search-button": "search",
-  "close-search": "close search",
-  "searchbox": {
-    "type": "search",
-    "class": "top-search__input",
-    "attributes": [
-      {
-        "name": "placeholder",
-        "value": "Type hier je zoekvraag..."
-      },
-      {
-        "name": "required",
-        "value": "required"
-      }
-    ]
-  }
+	"label": "label for search",
+	"placeholder": "Wat zoek je",
+	"search-button": "search",
+	"close-search": "close search",
+	"searchaction": "/zoeken",
+	"searchbox": {
+		"type": "search",
+		"class": "top-search__input",
+		"attributes": [{
+				"name": "placeholder",
+				"value": "Type hier je zoekvraag..."
+			},
+			{
+				"name": "required",
+				"value": "required"
+			}
+		]
+	}
 }

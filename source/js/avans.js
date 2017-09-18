@@ -17,8 +17,11 @@ var avans = (function(){
 
 		var buttonOpen = elem.buttonOpen,
 			buttonClose = elem.buttonClose;
-		buttonOpen.addEventListener('click'	,function(evt){toggleClass(evt,elem)}, false);
-		buttonClose.addEventListener('click',function(evt){toggleClass(evt,elem)}, false);
+		if( elem !== null){
+			buttonOpen.addEventListener('click'	,function(evt){toggleClass(evt,elem)}, false);
+			buttonClose.addEventListener('click',function(evt){toggleClass(evt,elem)}, false);
+		}
+
 
 	},	toggleClass = function(evt,elem){
 		evt.preventDefault();
@@ -39,7 +42,6 @@ var avans = (function(){
 		}
 
 	},	init = function(){
-		console.log('init');
 		toggle(config.topMenu);
 		toggle(config.topSearch);
 		subMenu();

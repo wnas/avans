@@ -1,5 +1,6 @@
 {
-	"results-list": [{
+	"results-list": [
+		{
 			"header": "Accountancy",
 			"location": "Den Bosch",
 			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
@@ -92,8 +93,26 @@
 			]}
 	],
 	"button": {
-		"text": "go on the button",
-		"type": "submit",
-		"class": "btn--hidden"
-	}
+		"button-text": "go on the button",
+		"button-type": "submit",
+		"button-class": "btn--hidden"
+	},
+	"active-filter": {
+		"filter-label": "active filter",
+		"filters": [{
+				"button-class": "btn--filter",
+				"button-text": "Den bosch"
+			},
+			{
+				"button-class": "btn--filter",
+				"button-text": "hi theire"
+			}
+		]
+	},
+	"pagination": {
+		"pages": [
+		{"pagination-label":"1"},
+		{"pagination-label":"2"}
+
+	]}
 }

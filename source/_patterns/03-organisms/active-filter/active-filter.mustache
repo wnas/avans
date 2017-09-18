@@ -1,0 +1,10 @@
+<form action="#" method="get">
+	<dl class="active-filters__list">
+		<dt>{{ filter-label }}</dt>
+		{{# filters }}
+			<dd class="active-filters__item">
+				{{> atoms-button}}
+			</dd>
+		{{/ filters }}
+	</dl>
+</form>

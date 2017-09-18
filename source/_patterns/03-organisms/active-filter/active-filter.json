@@ -1,0 +1,13 @@
+{
+	"filter-label": "active filter",
+	"filters": [
+		{
+			"button-class": "btn--filter",
+			"button-text": "Den bosch"
+		},
+		{
+			"button-class": "btn--filter",
+			"button-text": "hi theire"
+		}
+	]
+}

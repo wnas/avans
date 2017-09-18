@@ -1,46 +1,38 @@
-.avans-listpage * {
-
-}
-
-.resultpage {
-
-}
 .resultpage__content {
 	display: flex;
 	flex-direction: column-reverse;
 }
 @media all and (min-width: $bp-l) {
-	.resultpage__list {
+	.resultpage__content {
 		display: flex;
 		flex-direction: row-reverse;
 	}
-}
-.resultpage__list {
-	width: 70%;
-}
-.resultpage__filters {
-	width: 30%;
-	outline: 1px solid red;
-	padding-top: .875rem;
 
-}
+	.resultpage__filters {
+		width: 260px;
+		padding-right: $spacing;
+		outline: 1px solid red;
+	}
 
-.filter__header {
-	padding: .875rem;
-	margin: 0;
-	column-span: all;
+	.resultpage__list {
+		width: calc(100% - 285px);
+		flex: 1;
+		padding-left: 0;
+	}
+	.resultpage__footer,
+	.resultpage__header {
+		padding-left: $sidebar;
+	}
 }
 @media all and (max-width: $bp-l) {
-	.resultpage__list,
-	.resultpage__filters {
-		width: 100%;
-	}
-
 	.resultpage__filters {
 		column-count: 2;
+		display: none;
+	}
+	.filter__header {
+		column-span: all;
 	}
 }
-
 /*
 	testing
 */
