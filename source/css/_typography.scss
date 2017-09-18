@@ -40,10 +40,7 @@
 
 
 
-body,
-input {
-    font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif;
-}
+
 h1,
 h2,
 h3,
@@ -53,6 +50,12 @@ legend,
 .nav__link,
 .header-font {
 	font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif;
+}
+
+body,
+input,
+.nav__link--sub {
+    font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif;
 }
 // fonts-loaded body {
 //     font-family: Source Sans Pro, sans-serif;

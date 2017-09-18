@@ -24,13 +24,29 @@ var avans = (function(){
 		evt.preventDefault();
 		elem.container.classList.toggle( elem.class );
 
+	},	subMenu = function(){
+		var sub = document.querySelectorAll('.nav__item--has-sub'),
+			len = sub.length,
+			i;
+
+		for (i = 0; i < len; i++) {
+			sub[i].classList.add('nav__sub--closed')
+			var link = sub[i].querySelector('a');
+			link.addEventListener('click',function(e){
+				e.preventDefault();
+				e.target.parentElement.classList.toggle('nav__sub--opened');
+			})
+		}
+
 	},	init = function(){
+		console.log('init');
 		toggle(config.topMenu);
 		toggle(config.topSearch);
+		subMenu();
 	};
 	return {
 		init: init
 	};
 }());
 
-//avans.init();
+avans.init();

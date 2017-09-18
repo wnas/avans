@@ -159,3 +159,34 @@
 .nav__item:hover .nav_sub {
 	height: auto;
 }
+
+@media all and (max-width: $bp-l) {
+
+	.nav__item--has-sub .nav__sub {
+		display: none;
+	}
+	.nav__sub--opened .nav__sub {
+		display: block;
+	}
+
+	.nav__item--top-level {
+		position: relative;
+	}
+
+	.nav__item--has-sub:after {
+		content: '';
+		position: absolute;
+		top: 1.5rem;
+		right: 1.5rem;
+		height: 9px;
+		width: 9px;
+		border: 1px solid #333;
+		border-width:  0 0 1px 1px;
+		transform: rotate(-45deg);
+		transition: transform .5s ease;
+	}
+	.nav__sub--opened:after {
+		//border-width:  1px 1px 0 0;
+		transform: rotate(135deg);
+	}
+}

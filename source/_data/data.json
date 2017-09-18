@@ -13,11 +13,11 @@
 	"search-id": "search-id",
 	"nav-id": "nav-id",
 	"main-nav": [{
-			"content": "Home",
-			"active": "true"
+			"content": "Home"
 		},
 		{
 			"content": "Studeren",
+			"active": "true",
 			"sub": {
 				"items": [{
 						"content": "Opleidingen"
