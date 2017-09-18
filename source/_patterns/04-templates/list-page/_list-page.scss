@@ -21,6 +21,14 @@
 .resultpage__filters {
 	width: 30%;
 	outline: 1px solid red;
+	padding-top: .875rem;
+
+}
+
+.filter__header {
+	padding: .875rem;
+	margin: 0;
+	column-span: all;
 }
 @media all and (max-width: $bp-l) {
 	.resultpage__list,
@@ -32,3 +40,11 @@
 		column-count: 2;
 	}
 }
+
+/*
+	testing
+*/
+// .resultpage__filters {
+// 	background-image: url('../images/test-bgs/filters.png');
+// 	background-position: -130px -60px;
+// }
