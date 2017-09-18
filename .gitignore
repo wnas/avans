@@ -1,6 +1,6 @@
 node_modules/
 .DS_Store
-*.css
+
 *.map
 *.sketch
 patternlab.json
@@ -9,3 +9,4 @@ patternlab.json
 Thumbs.db
 .idea/
 public
+source/archive

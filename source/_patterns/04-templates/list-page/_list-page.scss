@@ -10,7 +10,7 @@
 	flex-direction: column-reverse;
 }
 @media all and (min-width: $bp-l) {
-	.resultpage__content {
+	.resultpage__list {
 		display: flex;
 		flex-direction: row-reverse;
 	}

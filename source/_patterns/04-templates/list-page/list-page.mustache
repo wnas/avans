@@ -7,19 +7,20 @@
         <h1>1-10 van de 141 opleidingen</h1>
       </div>
       {{> organisms-results-list }}
-    </article>
-	<aside class="resultpage__filters filter">
-			<h2 class="filter__header">Filter</h2>
-			<form action="{{ action }}" method="get">
-				{{# filters }}
+	  <aside class="resultpage__filters filter">
+			  <h2 class="filter__header">Filter</h2>
+			  <form action="{{ action }}" method="get">
+				  {{# filters }}
 
-					{{> organisms-results-filters }}
-				{{/ filters }}
-				{{# button }}
-					{{> atoms-button }}
-				{{/ button }}
-			</form>
-	</aside>
+					  {{> organisms-results-filters }}
+				  {{/ filters }}
+				  {{# button }}
+					  {{> atoms-button }}
+				  {{/ button }}
+			  </form>
+	  </aside>
+    </article>
+
   </div>
 </main>
 <!-- /main -->
