@@ -757,6 +757,9 @@ input {
   border-top: 1px solid #ccc;
   border-bottom: 0; }
 
+.nav__item--sub:first-child {
+  border-top: none; }
+
 .nav__link {
   text-decoration: none;
   font-weight: bold;
@@ -817,8 +820,7 @@ input {
     left: -0.625rem; }
   .nav__item--sub {
     margin: 0 1.25rem;
-    padding: 0 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+    padding: 0 1rem; }
   .nav__item--sub:last-child {
     border-bottom: 0; }
   .nav__link--sub {

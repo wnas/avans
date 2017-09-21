@@ -1,0 +1,261 @@
+{
+	"results-list": [{
+			"header": "Accountancy",
+			"location": "Den Bosch",
+			"content": "<p>De voltijd hbo-opleiding Accountancy bij Avans Hogeschool in Breda leidt jou op tot accountant.</p><p><small><em>Let op:</em> Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket.</small></p>",
+			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"srcset": [{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+					"res": "1x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
+					"res": "2x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
+					"res": "3x"
+				}
+			]
+		},
+		{
+			"header": "Accountancy",
+			"location": "Den Bosch",
+			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
+			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"srcset": [{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+					"res": "1x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
+					"res": "2x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
+					"res": "3x"
+				}
+			]
+		},
+		{
+			"header": "Bedrijfskunde MER",
+			"location": "Breda",
+			"content": "<p>De tweejarige hbo-opleiding Bedrijfskunde is veelzijdig en praktijkgericht. Deze business-opleiding past bij jou als je een rol wilt spelen in de snel veranderde wereld van management en organisaties.</p>",
+			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png"
+		}
+
+	],
+	"filters": [{
+			"header": "Vorm",
+			"input-class": "input--filter",
+			"type": "checkbox",
+			"filters": [{
+					"label-text": "Voltijd",
+					"for": "voltijd",
+					"id": "voltijd"
+				},
+				{
+					"label-text": "Deeltijd",
+					"for": "deeltijd",
+					"id": "deeltijd"
+				},
+				{
+					"label-text": "Duaal",
+					"for": "duaal",
+					"id": "duaal"
+				}
+
+			]
+		},
+		{
+			"header": "Locatie",
+			"input-class": "input--filter",
+			"type": "checkbox",
+			"filters": [{
+					"label-text": "Breda",
+					"for": "Breda",
+					"id": "Breda"
+				},
+				{
+					"label-text": "'s-Hertogenbosch",
+					"for": "db",
+					"id": "db"
+				},
+				{
+					"label-text": "Tilburg",
+					"for": "Tilburg",
+					"id": "Tilburg"
+				}
+
+			]
+		},
+		{
+			"header": "Vooropleiding",
+			"input-class": "input--filter",
+			"type": "checkbox",
+			"filters": [{
+					"label-text": "Havo C&M",
+					"for": "a",
+					"id": "a"
+				},
+				{
+					"label-text": "Havo E&M",
+					"for": "b",
+					"id": "b"
+				},
+				{
+					"label-text": "Havo N&G",
+					"for": "c",
+					"id": "c"
+				},
+				{
+					"label-text": "Havo N&T",
+					"for": "d",
+					"id": "d"
+				},
+				{
+					"label-text": "Havo C&M",
+					"for": "e",
+					"id": "e"
+				},
+				{
+					"label-text": "VWO C&M",
+					"for": "f",
+					"id": "f"
+				},
+				{
+					"label-text": "VWO N&T",
+					"for": "g",
+					"id": "g"
+				},
+				{
+					"label-text": "MBO 4",
+					"for": "h",
+					"id": "h"
+				}
+
+			]
+		},
+		{
+			"header": "Interessegebied",
+			"input-class": "input--filter",
+			"type": "checkbox",
+			"filters": [{
+					"label-text": "Aarde en Milieu",
+					"for": "a1",
+					"id": "a1"
+				},
+				{
+					"label-text": "Economie en Bedrijf",
+					"for": "b1",
+					"id": "b1"
+				},
+				{
+					"label-text": "Exact en Informatica",
+					"for": "c1",
+					"id": "c1"
+				},
+				{
+					"label-text": "Gedrag en Maatschappij",
+					"for": "d1",
+					"id": "d1"
+				},
+				{
+					"label-text": "Gezondheid",
+					"for": "e1",
+					"id": "e1"
+				},
+				{
+					"label-text": "Kunst en Cultuur",
+					"for": "f1",
+					"id": "f1"
+				},
+				{
+					"label-text": "Onderwijs en Opvoeding",
+					"for": "g1",
+					"id": "g1"
+				},
+				{
+					"label-text": "Recht en Bestuur",
+					"for": "h1",
+					"id": "h1"
+				},
+				{
+					"label-text": "Taal en Communicatie",
+					"for": "i1",
+					"id": "i1"
+				},
+				{
+					"label-text": "Techniek",
+					"for": "j1",
+					"id": "j1"
+				}
+
+			]
+		},
+		{
+			"header": "Taal",
+			"input-class": "input--filter",
+			"type": "checkbox",
+			"filters": [{
+					"label-text": "Nederlands",
+					"for": "nl",
+					"id": "nl"
+				},
+				{
+					"label-text": "Engels",
+					"for": "en",
+					"id": "en"
+				}
+			]
+		}
+	],
+	"button": {
+		"button-text": "go on the button",
+		"button-type": "submit",
+		"button-class": "btn--hidden"
+	},
+	"active-filter": {
+		"filter-label": "active filter",
+		"filters": [{
+				"button-class": "btn--filter",
+				"button-text": "Den bosch"
+			},
+			{
+				"button-class": "btn--filter",
+				"button-text": "Breda"
+			}
+		]
+	},
+	"pagination": {
+		"previous": {
+			"link": "#",
+			"text": "Vorige"
+		},
+
+		"next": {
+			"link": "#",
+			"text": "Volgende"
+		},
+		"pages": [{
+				"pagination-label": "4",
+				"pagination-link": "#"
+			}, {
+				"pagination-label": "5",
+				"pagination-link": "wnas.nl"
+			},
+			{
+				"pagination-label": "6",
+				"pagination-link": "#",
+				"active": "true"
+			}, {
+				"pagination-label": "7",
+				"pagination-link": "wnas.nl"
+			},
+			{
+				"pagination-label": "8",
+				"pagination-link": "#"
+			}
+		]
+	}
+}

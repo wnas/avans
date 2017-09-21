@@ -47,6 +47,9 @@
 	border-top: 1px solid #ccc;
 	border-bottom: 0;
 }
+.nav__item--sub:first-child {
+	border-top: none;
+}
 
 .nav__link {
 	text-decoration: none;
@@ -131,7 +134,6 @@
 	.nav__item--sub {
 		margin: 0 $spacing-l;
 		padding: 0 $spacing;
-		border-bottom: 1px solid rgba(255,255,255,.4);
 	}
 
 	.nav__item--sub:last-child {
