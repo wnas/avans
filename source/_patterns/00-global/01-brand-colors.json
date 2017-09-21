@@ -1,24 +1,21 @@
 {
-    "brandcolors": [{
-        "label": "$avans-red",
-        "colorvalue": "#C6002A"
-    }, {
-        "label": "$link-active-bg",
-        "colorvalue": "rgba(0, 174, 244, 0.15)"
-    }, {
-        "label": "$subnav-link-hover",
-        "colorvalue": "#00AEED"
-    }, {
-        "label": "$primary-teal",
-        "colorvalue": "#00b1aa"
-    }, {
-        "label": "$secondary-geel",
-        "colorvalue": "#f6c900"
-    }, {
-        "label": "$secondary-groen",
-        "colorvalue": "#0fa550"
-    }, {
-        "label": "$secondary-rood",
-        "colorvalue": "#e73446"
-    }]
+	"brandcolors": [{
+		"label": "$avans-red",
+		"colorvalue": "#C6002A"
+	}, {
+		"label": "$avans-blue",
+		"colorvalue": "#00ACEB"
+	}, {
+		"label": "$light-gray",
+		"colorvalue": "#999999"
+	}, {
+		"label": "$lighter-gray",
+		"colorvalue": "#eeeeee"
+	}, {
+		"label": "light-gray-background",
+		"colorvalue": "rgba(238,238,238,.5)"
+	}, {
+		"label": "$default-background",
+		"colorvalue": "#F6F6F6"
+	}]
 }

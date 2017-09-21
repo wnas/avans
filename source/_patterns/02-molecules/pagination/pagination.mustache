@@ -1,0 +1,20 @@
+<div class="pagination">
+	{{# previous }}
+		<a href="{{ link }}" class="pagination__link pagination__link--previous">
+			{{ text}}
+		</a>
+	{{/ previous }}
+	<ol class="pagination__list">
+		{{# pages }}
+			<li class="pagination__item">
+				<a href="{{ pagination-link }}" class="pagination__link {{ pagination-class }}">
+					{{ pagination-label }}
+				</a></li>
+		{{/ pages }}
+	</ol>
+	{{# next }}
+		<a href="{{ link }}" class="pagination__link pagination__link--next">
+			{{ text}}
+		</a>
+	{{/ next }}
+</div>

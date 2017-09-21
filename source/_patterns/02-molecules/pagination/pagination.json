@@ -1,0 +1,27 @@
+{
+	"previous": {
+		"link": "#",
+		"text": "Vorige"
+	},
+
+	"next": {
+		"link": "#",
+		"text": "Volgende"
+	},
+	"pages": [{
+			"pagination-label": "1",
+			"pagination-link": "wnas.nl"
+		},
+		{
+			"pagination-label": "2",
+			"pagination-link": "#"
+		}, {
+			"pagination-label": "3",
+			"pagination-link": "wnas.nl"
+		},
+		{
+			"pagination-label": "4",
+			"pagination-link": "#"
+		}
+	]
+}

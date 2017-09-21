@@ -1,7 +1,7 @@
 {
   "buttons": [
-    {"text":"text on button 1",
-    "class":"btn--primary"},
-      {"text":"text on button 2"}
+    {"button-text":"text on button 1",
+    "button-class":"btn--primary"},
+      {"button-text":"text on button 2"}
   ]
 }

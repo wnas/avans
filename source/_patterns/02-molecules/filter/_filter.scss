@@ -7,7 +7,11 @@ $filter-size: .875rem;
 	font-size: $filter-size;
 }
 
+.filter__item:hover {
+	color: $avans-blue;
+}
+
 .input--filter {
 	width: auto;
-	margin: 0 $filter-size 0 0;
+	margin: .1rem $filter-size 0 0;
 }

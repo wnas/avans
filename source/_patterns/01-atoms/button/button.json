@@ -1,4 +1,4 @@
 {
-  "text": "text on button",
-  "class": "btn--primary"
+  "button-text": "text on button",
+  "button-class": "btn--primary"
 }
