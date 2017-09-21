@@ -4,17 +4,17 @@
 	<div class="layout-full-width-block__content">
 		<article class="resultpage__list">
 			<header class="resultpage__header header__block">
+				{{> molecules-header-group }}
 				<h1>1-10 van de 141 opleidingen</h1>
 				<a href="#filters" class="filter__button">Toon filters</a>
 				{{# active-filter }}
-				hi there
 					{{> organisms-active-filter }}
 				{{/ active-filter }}
 
 			</header>
 			<section class="resultpage__content">
 				{{> organisms-results-list }}
-				<aside class="resultpage__filters filter">
+				<aside class="resultpage__filters filter" id="filters">
 					<h2 class="filter__header">Filter</h2>
 					<form action="{{ action }}" method="get">
 						{{# filters }}

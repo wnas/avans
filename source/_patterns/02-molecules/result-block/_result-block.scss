@@ -1,5 +1,8 @@
 .result-block {
 	list-style: none;
+	border-bottom: $lighter-gray 1px solid;
+	padding-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 .result-block__link {

@@ -14,7 +14,6 @@
 }
 
 .pagination__link {
-	background-color: $light-gray;
 	width: 2rem;
 	height: 2rem;
 	color: #fff;
@@ -22,11 +21,22 @@
 	text-align: center;
 	padding-top: 0.5rem;
 	margin-right: 0.625rem;
+	transition: background-color .5s ease;
 }
 
+.pagination__link--active.pagination__link--active:hover,
+.pagination__link {
+	background-color: $light-gray;
+}
+
+.pagination__link--active,
 .pagination__link:hover {
 	background-color: $avans-blue;
 }
+
+
+
+
 
 .pagination__link--next,
 .pagination__link--previous {

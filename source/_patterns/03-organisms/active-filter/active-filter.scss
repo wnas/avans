@@ -1,16 +1,31 @@
-dl {
-	outline: 1px solid red;
+.active-filters__list {
+	border: 1px solid $lighter-gray ;
+	border-width: 1px 0;
+	padding: 1rem 0;
 	display: flex;
+}
+
+.active-filters__label {
+	padding-top: .625rem;;
+	margin-right: 1rem;
+}
+
+.active-filters__item {
+	margin: 0;
 }
 
 .btn--filter {
 	border-radius: 30px;
 	background-color: #eeeeee;
 	position: relative;
+	padding: .625rem 2.5rem .625rem 1rem;
 }
 
 .btn--filter:after {
 	content:'x';
 	color: #999;
+	position: absolute;
+	right: .8rem;
+	top: .2rem;
 	font-size: 1.5rem;
 }

@@ -14,7 +14,8 @@
 		},
 		{
 			"pagination-label": "2",
-			"pagination-link": "#"
+			"pagination-link": "#",
+			"active": "true"
 		}, {
 			"pagination-label": "3",
 			"pagination-link": "wnas.nl"

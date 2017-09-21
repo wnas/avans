@@ -7,7 +7,7 @@
 	<ol class="pagination__list">
 		{{# pages }}
 			<li class="pagination__item">
-				<a href="{{ pagination-link }}" class="pagination__link {{ pagination-class }}">
+				<a href="{{ pagination-link }}" class="pagination__link {{ pagination-class }} {{# active }}pagination__link--active{{/ active }}">
 					{{ pagination-label }}
 				</a></li>
 		{{/ pages }}

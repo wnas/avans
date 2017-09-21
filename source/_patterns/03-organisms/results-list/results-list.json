@@ -36,6 +36,25 @@
 					"res": "3x"
 				}
 			]
+		},
+		{
+			"header": "Bedrijfskunde MER",
+			"location": "Breda",
+			"content": "<p>De tweejarige hbo-opleiding Bedrijfskunde is veelzijdig en praktijkgericht. Deze business-opleiding past bij jou als je een rol wilt spelen in de snel veranderde wereld van management en organisaties.</p>",
+			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"srcset": [{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+					"res": "1x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
+					"res": "2x"
+				},
+				{
+					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
+					"res": "3x"
+				}
+			]
 		}
 	]
 }

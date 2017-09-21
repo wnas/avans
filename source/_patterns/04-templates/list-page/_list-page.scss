@@ -7,11 +7,12 @@
 		display: flex;
 		flex-direction: row-reverse;
 	}
-
+	.filter__button {
+		display: none;
+	}
 	.resultpage__filters {
 		width: 260px;
 		padding-right: $spacing;
-		outline: 1px solid red;
 	}
 
 	.resultpage__list {
@@ -25,9 +26,15 @@
 	}
 }
 @media all and (max-width: $bp-l) {
+	.filter__button {
+		display: block;
+	}
 	.resultpage__filters {
 		column-count: 2;
 		display: none;
+	}
+	.resultpage__filters:target {
+		display: block;
 	}
 	.filter__header {
 		column-span: all;

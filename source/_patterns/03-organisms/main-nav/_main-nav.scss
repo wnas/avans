@@ -4,13 +4,12 @@
 		width: 100%;
 		opacity: 100%;
 		overflow: auto;
-		height: calc(100vh - 100px);
+		height: auto;
+		min-height: calc(100vh - 100px);
 		position: absolute;
 		z-index: 20;
 		top: 100px;
 		left: $spacing;
-		transition: height 0.5s;
-		overflow: visible;
 	}
 }
 
@@ -106,7 +105,7 @@
 	}
 
 	.nav__item--has-sub:hover:after {
-		content: 'hi there';
+		content: '';
 		display: block;
 		width: 11px;
 		height: 11px;
