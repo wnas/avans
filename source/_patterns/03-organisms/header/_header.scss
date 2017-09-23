@@ -57,10 +57,20 @@
 .nav-link {
 	background-image: url("../images/icons/nav-icon.svg");
 	order: 0;
+	padding-top: 2.4rem;
+	padding-right: 1rem;
+	text-indent: 4rem;
+	transition: color 0.4s ease;
+	color: #999;
+	overflow: visible;
+	width: 8rem;
+	background-position: 2rem;
 }
 
 .nav-link:hover {
 	background-image: url("../images/icons/nav-icon-blue.svg");
+	color: $avans-blue;
+
 }
 
 .search-link {
@@ -80,6 +90,7 @@
 		border-right: 0;
 		border-left: 1px solid #ccc;
 	}
+
 	.js-open .input--search,
 	:target .input--search {
 		max-width: 37.5rem;

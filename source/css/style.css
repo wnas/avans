@@ -635,10 +635,19 @@ input {
 
 .nav-link {
   background-image: url("../images/icons/nav-icon.svg");
-  order: 0; }
+  order: 0;
+  padding-top: 2.4rem;
+  padding-right: 1rem;
+  text-indent: 4rem;
+  transition: color 0.4s ease;
+  color: #999;
+  overflow: visible;
+  width: 8rem;
+  background-position: 2rem; }
 
 .nav-link:hover {
-  background-image: url("../images/icons/nav-icon-blue.svg"); }
+  background-image: url("../images/icons/nav-icon-blue.svg");
+  color: #00ACEB; }
 
 .search-link {
   background-image: url("../images/icons/search-icon.svg"); }
