@@ -1,0 +1,11 @@
+<fieldset class="filters">
+
+	<legend class="filters__header">
+		{{ header }} header
+	</legend>
+	<ul class="filters__list">
+		{{# filters }}
+			{{> atoms-filter }}
+		{{/ filters }}
+	</ul>
+</fieldset>

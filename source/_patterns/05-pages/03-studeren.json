@@ -45,187 +45,211 @@
 		}
 
 	],
-	"filters": [{
-			"header": "Vorm",
-			"input-class": "input--filter",
-			"type": "checkbox",
-			"filters": [{
-					"label-text": "Voltijd",
-					"for": "voltijd",
-					"id": "voltijd"
-				},
-				{
-					"label-text": "Deeltijd",
-					"for": "deeltijd",
-					"id": "deeltijd"
-				},
-				{
-					"label-text": "Duaal",
-					"for": "duaal",
-					"id": "duaal"
-				}
+	"filter-blok": {
+		"filters-collection": [{
+				"header": "Vorm",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Voltijd",
+						"for": "voltijd",
+						"id": "voltijd"
+					},
+					{
+						"label-text": "Deeltijd",
+						"for": "deeltijd",
+						"id": "deeltijd"
+					},
+					{
+						"label-text": "Duaal",
+						"for": "duaal",
+						"id": "duaal"
+					}
 
-			]
-		},
-		{
-			"header": "Locatie",
-			"input-class": "input--filter",
-			"type": "checkbox",
-			"filters": [{
-					"label-text": "Breda",
-					"for": "Breda",
-					"id": "Breda"
-				},
-				{
-					"label-text": "'s-Hertogenbosch",
-					"for": "db",
-					"id": "db"
-				},
-				{
-					"label-text": "Tilburg",
-					"for": "Tilburg",
-					"id": "Tilburg"
-				}
+				]
+			},
+			{
+				"header": "Locatie",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Breda",
+						"for": "Breda",
+						"id": "Breda"
+					},
+					{
+						"label-text": "'s-Hertogenbosch",
+						"for": "db",
+						"id": "db"
+					},
+					{
+						"label-text": "Tilburg",
+						"for": "Tilburg",
+						"id": "Tilburg"
+					}
 
-			]
-		},
-		{
-			"header": "Vooropleiding",
-			"input-class": "input--filter",
-			"type": "checkbox",
-			"filters": [{
-					"label-text": "Havo C&M",
-					"for": "a",
-					"id": "a"
-				},
-				{
-					"label-text": "Havo E&M",
-					"for": "b",
-					"id": "b"
-				},
-				{
-					"label-text": "Havo N&G",
-					"for": "c",
-					"id": "c"
-				},
-				{
-					"label-text": "Havo N&T",
-					"for": "d",
-					"id": "d"
-				},
-				{
-					"label-text": "Havo C&M",
-					"for": "e",
-					"id": "e"
-				},
-				{
-					"label-text": "VWO C&M",
-					"for": "f",
-					"id": "f"
-				},
-				{
-					"label-text": "VWO N&T",
-					"for": "g",
-					"id": "g"
-				},
-				{
-					"label-text": "MBO 4",
-					"for": "h",
-					"id": "h"
-				}
+				]
+			},
+			{
+				"header": "Vooropleiding",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Havo C&M",
+						"for": "a",
+						"id": "a"
+					},
+					{
+						"label-text": "Havo E&M",
+						"for": "b",
+						"id": "b"
+					},
+					{
+						"label-text": "Havo N&G",
+						"for": "c",
+						"id": "c"
+					},
+					{
+						"label-text": "Havo N&T",
+						"for": "d",
+						"id": "d"
+					},
+					{
+						"label-text": "Havo C&M",
+						"for": "e",
+						"id": "e"
+					},
+					{
+						"label-text": "VWO C&M",
+						"for": "f",
+						"id": "f"
+					},
+					{
+						"label-text": "VWO N&T",
+						"for": "g",
+						"id": "g"
+					},
+					{
+						"label-text": "MBO 4",
+						"for": "h",
+						"id": "h"
+					}
 
-			]
-		},
-		{
-			"header": "Interessegebied",
-			"input-class": "input--filter",
-			"type": "checkbox",
-			"filters": [{
-					"label-text": "Aarde en Milieu",
-					"for": "a1",
-					"id": "a1"
-				},
-				{
-					"label-text": "Economie en Bedrijf",
-					"for": "b1",
-					"id": "b1"
-				},
-				{
-					"label-text": "Exact en Informatica",
-					"for": "c1",
-					"id": "c1"
-				},
-				{
-					"label-text": "Gedrag en Maatschappij",
-					"for": "d1",
-					"id": "d1"
-				},
-				{
-					"label-text": "Gezondheid",
-					"for": "e1",
-					"id": "e1"
-				},
-				{
-					"label-text": "Kunst en Cultuur",
-					"for": "f1",
-					"id": "f1"
-				},
-				{
-					"label-text": "Onderwijs en Opvoeding",
-					"for": "g1",
-					"id": "g1"
-				},
-				{
-					"label-text": "Recht en Bestuur",
-					"for": "h1",
-					"id": "h1"
-				},
-				{
-					"label-text": "Taal en Communicatie",
-					"for": "i1",
-					"id": "i1"
-				},
-				{
-					"label-text": "Techniek",
-					"for": "j1",
-					"id": "j1"
-				}
+				]
+			},
+			{
+				"header": "Interessegebied",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Aarde en Milieu",
+						"for": "a1",
+						"id": "a1"
+					},
+					{
+						"label-text": "Economie en Bedrijf",
+						"for": "b1",
+						"id": "b1"
+					},
+					{
+						"label-text": "Exact en Informatica",
+						"for": "c1",
+						"id": "c1"
+					},
+					{
+						"label-text": "Gedrag en Maatschappij",
+						"for": "d1",
+						"id": "d1"
+					},
+					{
+						"label-text": "Gezondheid",
+						"for": "e1",
+						"id": "e1"
+					},
+					{
+						"label-text": "Kunst en Cultuur",
+						"for": "f1",
+						"id": "f1"
+					},
+					{
+						"label-text": "Onderwijs en Opvoeding",
+						"for": "g1",
+						"id": "g1"
+					},
+					{
+						"label-text": "Recht en Bestuur",
+						"for": "h1",
+						"id": "h1"
+					},
+					{
+						"label-text": "Taal en Communicatie",
+						"for": "i1",
+						"id": "i1"
+					},
+					{
+						"label-text": "Techniek",
+						"for": "j1",
+						"id": "j1"
+					}
 
-			]
-		},
-		{
-			"header": "Taal",
-			"input-class": "input--filter",
-			"type": "checkbox",
+				]
+			},
+			{
+				"header": "Taal",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Nederlands",
+						"for": "nl",
+						"id": "nl"
+					},
+					{
+						"label-text": "Engels",
+						"for": "en",
+						"id": "en"
+					}
+				]
+			},
+			{
+				"header": "Type",
+				"input-class": "input--filter",
+				"type": "checkbox",
+				"filters": [{
+						"label-text": "Bachelor",
+						"for": "ba",
+						"id": "ba"
+					},
+					{
+						"label-text": "Associate Degree",
+						"for": "ad",
+						"id": "ad"
+					}
+					,
+					{
+						"label-text": "Master",
+						"for": "m",
+						"id": "m"
+					}
+				]
+			}
+		],
+		"active-filter": {
+			"filter-label": "active filter",
 			"filters": [{
-					"label-text": "Nederlands",
-					"for": "nl",
-					"id": "nl"
+					"button-class": "btn--filter",
+					"button-text": "Den bosch"
 				},
 				{
-					"label-text": "Engels",
-					"for": "en",
-					"id": "en"
+					"button-class": "btn--filter",
+					"button-text": "Breda"
 				}
 			]
 		}
-	],
+	},
 	"button": {
 		"button-text": "go on the button",
 		"button-type": "submit",
 		"button-class": "btn--hidden"
-	},
-	"active-filter": {
-		"filter-label": "active filter",
-		"filters": [{
-				"button-class": "btn--filter",
-				"button-text": "Den bosch"
-			},
-			{
-				"button-class": "btn--filter",
-				"button-text": "Breda"
-			}
-		]
 	},
 	"pagination": {
 		"previous": {

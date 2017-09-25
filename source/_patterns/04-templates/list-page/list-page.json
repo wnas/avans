@@ -1,6 +1,5 @@
 {
-	"results-list": [
-		{
+	"results-list": [{
 			"header": "Accountancy",
 			"location": "Den Bosch",
 			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
@@ -59,76 +58,79 @@
 		}
 
 	],
-	"filters": [{
-		"header": "Vorm",
-		"filters": [
-			{
-				"label-text": "Voltijd",
-				"input-class": "input--filter",
-				"for": "voltijd",
-				"id": "voltijd",
-				"type":"checkbox"
+	"filter-blok": {
+		"filters-collection": [{
+				"header": "Vorm",
+				"filters": [{
+						"label-text": "Voltijd",
+						"input-class": "input--filter",
+						"for": "voltijd",
+						"id": "voltijd",
+						"type": "checkbox"
+					},
+					{
+						"label-text": "Deeltijd",
+						"input-class": "input--filter",
+						"for": "deeltijd",
+						"id": "deeltijd",
+						"type": "checkbox"
+					},
+					{
+						"label-text": "Duaal",
+						"input-class": "input--filter",
+						"for": "duaal",
+						"id": "duaal",
+						"type": "checkbox"
+					}
+
+				]
 			},
 			{
-				"label-text": "Deeltijd",
-				"input-class": "input--filter",
-				"for": "deeltijd",
-				"id": "deeltijd",
-				"type":"checkbox"
-			},
-			{
-				"label-text": "Duaal",
-				"input-class": "input--filter",
-				"for": "duaal",
-				"id": "duaal",
-				"type":"checkbox"
+				"header": "Locatie",
+				"filters": [{
+						"label-text": "Breda",
+						"input-class": "input--filter",
+						"for": "Breda",
+						"id": "Breda",
+						"type": "checkbox"
+					},
+					{
+						"label-text": "'s-Hertogenbosch",
+						"input-class": "input--filter",
+						"for": "db",
+						"id": "db",
+						"type": "checkbox"
+					},
+					{
+						"label-text": "Tilburg",
+						"input-class": "input--filter",
+						"for": "Tilburg",
+						"id": "Tilburg",
+						"type": "checkbox"
+					}
+
+				]
 			}
-
-		]},
-		{
-			"header": "Locatie",
-			"filters": [
-				{
-					"label-text": "Breda",
-					"input-class": "input--filter",
-					"for": "Breda",
-					"id": "Breda",
-					"type":"checkbox"
+		],
+		"active-filter": {
+			"filter-label": "active filter",
+			"filters": [{
+					"button-class": "btn--filter",
+					"button-text": "Den bosch"
 				},
 				{
-					"label-text": "'s-Hertogenbosch",
-					"input-class": "input--filter",
-					"for": "db",
-					"id": "db",
-					"type":"checkbox"
-				},
-				{
-					"label-text": "Tilburg",
-					"input-class": "input--filter",
-					"for": "Tilburg",
-					"id": "Tilburg",
-					"type":"checkbox"
+					"button-class": "btn--filter",
+					"button-text": "Breda"
 				}
-
-			]}
-	],
+			]
+		}
+	},
 	"button": {
 		"button-text": "go on the button",
 		"button-type": "submit",
 		"button-class": "btn--hidden"
 	},
-	"active-filter": {
-		"filter-label": "active filter",
-		"filters": [{
-				"button-class": "btn--filter",
-				"button-text": "Den bosch"
-			},
-			{
-				"button-class": "btn--filter",
-				"button-text": "hi theire"
-			}
-		]
-	},
+
 	"pagination": {
 		"previous": {
 			"link": "#",
@@ -139,11 +141,10 @@
 			"link": "#",
 			"text": "Volgende"
 		},
-		"pages": [
-			{
+		"pages": [{
 				"pagination-label": "4",
 				"pagination-link": "#"
-			},{
+			}, {
 				"pagination-label": "5",
 				"pagination-link": "wnas.nl"
 			},

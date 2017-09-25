@@ -1,0 +1,55 @@
+{
+	"filters-collection": [{
+			"header": "Vorm hi",
+			"filters": [{
+					"label-text": "Voltijd",
+					"input-class": "input--filter",
+					"for": "voltijd",
+					"id": "voltijd",
+					"type": "checkbox"
+				},
+				{
+					"label-text": "Deeltijd",
+					"input-class": "input--filter",
+					"for": "deeltijd",
+					"id": "deeltijd",
+					"type": "checkbox"
+				},
+				{
+					"label-text": "Duaal",
+					"input-class": "input--filter",
+					"for": "duaal",
+					"id": "duaal",
+					"type": "checkbox"
+				}
+
+			]
+		},
+		{
+			"header": "Locatie",
+			"filters": [{
+					"label-text": "Breda",
+					"input-class": "input--filter",
+					"for": "Breda",
+					"id": "Breda",
+					"type": "checkbox"
+				},
+				{
+					"label-text": "'s-Hertogenbosch",
+					"input-class": "input--filter",
+					"for": "db",
+					"id": "db",
+					"type": "checkbox"
+				},
+				{
+					"label-text": "Tilburg",
+					"input-class": "input--filter",
+					"for": "Tilburg",
+					"id": "Tilburg",
+					"type": "checkbox"
+				}
+
+			]
+		}
+	]
+}
