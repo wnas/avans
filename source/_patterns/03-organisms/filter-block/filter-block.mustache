@@ -1,16 +1,17 @@
-<aside class="filter-block" id="filters">
+<aside class="filter-block resultpage__aside" id="filters">
 	<a href="#filters" class="filter__button">Toon filters</a>
 	<h2 class="filter-block__header">Filter</h2>
 	<form action="{{ action }}" method="get" class="filter-block__form filter-block__container">
 		{{# filters-collection }}
-
 			{{> molecules-filters }}
 		{{/ filters-collection }}
+
 		{{# button }}
 			{{> atoms-button }}
 		{{/ button }}
-	</form
+	</form>
 </aside>
+
 {{# active-filter }}
 	{{> organisms-active-filter }}
 {{/ active-filter }}
