@@ -877,25 +877,52 @@ input {
 
 /* templates */
 .resultpage__content {
-  display: flex;
-  flex-direction: column-reverse; }
+  display: flex; }
 
 @media all and (min-width: 992px) {
   .resultpage__list {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 285px calc(100vw - 335px);
-    grid-template-areas: ". header " ". sub-header" "aside content" ". footer"; }
-  .resultpage__header {
-    grid-area: header; }
-  .active-filters__container {
-    grid-area: sub-header; }
-  .resultpage__aside {
-    grid-area: aside; }
-  .resultpage__content {
-    grid-area: content; }
+    display: flex;
+    flex-wrap: wrap; }
+  .resultpage__header,
+  .active-filters__container,
   .resultpage__footer {
-    grid-area: footer; } }
+    flex: 0 1 100%;
+    padding-left: 285px; }
+  .resultpage__header {
+    order: 0; }
+  .active-filters__container {
+    order: 1; }
+  .filter__button {
+    display: none; }
+  .resultpage__aside {
+    flex: 0 1 285px;
+    order: 2; }
+  .resultpage__content {
+    flex: 0 1 calc(100% - 285px);
+    padding-left: 1rem;
+    order: 3; }
+  .resultpage__footer {
+    order: 4; }
+  @supports (display: grid) {
+    .resultpage__list {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: 285px calc(100% - 285px);
+      grid-template-areas: ". header " ". sub-header" "aside content" ". footer"; }
+    .resultpage__header,
+    .active-filters__container,
+    .resultpage__footer {
+      padding-left: 0; }
+    .resultpage__header {
+      grid-area: header; }
+    .active-filters__container {
+      grid-area: sub-header; }
+    .resultpage__aside {
+      grid-area: aside; }
+    .resultpage__content {
+      grid-area: content; }
+    .resultpage__footer {
+      grid-area: footer; } } }
 
 @media all and (max-width: 992px) {
   .filter__button {

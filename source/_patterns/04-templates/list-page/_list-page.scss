@@ -1,71 +1,95 @@
 .resultpage__content {
 	display: flex;
-	flex-direction: column-reverse;
 }
 @media all and (min-width: $bp-l) {
-	// .resultpage__content {
-	// 	display: flex;
-	// 	flex-direction: row-reverse;
-	// }
-	// .filter__button {
-	// 	display: none;
-	// }
-	// .resultpage__filters {
-	// 	width: 260px;
-	// 	padding-right: $spacing;
-	// }
-	//
-	// .resultpage__list {
-	// 	width: calc(100% - 285px);
-	// 	flex: 1;
-	// 	padding-left: 0;
-	// }
-	// .resultpage__footer,
-	// .resultpage__header {
-	// 	padding-left: $sidebar;
-	// }
 	.resultpage__list {
-		display: grid;
-		grid-gap: $spacing;
-		grid-template-columns: 285px calc(100vw - 335px);
-		grid-template-areas:
-               ". header "
-			   ". sub-header"
-                "aside content"
-				". footer";
+		display: flex;
+		flex-wrap: wrap;
+	}
 
+	.resultpage__header,
+	.active-filters__container,
+	.resultpage__footer  {
+		flex: 0 1 100%;
+		padding-left: $sidebar;
 	}
 
 	.resultpage__header {
-		grid-area: header;
+		order: 0;
 	}
 
 	.active-filters__container {
-		grid-area: sub-header;
+		order: 1;
+	}
+
+	.filter__button {
+		display: none;
 	}
 
 	.resultpage__aside {
-		grid-area: aside;
-	}
-	.resultpage__content {
-		grid-area: content;
+		flex: 0 1 $sidebar;
+		order: 2;
 	}
 
-	.resultpage__footer {
-		grid-area: footer;
+	.resultpage__content {
+		flex: 0 1 calc(100% - 285px);
+		padding-left: $spacing;
+		order: 3;
 	}
+	.resultpage__footer  {
+		order: 4;
+	}
+
+	@supports( display: grid) {
+		.resultpage__list {
+			display: grid;
+			grid-gap: $spacing;
+			grid-template-columns: $sidebar calc(100% - 285px);
+			grid-template-areas: ". header " ". sub-header" "aside content" ". footer";
+		}
+
+		.resultpage__header,
+		.active-filters__container,
+		.resultpage__footer {
+			padding-left: 0;
+		}
+
+		.resultpage__header {
+			grid-area: header;
+		}
+
+		.active-filters__container {
+			grid-area: sub-header;
+		}
+
+		.resultpage__aside {
+			grid-area: aside;
+		}
+
+		.resultpage__content {
+			grid-area: content;
+		}
+
+		.resultpage__footer {
+			grid-area: footer;
+		}
+	}
+
 }
 @media all and (max-width: $bp-l) {
 	.filter__button {
 		display: block;
 	}
+
 	.resultpage__filters {
 		column-count: 2;
 		display: none;
 	}
+
 	.resultpage__filters:target {
 		display: block;
 	}
+
 	.filter__header {
 		column-span: all;
 	}
