@@ -855,18 +855,28 @@ input {
     display: block; }
   .nav__item--top-level {
     position: relative; }
-  .nav__item--has-sub:after {
+  .nav__sub-opener {
     content: '';
     position: absolute;
-    top: 1.5rem;
+    top: 0;
+    right: 0;
+    height: 3rem;
+    width: 4rem;
+    text-indent: 5rem;
+    white-space: nowrap;
+    overflow: hidden; }
+  .nav__sub-opener:after {
+    content: '';
+    position: absolute;
     right: 1.5rem;
-    height: 9px;
+    top: 1rem;
     width: 9px;
+    height: 9px;
     border: 1px solid #333;
     border-width: 0 0 1px 1px;
     transform: rotate(-45deg);
     transition: transform .5s ease; }
-  .nav__sub--opened:after {
+  .nav__sub--opened .nav__sub-opener:after {
     transform: rotate(135deg); } }
 
 @media all and (max-width: 992px) {

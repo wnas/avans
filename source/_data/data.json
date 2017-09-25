@@ -18,10 +18,12 @@
 		},
 		{
 			"content": "Studeren",
+			"href": "http:\/\/wnas.nl",
 			"active": "true",
 			"sub": {
 				"items": [{
-						"content": "Opleidingen"
+						"content": "Opleidingen",
+						"href": "http:\/\/nu.nl"
 					},
 					{
 						"content": "Interessegebieden"
