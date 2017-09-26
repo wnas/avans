@@ -23,6 +23,7 @@
 			"sub": {
 				"items": [{
 						"content": "Opleidingen",
+						"active": "true",
 						"href": "http:\/\/nu.nl"
 					},
 					{
