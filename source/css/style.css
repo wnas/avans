@@ -824,6 +824,8 @@ input {
     position: absolute;
     left: calc(50% - 8px);
     bottom: -5px; }
+  .nav__sub-opener {
+    display: none; }
   .nav__item--top-level {
     border-right: 1px solid #ccc; }
   .nav__item--top-level:hover > .nav__link {
@@ -919,6 +921,7 @@ input {
       display: grid;
       grid-gap: 1rem;
       grid-template-columns: 285px calc(100% - 285px);
+      grid-template-rows: 100px 100px 1fr 100px;
       grid-template-areas: ". header " "aside sub-header" "aside content" ". footer"; }
     .resultpage__header,
     .active-filters__container,

@@ -45,6 +45,7 @@
 			display: grid;
 			grid-gap: $spacing;
 			grid-template-columns: $sidebar calc(100% - 285px);
+			grid-template-rows: 100px 100px 1fr 100px;
 			grid-template-areas: ". header " "aside sub-header" "aside content" ". footer";
 		}
 
