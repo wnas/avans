@@ -909,7 +909,8 @@ input {
     display: none; }
   .resultpage__aside {
     flex: 0 1 285px;
-    order: 2; }
+    order: 2;
+    margin-top: -3rem; }
   .resultpage__content {
     flex: 0 1 calc(100% - 285px);
     padding-left: 1rem;
@@ -922,7 +923,7 @@ input {
       grid-gap: 1rem;
       grid-template-columns: 285px calc(100% - 285px);
       grid-template-rows: 100px 100px 1fr 100px;
-      grid-template-areas: ". header " "aside sub-header" "aside content" ". footer"; }
+      grid-template-areas: ".		header " "aside  sub-header" "aside 	content" ".		footer"; }
     .resultpage__header,
     .active-filters__container,
     .resultpage__footer {
@@ -932,7 +933,8 @@ input {
     .active-filters__container {
       grid-area: sub-header; }
     .resultpage__aside {
-      grid-area: aside; }
+      grid-area: aside;
+      background-color: pink; }
     .resultpage__content {
       grid-area: content; }
     .resultpage__footer {
