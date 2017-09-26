@@ -933,8 +933,7 @@ input {
     .active-filters__container {
       grid-area: sub-header; }
     .resultpage__aside {
-      grid-area: aside;
-      background-color: pink; }
+      grid-area: aside; }
     .resultpage__content {
       grid-area: content; }
     .resultpage__footer {
