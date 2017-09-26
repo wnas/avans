@@ -2,6 +2,7 @@
 	position: relative;
 	z-index: 25;
 	border-top: 5px solid $avans-red;
+	border-bottom :1px solid #ccc;
 }
 
 .top-bar {
@@ -19,7 +20,7 @@
 
 .skip-link {
 	width: 5rem;
-	height: 6rem;
+	height: 6.3rem;
 	text-indent: 6rem;
 	padding-top: 1.5rem;
 	overflow: hidden;

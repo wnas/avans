@@ -1,0 +1,38 @@
+.submenu {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 2rem;
+	.layout-full-width-block__content {
+		margin-bottom: 0;
+	}
+}
+.submenu__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.submenu__item {
+	display: inline-block;
+}
+
+.submenu__link {
+	color: #999;
+	display: block;
+	padding: 1rem 1rem 1rem 0;
+	font-size: .875rem;
+}
+
+.submenu__link--active {
+	color: #000;
+}
+
+.submenu__link:hover {
+	color: $avans-blue;
+	text-decoration: underline;
+}
+
+@media all and (max-width: $bp-l) {
+	.submenu {
+		display: none;
+	}
+}
