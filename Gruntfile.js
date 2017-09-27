@@ -10,10 +10,12 @@ module.exports = function(grunt) {
         argv = require('minimist')(process.argv.slice(2));
 
     // load all grunt tasks
+
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-postcss');
 
     /******************************************************
      * PATTERN LAB CONFIGURATION
@@ -75,6 +77,20 @@ module.exports = function(grunt) {
                 files: {
                     'source/css/style.css': 'source/css/style.scss'
                 }
+            }
+        },
+		/******************************************************
+		 * post css
+		 ******************************************************/
+		 postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')
+                ]
+            },
+            dist: {
+                src: 'source/css/style.css'
             }
         },
         /******************************************************
@@ -164,9 +180,9 @@ module.exports = function(grunt) {
      * COMPOUND TASKS
      ******************************************************/
 
-    grunt.registerTask('default', ['patternlab', 'sass', 'copy:main']);
-    grunt.registerTask('patternlab:build', ['patternlab', 'sass', 'copy:main']);
-    grunt.registerTask('patternlab:watch', ['patternlab', 'sass', 'copy:main', 'watch:all']);
-    grunt.registerTask('patternlab:serve', ['patternlab', 'sass', 'copy:main', 'browserSync', 'watch:all']);
+    grunt.registerTask('default', ['patternlab', 'sass', 'postcss:dist', 'copy:main']);
+    grunt.registerTask('patternlab:build', ['patternlab', 'sass', 'postcss:dist', 'copy:main']);
+    grunt.registerTask('patternlab:watch', ['patternlab', 'sass', 'postcss:dist', 'copy:main', 'watch:all']);
+    grunt.registerTask('patternlab:serve', ['patternlab', 'sass', 'postcss:dist', 'copy:main', 'browserSync', 'watch:all']);
 
 };
