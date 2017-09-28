@@ -88,6 +88,7 @@ module.exports = function(grunt) {
                 processors: [
                     require('autoprefixer')
                 ]
+
             },
             dist: {
                 src: 'source/css/style.css'
