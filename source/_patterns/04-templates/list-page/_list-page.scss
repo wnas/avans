@@ -85,7 +85,7 @@
 }
 @media all and (max-width: $bp-l) {
 	.filter__button {
-		display: block;
+		display: inline-block;
 	}
 
 	.resultpage__filters {

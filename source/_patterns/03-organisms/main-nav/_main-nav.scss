@@ -92,7 +92,7 @@
 		background-color: $avans-blue;
 		top: 100px;
 		flex-direction: column;
-		@mixin hideVisually();
+		@include hideVisually();
 	}
 
 	.nav__item--has-sub:before {

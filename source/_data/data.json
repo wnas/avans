@@ -13,6 +13,7 @@
 	"search-id": "search-id",
 	"searchaction": "http://avans.nl/zoeken",
 	"nav-id": "nav-id",
+	"nav-link": "Menu",
 	"main-nav": [{
 			"content": "Home"
 		},

@@ -920,15 +920,15 @@ input {
   .nav__item {
     border-bottom: 0; }
   .nav__sub {
-    position: absolute;
     width: auto;
-    left: -999em;
     background-color: #00ACEB;
     top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    position: absolute;
+    left: -999em; }
   .nav__item--has-sub:before {
     content: '';
     display: block;
@@ -1044,6 +1044,32 @@ input {
   .submenu {
     display: none; } }
 
+.filter__button {
+  padding: .625rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../images/icons/Icon-Filter.svg");
+  position: relative;
+  display: inline-block;
+  color: #00ACEB; }
+
+.filter__button:after {
+  content: '';
+  position: absolute;
+  top: .625rem;
+  right: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 1px solid #00ACEB;
+  border-width: 0 1px 1px 0; }
+
+.filter__button--hide:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg); }
+
 @media all and (max-width: 992px) {
   .filter-block__container,
   .filter__button--hide {
@@ -1051,7 +1077,10 @@ input {
     left: -999em; }
   :target .filter-block__container,
   :target .filter__button--hide {
-    position: static; }
+    left: 0;
+    position: relative; }
+  :target .filter__button--show {
+    display: none; }
   .filter-block__form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1140,7 +1169,7 @@ input {
 
 @media all and (max-width: 992px) {
   .filter__button {
-    display: block; }
+    display: inline-block; }
   .resultpage__filters {
     -webkit-column-count: 2;
             column-count: 2;
