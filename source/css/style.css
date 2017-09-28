@@ -745,6 +745,12 @@ input {
   width: 8rem;
   background-position: 2rem; }
 
+.nav-link.clicked {
+  background-image: url("../images/icons/close-search-icon.svg"); }
+
+.nav-link.clicked:hover {
+  background-image: url("../images/icons/close-search-icon-blue.svg"); }
+
 .nav-link:hover {
   background-image: url("../images/icons/nav-icon-blue.svg");
   color: #00ACEB; }
@@ -826,7 +832,6 @@ input {
   .nav.js-open,
   .nav:target {
     width: 100%;
-    opacity: 100%;
     overflow: auto;
     height: 100vh;
     min-height: calc(100vh - 100px);

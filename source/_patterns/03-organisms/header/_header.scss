@@ -68,6 +68,14 @@
 	background-position: 2rem;
 }
 
+.nav-link.clicked {
+	background-image: url("../images/icons/close-search-icon.svg");
+}
+
+.nav-link.clicked:hover {
+	background-image: url("../images/icons/close-search-icon-blue.svg");
+}
+
 .nav-link:hover {
 	background-image: url("../images/icons/nav-icon-blue.svg");
 	color: $avans-blue;

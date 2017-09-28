@@ -25,7 +25,9 @@ var avans = (function(){
 
 	},	toggleClass = function(evt,elem){
 		evt.preventDefault();
+		evt.target.classList.toggle('clicked');
 		elem.container.classList.toggle( elem.class );
+		return false;
 
 	},	subMenu = function(){
 		// get the menu items with sub menus
