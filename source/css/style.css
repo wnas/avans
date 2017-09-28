@@ -1045,7 +1045,14 @@ input {
     display: none; } }
 
 @media all and (max-width: 992px) {
-  .filter-block__container {
+  .filter-block__container,
+  .filter__button--hide {
+    position: absolute;
+    left: -999em; }
+  :target .filter-block__container,
+  :target .filter__button--hide {
+    position: static; }
+  .filter-block__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

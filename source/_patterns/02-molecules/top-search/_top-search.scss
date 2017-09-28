@@ -32,6 +32,5 @@
 :target .nav-link,
 .top-search__button,
 .top-search__label {
-  position: absolute;
-  left: -999em;
+  @mixin hideVisually();
 }

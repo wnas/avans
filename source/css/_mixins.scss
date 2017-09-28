@@ -37,3 +37,8 @@
   background-image: url('../../../images/icons/ICON-Arrow-Right-White.svg');
   background-position: 0 50%;
 }
+
+@mixin hideVisually(){
+	position: absolute;
+	left: -999em;
+}

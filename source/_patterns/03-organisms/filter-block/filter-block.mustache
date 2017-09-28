@@ -1,7 +1,9 @@
 <aside class="filter-block resultpage__aside" id="filters">
-	<a href="#filters" class="filter__button">Toon filters</a>
+	<a href="#filters" class="filter__button filter__button--show">Toon filters</a>
+	<a href="#" class="filter__button filter__button--hide">Verberg filters</a>
+	<div class="filter-block__container">
 	<h2 class="filter-block__header">Filter</h2>
-	<form action="{{ action }}" method="get" class="filter-block__form filter-block__container">
+	<form action="{{ action }}" method="get" class="filter-block__form ">
 		{{# filters-collection }}
 			{{> molecules-filters }}
 		{{/ filters-collection }}
@@ -10,6 +12,7 @@
 			{{> atoms-button }}
 		{{/ button }}
 	</form>
+</div>
 </aside>
 
 {{# active-filter }}

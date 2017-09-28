@@ -1,11 +1,24 @@
 .filter-block {
-	// hi
+
 }
 
 
 
 @media all and (max-width: $bp-l) {
-	.filter-block__container {
+	.filter-block__container,
+	.filter__button--hide {
+		@mixin hideVisually();
+	}
+	:target {
+		.filter-block__container,
+		.filter__button--hide {
+		position: static;
+	}
+		.filter__button--show {
+
+		}
+	}
+	.filter-block__form {
 		display: flex;
 		flex-wrap: wrap;
 	}

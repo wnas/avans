@@ -88,12 +88,11 @@
 	}
 
 	.nav__sub {
-		position: absolute;
 		width: auto;
-		left: -999em;
 		background-color: $avans-blue;
 		top: 100px;
 		flex-direction: column;
+		@mixin hideVisually();
 	}
 
 	.nav__item--has-sub:before {
