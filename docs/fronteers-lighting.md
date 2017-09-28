@@ -31,17 +31,19 @@ Simple is better, most of the times…
 animated gifs
 — geocities.
 — giphy
+
 6
 Flash. that was then, we sure as hell won’t put our trust in the fact that everybody had a certain technique and that it won’t ever change, right
 — no flash
 — no javascript
+
 7
 best viewed with
 IE5
 chrome
+
 8
-browser sniffing
-ua strings
+Use CSS more often. don’t start with javascript for everything
 
 9 
 non standard tags
@@ -71,7 +73,7 @@ be platform agnostic. make sure the design works everywhere. That means, not mak
 input mediums
 don’t only support mouse and keyboard.
 or phone
-get real users to test with screenreaders and more…
+get real users to test with screen readers and more…
 
 15
 Be flexible
@@ -79,17 +81,18 @@ politie quote.
 
 16
 trends
-don’t, just don’t. You don’t have to use the latest framework.
+don’t, just don’t. You don’t have to use the latest framework or do parallax. We can help people who want to go on second life…
 
 17
 Users
-that is who you are building it for
+that is who you are building it for, make the effort to get some user testing done. with real people…
 
 18
 Clients
 they have been asking stupid things for years.
 it is our task to help and educate them. Please do so, make the
 world a better place.
+— carousels
 — kittens
 
 19
@@ -104,5 +107,4 @@ please use more elements, there are so much elements we don’t appreciate enoug
 using them is a good way to appear really smart and maybe it also helps your user . think input type number or proper usage of footer, header, aside and article elements.
 gotta catch ‘m all.
 
-21
-Use CSS more often. don’t start with javascript for everything
+

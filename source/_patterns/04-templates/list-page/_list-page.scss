@@ -43,6 +43,7 @@
 
 	@supports( display: grid) {
 		.resultpage__list {
+
 			display: grid;
 			grid-gap: $spacing;
 			grid-template-columns: $sidebar calc(100% - 285px);
@@ -51,6 +52,7 @@
 									"aside  sub-header"
 									"aside 	content"
 									".		footer";
+
 		}
 
 		.resultpage__header,
