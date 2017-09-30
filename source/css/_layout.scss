@@ -1,7 +1,14 @@
 body {
+	background-color: #fff;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+}
+
+article,
+section,
+aside,
+body {
+	display: block;
 }
 
 .hero,
@@ -19,6 +26,7 @@ body {
 .layout-full-width-block__content,
 .top-bar__content {
 	max-width: $width__overal;
+	width: 100%;
 	margin: 0 auto;
 }
 

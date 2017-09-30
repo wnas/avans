@@ -2,8 +2,8 @@
 	"results-list": [{
 			"header": "Accountancy",
 			"location": "Den Bosch",
-			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
-			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 			"srcset": [{
 					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 					"res": "1x"
@@ -21,8 +21,8 @@
 		{
 			"header": "Accountancy",
 			"location": "Den Bosch",
-			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
-			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+			"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 			"srcset": [{
 					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 					"res": "1x"
@@ -40,8 +40,8 @@
 		{
 			"header": "Bedrijfskunde MER",
 			"location": "Breda",
-			"content": "<p>De tweejarige hbo-opleiding Bedrijfskunde is veelzijdig en praktijkgericht. Deze business-opleiding past bij jou als je een rol wilt spelen in de snel veranderde wereld van management en organisaties.</p>",
-			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"content": "De tweejarige hbo-opleiding Bedrijfskunde is veelzijdig en praktijkgericht. Deze business-opleiding past bij jou als je een rol wilt spelen in de snel veranderde wereld van management en organisaties.",
+			"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 			"srcset": [{
 					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 					"res": "1x"

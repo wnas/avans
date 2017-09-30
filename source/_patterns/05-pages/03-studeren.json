@@ -3,17 +3,17 @@
 			"header": "Accountancy",
 			"location": "Den Bosch",
 			"content": "De voltijd hbo-opleiding Accountancy bij Avans Hogeschool in Breda leidt jou op tot accountant.",
-			"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+			"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 			"srcset": [{
-					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+					"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200.png",
 					"res": "1x"
 				},
 				{
-					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
+					"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
 					"res": "2x"
 				},
 				{
-					"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
+					"src": "../../images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
 					"res": "3x"
 				}
 			]
@@ -22,43 +22,43 @@
 			"header": "Accountancy",
 			"location": "Den Bosch",
 			"content": "Jij hebt gevoel voor cijfers en vindt het leuk om bedrijfsgegevens voor je klant uit te zoeken en hierover te rapporteren en te adviseren. De opleiding Accountancy is dan perfect voor jou.",
-			"src": "/images/accountancy-denbosch-240x200.png"
+			"src": "../../images/accountancy-denbosch-240x200.png"
 		},
 		{
 			"header": " Accountancy Associate degree",
 			"location": "'s-Hertogenbosch",
 			"content": "Tijdens de tweejarige hbo-opleiding Accountancy verdiep je je in administratieve en financiële zaken. Je leert wat je met (financiële) stukken kunt doen om een organisatie gezond te houden.",
-			"src": "/images/advancedbusinesscreation-denbosch-240x200.png"
+			"src": "../../images/advancedbusinesscreation-denbosch-240x200.png"
 		},
 		{
 			"header": "  Autonome Beeldende Kunst",
 			"location": "'s-Hertogenbosch",
 			"content": "Je leert creëren vanuit een eigen artistiek gedachtegoed. Tijdens de opleiding Autonome Beeldende Kunst ga je op zoek naar eigen vormen van makerschap. En op zoek naar wie jij bent als kunstenaar. ",
-			"src": "/images/kunst-denbosch-240x200.png"
+			"src": "../../images/kunst-denbosch-240x200.png"
 		},
 		{
 			"header": " Bedrijfskunde",
 			"location": "Breda",
 			"content": "Bedrijfskunde is de start van jouw veelzijdige carrière in het bedrijfsleven. Je werkt als adviseur, manager of projectleider. Maar altijd als bruggenbouwer. Tussen mensen, projecten en afdelingen.",
-			"src": "/images/be-breda-240x200.png"
+			"src": "../../images/be-breda-240x200.png"
 		},
 		{
 			"header": "  Autonome Beeldende Kunst",
 			"location": "Breda",
 			"content": "Je leert creëren vanuit een eigen artistiek gedachtegoed. Tijdens de opleiding Autonome Beeldende Kunst ga je op zoek naar eigen vormen van makerschap. En op zoek naar wie jij bent als kunstenaar. ",
-			"src": "/images/kunst-denbosch-240x200.png"
+			"src": "../../images/kunst-denbosch-240x200.png"
 		},
 		{
 			"header": "  Bedrijfskunde",
 			"location": "'s-Hertogenbosch",
 			"content": "Jij bent een teamspeler en bruggenbouwer. Analytisch en creatief. In de opleiding Bedrijfskunde, voorheen Bedrijfskunde MER, speel je in op veranderingen in organisaties. Je zet innovaties in gang.",
-			"src": "/images/kunst-denbosch-240x200.png"
+			"src": "../../images/kunst-denbosch-240x200.png"
 		},
 		{
 			"header": "   Bedrijfskunde Associate degree",
 			"location": "'s-Hertogenbosch",
 			"content": "De tweejarige hbo-opleiding Bedrijfskunde is veelzijdig en praktijkgericht. Deze business-opleiding past bij jou als je een rol wilt spelen in de snel veranderde wereld van management en organisaties.",
-			"src": "/images/advancedbusinesscreation-denbosch-240x200.png"
+			"src": "../../images/advancedbusinesscreation-denbosch-240x200.png"
 		}
 
 	],
