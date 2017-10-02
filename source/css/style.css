@@ -564,7 +564,8 @@ input {
 
 .footer-link__link {
   color: #999;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  transition: background .5s ease; }
 
 .footer-link__item--discover {
   background-repeat: no-repeat;
@@ -616,23 +617,44 @@ input {
 .footer-link__link--mail {
   background-image: url("../images/icons/Icon-Social-Mail-White.svg"); }
 
+.footer-link__link--mail:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Mail.svg"); }
+
 .footer-link__link--linkedin {
   background-image: url("../images/icons/Icon-Social-LinkedIn.svg"); }
+
+.footer-link__link--linkedin:hover {
+  background-image: url("../images/icons/Icon-SocialHover-LinkedIn.svg"); }
 
 .footer-link__link--snapchat {
   background-image: url("../images/icons/Icon-Social-Snapchat.svg"); }
 
+.footer-link__link--snapchat:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Snapchat.svg"); }
+
 .footer-link__link--twitter {
   background-image: url("../images/icons/Icon-Social-Twitter.svg"); }
+
+.footer-link__link--twitter:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Twitter.svg"); }
 
 .footer-link__link--instagram {
   background-image: url("../images/icons/Icon-Social-Instagram.svg"); }
 
+.footer-link__link--instagram:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Instagram.png"); }
+
 .footer-link__link--youtube {
   background-image: url("../images/icons/Icon-Social-Youtube.svg"); }
 
+.footer-link__link--youtube:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Youtube.svg"); }
+
 .footer-link__link--facebook {
   background-image: url("../images/icons/Icon-Social-Facebook.svg"); }
+
+.footer-link__link--facebook:hover {
+  background-image: url("../images/icons/Icon-SocialHover-Facebook.svg"); }
 
 .footer-links__header {
   color: #999;
@@ -665,7 +687,10 @@ input {
   max-width: 1140px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .page-footer__logo {
   width: 125px;
