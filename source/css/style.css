@@ -546,8 +546,7 @@ input {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row;
-  background-color: purple; }
+          flex-direction: row; }
 
 @media all and (max-width: 1200px) {
   .footer-links__list-block {
