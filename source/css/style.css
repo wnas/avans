@@ -149,7 +149,7 @@ body,
 input {
   font-size: 1em; }
 
-.input {
+.input:not([type="checkbox"]) {
   padding: 1rem;
   margin: 1rem;
   width: calc(100% - 3rem);
@@ -210,7 +210,9 @@ input {
   color: #00ACEB; }
 
 .input--filter {
-  width: auto;
+  width: 20px;
+  heigth: 20px;
+  display: inline-block;
   margin: 0.1rem 0.875rem 0 0; }
 
 .btn-bar {
