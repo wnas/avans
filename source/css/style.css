@@ -546,7 +546,8 @@ input {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  background-color: purple; }
 
 @media all and (max-width: 1200px) {
   .footer-links__list-block {
@@ -593,7 +594,7 @@ input {
   height: 0.125rem;
   position: absolute;
   z-index: 5;
-  bottom: 1.25rem;
+  top: 2.4875rem;
   left: 0; }
 
 .footer-link__item--linkedin:after {

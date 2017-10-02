@@ -45,6 +45,7 @@
 	padding-left: 0;
 	display: flex;
 	flex-direction: row;
+	background-color: purple;
 }
 @media all and (max-width: $bp-xl) {
 	.footer-links__list-block {
@@ -96,7 +97,7 @@
 	height: 0.125rem;
 	position: absolute;
 	z-index: 5;
-	bottom: $spacing-l;
+	top: 2.4875rem;
 	left: 0;
 }
 
