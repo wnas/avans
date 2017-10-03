@@ -935,12 +935,17 @@ input {
   color: #999;
   padding: 1rem 0; }
 
-.nav__link--active {
+.nav__link--active,
+.nav__link--sub.nav__link--active {
   color: #000; }
+
+.nav__link--active .nav__link--sub {
+  color: #999; }
 
 .nav__link--sub {
   padding-left: 1rem;
-  font-weight: normal; }
+  font-weight: normal;
+  color: #999; }
 
 @media all and (min-width: 992px) {
   .nav {
@@ -1048,9 +1053,9 @@ input {
     border-width: 0 0 1px 1px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
-    transition: transform .5s ease, -webkit-transform .5s ease; }
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
   .nav__sub--opened .nav__sub-opener:after {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); } }
