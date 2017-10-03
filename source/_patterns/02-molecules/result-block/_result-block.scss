@@ -2,7 +2,7 @@
 	list-style: none;
 	border-bottom: $lighter-gray 1px solid;
 	padding-bottom: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 2rem; //	@extend .testing;
 }
 
 .result-block__link {
@@ -10,24 +10,77 @@
 	display: flex;
 }
 
+.result-block__link:hover {
+	.result-block__header {
+		color: $avans-blue;
+	}
+
+
+
+	.result-block__image-container:after {
+		height: 133px;
+	}
+}
+
 .result-block__content-container {
 	order: 1;
 	margin-left: $spacing-xl;
 }
+
 .result-block__image-container {
 	order: 0;
+	position: relative;
+}
+
+.result-block__image-container:after {
+	content: '';
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba($avans-blue, .2);
+	transition: height $time-s ease;
 }
 
 .result-block__image {
 	max-width: 200px;
 }
 
+.result-block__header-group {
+	display: flex;
+}
+
 .result-block__header {
 	margin-top: 0;
 	font-size: 1.25rem;
+	transition: color $time-s ease;
+}
+
+.result-block__location {
+	display: inline-block;
+	padding-left: 1.5rem;
+	margin-left: 1rem;
+	background-repeat: no-repeat;
+	background-image: url("../../images/icons/icon-locationMarker.svg");
+	background-size: 1rem;
+}
+
+.alert__header {
+	color: $avans-red;
+	padding-right: 0.5rem;
 }
 @media all and (max-width: $bp-m) {
+	.result-block__alert,
 	.result-block__content {
 		display: none;
+	}
+
+	.result-block__header-group {
+		flex-direction: column;
+	}
+	.result-block__location {
+		margin-left: 0;
+		min-height: 1.5rem;
 	}
 }

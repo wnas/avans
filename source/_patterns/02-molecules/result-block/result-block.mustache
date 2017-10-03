@@ -1,20 +1,25 @@
 <li class="result-block">
 	<a class="result-block__link" href="{{ href }}">
 		<div class="result-block__content-container">
-	 		<h3 class="result-block__header">
+			<div class="result-block__header-group">
+				<h3 class="result-block__header">
 				{{ header }}
 			</h3>
-			<span class="result-block__location">
+				<span class="result-block__location">
 				{{ location }}
 			</span>
+			</div>
 			<div class="result-block__content">
 				<p>{{ content }}</p>
 			</div>
+			{{# alert }}
+			<div class="result-block__alert">
+				<p><strong class="alert__header">Let op:</strong><span class="alert__text">{{ content }}</span></p>
+			</div>
+			{{/ alert }}
 		</div>
 		<div class="result-block__image-container">
-			<img class="result-block__image"
-				src="{{ src }}"
-				srcset="{{# srcset }} {{src}} {{res}},  {{/ srcset }}" />
+			<img class="result-block__image" src="{{ src }}" srcset="{{# srcset }} {{src}} {{res}},  {{/ srcset }}" />
 		</div>
 	</a>
 </li>

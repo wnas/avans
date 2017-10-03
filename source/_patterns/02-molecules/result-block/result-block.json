@@ -17,5 +17,8 @@
 		  "src":"/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
 		  "res": "3x"
 	  }
-  ]
+  ],
+  "alert": {
+	  "content": "Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket."
+  }
 }

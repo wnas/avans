@@ -230,6 +230,12 @@ input {
   display: -ms-flexbox;
   display: flex; }
 
+.result-block__link:hover .result-block__header {
+  color: #00ACEB; }
+
+.result-block__link:hover .result-block__image-container:after {
+  height: 133px; }
+
 .result-block__content-container {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -239,18 +245,56 @@ input {
 .result-block__image-container {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
-          order: 0; }
+          order: 0;
+  position: relative; }
+
+.result-block__image-container:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 172, 235, 0.2);
+  transition: height 0.1s ease; }
 
 .result-block__image {
   max-width: 200px; }
 
+.result-block__header-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .result-block__header {
   margin-top: 0;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  transition: color 0.1s ease; }
+
+.result-block__location {
+  display: inline-block;
+  padding-left: 1.5rem;
+  margin-left: 1rem;
+  background-repeat: no-repeat;
+  background-image: url("../../images/icons/icon-locationMarker.svg");
+  background-size: 1rem; }
+
+.alert__header {
+  color: #C6002A;
+  padding-right: 0.5rem; }
 
 @media all and (max-width: 768px) {
+  .result-block__alert,
   .result-block__content {
-    display: none; } }
+    display: none; }
+  .result-block__header-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .result-block__location {
+    margin-left: 0;
+    min-height: 1.5rem; } }
 
 .avans-homepage .link-block {
   float: left;
@@ -1198,8 +1242,8 @@ input {
       display: -ms-grid;
       display: grid;
       grid-gap: 1rem;
-      -ms-grid-columns: 285px calc(100% - 285px);
-          grid-template-columns: 285px calc(100% - 285px);
+      -ms-grid-columns: 285px calc(100% - 285px - 1rem);
+          grid-template-columns: 285px calc(100% - 285px - 1rem);
       -ms-grid-rows: 100px 100px calc(100% - 300px) 100px;
           grid-template-rows: 100px 100px calc(100% - 300px) 100px;
       grid-template-areas: ". header " "aside sub-header" "aside content" ". footer"; }
