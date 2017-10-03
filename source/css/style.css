@@ -141,7 +141,8 @@ legend,
 body,
 input,
 .btn--filter,
-.nav__link--sub {
+.nav__link--sub,
+.result-block__location {
   font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif; }
 
 html,
@@ -233,9 +234,6 @@ input {
 .result-block__link:hover .result-block__header {
   color: #00ACEB; }
 
-.result-block__link:hover .result-block__image-container:after {
-  height: 133px; }
-
 .result-block__content-container {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -246,7 +244,20 @@ input {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-  position: relative; }
+  position: relative;
+  min-width: 220px;
+  height: 147px;
+  display: inline-block; }
+
+.result-block__link:hover :after {
+  height: 147px; }
+
+@media all and (min-width: 1200px) {
+  .result-block__image-container {
+    min-width: 263px;
+    height: 175px; }
+  .result-block__link:hover :after {
+    height: 175px; } }
 
 .result-block__image-container:after {
   content: '';
@@ -259,12 +270,8 @@ input {
   transition: height 0.1s ease; }
 
 .result-block__image {
-  max-width: 200px; }
-
-.result-block__header-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  width: 100%;
+  height: 100%; }
 
 .result-block__header {
   margin-top: 0;
@@ -272,12 +279,13 @@ input {
   transition: color 0.1s ease; }
 
 .result-block__location {
+  font-size: .875rem;
   display: inline-block;
   padding-left: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 1.25rem;
   background-repeat: no-repeat;
   background-image: url("../../images/icons/icon-locationMarker.svg");
-  background-size: 1rem; }
+  background-size: contain; }
 
 .alert__header {
   color: #C6002A;
@@ -286,15 +294,7 @@ input {
 @media all and (max-width: 768px) {
   .result-block__alert,
   .result-block__content {
-    display: none; }
-  .result-block__header-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .result-block__location {
-    margin-left: 0;
-    min-height: 1.5rem; } }
+    display: none; } }
 
 .avans-homepage .link-block {
   float: left;

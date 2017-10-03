@@ -18,8 +18,8 @@
 				}
 			],
 			"alert": {
-		  	  "content": "Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket."
-		    }
+				"content": "Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket."
+			}
 		},
 		{
 			"header": "Accountancy",
@@ -33,8 +33,8 @@
 			"content": "Tijdens de tweejarige hbo-opleiding Accountancy verdiep je je in administratieve en financiële zaken. Je leert wat je met (financiële) stukken kunt doen om een organisatie gezond te houden.Tijdens de tweejarige hbo-opleiding Accountancy verdiep je je in administratieve en financiële zaken. Je leert wat je met (financiële) stukken kunt doen om een organisatie gezond te houden. Een extra lange tekst om te kijken hoe het er uit ziet...",
 			"src": "../../images/advancedbusinesscreation-denbosch-240x200.png",
 			"alert": {
-		  	  "content": "Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket."
-		    }
+				"content": "Naast je voorlopleiding zijn er aanvullende eisen aan je vakkenpakket."
+			}
 		},
 		{
 			"header": "  Autonome Beeldende Kunst",
@@ -43,7 +43,7 @@
 			"src": "../../images/kunst-denbosch-240x200.png"
 		},
 		{
-			"header": " Bedrijfskunde",
+			"header": " Environmental Science for Sustainable Energy and Technology / Milieukunde",
 			"location": "Breda",
 			"content": "Bedrijfskunde is de start van jouw veelzijdige carrière in het bedrijfsleven. Je werkt als adviseur, manager of projectleider. Maar altijd als bruggenbouwer. Tussen mensen, projecten en afdelingen.",
 			"src": "../../images/be-breda-240x200.png"
@@ -246,8 +246,7 @@
 						"label-text": "Associate Degree",
 						"for": "ad",
 						"id": "ad"
-					}
-					,
+					},
 					{
 						"label-text": "Master",
 						"for": "m",
