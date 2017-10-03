@@ -58,10 +58,11 @@
 	color: #999;
 	padding: $spacing 0;
 }
-
-.nav__link--active,
-.nav__link--sub.nav__link--active {
-	color: #000;
+@media all and (max-width: $bp-l) {
+	.nav__link--active,
+	.nav__link--sub.nav__link--active {
+		color: #000;
+	}
 }
 
 .nav__link--active .nav__link--sub {
