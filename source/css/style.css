@@ -770,17 +770,20 @@ input {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-  padding-top: 2.4rem;
-  padding-right: 1rem;
-  text-indent: 4rem;
+  text-indent: 0;
+  text-align: center;
+  padding-top: 4rem;
   transition: color 0.4s ease;
   color: #999;
   overflow: visible;
-  width: 8rem;
-  background-position: 2rem; }
+  width: 6rem;
+  background-position: 2.25rem;
+  text-transform: uppercase; }
 
 .nav-link.clicked {
-  background-image: url("../images/icons/close-search-icon.svg"); }
+  background-image: url("../images/icons/close-search-icon.svg");
+  text-indent: 6rem;
+  overflow: hidden; }
 
 .nav-link.clicked:hover {
   background-image: url("../images/icons/close-search-icon-blue.svg"); }
