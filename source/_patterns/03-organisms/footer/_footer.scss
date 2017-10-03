@@ -67,6 +67,11 @@
 	transition: background .5s ease;
 }
 
+.footer-link__link:hover {
+	text-decoration: underline;
+}
+
+
 .footer-link__item--discover {
 	background-repeat: no-repeat;
 	background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
