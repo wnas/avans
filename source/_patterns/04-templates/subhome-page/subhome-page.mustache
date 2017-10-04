@@ -21,10 +21,12 @@
 					je profiteert van onze contacten.
 				</p>
 			</article>
-			{{# attentionblocks }}
+			<div class="attention-block__container">
+				{{# attentionblocks }}
 
-				{{> molecules-attention-block }}
-			{{/ attentionblocks }}
+					{{> molecules-attention-block }}
+				{{/ attentionblocks }}
+			</div>
 </section>
 
 		</div>
@@ -35,7 +37,6 @@
 				{{> organisms-link-box }}
 			{{/ opleidingen }}
 			{{# attentionblock }}
-
 				{{> molecules-attention-block }}
 			{{/ attentionblock }}
 

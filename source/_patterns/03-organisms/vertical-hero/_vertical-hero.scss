@@ -6,11 +6,13 @@
 @media all and (min-width: $bp-l) {
 	.vertical-hero {
 		min-width: 750px;
+		height: 100vh;
 		// min-width: 400px;
 		 display: flex;
 		 flex-direction: column;
 		 align-items: center;
 		 text-align: right;
 		 padding: $spacing-l;
+
 	}
 }

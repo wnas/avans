@@ -1,9 +1,13 @@
 $attention-spacing: $spacing-l;
-
+.attention-block__container {
+	display: flex;
+	align-items: stretch;
+}
 .attention-block {
 	padding: $spacing-l;
 	display: inline-flex;
 	flex-direction: column;
+	align-items: stretch;
 	width: 355px;
 }
 .attention-block--alpha {

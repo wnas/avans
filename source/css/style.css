@@ -494,6 +494,14 @@ p a {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg); }
 
+.attention-block__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
 .attention-block {
   padding: 1.25rem;
   display: -webkit-inline-box;
@@ -503,6 +511,9 @@ p a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   width: 355px; }
 
 .attention-block--alpha {
@@ -1243,6 +1254,7 @@ p a {
 @media all and (min-width: 992px) {
   .vertical-hero {
     min-width: 750px;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
