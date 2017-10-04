@@ -1,0 +1,28 @@
+$attention-spacing: $spacing-l;
+
+.attention-block {
+	padding: $spacing-l;
+	display: inline-flex;
+	flex-direction: column;
+	width: 355px;
+}
+.attention-block--alpha {
+	background-color: #fff;
+}
+
+.attention-block--beta {
+	background-color: $default-background;
+}
+
+.attention-block--charlie {
+	background-color: $text-color;
+	color: #fff;
+	a {
+		color: #fff;
+	}
+}
+
+
+.attention-block + .attention-block {
+	margin-left: $spacing-l;
+}

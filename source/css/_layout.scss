@@ -22,6 +22,13 @@ body {
 	}
 }
 
+
+@media all and (min-width: $bp-l) {
+	.layout-full-width-block{
+		padding: 0;
+	}
+}
+
 .hero__content,
 .layout-full-width-block__content,
 .top-bar__content {
@@ -31,7 +38,6 @@ body {
 }
 
 .layout-full-width-block__content {
-	display: flex;
 	position: relative;
 	margin-bottom: $spacing-xl;
 
@@ -39,6 +45,7 @@ body {
 		width: 40%;
 	}
 }
+
 
 .layout-full-width-block__content--image-blocks {
 	.image-block {
@@ -51,5 +58,9 @@ body {
 }
 
 .home-page .layout-full-width-block__content:first-child {
-	background-color: orange;
+
+}
+
+.content {
+	padding-bottom: 2rem;
 }

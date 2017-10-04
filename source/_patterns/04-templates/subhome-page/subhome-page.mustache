@@ -1,0 +1,55 @@
+{{> organisms-header }}
+{{> organisms-submenu }}
+<main class="layout-full-width-block main-content main-content--subhome">
+	<div class="subhome__content subhome__content--top">
+
+
+		<div class="layout-full-width-block__content layout-full-width-block__content--subhome">
+			{{> organisms-vertical-hero}}
+			<section>
+			<article class="content">
+				<h1 class="content__header">Studeren bij Avans Hogeschool</h1>
+				<p class="paragraph--intro">
+					Kiezen voor Avans Hogeschool betekent dat je kiest voor onderwijs dat jou uitdaagt. Om je grenzen te verleggen. En het maximale uit jezelf te halen. We leggen de lat hoog voor onszelf en onze studenten. Daardoor is je diploma ook echt wat waard. En heb
+					je een goede bagage voor de toekomst.
+				</p>
+				<p>
+					Als student sta je bij ons centraal. Door persoonlijke aandacht is niemand een nummer. We hebben aandacht voor je talenten en helpen deze verder te ontwikkelen.
+				</p>
+				<p>
+					Ons onderwijs richt zich op de praktijk. Dat merk je als student. Je werkt namelijk aan opdrachten uit het bedrijfsleven of van onderzoekers van Avans. Samen met studenten van andere opleidingen benader je deze opdrachten van verschillende kanten. En
+					je profiteert van onze contacten.
+				</p>
+			</article>
+			{{# attentionblocks }}
+
+				{{> molecules-attention-block }}
+			{{/ attentionblocks }}
+</section>
+
+		</div>
+	</div>
+	<div class="subhome__content">
+		<div class="layout-full-width-block__content">
+			{{# opleidingen }}
+				{{> organisms-link-box }}
+			{{/ opleidingen }}
+			{{# attentionblock }}
+
+				{{> molecules-attention-block }}
+			{{/ attentionblock }}
+
+		</div>
+	</div>
+
+	<div class="subhome__content">
+		<div class="layout-full-width-block__content">
+			<h2>ambitie 2020</h2>
+
+		</div>
+	</div>
+
+</main>
+<!-- /main -->
+
+{{> organisms-footer }}
