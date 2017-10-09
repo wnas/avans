@@ -10,7 +10,7 @@ title : bugfix list
 - Op een of andere manier renderen de fonts van het hoofdmenu absurd dik. Even samen naar kijken, want het gebeurd ook bij alle andere tekst op de site.
 - *Het zoekloepje wordt te groot gerendered, zou 21px moeten zijn, is 24px.*
 - *De blauwe dropdown zou flush aan de onderkant van het menu moeten zitten, maar steekt er 1 a 2 px bovenuit*
-- Ik mis de witte pijltjes in het blauwe menu
+- *Ik mis de witte pijltjes in het blauwe menu*
 - *Witte lijntjes in Blauw menu zouden wit met 35% alpha moeten zijn*
 - Ruimte tussen 2 witte strepen zou 49px moeten zijn, is nu 51px
 - Bij weergave S en XS zou het witte vlak van de header nog maar 70px hoog moeten zijn en logo 36.
