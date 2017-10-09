@@ -159,7 +159,7 @@ input {
 h2 {
   font-size: 1.5rem; }
 
-body {
+p {
   line-height: 2rem; }
 
 a {
@@ -1011,7 +1011,7 @@ p a {
   margin: 0; }
 
 .nav__item {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #eee;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +1031,7 @@ p a {
     border-right: 0; }
 
 .nav__item--sub {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #eee;
   border-bottom: 0; }
 
 .nav__item--sub:first-child {
@@ -1092,7 +1092,7 @@ p a {
     height: 8px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    border: 1px solid #ccc;
+    border: 1px solid #eee;
     border-width: 0 1px 1px 0;
     position: absolute;
     left: calc(50% - 8px);
@@ -1111,7 +1111,7 @@ p a {
   .nav__sub-opener {
     display: none; }
   .nav__item--top-level {
-    border-right: 1px solid #ccc; }
+    border-right: 1px solid #eee; }
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
   .nav__item:hover .nav__sub {
