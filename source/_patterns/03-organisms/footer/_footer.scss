@@ -1,3 +1,6 @@
+$footer-text-color: #999999;
+$footer-background-color: $light-gray-background;
+$disclaimer-background-color:#000;
 /*
 	for testing purposes
 */
@@ -5,7 +8,7 @@
 	/ end testing
 */
 .page-footer {
-	background-color: $light-gray-background;
+	background-color: $footer-background-color;
 }
 
 .page-footer__content {
@@ -16,7 +19,7 @@
 .footer-links {
 	display: flex;
 	flex-direction: column;
-	color: #999;
+	color: $footer-text-color;
 	justify-content: space-between;
 	padding: 0;
 	margin-top: 1rem;
@@ -30,12 +33,12 @@
 	.footer-links {
 		flex-direction: row;
 	}
-
 	// vul de ruimte en zet een beetje marge links
 	.footer-links__list-block {
 		flex: 1;
 		margin-left: $spacing;
 	}
+
 	.footer-links__list-block:first-child {
 		margin-left: 0;
 	}
@@ -62,15 +65,14 @@
 }
 
 .footer-link__link {
-	color: #999;
+	color: $footer-text-color;
 	font-size: 0.8125rem;
-	transition: background .5s ease;
+	transition: background 0.5s ease;
 }
 
 .footer-link__link:hover {
 	text-decoration: underline;
 }
-
 
 .footer-link__item--discover {
 	background-repeat: no-repeat;
@@ -139,6 +141,7 @@
 .footer-link__link--linkedin {
 	background-image: url('../images/icons/Icon-Social-LinkedIn.svg');
 }
+
 .footer-link__link--linkedin:hover {
 	background-image: url('../images/icons/Icon-SocialHover-LinkedIn.svg');
 }
@@ -166,6 +169,12 @@
 .footer-link__link--instagram:hover {
 	background-image: url('../images/icons/Icon-SocialHover-Instagram.png');
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+	.footer-link__link--instagram:hover {
+		background-image: url('../images/icons/Icon-SocialHover-Instagram@2x.png');
+	}
+}
 
 .footer-link__link--youtube {
 	background-image: url('../images/icons/Icon-Social-Youtube.svg');
@@ -186,14 +195,14 @@
 .footer-links__list-block {}
 
 .footer-links__header {
-	color: #999;
+	color: $footer-text-color;
 	margin: 1.3rem 0 0.4rem;
 }
 
 .disclaimer {
 	display: block;
-	background-color: #000;
-	color: #ccc;
+	background-color: $disclaimer-background-color;
+	color: $footer-text-color;
 	padding: 1rem 0;
 }
 @media all and (max-width: $bp-m) {
@@ -201,6 +210,11 @@
 		flex-direction: column;
 		padding: $spacing-l;
 		text-align: left;
+	}
+}
+@media all and (min-width: $bp-m) {
+	.disclaimer__container {
+		align-items: center;
 	}
 }
 @media all and (max-width: $bp-xl) {
@@ -214,11 +228,9 @@
 	margin: 0 auto;
 	max-width: $width__overal;
 	justify-content: space-between;
-	align-items: center;
 }
 
 .page-footer__logo {
-
 	width: 125px;
 	height: 36px;
 }
@@ -239,6 +251,6 @@
 }
 
 .disclaimer__link {
-	color: #ccc;
+	color: $footer-text-color;
 	text-decoration: underline;
 }
