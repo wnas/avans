@@ -15,17 +15,17 @@ a {
 /*
   timing
 */
-.testing, .nav {
+.testing {
   outline: 1px solid red; }
-  .testing *, .nav * {
+  .testing * {
     outline: 1px solid green; }
-    .testing * *, .nav * * {
+    .testing * * {
       outline: 1px solid pink; }
-      .testing * * *, .nav * * * {
+      .testing * * * {
         outline: 1px solid blue; }
-        .testing * * * *, .nav * * * * {
+        .testing * * * * {
           outline: 1px solid orange; }
-          .testing * * * * *, .nav * * * * * {
+          .testing * * * * * {
             outline: 1px solid teal; }
 
 /*
@@ -98,8 +98,7 @@ body {
 
 @font-face {
   font-family: "FrutigerLTW01-56Italic";
-  src: url("../fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix");
-  src: url("../fonts/fcbab1a3-9659-4b39-8479-cc1f50d18f55.eot?#iefix") format("eot"), url("../fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"), url("../fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"), url("../fonts/19fe9614-8825-4e7d-b8c3-230d2561e0e2.ttf") format("truetype"), url("../fonts/c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3.svg#c2f8e3aa-1c1a-49ee-9ec7-30f61a5e96d3") format("svg"); }
+  src: url("../fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"), url("../fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"); }
 
 @font-face {
   font-family: "Frutiger LT W01 65 Bold";
@@ -139,6 +138,7 @@ legend,
 .nav__link,
 .header-font,
 .paragraph--intro {
+  font-weight: normal;
   font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif; }
 
 body,
@@ -146,11 +146,13 @@ input,
 .btn--filter,
 .nav__link--sub,
 .result-block__location {
+  font-weight: normal;
   font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif; }
 
 html,
 body,
 input {
+  font-weight: normal;
   font-size: 1em; }
 
 .content__header {
@@ -1039,7 +1041,6 @@ p a {
 
 .nav__link {
   text-decoration: none;
-  font-weight: bold;
   color: #999;
   padding: 1rem 0; }
 

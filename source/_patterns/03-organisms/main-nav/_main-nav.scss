@@ -22,7 +22,7 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(255,255,255,.9);
-	@extend .testing;
+	//@extend .testing;
 }
 
 .nav__list {
@@ -58,7 +58,6 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 
 .nav__link {
 	text-decoration: none;
-	font-weight: bold;
 	color: #999;
 	padding: $spacing 0;
 }
