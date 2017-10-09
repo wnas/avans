@@ -153,6 +153,7 @@ html,
 body,
 input {
   font-weight: normal;
+  -webkit-font-smoothing: antialiased;
   font-size: 1em; }
 
 .content__header {
