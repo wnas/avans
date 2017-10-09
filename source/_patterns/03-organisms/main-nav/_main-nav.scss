@@ -1,3 +1,5 @@
+$nav-border-color: #eee;
+
 @media all and (max-width: $bp-l) {
 	.nav.js-open,
 	.nav:target {
@@ -30,7 +32,7 @@
 }
 
 .nav__item {
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid $nav-border-color;
 	display: flex;
 	flex: 1 0 auto;
 	flex-direction: column;
@@ -44,7 +46,7 @@
 }
 
 .nav__item--sub {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid $nav-border-color;
 	border-bottom: 0;
 }
 
@@ -107,7 +109,7 @@
 		width: 8px;
 		height: 8px;
 		transform: rotate(45deg);
-		border: 1px solid #ccc;
+		border: 1px solid $nav-border-color;
 		border-width: 0 1px 1px 0;
 		position: absolute;
 		left: calc(50% - 8px);
@@ -131,7 +133,7 @@
 	}
 
 	.nav__item--top-level {
-		border-right: 1px solid #ccc;
+		border-right: 1px solid $nav-border-color;
 	}
 
 	.nav__item--top-level:hover > .nav__link {
