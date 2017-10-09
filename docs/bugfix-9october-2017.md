@@ -15,3 +15,4 @@ title : bugfix list
 - Ruimte tussen 2 witte strepen zou 49px moeten zijn, is nu 51px
 - Bij weergave S en XS zou het witte vlak van de header nog maar 70px hoog moeten zijn en logo 36.
 -Bij scalen: tussen 1140 en 992 ontbreken de linker en rechter gutter, waardoor de content tegen de rad van het browservenster geplakt zit, ipv een marge va 15px heeft.
+- *padding van 15 naar 20px*

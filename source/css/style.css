@@ -15,17 +15,17 @@ a {
 /*
   timing
 */
-.testing {
+.testing, .nav {
   outline: 1px solid red; }
-  .testing * {
+  .testing *, .nav * {
     outline: 1px solid green; }
-    .testing * * {
+    .testing * *, .nav * * {
       outline: 1px solid pink; }
-      .testing * * * {
+      .testing * * *, .nav * * * {
         outline: 1px solid blue; }
-        .testing * * * * {
+        .testing * * * *, .nav * * * * {
           outline: 1px solid orange; }
-          .testing * * * * * {
+          .testing * * * * *, .nav * * * * * {
             outline: 1px solid teal; }
 
 /*
@@ -1026,9 +1026,9 @@ p a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 0 1rem; }
-  .util-nav .nav__item:last-child {
-    border-right: 0; }
+  padding: 0 1.25rem; }
+  .nav__item:first-child {
+    padding-left: 1rem; }
 
 .nav__item--sub {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
