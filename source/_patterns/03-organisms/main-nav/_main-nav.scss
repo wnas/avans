@@ -53,7 +53,7 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 }
 
 .nav__item--sub:first-child {
-	border-top: none;
+
 }
 
 .nav__link {
@@ -141,9 +141,11 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 		color: $avans-blue;
 	}
 
-	.nav__item:hover .nav__sub {
-		left: -$spacing-s;
+	.nav__item:hover .nav__sub,
+	.nav__item:nth-child(2) .nav__sub {
+		left: 0;
 		margin-top: 2px;
+		padding: 1.25rem 0;
 	}
 
 	.nav__item--sub {
@@ -152,7 +154,7 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 	}
 
 	.nav__item--sub:last-child {
-		border-bottom: 0;
+		border-bottom: 1px solid $sub-nav-border-color;
 	}
 
 	.nav__link--sub {

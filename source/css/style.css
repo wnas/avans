@@ -1037,9 +1037,6 @@ p a {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
   border-bottom: 0; }
 
-.nav__item--sub:first-child {
-  border-top: none; }
-
 .nav__link {
   text-decoration: none;
   color: #999;
@@ -1116,14 +1113,16 @@ p a {
     border-right: 1px solid #eee; }
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
-  .nav__item:hover .nav__sub {
-    left: -0.625rem;
-    margin-top: 2px; }
+  .nav__item:hover .nav__sub,
+  .nav__item:nth-child(2) .nav__sub {
+    left: 0;
+    margin-top: 2px;
+    padding: 1.25rem 0; }
   .nav__item--sub {
     margin: 0 1.25rem;
     padding: 0 1rem; }
   .nav__item--sub:last-child {
-    border-bottom: 0; }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
   .nav__link--sub {
     color: #fff;
     background-image: url("../../../images/icons/ICON-Arrow-Right-White.svg");
