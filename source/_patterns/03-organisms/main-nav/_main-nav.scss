@@ -21,6 +21,7 @@ $nav-border-color: #eee;
 	display: flex;
 	flex-direction: column;
 	background-color: rgba(255,255,255,.9);
+	//@extend .testing;
 }
 
 .nav__list {
@@ -142,6 +143,7 @@ $nav-border-color: #eee;
 
 	.nav__item:hover .nav__sub {
 		left: -$spacing-s;
+		margin-top: 2px;
 	}
 
 	.nav__item--sub {

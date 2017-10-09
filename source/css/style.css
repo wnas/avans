@@ -1115,7 +1115,8 @@ p a {
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
   .nav__item:hover .nav__sub {
-    left: -0.625rem; }
+    left: -0.625rem;
+    margin-top: 2px; }
   .nav__item--sub {
     margin: 0 1.25rem;
     padding: 0 1rem; }
