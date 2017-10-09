@@ -1,4 +1,5 @@
 $nav-border-color: #eee;
+$sub-nav-border-color: rgba(255,255,255,.35);
 
 @media all and (max-width: $bp-l) {
 	.nav.js-open,
@@ -47,7 +48,7 @@ $nav-border-color: #eee;
 }
 
 .nav__item--sub {
-	border-top: 1px solid $nav-border-color;
+	border-top: 1px solid $sub-nav-border-color;
 	border-bottom: 0;
 }
 
