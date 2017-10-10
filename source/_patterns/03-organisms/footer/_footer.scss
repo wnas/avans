@@ -1,6 +1,8 @@
 $footer-text-color: #999999;
 $footer-background-color: $light-gray-background;
 $disclaimer-background-color: #000;
+
+$footer-link-animation-duration: .5s;
 /*
 	for testing purposes
 */
@@ -67,7 +69,7 @@ $disclaimer-background-color: #000;
 .footer-link__link {
 	color: $footer-text-color;
 	font-size: 0.8125rem;
-	transition: background 0.5s ease;
+	transition: background $footer-link-animation-duration ease;
 }
 
 .footer-link__link:hover {
@@ -75,10 +77,36 @@ $disclaimer-background-color: #000;
 }
 
 .footer-link__item--discover {
-	//background-repeat: no-repeat;
-	//background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
-//	background-position: 0.2rem 0.3rem;
+	// background-repeat: no-repeat;
+	// background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
+	// background-position: 0.2rem 0.3rem;
 	padding-left: $spacing;
+	position: relative;
+	transition: border-color $footer-link-animation-duration ease;
+}
+
+.footer-link__item--discover .footer-link__link {
+		transition: color 0.5s ease;
+}
+
+.footer-link__item--discover .footer-link__link:hover {
+	color: $avans-blue;
+}
+.footer-link__item--discover:before {
+	content: '';
+	width: 5px;
+	height: 5px;
+	display: inline-block;
+	border: 1px solid #999;
+	border-width: 1px 1px 0 0;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 2px;
+	top: 8px;
+}
+
+.footer-link__item--discover:hover:before {
+	border-color: $avans-blue;
 }
 
 .footer-link__link--icon {

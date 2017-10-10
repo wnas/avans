@@ -1,5 +1,15 @@
 {
 	"title": "title",
+	"hero-title": "Communicatie & Multimedia Design",
+	"hero-image": {
+		"src": "../../images/opleidingen/cmd/hero.png",
+		"srcSet": [
+			{"src": "../../images/opleidingen/cmd/hero.png",
+			"res": "1x"},
+			{"src": "../../images/opleidingen/cmd/hero@2x.png",
+			"res": "2x"}
+		]
+	},
 	"type": "url",
 	"label-text": "label-text",
 	"link-text": "link-text",
