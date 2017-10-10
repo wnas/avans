@@ -1,8 +1,10 @@
 $attention-spacing: $spacing-l;
+
 .attention-block__container {
 	display: flex;
 	align-items: stretch;
 }
+
 .attention-block {
 	padding: $spacing-l;
 	display: inline-flex;
@@ -10,6 +12,23 @@ $attention-spacing: $spacing-l;
 	align-items: stretch;
 	width: 355px;
 }
+@media all and (max-width: $bp-l) {
+	.attention-block--alpha {
+		width: calc(100% - 2rem);
+		margin: 1rem;
+	}
+}
+
+@media all and (max-width: $bp-m) {
+	.attention-block__container {
+		flex-direction: column;
+	}
+	.attention-block {
+		width: calc(100% - 2rem);
+		margin: 1rem;
+	}
+}
+
 .attention-block--alpha {
 	background-color: #fff;
 }
@@ -21,11 +40,11 @@ $attention-spacing: $spacing-l;
 .attention-block--charlie {
 	background-color: $text-color;
 	color: #fff;
+
 	a {
 		color: #fff;
 	}
 }
-
 
 .attention-block + .attention-block {
 	margin-left: $spacing-l;

@@ -1,6 +1,6 @@
 $footer-text-color: #999999;
 $footer-background-color: $light-gray-background;
-$disclaimer-background-color:#000;
+$disclaimer-background-color: #000;
 /*
 	for testing purposes
 */
@@ -75,9 +75,9 @@ $disclaimer-background-color:#000;
 }
 
 .footer-link__item--discover {
-	background-repeat: no-repeat;
-	background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
-	background-position: 0.2rem 0.3rem;
+	//background-repeat: no-repeat;
+	//background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
+//	background-position: 0.2rem 0.3rem;
 	padding-left: $spacing;
 }
 
@@ -170,9 +170,10 @@ $disclaimer-background-color:#000;
 	background-image: url('../images/icons/Icon-SocialHover-Instagram.png');
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* Retina-specific stuff here */
+	/* Retina-specific stuff here */
 	.footer-link__link--instagram:hover {
 		background-image: url('../images/icons/Icon-SocialHover-Instagram@2x.png');
+		background-size: contain;
 	}
 }
 

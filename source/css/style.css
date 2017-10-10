@@ -523,6 +523,21 @@ p a {
           align-items: stretch;
   width: 355px; }
 
+@media all and (max-width: 992px) {
+  .attention-block--alpha {
+    width: calc(100% - 2rem);
+    margin: 1rem; } }
+
+@media all and (max-width: 768px) {
+  .attention-block__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .attention-block {
+    width: calc(100% - 2rem);
+    margin: 1rem; } }
+
 .attention-block--alpha {
   background-color: #fff; }
 
@@ -546,6 +561,11 @@ p a {
   width: 748px;
   margin-right: 2rem;
   display: inline-block; }
+
+@media all and (max-width: 992px) {
+  .link-box--opleidingen {
+    width: calc(100% - 2rem);
+    margin: 1rem; } }
 
 .link-box--top {
   width: 60%;
@@ -683,9 +703,6 @@ p a {
   text-decoration: underline; }
 
 .footer-link__item--discover {
-  background-repeat: no-repeat;
-  background-image: url("../images/icons/ICON-Arrow-Right-Black.svg");
-  background-position: 0.2rem 0.3rem;
   padding-left: 1rem; }
 
 .footer-link__link--icon {
@@ -762,7 +779,8 @@ p a {
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* Retina-specific stuff here */
   .footer-link__link--instagram:hover {
-    background-image: url("../images/icons/Icon-SocialHover-Instagram@2x.png"); } }
+    background-image: url("../images/icons/Icon-SocialHover-Instagram@2x.png");
+    background-size: contain; } }
 
 .footer-link__link--youtube {
   background-image: url("../images/icons/Icon-Social-Youtube.svg"); }
@@ -1130,8 +1148,7 @@ p a {
     border-right: 1px solid #eee; }
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
-  .nav__item:hover .nav__sub,
-  .nav__item:nth-child(2) .nav__sub {
+  .nav__item:hover .nav__sub {
     left: 0;
     margin-top: 2px;
     padding: 1.25rem 0; }
@@ -1142,7 +1159,7 @@ p a {
     border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
   .nav__link--sub {
     color: #fff;
-    background-image: url("../../../images/icons/ICON-Arrow-Right-White.svg");
+    background-image: url("../images/icons/ICON-Arrow-Right-White.svg");
     white-space: nowrap; }
   .nav__link--sub:hover {
     text-decoration: underline; } }
@@ -1435,20 +1452,24 @@ p a {
           justify-content: center; }
 
 .subhome__content:nth-child(even) {
-  background-color: #F6F6F6;
-  padding: 4rem 0; }
-  .subhome__content:nth-child(even) .layout-full-width-block__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+  background-color: #F6F6F6; }
+
+.subhome__content {
+  margin-bottom: 1rem; }
 
 @media all and (min-width: 992px) {
+  .subhome__content:nth-child(even) {
+    padding: 4rem 0; }
+    .subhome__content:nth-child(even) .layout-full-width-block__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
   .subhome__content--top .vertical-hero {
     outline: 1px solid red; }
   .layout-full-width-block__content--subhome .content {
@@ -1456,4 +1477,17 @@ p a {
   .layout-full-width-block__content--subhome .vertical-hero {
     margin-left: -375px;
     margin-right: 20px; } }
+
+@media all and (max-width: 992px) {
+  .subhome__content:nth-child(1) .layout-full-width-block__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .subhome__content--top .vertical-hero {
+    outline: 1px solid green;
+    margin: 0 -1rem;
+    height: 300px; }
+  .layout-full-width-block__content--subhome .content {
+    max-width: 100%; } }
 /*# sourceMappingURL=style.css.map */
