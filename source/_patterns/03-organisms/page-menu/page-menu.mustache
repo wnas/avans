@@ -1,0 +1,12 @@
+<nav class="page-menu {{ page-menu-class }}">
+	{{# page-menu-block }}
+	<h3>{{ block-title }}</h3>
+	<ul class="page-menu__list">
+		{{# items }}
+		<li class="page-menu__item">
+			<a href="{{ href }}" class="page-menu__link">{{ text }}</a>
+		</li>
+		{{/ items }}
+	</ul>
+	{{/ page-menu-block }}
+</nav>

@@ -1,0 +1,31 @@
+{
+	"page-menu-class": "page-menu-class",
+	"page-menu-block": [
+		{
+			"block-title": "Voltijd in Breda",
+			"items": [
+				{
+					"href": "#",
+					"text": "Introductie"
+				},
+				{
+					"href": "#",
+					"text": "Opbouw"
+				}
+			]
+		},
+		{
+			"block-title": "Voltijd in Dordrecht",
+			"items": [
+				{
+					"href": "#",
+					"text": "mooie link"
+				},
+				{
+					"href": "#",
+					"text": "Opbouw"
+				}
+			]
+		}
+	]
+}

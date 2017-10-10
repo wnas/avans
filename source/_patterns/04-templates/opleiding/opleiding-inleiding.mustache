@@ -1,0 +1,17 @@
+{{> organisms-header }}
+{{> organisms-submenu }}
+
+{{> organisms-hero }}
+
+<main class="layout-full-width-block main-content layout-full-width-block--detail-page">
+	<div class="layout-full-width-block__content detail-page">
+		{{> organisms-page-menu}}
+		<article class="main-content detail-page__content">
+			{{{ article-content }}}
+		</article>
+		<aside class="detail-page__aside">widgets</aside>
+	</div>
+</main>
+<!-- /main -->
+
+{{> organisms-footer }}
