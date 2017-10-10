@@ -13,6 +13,13 @@
       "fonts" : "./source/fonts",
       "css" : "./source/css/"
     },
+    "external" : {
+      "root" : "../avans-responsive-hippo/site/src/main/webapp",
+      "js" : "../avans-responsive-hippo/site/src/main/webapp/js",
+      "images" : "../avans-responsive-hippo/site/src/main/webapp/images",
+      "fonts" : "../avans-responsive-hippo/site/src/main/webapp/fonts",
+      "css" : "../avans-responsive-hippo/site/src/main/webapp/css"
+    },
     "public" : {
       "root" : "./public/",
       "patterns" : "./public/patterns/",
