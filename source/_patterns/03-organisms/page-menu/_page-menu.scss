@@ -24,7 +24,7 @@ dkdkd
 	border-width: 1px 1px 0 0;
 	transform: rotate(45deg);
 	position: absolute;
-	top: 21px;
+	top: 23px;
 	left: 8px;
 }
 .page-menu__item:last-child {
@@ -34,6 +34,9 @@ dkdkd
 .page-menu__link {
 	font-size: .875rem;
 	color: #999;
+}
+.page-menu__link--active {
+	color: #000;
 }
 .page-menu__link:hover {
 	color: $avans-blue;

@@ -4,7 +4,7 @@
 	<ul class="page-menu__list">
 		{{# items }}
 		<li class="page-menu__item">
-			<a href="{{ href }}" class="page-menu__link">{{ text }}</a>
+			<a href="{{ href }}" class="page-menu__link {{# active }}page-menu__link--active{{/ active }}">{{ text }}</a>
 		</li>
 		{{/ items }}
 	</ul>

@@ -75,7 +75,9 @@ body {
 .detail-page__menu,
 .detail-page__content {
 	padding: $spacing;
+	padding-top: $spacing-xl;
 }
+
 .detail-page__aside {
 	background-color: $light-gray-background;
 }

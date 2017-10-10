@@ -96,7 +96,8 @@ body {
 .detail-page__aside,
 .detail-page__menu,
 .detail-page__content {
-  padding: 0.9375rem; }
+  padding: 0.9375rem;
+  padding-top: 1.875rem; }
 
 .detail-page__aside {
   background-color: rgba(238, 238, 238, 0.5); }
@@ -164,7 +165,8 @@ legend,
 .nav__link,
 .header-font,
 .paragraph--intro,
-.page-menu-block__header {
+.page-menu-block__header,
+.page-menu__link--active {
   font-weight: normal;
   font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif; }
 
@@ -187,7 +189,8 @@ input {
   font-size: 2em; }
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin: 0; }
 
 p {
   line-height: 2rem; }
@@ -1328,7 +1331,7 @@ dkdkd
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   position: absolute;
-  top: 21px;
+  top: 23px;
   left: 8px; }
 
 .page-menu__item:last-child {
@@ -1337,6 +1340,9 @@ dkdkd
 .page-menu__link {
   font-size: .875rem;
   color: #999; }
+
+.page-menu__link--active {
+  color: #000; }
 
 .page-menu__link:hover {
   color: #00ACEB; }
