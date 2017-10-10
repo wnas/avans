@@ -1,5 +1,8 @@
 $nav-border-color: #eee;
 $sub-nav-border-color: rgba(255,255,255,.35);
+$nav-gray: #999;
+$nav-gray-arrow-color: $nav-gray;
+$nav-link-color: $nav-gray;
 
 @media all and (max-width: $bp-l) {
 	.nav.js-open,
@@ -60,9 +63,15 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 
 }
 
+.nav__link,
+.nav__link--active .nav__link--sub,
+.nav__link--sub  {
+	color: $nav-link-color;
+}
+
 .nav__link {
 	text-decoration: none;
-	color: #999;
+
 	padding: $spacing 0;
 }
 @media all and (max-width: $bp-l) {
@@ -72,15 +81,11 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 	}
 }
 
-.nav__link--active .nav__link--sub {
-	color: #999;
-}
 
 .nav__link--sub {
 	@extend .blue-arrow;
 	padding-left: $spacing;
 	font-weight: normal;
-	color: #999;
 }
 // big screen
 @media all and (min-width: $bp-l) {
@@ -114,7 +119,7 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 		width: 8px;
 		height: 8px;
 		transform: rotate(45deg);
-		border: 1px solid $nav-border-color;
+		border: 1px solid $nav-gray-arrow-color;
 		border-width: 0 1px 1px 0;
 		position: absolute;
 		left: calc(50% - 8px);

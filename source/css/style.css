@@ -1073,9 +1073,13 @@ p a {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
   border-bottom: 0; }
 
+.nav__link,
+.nav__link--active .nav__link--sub,
+.nav__link--sub {
+  color: #999; }
+
 .nav__link {
   text-decoration: none;
-  color: #999;
   padding: 1rem 0; }
 
 @media all and (max-width: 992px) {
@@ -1083,13 +1087,9 @@ p a {
   .nav__link--sub.nav__link--active {
     color: #000; } }
 
-.nav__link--active .nav__link--sub {
-  color: #999; }
-
 .nav__link--sub {
   padding-left: 1rem;
-  font-weight: normal;
-  color: #999; }
+  font-weight: normal; }
 
 @media all and (min-width: 992px) {
   .nav {
@@ -1127,7 +1127,7 @@ p a {
     height: 8px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
-    border: 1px solid #eee;
+    border: 1px solid #999;
     border-width: 0 1px 1px 0;
     position: absolute;
     left: calc(50% - 8px);
