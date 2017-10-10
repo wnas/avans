@@ -4,7 +4,8 @@
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow: hidden;
-	@extend .testing;
+	background-color: $avans-red;
+	// @extend .testing;
 }
 
 .hero:after {}
@@ -26,7 +27,7 @@
 	z-index: 10;
 	height: 100%;
 	width:100%;
-	background-color : rgba(255,0,99,.5);
+	background: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.6) 100%);
 }
 
 .hero__image {
@@ -37,7 +38,20 @@
 	z-index: 5;
 	top: 0;
 	left: 50%;
-	transform: translate(-50%, 0);
+	transform: translate(-50%, -50px);
+}
+
+@media all and (max-width: $bp-l) {
+	.hero__image {
+		transform: translate(-50%, 0);
+		height: auto;
+	}
+}
+
+@media all and (max-width: $bp-m) {
+	.hero__image {
+		transform: translate(-50%, 0);
+	}
 }
 
 .header--hero {

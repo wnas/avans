@@ -86,7 +86,7 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--discover .footer-link__link {
-		transition: color 0.5s ease;
+		transition: color $footer-link-animation-duration ease;
 }
 
 .footer-link__item--discover .footer-link__link:hover {

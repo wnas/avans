@@ -1,6 +1,9 @@
 .resultpage__content {
 	display: flex;
 }
+.resultpage__list {
+	margin-top: 2rem;
+}
 @media all and (min-width: $bp-l) {
 	.resultpage__list {
 		display: flex;

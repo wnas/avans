@@ -1,8 +1,10 @@
 {
-	"title": "title",
+	"title": "title of the page",
 	"hero-title": "Communicatie & Multimedia Design",
 	"hero-image": {
-		"src": "../../images/opleidingen/cmd/hero.png",
+		"container-class": "hero__container",
+		"image-class": "hero__image",
+		"img-src": "../../images/opleidingen/cmd/hero.png",
 		"srcSet": [
 			{"src": "../../images/opleidingen/cmd/hero.png",
 			"res": "1x"},

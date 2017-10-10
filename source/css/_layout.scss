@@ -16,6 +16,9 @@ body {
 .top-bar {
 	padding: 0 $content__margin;
 }
+.layout-full-width-block--detail-page {
+	padding: 0;
+}
 @media all and (max-width: $bp-m) {
 	.top-bar {
 		padding: 0;
@@ -39,7 +42,6 @@ body {
 
 .layout-full-width-block__content {
 	position: relative;
-	margin-bottom: $spacing-xl;
 
 	.image-block {
 		width: 40%;
@@ -63,4 +65,42 @@ body {
 
 .content {
 	padding-bottom: 2rem;
+}
+
+.detail-page {
+//	@extend .testing;
+}
+
+.detail-page__aside,
+.detail-page__menu,
+.detail-page__content {
+	padding: $spacing;
+}
+.detail-page__aside {
+	background-color: $light-gray-background;
+}
+
+@media all and (min-width: $bp-l) {
+	.detail-page {
+		display: flex;
+	}
+
+	.detail-page__menu,
+	.detail-page__aside {
+		width: 263px;
+	}
+
+	.detail-page__content {
+		width: 556px;
+		margin-bottom: $spacing-xl;
+	}
+	.detail-page__menu {
+
+		margin-right: $spacing-xl;
+	}
+
+	.detail-page__aside {
+		margin-left: $spacing-xl;
+
+	}
 }
