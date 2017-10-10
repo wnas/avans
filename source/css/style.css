@@ -163,7 +163,8 @@ button,
 legend,
 .nav__link,
 .header-font,
-.paragraph--intro {
+.paragraph--intro,
+.page-menu-block__header {
   font-weight: normal;
   font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif; }
 
@@ -1300,6 +1301,45 @@ p a {
 @media all and (max-width: 992px) {
   .submenu {
     display: none; } }
+
+/*
+dkdkd
+*/
+.page-menu-block__header {
+  font-size: .75rem;
+  text-transform: uppercase; }
+
+.page-menu__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem; }
+
+.page-menu__item {
+  border-top: 1px solid #eee;
+  padding: 0.9375rem 0 0.9375rem 1.875rem;
+  position: relative; }
+
+.page-menu__item:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border: 1px solid #00ACEB;
+  border-width: 1px 1px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 21px;
+  left: 8px; }
+
+.page-menu__item:last-child {
+  border-bottom: 1px solid #eee; }
+
+.page-menu__link {
+  font-size: .875rem;
+  color: #999; }
+
+.page-menu__link:hover {
+  color: #00ACEB; }
 
 .filter__button {
   padding: .625rem 1.5rem;

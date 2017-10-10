@@ -1,0 +1,40 @@
+/*
+dkdkd
+*/
+
+.page-menu-block__header {
+	font-size: .75rem;
+	text-transform: uppercase;
+}
+.page-menu__list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: $spacing-xxl;
+}
+.page-menu__item {
+	border-top: 1px solid #eee;
+	padding: $spacing 0 $spacing $spacing-xl;
+	position: relative;
+}
+.page-menu__item:before {
+	content: "";
+	width: 5px;
+	height: 5px;
+	border: 1px solid $avans-blue;
+	border-width: 1px 1px 0 0;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 21px;
+	left: 8px;
+}
+.page-menu__item:last-child {
+	border-bottom: 1px solid #eee;
+}
+
+.page-menu__link {
+	font-size: .875rem;
+	color: #999;
+}
+.page-menu__link:hover {
+	color: $avans-blue;
+}
