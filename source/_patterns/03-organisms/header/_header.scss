@@ -88,8 +88,8 @@
 
 @media all and (max-width: $bp-s) {
 	.skip-link {
-		width: 4rem;
-		height: 4rem;
+		width: 4.375rem;
+		height: 4.375rem;
 		padding-top: 2.8rem;
 	}
 }
@@ -129,12 +129,14 @@
 .nav,
 .top-search {
 	width: 0;
+	height: 0;
 	overflow: hidden;
 	transition: width 0.2s easein;
 }
 @media all and (min-width: $bp-l) {
 	.nav {
 		width: auto;
+		height: auto;
 		order: 1;
 	}
 }

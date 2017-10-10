@@ -942,8 +942,8 @@ p a {
 
 @media all and (max-width: 540px) {
   .skip-link {
-    width: 4rem;
-    height: 4rem;
+    width: 4.375rem;
+    height: 4.375rem;
     padding-top: 2.8rem; } }
 
 .search-link {
@@ -975,6 +975,7 @@ p a {
 .nav,
 .top-search {
   width: 0;
+  height: 0;
   overflow: hidden;
   -webkit-transition: width 0.2s easein;
   transition: width 0.2s easein; }
@@ -982,6 +983,7 @@ p a {
 @media all and (min-width: 992px) {
   .nav {
     width: auto;
+    height: auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; } }
