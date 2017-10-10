@@ -802,7 +802,8 @@ p a {
   display: block;
   background-color: #000;
   color: #999999;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  font-size: 0.8125rem; }
 
 @media all and (max-width: 768px) {
   .disclaimer__container {

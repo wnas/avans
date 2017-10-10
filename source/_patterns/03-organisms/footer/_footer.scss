@@ -205,6 +205,7 @@ $disclaimer-background-color: #000;
 	background-color: $disclaimer-background-color;
 	color: $footer-text-color;
 	padding: 1rem 0;
+	font-size: 0.8125rem;
 }
 @media all and (max-width: $bp-m) {
 	.disclaimer__container {
