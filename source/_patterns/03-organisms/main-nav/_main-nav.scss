@@ -3,6 +3,7 @@ $sub-nav-border-color: rgba(255,255,255,.35);
 $nav-gray: #999;
 $nav-gray-arrow-color: $nav-gray;
 $nav-link-color: $nav-gray;
+$nav-link-active-color: #000;
 
 @media all and (max-width: $bp-l) {
 	.nav.js-open,
@@ -77,7 +78,7 @@ $nav-link-color: $nav-gray;
 @media all and (max-width: $bp-l) {
 	.nav__link--active,
 	.nav__link--sub.nav__link--active {
-		color: #000;
+		color: $nav-link-active-color;
 	}
 }
 

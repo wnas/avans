@@ -66,7 +66,7 @@
 	font-size: .675rem;
 	overflow: visible;
 	width: 6rem;
-	background-position: 2rem;
+	//background-position: 2rem;
 	text-transform: uppercase;
 }
 
@@ -84,6 +84,14 @@
 	background-image: url("../images/icons/nav-icon-blue.svg");
 	color: $avans-blue;
 
+}
+
+@media all and (max-width: $bp-s) {
+	.skip-link {
+		width: 4rem;
+		height: 4rem;
+		padding-top: 2.8rem;
+	}
 }
 
 .search-link {
