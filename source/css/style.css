@@ -1548,7 +1548,8 @@ dkdkd
   display: flex; }
 
 .resultpage__list {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 @media all and (min-width: 992px) {
   .resultpage__list {
