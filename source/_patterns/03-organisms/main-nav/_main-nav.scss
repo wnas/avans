@@ -151,7 +151,8 @@ $nav-link-active-color: #000;
 		color: $avans-blue;
 	}
 
-	.nav__item:hover .nav__sub{
+	.nav__item:hover .nav__sub,
+	.nav__item:focus .nav__sub{
 		left: 0;
 		margin-top: 2px;
 		padding: 1.25rem 0;
@@ -183,7 +184,8 @@ $nav-link-active-color: #000;
 	height: auto;
 }
 
-.nav__item:hover .nav_sub {
+.nav__item:hover .nav_sub,
+.nav__item:focus .nav_sub {
 	height: auto;
 }
 @media all and (max-width: $bp-l) {

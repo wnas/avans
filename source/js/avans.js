@@ -60,6 +60,13 @@ var avans = (function(){
 				// open the submenu instead.
 				e.target.parentElement.classList.toggle('nav__sub--opened');
 			});
+			// add an event listener... duh.
+			toggler.addEventListener('focus',function(e){
+				// don't go there
+				e.preventDefault();
+				// open the submenu instead.
+				e.target.parentElement.classList.toggle('nav__sub--opened');
+			});
 			// and thanks for reading so far :).
 		}
 

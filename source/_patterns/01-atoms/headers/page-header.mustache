@@ -1,1 +1,8 @@
-<h1 class="page-header">{{ title }}</h1>
+<div class="page-header__container"><h1 class="page-header">
+	{{ title }}
+</h1>
+{{# view-switch }}
+	<a href="{{ href }}" class="page-header__switch page-header__switch--{{ type }} {{# active }}page-header__switch--active{{/ active }}">{{ type }}</a>
+{{/ view-switch }}
+</div>
+<!-- /page-header -->

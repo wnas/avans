@@ -15,17 +15,17 @@ a {
 /*
   timing
 */
-.testing {
+.testing, .detail-page, .page-header__container {
   outline: 1px solid red; }
-  .testing * {
+  .testing *, .detail-page *, .page-header__container * {
     outline: 1px solid green; }
-    .testing * * {
+    .testing * *, .detail-page * *, .page-header__container * * {
       outline: 1px solid pink; }
-      .testing * * * {
+      .testing * * *, .detail-page * * *, .page-header__container * * * {
         outline: 1px solid blue; }
-        .testing * * * * {
+        .testing * * * *, .detail-page * * * *, .page-header__container * * * * {
           outline: 1px solid orange; }
-          .testing * * * * * {
+          .testing * * * * *, .detail-page * * * * *, .page-header__container * * * * * {
             outline: 1px solid teal; }
 
 /*
@@ -93,13 +93,26 @@ body {
 .content {
   padding-bottom: 2rem; }
 
+.detail-page {
+  position: relative; }
+
+.detail-page__aside:after {
+  content: '';
+  height: 100%;
+  width: 40vw;
+  position: absolute;
+  z-index: -5;
+  right: calc(-40vw - 2*$side-column-width);
+  top: 0; }
+
 .detail-page__aside,
 .detail-page__menu,
 .detail-page__content {
   padding: 0.9375rem;
   padding-top: 1.875rem; }
 
-.detail-page__aside {
+.detail-page__aside,
+.detail-page__aside:after {
   background-color: rgba(238, 238, 238, 0.5); }
 
 @media all and (min-width: 992px) {
@@ -107,12 +120,16 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .detail-page__menu {
+    padding-left: 0; }
   .detail-page__menu,
   .detail-page__aside {
     width: 263px; }
   .detail-page__content {
     width: 556px;
-    margin-bottom: 1.875rem; }
+    margin-bottom: 1.875rem;
+    padding-left: 0;
+    padding-right: 0; }
   .detail-page__menu {
     margin-right: 1.875rem; }
   .detail-page__aside {
@@ -271,6 +288,44 @@ p a {
   heigth: 20px;
   display: inline-block;
   margin: 0.1rem 0.875rem 0 0; }
+
+.page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+.page-header__switch {
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 4rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0.9375rem;
+  background-color: #999; }
+
+.page-header__switch + .page-header__switch {
+  margin-left: 0.625rem; }
+
+.page-header__switch--active,
+.page-header__switch:hover,
+.page-header__switch:focus {
+  background-color: #00ACEB; }
+
+.page-header__switch--full {
+  background-image: url("../images/icons/page-header__switch--full.svg"); }
+
+.page-header__switch--compact {
+  background-image: url("../images/icons/page-header__switch--compact.svg"); }
 
 .btn-bar {
   margin: 1.875rem 0; }
@@ -1217,7 +1272,8 @@ p a {
     border-right: 1px solid #eee; }
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
-  .nav__item:hover .nav__sub {
+  .nav__item:hover .nav__sub,
+  .nav__item:focus .nav__sub {
     left: 0;
     margin-top: 2px;
     padding: 1.25rem 0; }
@@ -1236,7 +1292,8 @@ p a {
 .nav__sub {
   height: auto; }
 
-.nav__item:hover .nav_sub {
+.nav__item:hover .nav_sub,
+.nav__item:focus .nav_sub {
   height: auto; }
 
 @media all and (max-width: 992px) {
@@ -1453,6 +1510,17 @@ dkdkd
   bottom: 1rem;
   left: 0; }
 
+.header--hero:after {
+  content: '';
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
 .vertical-hero {
   background-color: #C6002A; }
 
@@ -1533,7 +1601,7 @@ dkdkd
       display: grid;
       grid-gap: 0.9375rem;
       grid-template-columns: 285px calc(100% - 285px - 1rem);
-      grid-template-rows: 100px 100px calc(100% - 300px) 100px;
+      grid-template-rows: 50px 100px calc(100% - 300px) 100px;
       grid-template-areas: ". header " "aside sub-header" "aside content" ". footer"; }
     .active-filters__container,
     .resultpage__footer,

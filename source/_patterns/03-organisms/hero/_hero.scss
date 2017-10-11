@@ -63,3 +63,14 @@
 	bottom: 1rem;
 	left: 0;
 }
+
+.header--hero:after {
+	content: '';
+	position: absolute;
+	bottom :-21px;
+	left: 0;
+	width: 11px;
+	height: 11px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}

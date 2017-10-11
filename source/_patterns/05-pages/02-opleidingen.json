@@ -2,6 +2,17 @@
 	"page-title": {
 		"title": "1-10 van de 151 opleidingen"
 	},
+	"view-switch": [
+		{
+			"href": "wnas.nl",
+			"type": "full",
+			"active": "true"
+		},
+		{
+			"href": "nu.nl",
+			"type": "compact"
+		}
+	],
 	"results-list": [{
 			"header": "Accountancy",
 			"location": "Den Bosch",
