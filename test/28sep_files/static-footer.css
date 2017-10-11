@@ -1,0 +1,70 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="nl"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="nl"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="nl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="nl"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Avans Hogeschool | Pagina niet gevonden</title>
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/css/style.css"/>
+
+        <script src="/js/libs/modernizr.custom.27170.js"></script>
+
+        <link rel="shortcut icon" href="/favicon.64.png"/>
+        <link rel="apple-touch-icon" href="/touch-icon.57.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="/touch-icon.72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="/touch-icon.114.png"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+    </head>
+    <body class="not-found-page">
+
+        <!-- Background -->
+        <div id="background">
+            <div class="wrapper">
+                <h1>Sorry!</h1>
+                <a href="/" class="logo">Avans Hogeschool</a>
+            </div>
+        </div>
+
+        <div class="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+
+                <p class="feedback">
+                    De pagina die u zoekt kan niet worden gevonden.<br>
+                    <i lang="en">The page you are looking for cannot be found.</i>
+                </p>
+
+                <div class="languages group">
+
+                    <!-- [AW] Not found page -->
+                    <div class="box">
+                        <h5>Voor Nederlandse bezoekers</h5>
+
+                        <form action="#" method="get">
+                            <input type="search" name="q" placeholder="Zoeken">
+                        </form>
+
+                        <ul class="nav nav-tree arrowed">
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+
+                            </ul>
+                    </div>
+
+
+                    </div>
+
+            </div> <!-- #main -->
+
+        </div> <!-- .wrapper -->
+
+    </body>
+</html>

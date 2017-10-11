@@ -2,7 +2,12 @@
 	{{ title }}
 </h1>
 {{# view-switch }}
-	<a href="{{ href }}" class="page-header__switch page-header__switch--{{ type }} {{# active }}page-header__switch--active{{/ active }}">{{ type }}</a>
+	<a
+		href="{{ href }}"
+		{{# active }}disabled{{/ active }}
+		class="page-header__switch page-header__switch--{{ type }} {{# active }}page-header__switch--active{{/ active }}">
+		{{ type }}
+	</a>
 {{/ view-switch }}
 </div>
 <!-- /page-header -->

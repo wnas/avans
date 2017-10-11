@@ -1,0 +1,39 @@
+// page-header
+.page-header__container {
+	@extend .testing;
+	display: flex;
+	align-items: center;
+}
+.page-header {
+	flex: 1;
+}
+
+.page-header__switch {
+	width: $spacing-xl;
+	height: $spacing-xl;
+	overflow: hidden;
+	white-space: nowrap;
+	text-indent: 4rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: $spacing;
+	background-color: #999;
+}
+
+.page-header__switch + .page-header__switch {
+	margin-left: $spacing-s;
+}
+
+.page-header__switch--active,
+.page-header__switch:hover,
+.page-header__switch:focus {
+	background-color: $avans-blue;
+}
+
+.page-header__switch--full {
+	background-image: url('../images/icons/page-header__switch--full.svg');
+}
+
+.page-header__switch--compact {
+	background-image: url('../images/icons/page-header__switch--compact.svg');
+}
