@@ -802,7 +802,8 @@ p a {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease; }
 
-.footer-link__item--discover .footer-link__link:hover {
+.footer-link__item--discover .footer-link__link:hover,
+.footer-link__item--discover .footer-link__link:focus {
   color: #00ACEB; }
 
 .footer-link__item--discover:before {
@@ -818,7 +819,8 @@ p a {
   left: 2px;
   top: 8px; }
 
-.footer-link__item--discover:hover:before {
+.footer-link__item--discover:hover:before,
+.footer-link__item--discover:focus:before {
   border-color: #00ACEB; }
 
 .footer-link__link--icon {
@@ -865,49 +867,57 @@ p a {
 .footer-link__link--mail {
   background-image: url("../images/icons/Icon-Social-Mail-White.svg"); }
 
-.footer-link__link--mail:hover {
+.footer-link__link--mail:hover,
+.footer-link__link--mail:focus {
   background-image: url("../images/icons/Icon-SocialHover-Mail.svg"); }
 
 .footer-link__link--linkedin {
   background-image: url("../images/icons/Icon-Social-LinkedIn.svg"); }
 
-.footer-link__link--linkedin:hover {
+.footer-link__link--linkedin:hover,
+.footer-link__link--linkedin:focus {
   background-image: url("../images/icons/Icon-SocialHover-LinkedIn.svg"); }
 
 .footer-link__link--snapchat {
   background-image: url("../images/icons/Icon-Social-Snapchat.svg"); }
 
-.footer-link__link--snapchat:hover {
+.footer-link__link--snapchat:hover,
+.footer-link__link--snapchat:focus {
   background-image: url("../images/icons/Icon-SocialHover-Snapchat.svg"); }
 
 .footer-link__link--twitter {
   background-image: url("../images/icons/Icon-Social-Twitter.svg"); }
 
-.footer-link__link--twitter:hover {
+.footer-link__link--twitter:hover,
+.footer-link__link--twitter:focus {
   background-image: url("../images/icons/Icon-SocialHover-Twitter.svg"); }
 
 .footer-link__link--instagram {
   background-image: url("../images/icons/Icon-Social-Instagram.svg"); }
 
-.footer-link__link--instagram:hover {
+.footer-link__link--instagram:hover,
+.footer-link__link--instagram:focus {
   background-image: url("../images/icons/Icon-SocialHover-Instagram.png"); }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   /* Retina-specific stuff here */
-  .footer-link__link--instagram:hover {
+  .footer-link__link--instagram:hover,
+  .footer-link__link--instagram:focus {
     background-image: url("../images/icons/Icon-SocialHover-Instagram@2x.png");
     background-size: contain; } }
 
 .footer-link__link--youtube {
   background-image: url("../images/icons/Icon-Social-Youtube.svg"); }
 
-.footer-link__link--youtube:hover {
+.footer-link__link--youtube:hover,
+.footer-link__link--youtube:focus {
   background-image: url("../images/icons/Icon-SocialHover-Youtube.svg"); }
 
 .footer-link__link--facebook {
   background-image: url("../images/icons/Icon-Social-Facebook.svg"); }
 
-.footer-link__link--facebook:hover {
+.footer-link__link--facebook:hover,
+.footer-link__link--facebook:focus {
   background-image: url("../images/icons/Icon-SocialHover-Facebook.svg"); }
 
 .footer-links__header {
