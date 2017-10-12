@@ -1,12 +1,21 @@
-<nav class="page-menu {{ page-menu-class }}">
-	{{# page-menu-block }}
-	<h3 class="page-menu-block__header">{{ block-title }}</h3>
-	<ul class="page-menu__list">
-		{{# items }}
-		<li class="page-menu__item">
-			<a href="{{ href }}" class="page-menu__link {{# active }}page-menu__link--active{{/ active }}">{{ text }}</a>
-		</li>
-		{{/ items }}
-	</ul>
-	{{/ page-menu-block }}
+<nav id="page-menu" class="page-menu {{ page-menu-class }}">
+	<a href="#page-menu" class="skip-link nav-link">Introductie</a>
+	<div class="page-menu__container">
+		{{# page-menu-block }}
+		<h3 class="page-menu-block__header">{{ block-title }}</h3>
+		<ul class="page-menu__list">
+			{{# items }}
+			<li class="page-menu__item">
+				<a href="{{ href }}" class="page-menu__link {{# active }}page-menu__link--active{{/ active }}">{{ text }}</a>
+			</li>
+			{{/ items }}
+		</ul>
+		{{/ page-menu-block }}
+		<a href="#" class="skip-link close-icon">Verberg het menu</a>
+	</div>
+	{{# more-info-button }}
+		<a href="{{link-href}}" class="{{link-class}}">{{link-text}}</a>
+
+	{{/ more-info-button }}
+
 </nav>

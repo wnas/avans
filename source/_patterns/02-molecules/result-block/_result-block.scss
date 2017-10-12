@@ -69,6 +69,15 @@
 	transition: color $time-s ease;
 }
 
+.result-block__header:hover {
+	text-decoration: underline;
+}
+
+.result-block__header:hover .result-block__location {
+	text-decoration: none;
+	color: #000;
+}
+
 .result-block__location {
 	font-size: 0.875rem;
 	display: inline-block;
