@@ -24,6 +24,14 @@
 	transition: background-color .5s ease;
 }
 
+@media all and (max-width: $bp-xs) {
+	.pagination__link {
+
+		margin-right: 0.325rem;
+
+	}
+}
+
 .pagination__link--active.pagination__link--active:hover,
 .pagination__link {
 	background-color: $light-gray;

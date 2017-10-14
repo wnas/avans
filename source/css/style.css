@@ -571,6 +571,10 @@ p a {
   -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease; }
 
+@media all and (max-width: 320px) {
+  .pagination__link {
+    margin-right: 0.325rem; } }
+
 .pagination__link--active.pagination__link--active:hover,
 .pagination__link {
   background-color: #999999; }
