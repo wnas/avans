@@ -11,6 +11,19 @@
 	display: flex;
 }
 
+@media all and (max-width: $bp-xs) {
+	.result-block__link {
+		flex-direction: column;
+	}
+	.result-block__image-container  {
+		margin-bottom: $spacing;
+	}
+
+
+}
+
+
+
 .result-block__link:hover {
 	.result-block__header {
 		color: $avans-blue;
@@ -86,6 +99,14 @@
 	background-repeat: no-repeat;
 	background-image: url("../images/icons/icon-locationMarker.svg");
 	background-size: contain;
+}
+
+@media all and (max-width: $bp-m) {
+	.result-block__location {
+		margin-left: 0;
+		display: block;
+		margin-top: $spacing-s;
+	}
 }
 
 .alert__header {

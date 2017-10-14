@@ -19,3 +19,13 @@
 	position: absolute;
 	left:-999em;
 }
+
+
+@media all and (max-width: $bp-xs) {
+	.btn {
+		width: 100%;
+	}
+    .btn + .btn {
+        margin-top: 1rem;
+    }
+}

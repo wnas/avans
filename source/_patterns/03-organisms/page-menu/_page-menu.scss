@@ -81,6 +81,10 @@ dkdkd
 	.page-menu {
 		display: flex;
 		flex-wrap: wrap;
+		border: 1px solid #eee;
+		border-width: 1px 0;
+		margin: 1rem 0;
+		padding-top: 0;
 
 		.btn,
 		.close-icon {
@@ -104,7 +108,8 @@ dkdkd
 
 		.nav-link {
 			width: auto;
-			padding-top: 2.5rem;
+			height: 4.3rem;
+			padding-top: 1.5rem;
 			text-transform: none;
 			font-size: 1rem;
 			padding-left: 3rem;
@@ -115,8 +120,8 @@ dkdkd
 		.nav-link:after {
 			content: '';
 			border: 1px solid $avans-blue;
-			width: 11px;
-			height: 11px;
+			width: 9px;
+			height: 9px;
 			transform: rotate(45deg);
 			display: inline-block;
 			margin-left: 1rem;
