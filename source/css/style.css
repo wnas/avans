@@ -364,15 +364,25 @@ p a {
   position: relative;
   min-width: 220px;
   height: 147px;
-  display: inline-block; }
+  display: inline-block;
+  outline: 1px solid red;
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px; }
 
 .result-block__link:hover .result-block__image-container:after {
   height: 147px; }
 
+@media all and (max-width: 320px) {
+  .result-block__image-container {
+    -ms-flex-preferred-size: 147px;
+        flex-basis: 147px; } }
+
 @media all and (min-width: 1200px) {
   .result-block__image-container {
     min-width: 263px;
-    height: 175px; }
+    height: 175px;
+    -ms-flex-preferred-size: 263px;
+        flex-basis: 263px; }
   .result-block__link:hover .result-block__image-container:after {
     height: 175px; } }
 
