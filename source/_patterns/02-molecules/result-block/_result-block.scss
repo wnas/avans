@@ -10,19 +10,15 @@
 	color: #000;
 	display: flex;
 }
-
 @media all and (max-width: $bp-xs) {
 	.result-block__link {
 		flex-direction: column;
 	}
-	.result-block__image-container  {
+
+	.result-block__image-container {
 		margin-bottom: $spacing;
 	}
-
-
 }
-
-
 
 .result-block__link:hover {
 	.result-block__header {
@@ -32,8 +28,7 @@
 
 .result-block__content-container {
 	order: 1;
-	margin-left: $spacing-xl;
-//	flex: 1;
+	margin-left: $spacing-xl; //	flex: 1;
 }
 
 .result-block__image-container {
@@ -42,19 +37,16 @@
 	min-width: 220px;
 	height: 147px;
 	display: inline-block;
-	outline: 1px solid red;
-
 	flex-basis: 220px;
 }
 
 .result-block__link:hover .result-block__image-container:after {
 	height: 147px;
 }
-
 @media all and (max-width: $bp-xs) {
-		.result-block__image-container {
-	flex-basis: 147px;
-}
+	.result-block__image-container {
+		flex-basis: 147px;
+	}
 }
 @media all and (min-width: $bp-xl) {
 	.result-block__image-container {
@@ -111,7 +103,6 @@
 	background-image: url("../images/icons/icon-locationMarker.svg");
 	background-size: contain;
 }
-
 @media all and (max-width: $bp-m) {
 	.result-block__location {
 		margin-left: 0;
@@ -120,10 +111,15 @@
 	}
 }
 
+.result-block__alert {
+	font-size: .875rem;
+}
+
 .alert__header {
 	color: $avans-red;
 	padding-right: 0.5rem;
 }
+
 @media all and (max-width: $bp-m) {
 	.result-block__alert,
 	.result-block__content {
