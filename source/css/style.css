@@ -436,7 +436,6 @@ p a {
   padding-right: 0.5rem; }
 
 @media all and (max-width: 768px) {
-  .result-block__alert,
   .result-block__content {
     display: none; } }
 
@@ -1151,6 +1150,8 @@ p a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0; }
 
 .active-filters__label {
