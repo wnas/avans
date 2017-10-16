@@ -96,14 +96,21 @@ body {
 .detail-page {
   position: relative; }
 
+.layout-full-width-block--detail-page {
+  background: linear-gradient(90deg, #fff 0%, #fff calc( 50% + 293px), rgba(238, 238, 238, 0.5) calc( 50.01% + 293px), rgba(238, 238, 238, 0.5) 100%);
+  /* w3c */ }
+
 .detail-page__aside,
 .detail-page__menu,
 .detail-page__content {
   padding: 0.9375rem;
   padding-top: 1.875rem; }
 
-.detail-page__aside {
-  background-color: rgba(238, 238, 238, 0.5); }
+.breakout-box {
+  z-index: 5;
+  width: 100%;
+  padding: 1rem 1rem 1rem 0;
+  background-color: #fff; }
 
 @media all and (min-width: 992px) {
   .detail-page {
@@ -120,10 +127,24 @@ body {
     margin-bottom: 1.875rem;
     padding-left: 0;
     padding-right: 0; }
+    .detail-page__content .breakout-box {
+      width: calc(100% + 298px); }
+  .breakout-box {
+    padding: 1rem 0; }
+    .detail-page__content .breakout-box {
+      padding-right: 1rem;
+      background-color: #fff; }
   .detail-page__menu {
     margin-right: 1.875rem; }
   .detail-page__aside {
     margin-left: 1.875rem; } }
+
+@media all and (min-width: 556px) {
+  .detail-page__content {
+    width: 556px;
+    margin: 0 auto; }
+    .detail-page__content .breakout-box {
+      width: calc(556px + ( (100vw - 556px )/ 2)); } }
 
 /* Define a custom web font */
 @font-face {
