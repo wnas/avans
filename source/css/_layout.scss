@@ -46,7 +46,7 @@ section {
 		width: 40%;
 	}
 }
-@media all and (max-width: 1140px) {
+@media all and (max-width: 1140px) and (min-width: $bp-l) {
 	.layout-full-width-block__content {
 		padding-left: $spacing;
 		padding-right: $spacing;
@@ -134,6 +134,23 @@ $side-column-width: 263px;
 	}
 
 	.detail-page__aside {
+		margin-left: $spacing-xl;
+	}
+}
+@media all and (max-width: $bp-l) {
+	.detail-page__aside {
+		background-color: $light-gray-background;
+	}}
+@media all and (max-width: $bp-l) and (min-width: $bp-m) {
+	.detail-page__aside {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.widget {
+		width: calc(50% - 1rem);
+		max-width: calc(50% - 1rem);
+	}
+	.widget:nth-child(even){
 		margin-left: $spacing-xl;
 	}
 }

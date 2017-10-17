@@ -99,5 +99,16 @@
 				"href": "nu.nl"
 			}]
 		}
-	]
+	],
+	"widget-follow": {
+		"class": "widget widget--follow",
+		"follow-header": "Volg onze opleiding",
+		"follow": [{
+				"item": "facebook"
+			},
+			{
+				"item": "instagram"
+			}
+		]
+	}
 }

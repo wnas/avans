@@ -13,9 +13,12 @@
 				{{/ items }}
 			</ul>
 		{{/ widget-list }}
+		{{# text }}
+		<p class="widget__paragraph">{{ text }}</p>
+		{{/ text }}
 		{{# widget-durability }}
-		<p class="widget__paragraph">Score van deze opleiding</p>
-			<span class="durability durability--{{widget-durability}}" title="{{ title }}">{{{ widget-durability}}}</span>
+
+			<span class="durability" title="{{ title }}">{{{ widget-durability}}}</span>
 		{{/ widget-durability }}
 		{{# widget-link }}
 			<a class="widget__link widget__link--solo" href="{{href}}">{{ text }}</a>

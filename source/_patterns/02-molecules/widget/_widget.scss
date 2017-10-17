@@ -1,5 +1,10 @@
 .widget {
-	padding-bottom: $spacing;
+	margin-bottom: $spacing;
+	//@extend .testing;
+}
+.widget.footer-links__list-block {
+	padding: 0;
+	margin: 0;
 }
 
 .widget__content {
@@ -11,8 +16,10 @@
 	color: #999;
 }
 
-.widget__header {
+.widget__header,
+.widget .footer-links__header {
 	border-bottom: 1px solid #eee;
+	color: #000;
 	padding: $spacing 0;
 	background-repeat: no-repeat;
 	background-position: center right;
