@@ -34,6 +34,10 @@
 	background-image: url(../images/icons/widgets/Icon-Duurzaam.svg);
 }
 
+.widget__paragraph,
+.durability {
+	margin-bottom: $spacing;
+}
 .btn--widget {
 	width: 100%;
 }
@@ -71,4 +75,13 @@
 
 .durability {
 	display: block;
+}
+
+.star {
+	fill : #ccc;
+	display: inline-block;
+}
+
+.star[data-rating="checked"]{
+	fill: #000;
 }

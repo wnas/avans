@@ -741,6 +741,10 @@ p a {
 .widget__header--duurzaam {
   background-image: url(../images/icons/widgets/Icon-Duurzaam.svg); }
 
+.widget__paragraph,
+.durability {
+  margin-bottom: 0.9375rem; }
+
 .btn--widget {
   width: 100%; }
 
@@ -770,6 +774,13 @@ p a {
 
 .durability {
   display: block; }
+
+.star {
+  fill: #ccc;
+  display: inline-block; }
+
+.star[data-rating="checked"] {
+  fill: #000; }
 
 .link-box {
   padding: 1.875rem;
