@@ -1,0 +1,24 @@
+<div class="widget widget--sidebar">
+	<h4 class="widget__header widget__header--{{type}}">{{header}}</h4>
+	<div class="widget__content">
+		{{# button }}
+			{{> atoms-button }}
+		{{/ button }}
+		{{# widget-list }}
+			<ul class="widget__list">
+				{{# items }}
+					<li class="widget__list-item">
+						<a class="widget__link widget__list-link" href="{{href}}">{{ text }}</a>
+					</li>
+				{{/ items }}
+			</ul>
+		{{/ widget-list }}
+		{{# widget-durability }}
+		<p>Score van deze opleiding</p>
+			<span class="durability durability--{{widget-durability}}">{{ widget-durability}}</span>
+		{{/ widget-durability }}
+		{{# widget-link }}
+			<a class="widget__link widget__link--solo" href="{{href}}">{{ text }}</a>
+		{{/ widget-link }}
+	</div>
+</div>

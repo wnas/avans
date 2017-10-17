@@ -1,0 +1,15 @@
+{
+	"type": "open",
+	"header": "Kom langs",
+	"list": {
+		"items": [{
+				"text": "Open dag 4 november 2017",
+				"href": "nu.nl"
+			},
+			{
+				"text": "Open dag 27 januari 2018",
+				"href": "nuzakelijk.nl"
+			}
+		]
+	}
+}

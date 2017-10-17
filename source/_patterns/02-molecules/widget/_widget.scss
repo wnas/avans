@@ -1,0 +1,74 @@
+.widget {
+	padding-bottom: $spacing;
+}
+
+.widget__content {
+	font-size: 0.875rem;
+}
+
+.widget__content,
+.widget__link--solo {
+	color: #999;
+}
+
+.widget__header {
+	border-bottom: 1px solid #eee;
+	padding: $spacing 0;
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.widget__header--apply {
+	background-image: url(../images/icons/widgets/Icon-Aanmelden.svg);
+}
+
+.widget__header--open {
+	background-image: url(../images/icons/widgets/Icon-Open.svg);
+}
+
+.widget__header--cijfers {
+	background-image: url(../images/icons/widgets/Icon-StudieInCijfers.svg);
+}
+
+.widget__header--duurzaam {
+	background-image: url(../images/icons/widgets/Icon-Duurzaam.svg);
+}
+
+.btn--widget {
+	width: 100%;
+}
+
+.widget__list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.widget__link--solo,
+.widget__list-item {
+	position: relative;
+	padding: $spacing-s 0 $spacing-s $spacing-l;
+	border-bottom: 1px solid #eee;
+}
+
+.widget__link--solo:before,
+.widget__list-item:before {
+	@extend .small-arrow;
+	top: $spacing;
+	left: 4px;
+}
+
+.widget__list-item:before {
+	border-color: #999;
+}
+
+.widget__link--solo:before {
+	border-color: $avans-blue;
+}
+
+.widget__list-link {
+	color: $avans-blue;
+}
+
+.durability {
+	display: block;
+}

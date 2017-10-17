@@ -13,7 +13,11 @@
 
 			</div>
 		</article>
-		<aside class="detail-page__aside">widgets</aside>
+		<aside class="detail-page__aside">
+			{{# widgets }}
+				{{> molecules-widget }}
+			{{/ widgets }}
+		</aside>
 	</div>
 </main>
 <!-- /main -->
