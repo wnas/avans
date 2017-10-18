@@ -12,6 +12,12 @@ var avans = (function(){
 			"buttonClose": document.querySelector('.nav .close-icon'),
 			"container": document.querySelector('.nav'),
 			"class": "js-open"
+		},
+		"pageMenu": {
+			"buttonOpen": document.querySelector('.page-menu .nav-link'),
+			"buttonClose": document.querySelector('.page-menu__container .close-icon'),
+			"container": document.querySelector('.page-menu__container'),
+			"class": "js-open"
 		}
 	},	toggle = function(elem){
 
@@ -86,6 +92,7 @@ var avans = (function(){
 	},	init = function(){
 		toggle(config.topMenu);
 		toggle(config.topSearch);
+		toggle(config.pageMenu);
 		subMenu();
 		if( document.getElementById('page-menu') !== undefined){
 			pageMenu();

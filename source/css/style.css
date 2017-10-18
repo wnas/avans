@@ -1594,13 +1594,15 @@ dkdkd
     position: relative;
     height: 0;
     left: -999em; }
+    .page-menu__container.js-open,
     :target .page-menu__container {
       left: 0;
       height: auto;
-      margin-top: 2rem;
-      border-top: 1px solid #eee; }
-      :target .page-menu__container .nav-link {
-        display: none; }
+      margin-top: 1rem;
+      border-top: 1px solid #eee;
+      z-index: 0; }
+  .nav-link.clicked {
+    text-indent: 0; }
   .page-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1618,7 +1620,9 @@ dkdkd
     .page-menu .close-icon {
       position: absolute;
       left: 0;
-      top: -3rem; }
+      top: -4rem;
+      border-right: 0;
+      visibility: hidden; }
     .page-menu .btn {
       position: absolute;
       right: 0;
@@ -1646,10 +1650,12 @@ dkdkd
               transform: rotate(45deg);
       display: inline-block;
       margin-left: 1rem;
-      border-width: 0 1px 1px 0; } }
+      border-width: 0 1px 1px 0; }
+    .page-menu .skip-link {
+      background-size: 1rem; } }
 
-.page-menu--clone .skip-link,
-.page-menu--clone .btn--primary {
+.page-menu--clone .btn--primary,
+.page-menu--clone .skip-link {
   display: none; }
 
 .page-menu--clone .page-menu__container {

@@ -66,16 +66,18 @@ dkdkd
 		height: 0;
 		left: -999em;
 
+		&.js-open,
 		:target & {
 			left: 0;
 			height: auto;
-			margin-top: 2rem;
+			margin-top: 1rem;
 			border-top: 1px solid #eee;
-
-			.nav-link {
-				display: none;
-			}
+			z-index: 0;
 		}
+	}
+
+	.nav-link.clicked {
+		text-indent: 0;
 	}
 
 	.page-menu {
@@ -95,7 +97,9 @@ dkdkd
 		.close-icon {
 			position: absolute;
 			left: 0;
-			top: -3rem;
+			top: -4rem;
+			border-right: 0;
+			visibility: hidden;
 		}
 
 		.btn {
@@ -127,14 +131,19 @@ dkdkd
 			margin-left: 1rem;
 			border-width: 0 1px 1px 0;
 		}
+
+		.skip-link {
+			background-size: 1rem;
+		}
 	}
 }
 
 .page-menu--clone {
-	.skip-link,
-	.btn--primary {
+	.btn--primary,
+	.skip-link {
 		display: none;
 	}
+
 	.page-menu__container {
 		left: 0;
 		height: auto;
