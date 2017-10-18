@@ -29,6 +29,19 @@ var avans = (function(){
 		elem.container.classList.toggle( elem.class );
 		return false;
 
+	},	pageMenu = function(){
+		var w = document.querySelector('body').clientWidth;
+		var aside = document.querySelector('aside')
+		var pm = document.getElementById('page-menu');
+		if ( w < 992 ){
+			var cloneMenu = pm.cloneNode(true);
+			cloneMenu.id = 'clone';
+			cloneMenu.classList.add('page-menu--clone');
+			aside.after(cloneMenu);
+
+		}
+		console.log(w);
+		console.log('hi there');
 	},	subMenu = function(){
 		// get the menu items with sub menus
 		var sub = document.querySelectorAll('.nav__item--has-sub'),
@@ -74,6 +87,9 @@ var avans = (function(){
 		toggle(config.topMenu);
 		toggle(config.topSearch);
 		subMenu();
+		if( document.getElementById('page-menu') !== undefined){
+			pageMenu();
+		}
 	};
 	return {
 		init: init

@@ -1648,6 +1648,18 @@ dkdkd
       margin-left: 1rem;
       border-width: 0 1px 1px 0; } }
 
+.page-menu--clone .skip-link,
+.page-menu--clone .btn--primary {
+  display: none; }
+
+.page-menu--clone .page-menu__container {
+  left: 0;
+  height: auto; }
+
+@media all and (min-width: 992px) {
+  .page-menu--clone {
+    display: none; } }
+
 .filter__button {
   padding: .625rem 1.5rem;
   background-repeat: no-repeat;

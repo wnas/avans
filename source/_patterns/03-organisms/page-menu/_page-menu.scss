@@ -129,3 +129,19 @@ dkdkd
 		}
 	}
 }
+
+.page-menu--clone {
+	.skip-link,
+	.btn--primary {
+		display: none;
+	}
+	.page-menu__container {
+		left: 0;
+		height: auto;
+	}
+}
+@media all and (min-width: $bp-l) {
+	.page-menu--clone {
+		display: none;
+	}
+}
