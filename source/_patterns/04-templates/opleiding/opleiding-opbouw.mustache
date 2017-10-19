@@ -1,8 +1,20 @@
 {{> organisms-header }}
 {{> organisms-submenu }}
-<main class="layout-full-width-block main-content">
-	<div class="layout-full-width-block__content">
-		inleiding voor opleieing
+
+{{> organisms-hero }}
+
+<main class="layout-full-width-block main-content layout-full-width-block--detail-page">
+	<div class="layout-full-width-block__content detail-page">
+		{{> organisms-page-menu}}
+		<article class="main-content detail-page__content">
+			hi
+			{{{ article-content }}}
+		</article>
+		<aside class="detail-page__aside">
+			{{# widgets }}
+				{{> molecules-widget }}
+			{{/ widgets }}
+		</aside>
 	</div>
 </main>
 <!-- /main -->

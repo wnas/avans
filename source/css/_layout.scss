@@ -46,7 +46,7 @@ section {
 		width: 40%;
 	}
 }
-@media all and (max-width: 1140px) and (min-width: $bp-l) {
+@media all and (max-width: 1140px) and (min-width: $bp-xl) {
 	.layout-full-width-block__content {
 		padding-left: $spacing;
 		padding-right: $spacing;
@@ -74,7 +74,7 @@ $side-column-width: 263px;
 	//	@extend .testing;
 	position: relative;
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.layout-full-width-block--detail-page {
 		background: linear-gradient(90deg,
 		            #fff 0%, #fff calc( 50% + 293px ),
@@ -95,7 +95,7 @@ $side-column-width: 263px;
 	padding: 1rem 1rem 1rem 0;
 	background-color: #fff;
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.detail-page {
 		display: flex;
 	}
@@ -138,13 +138,27 @@ $side-column-width: 263px;
 	}
 }
 @media all and (max-width: $bp-l) {
+
 	.detail-page__aside {
 		background-color: $light-gray-background;
 	}}
-@media all and (max-width: $bp-l) and (min-width: $bp-m) {
-	.detail-page__aside {
+@media all and (max-width: $bp-xl) and (min-width: $bp-m) {
+	.detail-page__aside-container,
+	.page-menu,
+	.detail-page__content,
+	.top-bar__content,
+	.page-footer__content,
+	.disclaimer__container {
+		max-width: 720px;
+	}
+
+	.detail-page__aside-container {
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.detail-page__aside-container,
+	.page-menu {
+		margin: 0 auto;
 	}
 	.widget {
 		width: calc(50% - 1rem);

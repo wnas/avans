@@ -77,9 +77,6 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--discover {
-	// background-repeat: no-repeat;
-	// background-image: url('../images/icons/ICON-Arrow-Right-Black.svg');
-	// background-position: 0.2rem 0.3rem;
 	padding-left: $spacing;
 	position: relative;
 	transition: border-color $footer-link-animation-duration ease;
@@ -262,11 +259,16 @@ $footer-link-animation-duration: .5s;
 		padding: $spacing-l;
 	}
 }
+@media all and (min-width: $bp-xl) {
+	.disclaimer__container {
+		max-width: $width__overal;
+	}
+}
 
 .disclaimer__container {
 	display: flex;
 	margin: 0 auto;
-	max-width: $width__overal;
+
 	justify-content: space-between;
 }
 

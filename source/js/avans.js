@@ -46,8 +46,6 @@ var avans = (function(){
 			aside.after(cloneMenu);
 
 		}
-		console.log(w);
-		console.log('hi there');
 	},	subMenu = function(){
 		// get the menu items with sub menus
 		var sub = document.querySelectorAll('.nav__item--has-sub'),

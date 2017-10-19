@@ -58,7 +58,7 @@ dkdkd
 		display: none;
 	}
 }
-@media all and (max-width: $bp-l) {
+@media all and (max-width: $bp-xl) {
 	.page-menu__container {
 		width: 100vw;
 		order: 2;
@@ -85,7 +85,7 @@ dkdkd
 		flex-wrap: wrap;
 		border: 1px solid #eee;
 		border-width: 1px 0;
-		margin: 1rem 0;
+		//margin: 1rem 0;
 		padding-top: 0;
 
 		.btn,
@@ -149,7 +149,7 @@ dkdkd
 		height: auto;
 	}
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.page-menu--clone {
 		display: none;
 	}

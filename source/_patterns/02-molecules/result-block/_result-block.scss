@@ -24,6 +24,10 @@
 	.result-block__header {
 		color: $avans-blue;
 	}
+	.result-block__location {
+		text-decoration: none;
+		color: #000;
+	}
 }
 
 .result-block__content-container {
@@ -89,10 +93,6 @@
 	text-decoration: underline;
 }
 
-.result-block__header:hover .result-block__location {
-	text-decoration: none;
-	color: #000;
-}
 
 .result-block__location {
 	font-size: 0.875rem;
