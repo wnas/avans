@@ -1,0 +1,22 @@
+// stuff
+.tab__item {
+	border: 1px solid #eee;
+	padding: 1rem;
+	margin: 0 1rem -1px 0;
+	order: 1;
+}
+
+.tab__link {
+	color: $avans-blue;
+}
+.tab__link:active {
+	color: #000;
+}
+
+[data-default] {
+	border-bottom-color: #fff;
+	order: 0;
+	.tab__link {
+		color: #000;
+	}
+}

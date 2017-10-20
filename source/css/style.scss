@@ -28,6 +28,8 @@ body {
 @import "../_patterns/02-molecules/pagination/pagination";
 @import "../_patterns/02-molecules/attention-block/attention-block";
 @import "../_patterns/02-molecules/widget/widget";
+@import "../_patterns/02-molecules/tab-item/tab-item";
+
 // organisms
 @import "../_patterns/03-organisms/link-box/link-box";
 @import "../_patterns/03-organisms/footer/footer";
@@ -39,6 +41,7 @@ body {
 @import "../_patterns/03-organisms/page-menu/page-menu";
 @import "../_patterns/03-organisms/filter-block/filter-block";
 @import "../_patterns/03-organisms/hero/hero";
+@import "../_patterns/03-organisms/tabs/tabs";
 @import "../_patterns/03-organisms/vertical-hero/vertical-hero";
 /* templates */
 @import "../_patterns/04-templates/list-page/list-page";

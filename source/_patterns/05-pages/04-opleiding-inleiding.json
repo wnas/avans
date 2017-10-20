@@ -1,5 +1,6 @@
 {
-	"page-menu-class": "content-page__menu",
+    "bodyClass": "content-page--top",
+    "page-menu-class": "content-page__menu",
 	"page-menu-block": [{
 			"block-title": "Voltijd in Breda",
 			"items": [{

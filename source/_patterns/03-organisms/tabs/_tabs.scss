@@ -1,0 +1,27 @@
+.tabs__content {
+	position: relative;
+}
+
+.tab__content,
+.tab__content:not(:target) {
+	position: absolute;
+	left: -999em;
+}
+
+.tab__content:last-of-type,
+.tab__content:target {
+	left: 0;
+}
+
+.tab__content:target ~ .tab__content:last-of-type {
+	left: -999em;
+}
+
+.tabs {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	border-bottom: 1px solid #eee;
+	padding-left: 0;
+}

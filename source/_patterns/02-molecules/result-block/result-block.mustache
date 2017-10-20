@@ -3,13 +3,22 @@
 		<div class="result-block__content-container">
 			<h3 class="result-block__header">
 				{{ header }}
+				{{# location }}
 				<span class="result-block__location">
 					{{ location }}
 				</span>
 				<!-- / result block location -->
+				{{/ location }}
+				{{# header-extra }}
+				<span class="result-block__header-extra">
+					{{ header-extra }}
+				</span>
+				<!-- / result block location -->
+				{{/ header-extra }}
+
 			</h3>
 			<div class="result-block__content">
-				<p>{{ content }}</p>
+				<p>{{{ content }}}</p>
 			</div>
 			<!-- / result block content -->
 			{{# alert }}
@@ -18,12 +27,18 @@
 				</div>
 				<!-- / result block alert -->
 			{{/ alert }}
+			{{# readmore }}
+				<div class="result-block__link">
+					<a href="{{href}}">{{ text }}</a>
+				</div>
+				<!-- / result block link -->
+			{{/ readmore }}
 
 		</div>
 		<div class="result-block__image-container">
 			<img class="result-block__image" src="{{ src }}" srcset="{{# srcset }} {{src}} {{res}},  {{/ srcset }}" />
 		</div>
-	<!-- / result block image -->
+		<!-- / result block image -->
 	</a>
 </li>
 <!-- / result block -->

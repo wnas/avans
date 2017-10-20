@@ -188,6 +188,50 @@
 		{
 			"item": "Contact"
 		}
+	],
+	"widgets": [{
+			"type": "apply",
+			"header": "Is dit jouw opleiding",
+			"button": {
+				"button-text": "Meld je aan",
+				"button-class": "btn--primary btn--widget"
+			}
+		},
+		{
+			"type": "open",
+			"header": "Kom langs",
+			"widget-list": {
+				"items": [{
+						"text": "Open dag 4 november 2017",
+						"href": "nu.nl"
+					},
+					{
+						"text": "Open dag 27 januari 2018",
+						"href": "nuzakelijk.nl"
+					}
+				]
+			}
+		},
+		{
+			"type": "cijfers",
+			"header": "Studie in cijfers",
+			"text": "Vergelijk deze opleiding met het landelijke gemiddelde",
+			"widget-link": [{
+				"text": "Bekijk de cijfers",
+				"href": "nu.nl"
+			}]
+		},
+		{
+			"type": "duurzaam",
+			"header": "Duurzaamheid",
+			"text": "Score van deze opleiding",
+			"title": "Two out of three stars",
+			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star rating__checked' data-rating='checked'><title>2 out of 3 stars</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating__checked' data-rating='checked'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
+			"widget-link": [{
+				"text": "Uitleg score",
+				"href": "nu.nl"
+			}]
+		}
 	]
 
 }

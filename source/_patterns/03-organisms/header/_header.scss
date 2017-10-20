@@ -41,7 +41,7 @@
 	height: 6rem;
 	background-color: #fff;
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.nav {
 		order: 1;
 	}
@@ -101,7 +101,7 @@
 .search-link:hover {
 	background-image: url("../images/icons/search-icon-blue.svg");
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.search-link {
 		order: 2;
 	}
@@ -133,7 +133,7 @@
 	overflow: hidden;
 	transition: width 0.2s easein;
 }
-@media all and (min-width: $bp-l) {
+@media all and (min-width: $bp-xl) {
 	.nav {
 		width: auto;
 		height: auto;

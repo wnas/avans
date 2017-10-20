@@ -19,6 +19,29 @@
 			]
 		},
 		{
+				"header": "Damon van Drimmelen",
+				"header-extra": "Student Communicatie & Multimedia Design",
+				"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",
+				"readmore": {
+					"href": "nu.nl",
+					"text": "Lees verder"
+				},
+				"src": "/images/persons/tom-reinhoudt.png",
+				"srcset": [{
+						"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200.png",
+						"res": "1x"
+					},
+					{
+						"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@2x.png",
+						"res": "2x"
+					},
+					{
+						"src": "/images/accountancy-denbosch/accountancy-denbosch-240x200@3x.png",
+						"res": "3x"
+					}
+				]
+			},
+		{
 			"header": "Accountancy",
 			"location": "Den Bosch",
 			"content": "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><p><small>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>",

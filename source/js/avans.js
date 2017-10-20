@@ -18,7 +18,10 @@ var avans = (function(){
 			"buttonClose": document.querySelector('.page-menu__container .close-icon'),
 			"container": document.querySelector('.page-menu__container'),
 			"class": "js-open"
-		}
+		},
+        "screensizes": {
+            "xl": 1200
+        }
 	},	toggle = function(elem){
 
 		var buttonOpen = elem.buttonOpen,
@@ -39,7 +42,7 @@ var avans = (function(){
 		var w = document.querySelector('body').clientWidth;
 		var aside = document.querySelector('aside')
 		var pm = document.getElementById('page-menu');
-		if ( w < 992 ){
+		if ( w < config.screensizes.xl ){
 			var cloneMenu = pm.cloneNode(true);
 			cloneMenu.id = 'clone';
 			cloneMenu.classList.add('page-menu--clone');

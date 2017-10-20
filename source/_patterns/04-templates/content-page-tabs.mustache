@@ -1,13 +1,15 @@
 {{> organisms-header }} {{> organisms-submenu }} {{> organisms-hero }}
 
 <main class="layout-full-width-block main-content layout-full-width-block--content-page">
-	<div class="layout-full-width-block__content content-page">
+	<div class="layout-full-width-block__content content-page content-page--tabs">
 		{{> organisms-page-menu}}
 		<article class="main-content content-page__content">
 			{{> atoms-article-header }}
 			<!-- /article-header -->
-			{{{ article-content }}}
-			<!-- / article-content -->
+
+				{{> organisms-tabs }}
+
+
 		</article>
 		<aside class="content-page__aside">
 			<div class="content-page__aside-container">
@@ -24,4 +26,4 @@
 <!-- /main -->
 
 {{> organisms-footer }}
-<!-- /content page -->
+<!-- /content page tabs -->

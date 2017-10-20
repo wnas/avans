@@ -17,7 +17,7 @@ section {
 	padding: 0 $content__margin;
 }
 
-.layout-full-width-block--detail-page {
+.layout-full-width-block--content-page {
 	padding: 0;
 }
 @media all and (max-width: $bp-m) {
@@ -70,12 +70,12 @@ section {
 }
 $side-column-width: 263px;
 
-.detail-page {
+.content-page {
 	//	@extend .testing;
 	position: relative;
 }
 @media all and (min-width: $bp-xl) {
-	.layout-full-width-block--detail-page {
+	.layout-full-width-block--content-page {
 		background: linear-gradient(90deg,
 		            #fff 0%, #fff calc( 50% + 293px ),
 					$light-gray-background calc( 50.01% + 293px ),
@@ -83,9 +83,9 @@ $side-column-width: 263px;
 	}
 }
 
-.detail-page__aside,
-.detail-page__content,
-.detail-page__menu {
+.content-page__aside-container,
+.content-page__content,
+.content-page__menu {
 	padding: $spacing-xl $spacing $spacing;
 }
 
@@ -96,20 +96,20 @@ $side-column-width: 263px;
 	background-color: #fff;
 }
 @media all and (min-width: $bp-xl) {
-	.detail-page {
+	.content-page {
 		display: flex;
 	}
 
-	.detail-page__menu {
+	.content-page__menu {
 		padding-left: 0;
 	}
 
-	.detail-page__aside,
-	.detail-page__menu {
+	.content-page__aside,
+	.content-page__menu {
 		width: $side-column-width;
 	}
 
-	.detail-page__content {
+	.content-page__content {
 		width: 556px;
 		margin-bottom: $spacing-xl;
 		padding-left: 0;
@@ -123,40 +123,41 @@ $side-column-width: 263px;
 	.breakout-box {
 		padding: 1rem 0;
 
-		.detail-page__content & {
+		.content-page__content & {
 			padding-right: 1rem;
 			background-color: #fff;
 		}
 	}
 
-	.detail-page__menu {
+	.content-page__menu {
 		margin-right: $spacing-xl;
 	}
 
-	.detail-page__aside {
+	.content-page__aside {
 		margin-left: $spacing-xl;
 	}
 }
-@media all and (max-width: $bp-l) {
+@media all and (max-width: $bp-xl) {
 
-	.detail-page__aside {
+	.content-page__aside {
 		background-color: $light-gray-background;
 	}}
 @media all and (max-width: $bp-xl) and (min-width: $bp-m) {
-	.detail-page__aside-container,
+	.content-page__aside-container,
 	.page-menu,
-	.detail-page__content,
+	.content-page__content,
 	.top-bar__content,
 	.page-footer__content,
-	.disclaimer__container {
+	.disclaimer__container,
+	.header {
 		max-width: 720px;
 	}
 
-	.detail-page__aside-container {
+	.content-page__aside-container {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.detail-page__aside-container,
+	.content-page__aside-container,
 	.page-menu {
 		margin: 0 auto;
 	}
@@ -169,7 +170,7 @@ $side-column-width: 263px;
 	}
 }
 @media all and (min-width: 556px) {
-	.detail-page__content {
+	.content-page__content {
 		min-width: 556px;
 		margin: 0 auto;
 
