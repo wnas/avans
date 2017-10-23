@@ -2,35 +2,44 @@
 
 .js-open .top-search,
 :target .top-search {
-  width: calc(100% - 1rem);
- transition: width $time-s;
-  background-color: #fff;
+	width: calc(100% - 1rem);
+	transition: width .5s;
+	background-color: #fff;
+	height: auto;
 }
 
 .js-open .search-link,
 :target .search-link {
-  order: 0;
-  border-left: 1px solid #ccc;
-  border-right: 0;
+	order: 0;
+	border-left: 1px solid #eee;
+	border-right: 0;
 }
 
 .js-open .nav,
 :target .nav {
-  display: none;
+	display: none;
+}
+
+.input.input--search {
+	margin-right: 0;
+}
+@media all and (max-width: $bp-m) {
+	.input.input--search {
+		margin: 0.5rem 1rem;
+	}
 }
 
 .top-search__container {
-  background-color: #fff;
-  display: flex;
-  height: 100%;
+	background-color: #fff;
+	display: flex;
+	height: 100%;
 }
 
-.top-search__input {
+.top-search__input {}
 
-}
 .js-open .nav-link,
-:target .nav-link,
 .top-search__button,
-.top-search__label {
-  @include hideVisually();
+.top-search__label,
+:target .nav-link {
+	@include hideVisually();
 }

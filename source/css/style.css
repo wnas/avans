@@ -598,21 +598,29 @@ p a {
 .js-open .top-search,
 :target .top-search {
   width: calc(100% - 1rem);
-  -webkit-transition: width 0.1s;
-  transition: width 0.1s;
-  background-color: #fff; }
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  background-color: #fff;
+  height: auto; }
 
 .js-open .search-link,
 :target .search-link {
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #eee;
   border-right: 0; }
 
 .js-open .nav,
 :target .nav {
   display: none; }
+
+.input.input--search {
+  margin-right: 0; }
+
+@media all and (max-width: 768px) {
+  .input.input--search {
+    margin: 0.5rem 1rem; } }
 
 .top-search__container {
   background-color: #fff;
@@ -622,9 +630,9 @@ p a {
   height: 100%; }
 
 .js-open .nav-link,
-:target .nav-link,
 .top-search__button,
-.top-search__label {
+.top-search__label,
+:target .nav-link {
   position: absolute;
   left: -999em; }
 
@@ -1382,8 +1390,7 @@ p a {
     min-height: calc(100vh - 100px);
     position: absolute;
     z-index: 20;
-    top: 100px;
-    left: 0.9375rem; }
+    top: 100px; }
   .nav__list {
     border-top: 1px solid #eee; } }
 
@@ -1400,6 +1407,12 @@ p a {
           flex-direction: column;
   background-color: rgba(255, 255, 255, 0.98); }
 
+@media all and (max-width: 768px) {
+  .nav {
+    margin-left: 0; }
+  .nav__list {
+    margin: 0.9375rem; } }
+
 .nav__list {
   list-style: none;
   display: -webkit-box;
@@ -1410,7 +1423,16 @@ p a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
-  margin: 0; }
+  margin: 0 0.9375rem; }
+  .nav__list .nav__list {
+    margin: -0.9375rem;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-top: 0; }
+
+@media all and (min-width: 768px) {
+  .nav__list {
+    margin: 0; } }
 
 .nav__item {
   border-bottom: 1px solid #eee;
@@ -1432,6 +1454,12 @@ p a {
   .nav__item:first-child {
     padding-left: 0.9375rem; }
 
+@media all and (max-width: 768px) {
+  .nav__item:first-child {
+    padding-left: 1.25rem; }
+  .nav__item--sub {
+    padding-left: 1.75rem; } }
+
 .nav__item--sub {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
   border-bottom: 0; }
@@ -1446,7 +1474,6 @@ p a {
   padding: 0.9375rem 0; }
 
 @media all and (max-width: 992px) {
-  .nav__link--active,
   .nav__link--sub.nav__link--active {
     color: #000; } }
 
@@ -1519,8 +1546,8 @@ p a {
     border-right: 1px solid #eee; }
   .nav__item--top-level:hover > .nav__link {
     color: #00ACEB; }
-  .nav__item:hover .nav__sub,
-  .nav__item:focus .nav__sub {
+  .nav__item:focus .nav__sub,
+  .nav__item:hover .nav__sub {
     left: 0;
     margin-top: 2px;
     padding: 1.25rem 0; }
@@ -1539,8 +1566,8 @@ p a {
 .nav__sub {
   height: auto; }
 
-.nav__item:hover .nav_sub,
-.nav__item:focus .nav_sub {
+.nav__item:focus .nav_sub,
+.nav__item:hover .nav_sub {
   height: auto; }
 
 @media all and (max-width: 992px) {
@@ -1564,20 +1591,21 @@ p a {
     content: '';
     position: absolute;
     right: 1.5rem;
-    top: 1rem;
+    top: calc(50% - 4px);
     width: 9px;
     height: 9px;
     border: 1px solid #333;
     border-width: 0 0 1px 1px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+    -webkit-transition: top .5s ease, -webkit-transform 0.5s ease;
+    transition: top .5s ease, -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease, top .5s ease;
+    transition: transform 0.5s ease, top .5s ease, -webkit-transform 0.5s ease; }
   .nav__sub--opened .nav__sub-opener:after {
     -webkit-transform: rotate(135deg);
-            transform: rotate(135deg); } }
+            transform: rotate(135deg);
+    top: 50%; } }
 
 .submenu {
   border-bottom: 1px solid #eee; }
@@ -1605,7 +1633,7 @@ p a {
   color: #00ACEB;
   text-decoration: underline; }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 992px) {
   .submenu {
     display: none; } }
 

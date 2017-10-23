@@ -5,6 +5,7 @@ var avans = (function() {
 				"buttonOpen": document.querySelector('.search-link'),
 				"buttonClose": document.querySelector('.top-search .close-icon'),
 				"container": document.querySelector('.top-bar__container'),
+				"input": document.querySelector('.input--search'),
 				"class": "js-open"
 			},
 			"topMenu": {
@@ -27,13 +28,17 @@ var avans = (function() {
 			if (elem.buttonOpen !== null) {
 				var buttonOpen = elem.buttonOpen,
 					buttonClose = elem.buttonClose;
-				console.log(elem);
+
 				buttonOpen.addEventListener('click', function(evt) {
-					toggleClass(evt, elem)
+					toggleClass(evt, elem);
+					if ( elem === config.topSearch ){
+						focusSearch(elem);
+					}
 				}, false);
 				buttonClose.addEventListener('click', function(evt) {
 					toggleClass(evt, elem)
 				}, false);
+
 			}
 
 
@@ -44,6 +49,9 @@ var avans = (function() {
 			elem.container.classList.toggle(elem.class);
 			return false;
 
+		},
+		focusSearch = function(elem){
+			elem.input.focus();
 		},
 		pageMenu = function() {
 			var w = document.querySelector('body').clientWidth;
@@ -184,7 +192,9 @@ var avans = (function() {
 			toggle(config.pageMenu);
 		}
 		subMenu();
+		if( document.querySelector('.tabs__container') !== null ){
 		tabs();
+	}
 		if (document.getElementById('page-menu') !== undefined) {
 			pageMenu();
 		}
