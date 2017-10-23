@@ -25,19 +25,20 @@ $footer-link-animation-duration: .5s;
 	justify-content: space-between;
 	padding: 0;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .footer-links__list-block {
 	flex: 1;
 }
-@media all and (min-width: 800px) {
+@media all and (min-width: $bp-m) {
 	// blokken naast elkaar
 	.footer-links {
 		flex-direction: row;
 	}
 	// vul de ruimte en zet een beetje marge links
 	.footer-links__list-block {
-		flex: 1;
+		flex: 0 1 33%;
 		margin-left: $spacing;
 	}
 
@@ -49,7 +50,9 @@ $footer-link-animation-duration: .5s;
 .footer-links__list {
 	padding-left: 0;
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: row;
+	margin-top: .75rem;
 }
 @media all and (max-width: $bp-xl) {
 	.footer-links__list-block {
@@ -63,7 +66,7 @@ $footer-link-animation-duration: .5s;
 
 .footer-link__item {
 	list-style: none;
-	padding: 0 0.625rem 0.625rem 0;
+	padding: 0 0.625rem 0.3125rem 0;
 }
 
 .footer-link__link {
@@ -90,6 +93,10 @@ $footer-link-animation-duration: .5s;
 .footer-link__item--discover .footer-link__link:focus {
 	color: $avans-blue;
 }
+/*
+	@#todo
+	make mixin
+	*/
 .footer-link__item--discover:before {
 	content: '';
 	width: 5px;
@@ -100,7 +107,7 @@ $footer-link-animation-duration: .5s;
 	transform: rotate(45deg);
 	position: absolute;
 	left: 2px;
-	top: 8px;
+	top: 7px;
 }
 
 .footer-link__item--discover:hover:before,
@@ -114,7 +121,7 @@ $footer-link-animation-duration: .5s;
 	overflow: hidden;
 	white-space: nowrap;
 	text-indent: 3rem;
-	margin: 0 $spacing-xs $spacing-xs 0;
+//	margin: 0 $spacing-xs $spacing-xs 0;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	display: inline-block;
@@ -232,8 +239,16 @@ $footer-link-animation-duration: .5s;
 
 .footer-links__header {
 	color: $footer-text-color;
-	margin: 1.3rem 0 0.4rem;
+	margin: 1.3rem 0 0;
 }
+
+@media all and (max-width: $bp-l) and (min-width: $bp-m) {
+	.footer-links__header {
+		font-size: .9rem;
+	}
+}
+
+
 
 .disclaimer {
 	display: block;
