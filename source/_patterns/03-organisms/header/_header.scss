@@ -41,7 +41,7 @@
 	height: 6rem;
 	background-color: #fff;
 }
-@media all and (min-width: $bp-xl) {
+@media all and (min-width: $bp-l) {
 	.nav {
 		order: 1;
 	}
@@ -87,7 +87,7 @@
 
 }
 
-@media all and (max-width: $bp-s) {
+@media all and (max-width: $bp-m) {
 	.skip-link {
 		width: 4.375rem;
 		height: 4.375rem;
@@ -102,7 +102,7 @@
 .search-link:hover {
 	background-image: url("../images/icons/search-icon-blue.svg");
 }
-@media all and (min-width: $bp-xl) {
+@media all and (min-width: $bp-l) {
 	.search-link {
 		order: 2;
 	}
@@ -134,7 +134,7 @@
 	overflow: hidden;
 	transition: width 0.2s easein;
 }
-@media all and (min-width: $bp-xl) {
+@media all and (min-width: $bp-l) {
 	.nav {
 		width: auto;
 		height: auto;

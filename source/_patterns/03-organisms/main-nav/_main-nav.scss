@@ -5,7 +5,7 @@ $nav-gray-arrow-color: $nav-gray;
 $nav-link-color: $nav-gray;
 $nav-link-active-color: #000;
 
-@media all and (max-width: $bp-xl) {
+@media all and (max-width: $bp-l) {
 	.nav.js-open,
 	.nav:target {
 		width: 100%;
@@ -75,12 +75,19 @@ $nav-link-active-color: #000;
 
 	padding: $spacing 0;
 }
-@media all and (max-width: $bp-xl) {
-	.nav__link--active,
+ @media all and (max-width: $bp-l) {
 	.nav__link--sub.nav__link--active {
 		color: $nav-link-active-color;
 	}
+
 }
+
+
+   .nav__link--active{
+	   color: $nav-link-active-color;
+   }
+
+
 
 
 .nav__link--sub {
@@ -89,7 +96,7 @@ $nav-link-active-color: #000;
 	font-weight: normal;
 }
 // big screen
-@media all and (min-width: $bp-xl) {
+@media all and (min-width: $bp-l) {
 	.nav {
 		height: auto;
 		width: auto;
@@ -125,6 +132,10 @@ $nav-link-active-color: #000;
 		position: absolute;
 		left: calc(50% - 5px);
 		bottom: 24px;
+	}
+
+	.nav__sub--opened:before {
+		border-color: $nav-link-active-color;
 	}
 
 	.nav__item--has-sub:hover:before {
@@ -192,7 +203,7 @@ $nav-link-active-color: #000;
 .nav__item:focus .nav_sub {
 	height: auto;
 }
-@media all and (max-width: $bp-xl) {
+@media all and (max-width: $bp-l) {
 	.nav__item--has-sub .nav__sub {
 		display: none;
 	}

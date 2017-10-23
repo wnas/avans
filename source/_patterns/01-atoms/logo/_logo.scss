@@ -5,9 +5,8 @@
 	flex-direction: column;
 	padding-top: 1.8125rem;
 	margin-left: $spacing;
-	@extend .testing;
 }
-@media all and (max-width: $bp-s) {
+@media all and (max-width: $bp-m) {
 	.logo {
 		height: 60px;
 		width: 122px;
