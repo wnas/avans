@@ -15,17 +15,17 @@ a {
 /*
   timing
 */
-.testing {
+.testing, .logo {
   outline: 1px solid red; }
-  .testing * {
+  .testing *, .logo * {
     outline: 1px solid green; }
-    .testing * * {
+    .testing * *, .logo * * {
       outline: 1px solid pink; }
-      .testing * * * {
+      .testing * * *, .logo * * * {
         outline: 1px solid blue; }
-        .testing * * * * {
+        .testing * * * *, .logo * * * * {
           outline: 1px solid orange; }
-          .testing * * * * * {
+          .testing * * * * *, .logo * * * * * {
             outline: 1px solid teal; }
 
 /*
@@ -326,19 +326,17 @@ p a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-top: 1.8125rem;
   margin-left: 0.9375rem; }
 
 @media all and (max-width: 540px) {
   .logo {
-    height: 70px;
-    width: 114px; } }
-
-.logo__img {
-  width: 100%;
-  height: 100%; }
+    height: 60px;
+    width: 122px;
+    padding-top: 18px; }
+  .logo__img {
+    height: 36px;
+    width: 122px; } }
 
 .filter__item {
   display: -webkit-box;
@@ -1215,7 +1213,7 @@ p a {
   position: relative;
   z-index: 25;
   border-top: 5px solid #C6002A;
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #eee; }
 
 .top-bar {
   background-color: #fff; }
@@ -1230,7 +1228,7 @@ p a {
   width: calc(100% - 163px); }
 
 .skip-link {
-  width: 5rem;
+  width: 3.8125rem;
   height: 6.3rem;
   text-indent: 6rem;
   padding-top: 1.5rem;
@@ -1240,7 +1238,7 @@ p a {
   background-position: center;
   background-size: 1.3125rem;
   display: inline-block;
-  border-right: 1px solid #ccc; }
+  border-right: 1px solid #eee; }
 
 .nav.js-open .skip-link,
 .nav:target .skip-link {
@@ -1486,15 +1484,17 @@ p a {
   .nav__item--has-sub:before {
     content: '';
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 5px;
+    height: 5px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     border: 1px solid #999;
     border-width: 0 1px 1px 0;
     position: absolute;
-    left: calc(50% - 8px);
-    bottom: 20px; }
+    left: calc(50% - 5px);
+    bottom: 24px; }
+  .nav__item--has-sub:hover:before {
+    border-color: #00ACEB; }
   .nav__item--has-sub:hover:after {
     content: '';
     display: block;
@@ -1573,7 +1573,7 @@ p a {
             transform: rotate(135deg); } }
 
 .submenu {
-  border-bottom: 1px solid #ccc; }
+  border-bottom: 1px solid #eee; }
   .submenu .layout-full-width-block__content {
     margin-bottom: 0; }
 

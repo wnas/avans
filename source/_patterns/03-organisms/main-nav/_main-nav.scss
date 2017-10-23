@@ -117,14 +117,18 @@ $nav-link-active-color: #000;
 	.nav__item--has-sub:before {
 		content: '';
 		display: block;
-		width: 8px;
-		height: 8px;
+		width: 5px;
+		height: 5px;
 		transform: rotate(45deg);
 		border: 1px solid $nav-gray-arrow-color;
 		border-width: 0 1px 1px 0;
 		position: absolute;
-		left: calc(50% - 8px);
-		bottom: 20px;
+		left: calc(50% - 5px);
+		bottom: 24px;
+	}
+
+	.nav__item--has-sub:hover:before {
+		border-color: $avans-blue;
 	}
 
 	.nav__item--has-sub:hover:after {
