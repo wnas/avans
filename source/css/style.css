@@ -1131,11 +1131,11 @@ p a {
     background-size: contain; } }
 
 .footer-link__link--youtube {
-  background-image: url("../images/icons/Icon-Social-Youtube.svg"); }
+  background-image: url("../images/icons/Icon-Social-YouTube.svg"); }
 
 .footer-link__link--youtube:hover,
 .footer-link__link--youtube:focus {
-  background-image: url("../images/icons/Icon-SocialHover-Youtube.svg"); }
+  background-image: url("../images/icons/Icon-SocialHover-YouTube.svg"); }
 
 .footer-link__link--facebook {
   background-image: url("../images/icons/Icon-Social-Facebook.svg"); }

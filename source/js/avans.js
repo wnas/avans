@@ -191,7 +191,9 @@ var avans = (function() {
 		if (config.pageMenu.container !== undefined) {
 			toggle(config.pageMenu);
 		}
-		subMenu();
+		if (document.querySelectorAll('.nav__item--has-sub') !== null) {
+			subMenu();
+		}
 		if (document.querySelector('.tabs__container') !== null) {
 			tabs();
 		}
