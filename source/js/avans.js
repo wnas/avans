@@ -31,7 +31,7 @@ var avans = (function() {
 
 				buttonOpen.addEventListener('click', function(evt) {
 					toggleClass(evt, elem);
-					if ( elem === config.topSearch ){
+					if (elem === config.topSearch) {
 						focusSearch(elem);
 					}
 				}, false);
@@ -50,7 +50,7 @@ var avans = (function() {
 			return false;
 
 		},
-		focusSearch = function(elem){
+		focusSearch = function(elem) {
 			elem.input.focus();
 		},
 		pageMenu = function() {
@@ -192,9 +192,9 @@ var avans = (function() {
 			toggle(config.pageMenu);
 		}
 		subMenu();
-		if( document.querySelector('.tabs__container') !== null ){
-		tabs();
-	}
+		if (document.querySelector('.tabs__container') !== null) {
+			tabs();
+		}
 		if (document.getElementById('page-menu') !== undefined) {
 			pageMenu();
 		}
