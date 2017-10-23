@@ -1205,7 +1205,11 @@ p a {
 
 .disclaimer__link {
   color: #999999;
+  margin-right: .5rem;
   text-decoration: underline; }
+
+.disclaimer__link:hover {
+  color: #fff; }
 
 .page__header {
   position: relative;

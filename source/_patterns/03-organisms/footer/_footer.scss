@@ -309,5 +309,9 @@ $footer-link-animation-duration: .5s;
 
 .disclaimer__link {
 	color: $footer-text-color;
+	margin-right: .5rem;
 	text-decoration: underline;
+}
+.disclaimer__link:hover {
+	color: #fff;
 }
