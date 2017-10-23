@@ -5,6 +5,16 @@
 	margin: 0 1rem -1px 0;
 	order: 1;
 }
+.tab__item[aria-selected] {
+	color: #000;
+	border-bottom-color: #fff;
+}
+
+@media (max-width: $bp-m ) {
+	.tab__item {
+		display: block;
+	}
+}
 
 .tab__link {
 	color: $avans-blue;
@@ -13,7 +23,7 @@
 	color: #000;
 }
 
-[data-default] {
+[aria-selected] {
 	border-bottom-color: #fff;
 	order: 0;
 	.tab__link {
