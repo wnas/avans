@@ -1273,7 +1273,8 @@ p a {
   font-size: .675rem;
   overflow: visible;
   width: 6rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-size: 30px 19px; }
 
 .nav-link.clicked {
   background-image: url("../images/icons/close-search-icon.svg");
@@ -1291,7 +1292,7 @@ p a {
   .skip-link {
     width: 4.375rem;
     height: 4.375rem;
-    padding-top: 2.8rem; } }
+    padding-top: 3rem; } }
 
 .search-link {
   background-image: url("../images/icons/search-icon.svg"); }
