@@ -14,11 +14,16 @@ $nav-link-active-color: $text-color;
 		position: absolute;
 		z-index: 20;
 		top: 100px;
-	//	left: $spacing;
+		left: 0;
+		margin-left: 0;
 	}
-
-	.nav__list {
-		border-top: 1px solid $nav-border-color;
+}
+@media all and (max-width: $bp-m) {
+	// on smaller screen we are not as heigh.
+	.nav.js-open,
+	.nav:target {
+		top: 70px;
+		min-height: calc(100vh - 70px);
 	}
 }
 
@@ -34,7 +39,6 @@ $nav-link-active-color: $text-color;
 @media all and (max-width: $bp-m) {
 	.nav {
 		margin-left: 0;
-	//	padding-right: $spacing;
 	}
 
 	.nav__list {
@@ -56,7 +60,16 @@ $nav-link-active-color: $text-color;
 		margin-top: 0;
 	}
 }
-@media all and (min-width: $bp-m) {
+@media all and (max-width: $bp-l) {
+	.nav__list {
+		border-top: 1px solid $nav-border-color;
+		max-width: 720px;
+
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media all and (min-width: $bp-l) {
 	.nav__list {
 		margin: 0;
 	}
@@ -70,8 +83,9 @@ $nav-link-active-color: $text-color;
 	justify-content: center;
 	position: relative;
 	padding: 0 $spacing-l;
-
-	&:first-child {
+}
+@media all and (min-width: $bp-l) {
+	.nav__item:first-child {
 		padding-left: $spacing;
 	}
 }
@@ -80,9 +94,6 @@ $nav-link-active-color: $text-color;
 		//	margin: 0 $spacing;
 	}
 
-	.nav__item:first-child {
-		padding-left: 1.25rem;
-	}
 	.nav__item--sub {
 		padding-left: 1.75rem;
 	}
@@ -265,12 +276,12 @@ $nav-link-active-color: $text-color;
 		border: 1px solid #333;
 		border-width: 0 0 1px 1px;
 		transform: rotate(-45deg);
-		transition: transform 0.5s ease, top .5s ease;
+		transition: transform 0.5s ease, top 0.5s ease;
 	}
 
 	.nav__sub--opened .nav__sub-opener:after {
 		//border-width:  1px 1px 0 0;
 		transform: rotate(135deg);
-		top: 50%;;
+		top: 50%;
 	}
 }

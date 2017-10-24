@@ -1385,9 +1385,15 @@ p a {
     min-height: calc(100vh - 100px);
     position: absolute;
     z-index: 20;
-    top: 100px; }
-  .nav__list {
-    border-top: 1px solid #eeeeee; } }
+    top: 100px;
+    left: 0;
+    margin-left: 0; } }
+
+@media all and (max-width: 768px) {
+  .nav.js-open,
+  .nav:target {
+    top: 70px;
+    min-height: calc(100vh - 70px); } }
 
 .nav {
   height: 0;
@@ -1425,7 +1431,14 @@ p a {
     padding-top: 10px;
     margin-top: 0; }
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 992px) {
+  .nav__list {
+    border-top: 1px solid #eeeeee;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto; } }
+
+@media all and (min-width: 992px) {
   .nav__list {
     margin: 0; } }
 
@@ -1446,12 +1459,12 @@ p a {
           justify-content: center;
   position: relative;
   padding: 0 1.25rem; }
+
+@media all and (min-width: 992px) {
   .nav__item:first-child {
-    padding-left: 0.9375rem; }
+    padding-left: 0.9375rem; } }
 
 @media all and (max-width: 768px) {
-  .nav__item:first-child {
-    padding-left: 1.25rem; }
   .nav__item--sub {
     padding-left: 1.75rem; } }
 
@@ -1593,10 +1606,10 @@ p a {
     border-width: 0 0 1px 1px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-transition: top .5s ease, -webkit-transform 0.5s ease;
-    transition: top .5s ease, -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease, top .5s ease;
-    transition: transform 0.5s ease, top .5s ease, -webkit-transform 0.5s ease; }
+    -webkit-transition: top 0.5s ease, -webkit-transform 0.5s ease;
+    transition: top 0.5s ease, -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease, top 0.5s ease;
+    transition: transform 0.5s ease, top 0.5s ease, -webkit-transform 0.5s ease; }
   .nav__sub--opened .nav__sub-opener:after {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);

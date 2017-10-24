@@ -35,6 +35,7 @@ var avans = (function() {
 						focusSearch(elem);
 					}
 				}, false);
+
 				buttonClose.addEventListener('click', function(evt) {
 					toggleClass(evt, elem)
 				}, false);
@@ -45,10 +46,9 @@ var avans = (function() {
 		},
 		toggleClass = function(evt, elem) {
 			evt.preventDefault();
+			evt.stopImmediatePropagation();
 			evt.target.classList.toggle('clicked');
 			elem.container.classList.toggle(elem.class);
-			return false;
-
 		},
 		focusSearch = function(elem) {
 			elem.input.focus();
