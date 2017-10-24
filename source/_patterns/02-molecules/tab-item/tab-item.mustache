@@ -1,8 +1,12 @@
-<li class="tab__item" {{# data-default}}data-default="{{data-default}}"{{/data-default}}>
+<li
+	class="tab__item {{# tab-selected }} tab__item--selected{{/ tab-selected }}">
 	<a
 		href="#section-{{ tab-id }}"
 		id="id-{{ tab-id }}"
-		class="tab__link">
+		class="tab__link"
+		{{# tab-selected }}
+			aria-selected="true"
+		{{/ tab-selected }}>
 		{{ tab-item }}
 	</a>
 </li>

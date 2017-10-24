@@ -4,14 +4,14 @@
 :target .top-search {
 	width: calc(100% - 1rem);
 	transition: width .5s;
-	background-color: #fff;
+	background-color: $white;
 	height: auto;
 }
 
 .js-open .search-link,
 :target .search-link {
 	order: 0;
-	border-left: 1px solid #eee;
+	border-left: 1px solid $lighter-gray;
 	border-right: 0;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .top-search__container {
-	background-color: #fff;
+	background-color: $white;
 	display: flex;
 	height: 100%;
 }

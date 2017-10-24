@@ -7,10 +7,10 @@
 		"colorvalue": "#00ACEB"
 	}, {
 		"label": "$light-gray",
-		"colorvalue": "#999999"
+		"colorvalue": "$light-gray999"
 	}, {
 		"label": "$lighter-gray",
-		"colorvalue": "#eeeeee"
+		"colorvalue": "$lighter-grayeee"
 	}, {
 		"label": "light-gray-background",
 		"colorvalue": "rgba(238,238,238,.5)"

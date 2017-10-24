@@ -1,27 +1,33 @@
 // stuff
 .tab__item {
-	border: 1px solid #eee;
-	padding: 1rem;
+	border: 1px solid $lighter-gray;
 	margin: 0 1rem -1px 0;
-}
-
-
-@media (max-width: $bp-m ) {
-	.tab__item {
-		display: block;
-	}
 }
 
 .tab__link {
 	color: $avans-blue;
+	padding: 1rem;
+	display: inline-block;
 }
+
+@media (max-width: $bp-m ) {
+	.tab__item {
+		display: block;
+		margin-bottom: 0;
+		border-bottom: 0;
+	}
+	.tab__item:last-child {
+		border-bottom: 1px solid $lighter-gray;
+	}
+}
+
 .tab__link:active {
-	color: #000;
+	color: $text-color;
 }
 
 .tab__item--selected {
-	border-bottom-color: #fff;
+	border-bottom-color: $white;
 	.tab__link {
-		color: #000;
+		color: $text-color;
 	}
 }

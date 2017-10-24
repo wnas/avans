@@ -13,7 +13,7 @@ dkdkd
 }
 
 .page-menu__item {
-	border-top: 1px solid #eee;
+	border-top: 1px solid $lighter-gray;
 	padding: $spacing 0 $spacing $spacing-xl;
 	position: relative;
 }
@@ -31,16 +31,16 @@ dkdkd
 }
 
 .page-menu__item:last-child {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $lighter-gray;
 }
 
 .page-menu__link {
 	font-size: 0.875rem;
-	color: #999;
+	color: $light-gray;
 }
 
 .page-menu__link--active {
-	color: #000;
+	color: $text-color;
 }
 
 .page-menu__link:hover {
@@ -71,7 +71,7 @@ dkdkd
 			left: 0;
 			height: auto;
 			margin-top: 1rem;
-			border-top: 1px solid #eee;
+			border-top: 1px solid $lighter-gray;
 			z-index: 0;
 		}
 	}
@@ -83,7 +83,7 @@ dkdkd
 	.page-menu {
 		display: flex;
 		flex-wrap: wrap;
-		border: 1px solid #eee;
+		border: 1px solid $lighter-gray;
 		border-width: 1px 0;
 		//margin: 1rem 0;
 		padding-top: 0;

@@ -7,13 +7,13 @@
 
 .btn--image-block,
 .btn--primary {
-  color: #fff;
+  color: $white;
 }
 .btn--primary {
   background-color: $avans-red;
 }
 .btn--image-block {
-  background-color: #000;
+  background-color: $text-color;
 }
 .btn--hidden {
 	position: absolute;

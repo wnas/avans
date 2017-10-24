@@ -30,7 +30,7 @@ $attention-spacing: $spacing-l;
 }
 
 .attention-block--alpha {
-	background-color: #fff;
+	background-color: $white;
 }
 
 .attention-block--beta {
@@ -39,10 +39,10 @@ $attention-spacing: $spacing-l;
 
 .attention-block--charlie {
 	background-color: $text-color;
-	color: #fff;
+	color: $white;
 
 	a {
-		color: #fff;
+		color: $white;
 	}
 }
 

@@ -2,11 +2,11 @@
 	position: relative;
 	z-index: 25;
 	border-top: 5px solid $avans-red;
-	border-bottom :1px solid #eee;
+	border-bottom :1px solid $lighter-gray;
 }
 
 .top-bar {
-	background-color: #fff;
+	background-color: $white;
 }
 
 .top-bar__container,
@@ -29,7 +29,7 @@
 	background-position: center;
 	background-size: 1.3125rem;
 	display: inline-block;
-	border-right: 1px solid #eee;
+	border-right: 1px solid $lighter-gray;
 }
 
 .nav.js-open .skip-link,
@@ -39,7 +39,7 @@
 	left: 1rem;
 	z-index: 5;
 	height: 6rem;
-	background-color: #fff;
+	background-color: $white;
 }
 @media all and (min-width: $bp-l) {
 	.nav {
@@ -62,7 +62,7 @@
 	text-align: center;
 	padding-top: 4rem;
 	transition: color 0.4s ease;
-	color: #999;
+	color: $light-gray;
 	font-size: .675rem;
 	overflow: visible;
 	width: 6rem;

@@ -15,7 +15,7 @@
 .pagination__link {
 	width: 2rem;
 	height: 2rem;
-	color: #fff;
+	color: $white;
 	display: block;
 	text-align: center;
 	padding-top: 0.4rem;
@@ -54,7 +54,7 @@
 		width: 0.625rem;
 		height: 0.625rem;
 		transform-origin: center;
-		border: 1px solid #fff;
+		border: 1px solid $white;
 		border-width: 1px 1px 0 0;
 	}
 }

@@ -2,11 +2,13 @@
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $lighter-gray;
 	padding-left: 0;
 }
 @media (max-width: $bp-m ) {
+	.tabs {
+		flex-direction: column;
+	}
 	[role="tablist"] a,
 	[role="tablist"] li {
 		display: block;

@@ -132,6 +132,8 @@ var avans = (function() {
 				var oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
 				panels[oldIndex].hidden = true;
 				panels[index].hidden = false;
+
+				return false;
 			};
 
 			// Add the tablist role to the first <ul> in the .tabbed container
@@ -151,7 +153,6 @@ var avans = (function() {
 					if (e.currentTarget !== currentTab) {
 						switchTab(currentTab, e.currentTarget);
 					}
-					return false;
 				});
 
 				// Handle keydown events for keyboard users
@@ -182,6 +183,7 @@ var avans = (function() {
 			// Initially activate the first tab and reveal the first tab panel
 			tabs[0].removeAttribute('tabindex');
 			tabs[0].setAttribute('aria-selected', 'true');
+			tabs[0].parentElement.classList.add('tab__item--selected');
 			panels[0].hidden = false;
 		}
 	init = function() {

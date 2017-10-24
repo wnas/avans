@@ -55,7 +55,7 @@
 }
 
 .header--hero {
-	color: #fff;
+	color: $white;
 	position: relative;
 	z-index: 15;
 	margin: 0 auto;
@@ -71,6 +71,6 @@
 	left: 0;
 	width: 11px;
 	height: 11px;
-	background-color: #fff;
+	background-color: $white;
 	transform: rotate(45deg);
 }

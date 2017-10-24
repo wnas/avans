@@ -1,6 +1,6 @@
-$footer-text-color: #999999;
+$footer-text-color: $light-gray;
 $footer-background-color: $light-gray-background;
-$disclaimer-background-color: #000;
+$disclaimer-background-color: $text-color;
 
 $footer-link-animation-duration: .5s;
 /*
@@ -102,7 +102,7 @@ $footer-link-animation-duration: .5s;
 	width: 5px;
 	height: 5px;
 	display: inline-block;
-	border: 1px solid #999;
+	border: 1px solid $light-gray;
 	border-width: 1px 1px 0 0;
 	transform: rotate(45deg);
 	position: absolute;
@@ -151,7 +151,7 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--mail:after {
-	background-color: #000000;
+	background-color: $text-color;
 }
 
 .footer-link__item--facebook:after {
@@ -313,5 +313,5 @@ $footer-link-animation-duration: .5s;
 	text-decoration: underline;
 }
 .disclaimer__link:hover {
-	color: #fff;
+	color: $white;
 }

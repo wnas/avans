@@ -1,9 +1,9 @@
-$nav-border-color: #eee;
+$nav-border-color: $lighter-gray;
 $sub-nav-border-color: rgba(255,255,255,.35);
-$nav-gray: #999;
+$nav-gray: $light-gray;
 $nav-gray-arrow-color: $nav-gray;
 $nav-link-color: $nav-gray;
-$nav-link-active-color: #000;
+$nav-link-active-color: $text-color;
 @media all and (max-width: $bp-l) {
 	.nav.js-open,
 	.nav:target {
@@ -208,7 +208,7 @@ $nav-link-active-color: #000;
 	}
 
 	.nav__link--sub {
-		color: #fff;
+		color: $white;
 		background-image: url('../images/icons/ICON-Arrow-Right-White.svg');
 		white-space: nowrap;
 	}

@@ -1,5 +1,5 @@
 .submenu {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid $lighter-gray;
 
 	.layout-full-width-block__content {
 		margin-bottom: 0;
@@ -16,14 +16,14 @@
 }
 
 .submenu__link {
-	color: #999;
+	color: $light-gray;
 	display: block;
 	padding: 1rem 1rem 1rem 0;
 	font-size: .875rem;
 }
 
 .submenu__link--active {
-	color: #000;
+	color: $text-color;
 }
 
 .submenu__link:hover {

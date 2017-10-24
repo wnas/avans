@@ -1,6 +1,6 @@
 .link-box {
 	padding: $spacing-xl;
-	background-color: #fff;
+	background-color: $white;
 }
 
 .link-box--opleidingen {
@@ -52,7 +52,7 @@
 
 .link-box__link {
 	text-decoration: none;
-	color: #000;
+	color: $text-color;
 	display: block;
 	padding: $spacing 0 0;
 }

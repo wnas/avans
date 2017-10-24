@@ -18,14 +18,14 @@
 
 .btn--filter {
 	border-radius: 30px;
-	background-color: #eeeeee;
+	background-color: $lighter-gray;
 	position: relative;
 	padding: .625rem 2.5rem .625rem 1rem;
 }
 
 .btn--filter:after {
 	content:'x';
-	color: #999;
+	color: $light-gray;
 	position: absolute;
 	right: .8rem;
 	top: .2rem;
