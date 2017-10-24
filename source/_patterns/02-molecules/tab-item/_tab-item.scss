@@ -3,12 +3,8 @@
 	border: 1px solid #eee;
 	padding: 1rem;
 	margin: 0 1rem -1px 0;
-	order: 1;
 }
-.tab__item[aria-selected] {
-	color: #000;
-	border-bottom-color: #fff;
-}
+
 
 @media (max-width: $bp-m ) {
 	.tab__item {
@@ -23,9 +19,8 @@
 	color: #000;
 }
 
-[aria-selected] {
+.tab__item--selected {
 	border-bottom-color: #fff;
-	order: 0;
 	.tab__link {
 		color: #000;
 	}

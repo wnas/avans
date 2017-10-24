@@ -121,8 +121,11 @@ var avans = (function() {
 				newTab.removeAttribute('tabindex');
 				// Set the selected state
 				newTab.setAttribute('aria-selected', 'true');
+				console.log(newTab.parentElement);
+				newTab.parentElement.classList.add('tab__item--selected');
 				oldTab.removeAttribute('aria-selected');
 				oldTab.setAttribute('tabindex', '-1');
+				oldTab.parentElement.classList.remove('tab__item--selected');
 				// Get the indices of the new and old tabs to find the correct
 				// tab panels to show and hide
 				var index = Array.prototype.indexOf.call(tabs, newTab);
@@ -148,6 +151,7 @@ var avans = (function() {
 					if (e.currentTarget !== currentTab) {
 						switchTab(currentTab, e.currentTarget);
 					}
+					return false;
 				});
 
 				// Handle keydown events for keyboard users
@@ -170,7 +174,6 @@ var avans = (function() {
 			Array.prototype.forEach.call(panels, function(panel, i) {
 				panel.setAttribute('role', 'tabpanel');
 				panel.setAttribute('tabindex', '-1');
-				console.log(tabs[i]);
 				var id = panel.getAttribute('id');
 				panel.setAttribute('aria-labelledby', tabs[i].id);
 				panel.hidden = true;
@@ -197,7 +200,7 @@ var avans = (function() {
 		if (document.querySelector('.tabs__container') !== null) {
 			tabs();
 		}
-		if (document.getElementById('page-menu') !== undefined) {
+		if (document.getElementById('page-menu') !== null) {
 			pageMenu();
 		}
 	};
