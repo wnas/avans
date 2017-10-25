@@ -1,4 +1,8 @@
 /* file to normalize the styles */
+* {
+	box-sizing: border-box;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -7,6 +11,7 @@ body {
 body {
 	background-color: #fff;
 }
+
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
