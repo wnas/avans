@@ -1,5 +1,6 @@
 {
 	"filter-class": "class for filter",
 	"input-class": "input--filter",
-	"type": "checkbox"
+	"type": "checkbox",
+	"id": "id"
 }

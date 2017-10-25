@@ -1,0 +1,7 @@
+{
+	"label-text": "Deeltijd",
+	"input-class": "input--filter",
+	"for": "deeltijd",
+	"id": "deeltijd",
+	"type":"email"
+}
