@@ -1,0 +1,14 @@
+{
+	"hero-title": "Communicatie & Multimedia Design",
+	"hero-image": {
+		"container-class": "hero__container",
+		"image-class": "hero__image",
+		"img-src": "../../images/hero/hero-opleidingen.png",
+		"srcSet": [
+			{"src": "../../images/hero/hero-opleidingen.png",
+			"res": "1x"},
+			{"src": "../../images/hero/hero-opleidingen@2x.png",
+			"res": "2x"}
+		]
+	}
+}

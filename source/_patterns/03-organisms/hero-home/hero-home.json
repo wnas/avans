@@ -1,8 +1,9 @@
 {
-	"hero-title": "Communicatie & Multimedia Design",
+	"hero-title": "Ervaar hoe het is om te studeren bij avans",
 	"hero-image": {
-		"container-class": "hero__container",
-		"image-class": "hero__image",
+		"container-class": "hero-home__img-container",
+		"image-class": "hero-home__image",
+		"image-alt": "Meaningfull alt tekst",
 		"img-src": "../../images/hero/hero-home.png",
 		"srcSet": [
 			{"src": "../../images/hero/hero-home.png",
@@ -10,5 +11,9 @@
 			{"src": "../../images/hero/hero-home@2x.png",
 			"res": "2x"}
 		]
+	},
+	"hero-button": {
+		"button-text": "Kom proefstuderen",
+	    "button-class": "btn--primary"
 	}
 }

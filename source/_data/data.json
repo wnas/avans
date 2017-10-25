@@ -4,13 +4,8 @@
 	"hero-image": {
 		"container-class": "hero__container",
 		"image-class": "hero__image",
-		"img-src": "../../images/opleidingen/cmd/hero.png",
-		"srcSet": [
-			{"src": "../../images/opleidingen/cmd/hero.png",
-			"res": "1x"},
-			{"src": "../../images/opleidingen/cmd/hero@2x.png",
-			"res": "2x"}
-		]
+		"img-src": "../../images/hero/hero-cmd.png"
+
 	},
 	"type": "url",
 	"label-text": "label-text",

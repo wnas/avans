@@ -1,17 +1,20 @@
-<div class="hero layout-full-width-block">
+<div class="hero-home layout-full-width-block {{ hero-class }}">
 	{{# hero-image }}
 		{{> atoms-image }}
 	<!-- / hero image -->
 	{{/ hero-image }}
 
-	<div class="hero__content">
-		<h1 class="header--hero header">
+	<div class="hero-home__content">
+		<h1 class="header--hero-home  header">
 	      <span class="header__text">
 	        {{ hero-title }}
 	       </span>
 	       <!-- / header text -->
 	     </h1>
 		<!-- / hero header -->
+		{{# hero-button }}
+			{{> atoms-button }}
+		{{/ hero-button }}
 	</div>
 	<!-- / hero content -->
 
