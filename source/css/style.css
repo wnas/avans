@@ -147,7 +147,7 @@ section {
     padding-left: 0;
     padding-right: 0; }
     .content-page__content .breakout-box {
-      width: calc(100% + 298px); }
+      width: calc(556px + 298px); }
   .breakout-box {
     padding: 1rem 0; }
     .content-page__content .breakout-box {
@@ -197,9 +197,7 @@ section {
 @media all and (min-width: 556px) {
   .content-page__content {
     min-width: 556px;
-    margin: 0 auto; }
-    .content-page__content .breakout-box {
-      width: calc(556px + ( (100vw - 556px )/ 2)); } }
+    margin: 0 auto; } }
 
 /* Define a custom web font */
 @font-face {
@@ -1904,12 +1902,14 @@ dkdkd
 
 .hero--simple {
   max-height: 150px;
-  background-color: #ffffff;
-  background-image: url("../images/hero-simple-bg.png");
-  background-repeat: repeat;
+  background-color: rgba(238, 238, 238, 0.5);
   max-width: 100%; }
   .hero--simple .header--hero {
     color: #000001; }
+
+.hero--pattern {
+  background-image: url("../images/hero-simple-bg.png");
+  background-repeat: repeat; }
 
 .hero--simple:after {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 238, 238, 0)), to(#f6f6f6));

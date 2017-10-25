@@ -1,14 +1,16 @@
 .hero--simple {
 	max-height: 150px;
-	background-color: $white;
-	background-image: url('../images/hero-simple-bg.png');
-	background-repeat: repeat;
+	background-color: $light-gray-background;
 	max-width: 100%;
-
 
 	.header--hero {
 		color: $text-color;
 	}
+}
+
+.hero--pattern {
+	background-image: url('../images/hero-simple-bg.png');
+	background-repeat: repeat;
 }
 
 .hero--simple:after {
