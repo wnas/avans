@@ -1,113 +1,62 @@
-{{> organisms-header }}
-{{> organisms-submenu }}
-
-{{> organisms-hero }}
+{{> organisms-header }} {{> organisms-submenu }} {{> organisms-hero-simple }}
 
 <main class="layout-full-width-block main-content layout-full-width-block--content-page">
 	<div class="layout-full-width-block__content content-page">
 		{{> organisms-page-menu}}
 		<article class="main-content content-page__content">
+			{{{ article-content }}}
+			<div class="breakout-box">
+				<table class="schedule">
+					<caption>Delivery slots:</caption>
+					<thead>
+						<tr>
+							<td></td>
+							<th class="schedule__header" scope="col">Blok 1</th>
+							<th class="schedule__header" scope="col">Blok 2</th>
+							<th class="schedule__header" scope="col">Blok 3</th>
+							<th class="schedule__header" scope="col">Blok 4</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th class="schedule__header" scope="row">Beeldbewerking & onderzoek</th>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="active schedule__slot--active">Les</td>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot"></td>
+						</tr>
+						<tr>
+							<th class="schedule__header" scope="row">Body & art</th>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot"></td>
+						</tr>
+						<tr>
+							<th class="schedule__header" scope="row">Creative technology</th>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot"></td>
+						</tr>
+						<tr>
+							<th class="schedule__header" scope="row">Gebruikersscenario</th>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+						</tr>
+						<tr>
+							<th class="schedule__header" scope="row">Grafisch ontwerp</th>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot"></td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+							<td class="schedule__slot schedule__slot--active">Les</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-
-			<table id="jaar-1" style="display: table;">
-            <caption>1-ejaars vakken</caption>
-            <thead>
-            <tr>
-                <th id="courses">Vakken</th>
-                <th id="block-1">Blok 1</th>
-                <th id="block-2">Blok 2</th>
-                <th id="block-3">Blok 3</th>
-                <th id="block-4">Blok 4</th>
-            </tr>
-            </thead>
-
-            <tbody>
-
-            <!-- Courses -->
-            <tr>
-
-                <!-- Name, description -->
-                <td headers="courses" class="">
-                    Vraagstuk 1: als organisatie het verschil maken</td>
-
-                <td headers="block-1" class="block">
-
-          <span class="span1 style-secondary">x</span>
-          </td>
-      <td headers="block-2" class="block">
-
-          </td>
-      <td headers="block-3" class="block">
-
-          </td>
-      <td headers="block-4" class="block">
-
-          </td>
-      </tr>
-            <tr>
-
-                <!-- Name, description -->
-                <td headers="courses" class="">
-                    Vraagstuk 2: processen inrichten en vastleggen</td>
-
-                <td headers="block-1" class="block">
-
-          </td>
-      <td headers="block-2" class="block">
-
-          <span class="span1 style-secondary">x</span>
-          </td>
-      <td headers="block-3" class="block">
-
-          </td>
-      <td headers="block-4" class="block">
-
-          </td>
-      </tr>
-            <tr>
-
-                <!-- Name, description -->
-                <td headers="courses" class="">
-                    Vraagstuk 3: resultaten en doelstellingen</td>
-
-                <td headers="block-1" class="block">
-
-          </td>
-      <td headers="block-2" class="block">
-
-          </td>
-      <td headers="block-3" class="block">
-
-          <span class="span1 style-secondary">x</span>
-          </td>
-      <td headers="block-4" class="block">
-
-          </td>
-      </tr>
-            <tr>
-
-                <!-- Name, description -->
-                <td headers="courses" class="">
-                    Vraagstuk 4: werkwijze en/of doelstellingen aanpassen</td>
-
-                <td headers="block-1" class="block">
-
-          </td>
-      <td headers="block-2" class="block">
-
-          </td>
-      <td headers="block-3" class="block">
-
-          </td>
-      <td headers="block-4" class="block">
-
-          <span class="span1 style-secondary">x</span>
-          </td>
-      </tr>
-            </tbody>
-        </table>
-
-		{{{ article-content }}}
 		</article>
 		<aside class="content-page__aside">
 			{{# widgets }}
