@@ -29,7 +29,7 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-links__list-block {
-	flex: 1;
+	flex: 0 1 auto;
 }
 @media all and (min-width: $bp-m) {
 	// blokken naast elkaar
@@ -67,6 +67,7 @@ $footer-link-animation-duration: .5s;
 .footer-link__item {
 	list-style: none;
 	padding: 0 0.625rem 0.3125rem 0;
+	flex: 0 1 auto;
 }
 
 .footer-link__link {

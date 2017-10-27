@@ -21,7 +21,8 @@ var avans = (function() {
 				"class": "js-open"
 			},
 			"screensizes": {
-				"xl": 1200
+				"xl": 1200,
+				"m": 768
 			}
 		},
 		toggle = function(elem) {
@@ -185,27 +186,52 @@ var avans = (function() {
 			tabs[0].setAttribute('aria-selected', 'true');
 			tabs[0].parentElement.classList.add('tab__item--selected');
 			panels[0].hidden = false;
-		}
-	init = function() {
-		if (config.topMenu.container !== undefined) {
-			toggle(config.topMenu);
-		}
-		if (config.topSearch.container !== undefined) {
-			toggle(config.topSearch);
-		}
-		if (config.pageMenu.container !== undefined) {
-			toggle(config.pageMenu);
-		}
-		if (document.querySelectorAll('.nav__item--has-sub') !== null) {
-			subMenu();
-		}
-		if (document.querySelector('.tabs__container') !== null) {
-			tabs();
-		}
-		if (document.getElementById('page-menu') !== null) {
-			pageMenu();
-		}
-	};
+		},
+		responsiveSchedule = function() {
+			var w = document.querySelector('body').clientWidth;
+			var table = document.querySelector('.schedule');
+
+			var header = table.querySelector('.schedule__row--head');
+
+
+			if (w < config.screensizes.m) {
+				var cloneHeader = header.cloneNode(true);
+				var lineHeaders = table.querySelectorAll('.schedule__header--line');
+				var len = lineHeaders.length;
+				var i;
+				// for (i = 0; i < len; i++) {
+				for (i = 0; i < len; i++) {
+					var line = lineHeaders[i];
+					var clone = cloneHeader;
+					console.log(clone);
+					placeClone(line,clone);
+				}
+			}
+		},
+		placeClone = function(tar, clone) {
+			tar.after(clone);
+		},
+		init = function() {
+			if (config.topMenu.container !== undefined) {
+				toggle(config.topMenu);
+			}
+			if (config.topSearch.container !== undefined) {
+				toggle(config.topSearch);
+			}
+			if (config.pageMenu.container !== undefined) {
+				toggle(config.pageMenu);
+			}
+			if (document.querySelectorAll('.nav__item--has-sub') !== null) {
+				subMenu();
+			}
+			if (document.querySelector('.tabs__container') !== null) {
+				tabs();
+			}
+			if (document.getElementById('page-menu') !== null) {
+				pageMenu();
+			}
+		//	responsiveSchedule();
+		};
 	return {
 		init: init
 	};
