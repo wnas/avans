@@ -1,0 +1,250 @@
+{
+	"caption": "Course schedule",
+	"headers": [
+		{
+			"content": "vak"
+		},
+		{
+			"content": "Blok 1"
+		},
+		{
+			"content": "Blok 2"
+		},
+		{
+			"content": "Blok 3"
+		},
+		{
+			"content": "Blok 4"
+		}
+	],
+	"rows": [
+		{
+			"line-header": "Beeldbewerking  & onderzoek",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Creative technology",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Gebruikersscenario",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		},
+		{
+			"line-header": "Grafisch ontwerp",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		},
+		{
+			"line-header": "Beeldbewerking  & onderzoek",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Creative technology",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Gebruikersscenario",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		},
+		{
+			"line-header": "Grafisch ontwerp",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		},
+		{
+			"line-header": "Beeldbewerking  & onderzoek",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Creative technology",
+			"slots": [
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				}
+			]
+		},
+		{
+			"line-header": "Gebruikersscenario",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		},
+		{
+			"line-header": "Grafisch ontwerp",
+			"slots": [
+				{
+					"content": ""
+				},
+				{
+					"content": ""
+				},
+				{
+					"content": "les",
+					"active": "true"
+				},
+				{
+					"content": "les",
+					"active": "true"
+				}
+			]
+		}
+	]
+}

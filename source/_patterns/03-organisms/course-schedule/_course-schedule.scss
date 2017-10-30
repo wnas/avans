@@ -1,0 +1,67 @@
+// scss
+
+.schedule {
+	border-collapse: collapse;
+	width: 100%;
+	//@extend .testing;
+}
+
+.schedule__header,
+.schedule__slot {
+	padding: $spacing-xs 0;
+	border-bottom: 1px solid #eee;
+}
+
+.schedule__header {
+	text-align: left;
+}
+
+.schedule__header--head {
+	text-transform: uppercase;
+	color: #999;
+	font-size: 0.75rem;
+	border-top: 0;
+}
+
+.schedule__header--line {
+	width: 50%;
+	min-width: 400px;
+	font-weight: normal;
+}
+
+.schedule__header--line,
+.schedule__slot {
+	font-size: 0.875rem;
+}
+
+.schedule__slot--active .schedule__slot-content {
+	background-color: #999;
+	display: block;
+	margin: 0.5rem 0;
+	color: #999;
+}
+@media all and (max-width: $bp-m) {
+	.schedule {
+		position: relative;
+	}
+	.schedule__row--head {
+		position: sticky;
+		top: 0;
+		background-color: $white;
+		border-bottom: 1px solid #ccc;
+	}
+	.schedule__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.schedule__header,
+	.schedule__slot {
+		flex: 0 1 25%;
+	}
+
+	.schedule__header--head:first-of-type,
+	.schedule__header--line {
+		flex-basis: 100%;
+	}
+}

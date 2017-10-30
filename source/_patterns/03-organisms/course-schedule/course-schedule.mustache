@@ -1,0 +1,24 @@
+<table class="schedule">
+	<caption>{{ caption }}</caption>
+	<thead class="schedule__head">
+		<tr class="schedule__row schedule__row--head">
+			{{# headers }}
+				<th class="schedule__header schedule__header--head" scope="col">{{ content }}</th>
+			{{/ headers }}
+		</tr>
+	</thead>
+	<tbody>
+		{{# rows }}
+		<tr class="schedule__row">
+			<th class="schedule__header schedule__header--line" scope="row">
+				{{ line-header }}
+			</th>
+			{{# slots }}
+				<td class="schedule__slot {{# active }}schedule__slot--active{{/ active }}">
+					<span class="schedule__slot-content">{{ content }}</span>
+				</td>
+			{{/ slots }}
+		</tr>
+		{{/ rows }}
+	</tbody>
+</table>
