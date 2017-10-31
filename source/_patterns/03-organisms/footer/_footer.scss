@@ -28,7 +28,7 @@ $footer-link-animation-duration: .5s;
 	margin-bottom: 1rem;
 }
 
-.footer-links__list-block {
+.links__list-block {
 	flex: 0 1 auto;
 }
 @media all and (min-width: $bp-m) {
@@ -37,17 +37,17 @@ $footer-link-animation-duration: .5s;
 		flex-direction: row;
 	}
 	// vul de ruimte en zet een beetje marge links
-	.footer-links__list-block {
+	.links__list-block {
 		flex: 0 1 33%;
 		margin-left: $spacing;
 	}
 
-	.footer-links__list-block:first-child {
+	.links__list-block:first-child {
 		margin-left: 0;
 	}
 }
 
-.footer-links__list {
+.links__list {
 	padding-left: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -55,12 +55,15 @@ $footer-link-animation-duration: .5s;
 	margin-top: .75rem;
 }
 @media all and (max-width: $bp-xl) {
-	.footer-links__list-block {
+	.links__list-block {
 		padding: 0 $spacing;
+		.nav & {
+			margin: $spacing-l 0;
+		}
 	}
 }
 
-.footer-links__list--discover {
+.links__list--discover {
 	flex-direction: column;
 }
 
@@ -160,7 +163,7 @@ $footer-link-animation-duration: .5s;
 }
 // if the screen is really tiny :)
 @media all and (max-width: $bp-xs) {
-	.footer-links__list {
+	.links__list {
 		flex-wrap: wrap;
 	}
 }
@@ -236,15 +239,18 @@ $footer-link-animation-duration: .5s;
 	background-image: url('../images/icons/Icon-SocialHover-Facebook.svg');
 }
 
-.footer-links__list-block {}
+.links__list-block {}
 
-.footer-links__header {
+.links__header {
 	color: $footer-text-color;
 	margin: 1.3rem 0 0;
+	.nav & {
+		display: none;
+	}
 }
 
 @media all and (max-width: $bp-l) and (min-width: $bp-m) {
-	.footer-links__header {
+	.links__header {
 		font-size: .9rem;
 	}
 }

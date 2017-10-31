@@ -73,6 +73,9 @@ $nav-link-active-color: $text-color;
 	.nav__list {
 		margin: 0;
 	}
+	.nav .links__list-block {
+		display: none;
+	}
 }
 
 .nav__item {

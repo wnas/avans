@@ -20,6 +20,26 @@ section {
 .layout-full-width-block--content-page {
 	padding: 0;
 }
+
+.foo {
+	display: flex;
+	flex-wrap: wrap;
+}
+.foo li {
+	list-style: none;
+	flex: 0 1 50%;
+	outline: 1px solid red;
+}
+
+@media all and (max-width: $bp-m) {
+	.foo {
+		flex-direction: column;
+	}
+	.foo li {
+		flex: 0 1 100%;
+	}
+}
+
 @media all and (max-width: $bp-m) {
 	.top-bar {
 		padding: 0;

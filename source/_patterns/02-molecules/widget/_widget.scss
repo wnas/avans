@@ -2,7 +2,7 @@
 	margin-bottom: $spacing;
 	//@extend .testing;
 }
-.widget.footer-links__list-block {
+.widget.links__list-block {
 	padding: 0;
 	margin: 0;
 }
@@ -17,7 +17,7 @@
 }
 
 .widget__header,
-.widget .footer-links__header {
+.widget .links__header {
 	border-bottom: 1px solid $lighter-gray;
 	color: $text-color;
 	padding: $spacing 0;
