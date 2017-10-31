@@ -1,6 +1,9 @@
 $width__overal : 1140px;
 $sidebar : 263px;
 
+/*
+	spacings
+*/
 $spacing-xs    : 0.3125rem ;
 $spacing-s    : .625rem;
 $spacing    : 0.9375rem;
@@ -11,7 +14,21 @@ $spacing-xxl : 4rem;
 $content__margin: $spacing;
 $hero__padding: calc($spacing * 2);
 
+/*
+	font-sizes
+*/
 
+$fs-s:					0.875rem;
+$fs: 					1.0rem;
+$fs-l:					1.5rem;
+$fs-xl:					2.0rem;
+
+$header-icon-text: 		0.675rem;
+$page-menu-header:		0.75rem;
+$footer-links:			0.8125rem;
+$footer-header:			0.9rem;
+$result-block__header: 	1.25rem;
+$table-header: 			0.75rem;
 /*
     breakpoints
 */

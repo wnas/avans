@@ -2,7 +2,7 @@
 dkdkd
 */
 .page-menu-block__header {
-	font-size: 0.75rem;
+	font-size: $page-menu-header;
 	text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@ dkdkd
 }
 
 .page-menu__link {
-	font-size: 0.875rem;
+	font-size: $fs-s;
 	color: $light-gray;
 }
 
@@ -115,7 +115,7 @@ dkdkd
 			height: 4.3rem;
 			padding-top: 1.5rem;
 			text-transform: none;
-			font-size: 1rem;
+			font-size: $fs;
 			padding-left: 3rem;
 			background-position: 1rem;
 			border-right: none;

@@ -85,7 +85,7 @@
 
 .result-block__header {
 	margin-top: 0;
-	font-size: 1.25rem;
+	font-size: $result-block__header;
 	transition: color $time-s ease;
 }
 
@@ -95,7 +95,6 @@
 
 
 .result-block__location {
-	font-size: 0.875rem;
 	display: inline-block;
 	padding-left: 1.5rem;
 	margin-left: 1.25rem;
@@ -111,8 +110,9 @@
 	}
 }
 
+.result-block__location,
 .result-block__alert {
-	font-size: .875rem;
+	font-size: $fs-s;
 }
 
 .alert__header {

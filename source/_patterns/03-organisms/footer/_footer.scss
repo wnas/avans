@@ -57,9 +57,7 @@ $footer-link-animation-duration: .5s;
 @media all and (max-width: $bp-xl) {
 	.links__list-block {
 		padding: 0 $spacing;
-		.nav & {
-			margin: $spacing-l 0;
-		}
+
 	}
 }
 
@@ -69,13 +67,16 @@ $footer-link-animation-duration: .5s;
 
 .footer-link__item {
 	list-style: none;
-	padding: 0 0.625rem 0.3125rem 0;
+	padding: 0 $spacing-s $spacing-xs 0;
 	flex: 0 1 auto;
+	.nav & {
+		padding-bottom: $spacing-s;
+	}
 }
 
 .footer-link__link {
 	color: $footer-text-color;
-	font-size: 0.8125rem;
+	font-size: $footer-links;
 	transition: background $footer-link-animation-duration ease;
 }
 
@@ -251,7 +252,7 @@ $footer-link-animation-duration: .5s;
 
 @media all and (max-width: $bp-l) and (min-width: $bp-m) {
 	.links__header {
-		font-size: .9rem;
+		font-size: $footer-header;
 	}
 }
 
@@ -262,7 +263,7 @@ $footer-link-animation-duration: .5s;
 	background-color: $disclaimer-background-color;
 	color: $footer-text-color;
 	padding: 1rem 0;
-	font-size: 0.8125rem;
+	font-size: $footer-links;
 }
 @media all and (max-width: $bp-m) {
 	.disclaimer__container {

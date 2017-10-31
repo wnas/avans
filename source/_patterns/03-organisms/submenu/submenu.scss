@@ -8,7 +8,6 @@
 .submenu__list {
 	list-style: none;
 	padding: 0;
-	margin: 0;
 }
 
 .submenu__item {
@@ -19,7 +18,7 @@
 	color: $light-gray;
 	display: block;
 	padding: 1rem 1rem 1rem 0;
-	font-size: .875rem;
+	font-size: $fs-s;
 }
 
 .submenu__link--active {

@@ -14,6 +14,12 @@ a {
   text-decoration: none; }
 
 /*
+	spacings
+*/
+/*
+	font-sizes
+*/
+/*
     breakpoints
 */
 /*
@@ -80,20 +86,6 @@ section {
 .layout-full-width-block--content-page {
   padding: 0; }
 
-.foo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-
-.foo li {
-  list-style: none;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  outline: 1px solid red; }
-
 @media all and (max-width: 768px) {
   .foo {
     -webkit-box-orient: vertical;
@@ -115,7 +107,9 @@ section {
 
 .hero__content,
 .layout-full-width-block__content,
-.top-bar__content {
+.top-bar__content,
+.submenu__list,
+.hero__content {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto; }
@@ -211,11 +205,14 @@ section {
 
 @media all and (max-width: 1200px) and (min-width: 992px) {
   .page-footer__content,
-  .top-bar__content {
+  .top-bar__content,
+  .hero__content,
+  .submenu__list {
     max-width: 960px; } }
 
 @media all and (max-width: 992px) and (min-width: 768px) {
   .page-footer__content,
+  .hero__content,
   .top-bar__content {
     max-width: 720px; } }
 
@@ -224,42 +221,40 @@ section {
     min-width: 556px;
     margin: 0 auto; } }
 
-/* Define a custom web font */
 @font-face {
-  font-family: "FrutigerLTW01-55Roman";
-  src: url("../fonts/9b1fae67-8764-448a-a926-54b09bd0b06b.woff2") format("woff2"), url("../fonts/3fbbd6b1-cfa7-4ff0-97ea-af1b2c489f15.woff") format("woff"); }
+  font-family: "Frutiger LT W01_45 Ligh1475730";
+  src: url("Fonts/81e3653a-53bd-49d9-a1f8-f924811b6f02.eot?#iefix");
+  src: url("Fonts/81e3653a-53bd-49d9-a1f8-f924811b6f02.eot?#iefix") format("eot"), url("Fonts/087d8a95-3f25-4bae-a1d1-db9ddffd72f5.woff2") format("woff2"), url("Fonts/ab1bcdf7-9570-4cba-a8e3-3e39ddd861db.woff") format("woff"), url("Fonts/83c94878-06c8-442c-a7df-d520b0ced00b.ttf") format("truetype"), url("Fonts/29f3ff8a-1719-4e25-a757-53ee1a1114a5.svg#29f3ff8a-1719-4e25-a757-53ee1a1114a5") format("svg"); }
 
 @font-face {
-  font-family: "FrutigerLTW01-56Italic";
-  src: url("../fonts/a6f5a1fe-91d0-4bde-bf50-4fc4e2d24f7e.woff2") format("woff2"), url("../fonts/e2ade8a9-bd48-45e7-95e6-9dc917ba4f74.woff") format("woff"); }
+  font-family: "Frutiger LT W01_46 Ligh1475734";
+  src: url("Fonts/381ea1e1-9a08-4929-a402-63be7fd76549.eot?#iefix");
+  src: url("Fonts/381ea1e1-9a08-4929-a402-63be7fd76549.eot?#iefix") format("eot"), url("Fonts/db6ed4c5-5248-41f3-a6b5-4e8ff1d5ab06.woff2") format("woff2"), url("Fonts/38f88aba-a7d0-4a78-9323-ac58226d277e.woff") format("woff"), url("Fonts/1149176e-a9be-41bf-822e-275d9da199e5.ttf") format("truetype"), url("Fonts/cd75c3e3-c5b7-4a25-9498-cabe4e8a9076.svg#cd75c3e3-c5b7-4a25-9498-cabe4e8a9076") format("svg"); }
 
 @font-face {
-  font-family: "Frutiger LT W01 65 Bold";
-  src: url("../fonts/6e7f04cb-3b30-43a5-b79d-25b4c1178700.woff2") format("woff2"), url("../fonts/9aa32a81-1124-4c43-b3db-15bfb1f7aed2.woff") format("woff"); }
+  font-family: "Frutiger LT W01_55 Roma1475738";
+  src: url("Fonts/fe232554-5489-4874-bb45-bd966c8c5932.eot?#iefix");
+  src: url("Fonts/fe232554-5489-4874-bb45-bd966c8c5932.eot?#iefix") format("eot"), url("Fonts/0811514e-6660-4043-92c1-23d0b8caaa2f.woff2") format("woff2"), url("Fonts/aeae8cac-ba4d-40d2-bbcf-936f2c7dcfe6.woff") format("woff"), url("Fonts/caedf2e6-fbef-4928-b08e-1f975981ae8d.ttf") format("truetype"), url("Fonts/7def0e34-f28d-434f-b2ec-472bde847115.svg#7def0e34-f28d-434f-b2ec-472bde847115") format("svg"); }
 
 @font-face {
-  font-family: "FrutigerLTW01-75Black";
-  src: url("../fonts/a11b4e58-71a2-4f70-bda7-242c1305efd0.woff2") format("woff2"), url("../fonts/70ad2f15-9e1e-4a42-8fdc-30327ef510c3.woff") format("woff"); }
+  font-family: "Frutiger LT W01_56 Italic";
+  src: url("Fonts/f8bbb037-530d-4e04-a651-4134f7031164.eot?#iefix");
+  src: url("Fonts/f8bbb037-530d-4e04-a651-4134f7031164.eot?#iefix") format("eot"), url("Fonts/f5a95cb0-6d5b-4eb4-b6a3-a529d5ccde25.woff2") format("woff2"), url("Fonts/01f463dc-dba9-419f-9c9f-80ac2ee9f427.woff") format("woff"), url("Fonts/ba125970-2d75-413e-a466-324153755f20.ttf") format("truetype"), url("Fonts/141c0322-57c4-48ca-abb4-31688d659f7d.svg#141c0322-57c4-48ca-abb4-31688d659f7d") format("svg"); }
 
 @font-face {
-  font-family: "FrutigerLTW02-47LightCn";
-  src: url("../fonts/710ce708-2f2b-4530-a455-a161ccf7b3d2.woff2") format("woff2"), url("../fonts/18e289e9-d1cf-49c2-9e2b-443f187c1f87.woff") format("woff"); }
+  font-family: "Frutiger LT W01_65 Bold1475746";
+  src: url("Fonts/eb06b4c3-c0fd-4cd0-a9d9-a2954f6839a7.eot?#iefix");
+  src: url("Fonts/eb06b4c3-c0fd-4cd0-a9d9-a2954f6839a7.eot?#iefix") format("eot"), url("Fonts/8c92eb68-ce37-4962-a9f4-5b47d336bd1c.woff2") format("woff2"), url("Fonts/9bdfdcac-bbd4-46a9-9280-056c9a4438a2.woff") format("woff"), url("Fonts/5dae3a6e-9b07-4c2f-aed2-1f5b8951261b.ttf") format("truetype"), url("Fonts/eae74276-dd78-47e4-9b27-dac81c3411ca.svg#eae74276-dd78-47e4-9b27-dac81c3411ca") format("svg"); }
 
 @font-face {
-  font-family: "FrutigerLTW02-48LightCn";
-  src: url("../fonts/2ae8be2a-ce37-4269-b6f3-a3434707f841.woff2") format("woff2"), url("../fonts/905db536-c069-4744-ae6f-6b3988ebaaed.woff") format("woff"); }
+  font-family: "Frutiger LT W01_66 Bold Italic";
+  src: url("Fonts/36c26121-ef21-4e44-9f00-0388185c96aa.eot?#iefix");
+  src: url("Fonts/36c26121-ef21-4e44-9f00-0388185c96aa.eot?#iefix") format("eot"), url("Fonts/9e60a7b4-389b-4630-9fa6-1abd9be2035f.woff2") format("woff2"), url("Fonts/3048913e-d0c8-4b82-978a-aa862248bea4.woff") format("woff"), url("Fonts/db4ea3f5-223b-4821-957f-6eb868db73b1.ttf") format("truetype"), url("Fonts/8ad009ab-a7e5-4acb-8ca5-326d2a759924.svg#8ad009ab-a7e5-4acb-8ca5-326d2a759924") format("svg"); }
 
 @font-face {
-  font-family: "FrutigerLTW02-57Condens";
-  src: url("../fonts/6fe059b8-9cdc-4d35-ab14-8244f8ce6a90.woff2") format("woff2"), url("../fonts/ef9a4f38-e55d-40e8-aa22-b4510adec541.woff") format("woff"); }
-
-@font-face {
-  font-family: "FrutigerLTW02-77BlackCn";
-  src: url("../fonts/a39aed4a-7c2e-43ba-a169-19a28c9bbf11.woff2") format("woff2"), url("../fonts/f3b37111-01e6-4bd9-98d0-c062e502de57.woff") format("woff"); }
-
-@font-face {
-  font-family: "LCD W01";
-  src: url("../fonts/d9d7ff01-52cf-4a5f-abe5-709f42b301d1.woff2") format("woff2"), url("../fonts/ea447350-0184-4cd2-b9d1-1c0200254e09.woff") format("woff"); }
+  font-family: "Frutiger LT W01_77 Black Cond";
+  src: url("Fonts/7eee79cd-0bdf-42f5-934b-ea0719e8f972.eot?#iefix");
+  src: url("Fonts/7eee79cd-0bdf-42f5-934b-ea0719e8f972.eot?#iefix") format("eot"), url("Fonts/6d87ec2c-6ff9-4959-ae4b-ee78bf6766d9.woff2") format("woff2"), url("Fonts/64002fd1-78f6-4403-bbaa-af1af63a80d9.woff") format("woff"), url("Fonts/350bf429-b295-4652-8bbd-c991c333406b.ttf") format("truetype"), url("Fonts/ff49f3f1-422a-4c44-80e2-be8dc904d23d.svg#ff49f3f1-422a-4c44-80e2-be8dc904d23d") format("svg"); }
 
 h1,
 h2,
@@ -275,7 +270,7 @@ legend,
 .page-menu__link--active,
 .schedule__header--head {
   font-weight: normal;
-  font-family: "Frutiger LT W01 65 Bold", helvetica, sans-serif; }
+  font-family: "Frutiger LT W01_65 Bold1475746", helvetica, sans-serif; }
 
 body,
 input,
@@ -283,7 +278,10 @@ input,
 .nav__link--sub,
 .result-block__location {
   font-weight: normal;
-  font-family: "FrutigerLTW01-55Roman", helvetica, sans-serif; }
+  font-family: "Frutiger LT W01_55 Roma1475738", helvetica, sans-serif; }
+
+.main-content p {
+  font-family: "Frutiger LT W01_45 Ligh1475730", helvetica, sans-serif; }
 
 html,
 body,
@@ -293,7 +291,7 @@ input {
   font-size: 1em; }
 
 .content__header {
-  font-size: 2em; }
+  font-size: 2rem; }
 
 h2 {
   font-size: 1.5rem;
@@ -512,7 +510,6 @@ p a {
   text-decoration: underline; }
 
 .result-block__location {
-  font-size: 0.875rem;
   display: inline-block;
   padding-left: 1.5rem;
   margin-left: 1.25rem;
@@ -526,8 +523,9 @@ p a {
     display: block;
     margin-top: 0.625rem; } }
 
+.result-block__location,
 .result-block__alert {
-  font-size: .875rem; }
+  font-size: 0.875rem; }
 
 .alert__header {
   color: #C6002A;
@@ -1015,9 +1013,7 @@ p a {
 
 @media all and (max-width: 1200px) {
   .links__list-block {
-    padding: 0 0.9375rem; }
-    .nav .links__list-block {
-      margin: 1.25rem 0; } }
+    padding: 0 0.9375rem; } }
 
 .links__list--discover {
   -webkit-box-orient: vertical;
@@ -1031,6 +1027,8 @@ p a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto; }
+  .nav .footer-link__item {
+    padding-bottom: 0.625rem; }
 
 .footer-link__link {
   color: #999999;
@@ -1180,7 +1178,7 @@ p a {
 
 @media all and (max-width: 992px) and (min-width: 768px) {
   .links__header {
-    font-size: .9rem; } }
+    font-size: 0.9rem; } }
 
 .disclaimer {
   display: block;
@@ -1309,7 +1307,7 @@ p a {
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
   color: #999999;
-  font-size: .675rem;
+  font-size: 0.675rem;
   overflow: visible;
   width: 6rem;
   text-transform: uppercase;
@@ -1486,7 +1484,8 @@ p a {
   .nav.js-open,
   .nav:target {
     top: 70px;
-    min-height: calc(100vh - 70px); } }
+    min-height: calc(100vh - 70px);
+    padding: 0.9375rem; } }
 
 .nav {
   height: 0;
@@ -1520,13 +1519,18 @@ p a {
   margin: 0 0.9375rem; }
   .nav__list .nav__list {
     margin: -0.9375rem;
-    padding-bottom: 30px;
-    padding-top: 10px;
+    padding-bottom: 1.875rem;
+    padding-top: 0.625rem;
     margin-top: 0; }
 
 @media all and (max-width: 992px) {
   .nav__list {
     border-top: 1px solid #eeeeee;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto; }
+  .nav__list,
+  .links__list-block {
     max-width: 720px;
     width: 100%;
     margin: 0 auto; } }
@@ -1561,7 +1565,7 @@ p a {
 
 @media all and (max-width: 768px) {
   .nav__item--sub {
-    padding-left: 1.75rem; } }
+    padding-left: 4rem; } }
 
 .nav__item--sub {
   border-top: 1px solid rgba(255, 255, 255, 0.35);
@@ -1717,8 +1721,7 @@ p a {
 
 .submenu__list {
   list-style: none;
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 .submenu__item {
   display: inline-block; }
@@ -1727,7 +1730,7 @@ p a {
   color: #999999;
   display: block;
   padding: 1rem 1rem 1rem 0;
-  font-size: .875rem; }
+  font-size: 0.875rem; }
 
 .submenu__link--active {
   color: #000001; }
@@ -1945,8 +1948,6 @@ dkdkd
 .hero__content {
   padding: 0 1.25rem;
   margin: 0 auto;
-  max-width: 1140px;
-  width: 100%;
   height: 100%;
   position: relative;
   z-index: 10; }

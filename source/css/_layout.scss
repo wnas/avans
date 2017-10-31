@@ -21,15 +21,6 @@ section {
 	padding: 0;
 }
 
-.foo {
-	display: flex;
-	flex-wrap: wrap;
-}
-.foo li {
-	list-style: none;
-	flex: 0 1 50%;
-	outline: 1px solid red;
-}
 
 @media all and (max-width: $bp-m) {
 	.foo {
@@ -53,7 +44,9 @@ section {
 
 .hero__content,
 .layout-full-width-block__content,
-.top-bar__content {
+.top-bar__content,
+.submenu__list,
+.hero__content {
 	max-width: $width__overal;
 	width: 100%;
 	margin: 0 auto;
@@ -189,12 +182,15 @@ $side-column-width: 263px;
 }
 @media all and (max-width: $bp-xl) and (min-width: $bp-l) {
 	.page-footer__content,
-	.top-bar__content {
+	.top-bar__content,
+	.hero__content,
+	.submenu__list {
 		max-width: 960px;
 	}
 }
 @media all and (max-width: $bp-l) and (min-width: $bp-m) {
 	.page-footer__content,
+	.hero__content,
 	.top-bar__content {
 		max-width: 720px;
 	}
