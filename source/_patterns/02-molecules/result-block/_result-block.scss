@@ -47,9 +47,17 @@
 .result-block__link:hover .result-block__image-container:after {
 	height: 147px;
 }
+@media all and (max-width: $bp-s) {
+	.result-block__image-container {
+		flex-basis: 169px;
+		min-width: 169px;
+		height: 112px;
+	}
+}
 @media all and (max-width: $bp-xs) {
 	.result-block__image-container {
 		flex-basis: 147px;
+	height: auto;
 	}
 }
 @media all and (min-width: $bp-xl) {
