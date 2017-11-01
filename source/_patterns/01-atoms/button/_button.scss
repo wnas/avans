@@ -20,6 +20,15 @@
 	left:-999em;
 }
 
+.btn--widget {
+	width: 100%;
+}
+
+a.btn--widget {
+	display: block;
+	text-align: center;
+}
+
 
 @media all and (max-width: $bp-xs) {
 	.btn {
