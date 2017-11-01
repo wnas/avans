@@ -2,6 +2,7 @@
 	margin-bottom: $spacing;
 	//@extend .testing;
 }
+
 .widget.links__list-block {
 	padding: 0;
 	margin: 0;
@@ -16,8 +17,8 @@
 	color: $light-gray;
 }
 
-.widget__header,
-.widget .links__header {
+.widget .links__header,
+.widget__header {
 	border-bottom: 1px solid $lighter-gray;
 	color: $text-color;
 	padding: $spacing 0;
@@ -26,27 +27,24 @@
 }
 
 .widget__header--apply {
-	background-image: url(../images/icons/widgets/Icon-Aanmelden.svg);
+	background-image: url("../images/icons/widgets/Icon-Aanmelden.svg");
 }
 
 .widget__header--open {
-	background-image: url(../images/icons/widgets/Icon-Open.svg);
+	background-image: url("../images/icons/widgets/Icon-Open.svg");
 }
 
 .widget__header--cijfers {
-	background-image: url(../images/icons/widgets/Icon-StudieInCijfers.svg);
+	background-image: url("../images/icons/widgets/Icon-StudieInCijfers.svg");
 }
 
 .widget__header--duurzaam {
-	background-image: url(../images/icons/widgets/Icon-Duurzaam.svg);
+	background-image: url("../images/icons/widgets/Icon-Duurzaam.svg");
 }
 
-.widget__paragraph,
-.durability {
+.durability,
+.widget__paragraph {
 	margin-bottom: $spacing;
-}
-.btn--widget {
-	width: 100%;
 }
 
 .widget__list {
@@ -85,10 +83,10 @@
 }
 
 .star {
-	fill : #ccc;
+	fill: #ccc;
 	display: inline-block;
 }
 
-.star[data-rating="checked"]{
+.star[data-rating="checked"] {
 	fill: $text-color;
 }
