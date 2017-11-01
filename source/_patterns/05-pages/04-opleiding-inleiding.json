@@ -61,9 +61,10 @@
 	"widgets": [{
 			"type": "apply",
 			"header": "Is dit jouw opleiding",
-			"button": {
-				"button-text": "Meld je aan",
-				"button-class": "btn--primary btn--widget"
+			"call-to-action": {
+				"text": "Meld je aan",
+				"class": "btn btn--primary btn--widget",
+				"href": "guardian.co.uk"
 			}
 		},
 		{

@@ -271,6 +271,12 @@ $footer-link-animation-duration: .5s;
 		padding: $spacing-l;
 		text-align: left;
 	}
+	.page-footer__logo-link {
+		order: 0;
+	}
+	.disclaimer__text {
+		order: 1;
+	}
 }
 @media all and (min-width: $bp-m) {
 	.disclaimer__container {
@@ -306,7 +312,7 @@ $footer-link-animation-duration: .5s;
 	}
 
 	.disclaimer__link {
-		padding-top: $spacing;
+	//	padding-top: $spacing;
 		display: inline-block;
 	}
 

@@ -113,12 +113,7 @@
 			}
 		},
 		{
-			"content": "NL",
-			"sub": {
-				"items": [{
-					"content": "INT"
-				}]
-			}
+			"content": "INT"
 		}
 	],
 

@@ -337,6 +337,13 @@ p a {
   position: absolute;
   left: -999em; }
 
+.btn--widget {
+  width: 100%; }
+
+a.btn--widget {
+  display: block;
+  text-align: center; }
+
 @media all and (max-width: 320px) {
   .btn {
     width: 100%; }
@@ -795,8 +802,8 @@ p a {
 .widget__link--solo {
   color: #999999; }
 
-.widget__header,
-.widget .links__header {
+.widget .links__header,
+.widget__header {
   border-bottom: 1px solid #eeeeee;
   color: #000001;
   padding: 0.9375rem 0;
@@ -804,23 +811,20 @@ p a {
   background-position: center right; }
 
 .widget__header--apply {
-  background-image: url(../images/icons/widgets/Icon-Aanmelden.svg); }
+  background-image: url("../images/icons/widgets/Icon-Aanmelden.svg"); }
 
 .widget__header--open {
-  background-image: url(../images/icons/widgets/Icon-Open.svg); }
+  background-image: url("../images/icons/widgets/Icon-Open.svg"); }
 
 .widget__header--cijfers {
-  background-image: url(../images/icons/widgets/Icon-StudieInCijfers.svg); }
+  background-image: url("../images/icons/widgets/Icon-StudieInCijfers.svg"); }
 
 .widget__header--duurzaam {
-  background-image: url(../images/icons/widgets/Icon-Duurzaam.svg); }
+  background-image: url("../images/icons/widgets/Icon-Duurzaam.svg"); }
 
-.widget__paragraph,
-.durability {
+.durability,
+.widget__paragraph {
   margin-bottom: 0.9375rem; }
-
-.btn--widget {
-  width: 100%; }
 
 .widget__list {
   list-style: none;
@@ -1194,7 +1198,15 @@ p a {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 1.25rem;
-    text-align: left; } }
+    text-align: left; }
+  .page-footer__logo-link {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0; }
+  .disclaimer__text {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
 
 @media all and (min-width: 768px) {
   .disclaimer__container {
@@ -1233,7 +1245,6 @@ p a {
         -ms-flex-direction: column;
             flex-direction: column; }
   .disclaimer__link {
-    padding-top: 0.9375rem;
     display: inline-block; }
   .page-footer__logo {
     margin-top: 1.25rem; } }
@@ -1395,7 +1406,8 @@ p a {
   border-radius: 30px;
   background-color: #eeeeee;
   position: relative;
-  padding: .625rem 2.5rem .625rem 1rem; }
+  padding: .625rem 2.5rem .625rem 1rem;
+  margin-bottom: .625rem; }
 
 .btn--filter:after {
   content: 'x';
@@ -2167,7 +2179,7 @@ dkdkd
       display: grid;
       grid-gap: 20px;
       grid-template-columns: 263px calc(100% - 283px);
-      grid-template-rows: 50px 100px calc(100% - 300px) 100px;
+      grid-template-rows: 50px 1fr calc(100% - 300px) 100px;
       grid-template-areas: ". header " "aside sub-header" "aside content" ". footer"; }
     .active-filters__container,
     .resultpage__footer,
