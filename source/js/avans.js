@@ -23,7 +23,8 @@ var avans = (function() {
 			"screensizes": {
 				"xl": 1200,
 				"m": 768
-			}
+			},
+			"topmenuheight": false
 		},
 		toggle = function(elem) {
 			if (elem.buttonOpen !== null) {
@@ -35,10 +36,27 @@ var avans = (function() {
 					if (elem === config.topSearch) {
 						focusSearch(elem);
 					}
+// debugger;
+					if ( elem === config.topMenu && config.topmenuheight === false) {
+						console.log('setting');
+						config.topmenuheight = true;
+						config.topMenu.container.style.height = document.body.clientHeight+'px';
+						return false;
+					}
+					 if ( elem === config.topMenu && config.topmenuheight === true) {
+						console.log('un-setting');
+						config.topmenuheight = false;
+						config.topMenu.container.style.height = 0;
+						return false;
+					}
 				}, false);
 
 				buttonClose.addEventListener('click', function(evt) {
-					toggleClass(evt, elem)
+					toggleClass(evt, elem);
+					if ( elem=== config.topMenu) {
+						var h = 0;
+						config.topMenu.container.style.height = h+'px';
+					}
 				}, false);
 
 			}
