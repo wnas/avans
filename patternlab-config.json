@@ -10,14 +10,14 @@
       "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
       "js" : "./source/js",
       "images" : "./source/images",
-      "fonts" : "./source/fonts",
+      "fonts" : "./source/css/Fonts",
       "css" : "./source/css/"
     },
     "external" : {
       "root" : "../avans-responsive-hippo/site/src/main/webapp",
       "js" : "../avans-responsive-hippo/site/src/main/webapp/js",
       "images" : "../avans-responsive-hippo/site/src/main/webapp/images",
-      "fonts" : "../avans-responsive-hippo/site/src/main/webapp/fonts",
+      "fonts" : "../avans-responsive-hippo/site/src/main/webapp/css/Fonts",
       "css" : "../avans-responsive-hippo/site/src/main/webapp/css"
     },
     "public" : {
@@ -28,7 +28,7 @@
       "styleguide" : "./public/styleguide/",
       "js" : "./public/js",
       "images" : "./public/images",
-      "fonts" : "./public/fonts",
+      "fonts" : "./public/css/Fonts",
       "css" : "./public/css"
     }
   },

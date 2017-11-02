@@ -9,8 +9,8 @@ $nav-link-active-color: $text-color;
 	.nav:target {
 		width: 100%;
 		overflow: auto;
-		height: 100vh;
-		min-height: calc(100vh - 100px);
+		height: calc(100vh + 100px);
+		//min-height: calc(100vh - 100px);
 		position: absolute;
 		z-index: 20;
 		top: 100px;
@@ -23,7 +23,7 @@ $nav-link-active-color: $text-color;
 	.nav.js-open,
 	.nav:target {
 		top: 70px;
-		min-height: calc(100vh - 70px);
+		height: calc(100vh + 70px);
 		padding: $spacing;
 	}
 }
