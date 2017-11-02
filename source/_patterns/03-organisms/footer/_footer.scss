@@ -265,6 +265,7 @@ $footer-link-animation-duration: .5s;
 	padding: 1rem 0;
 	font-size: $footer-links;
 }
+// < 768px
 @media all and (max-width: $bp-m) {
 	.disclaimer__container {
 		flex-direction: column;
@@ -278,16 +279,24 @@ $footer-link-animation-duration: .5s;
 		order: 1;
 	}
 }
+
+// 768px >
 @media all and (min-width: $bp-m) {
-	.disclaimer__container {
-		align-items: center;
+	.page-footer__logo-link {
+		display: inline;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 }
+
+// < 1200px
 @media all and (max-width: $bp-xl) {
 	.disclaimer__container {
 		padding: $spacing-l;
 	}
 }
+
+// 1200px >
 @media all and (min-width: $bp-xl) {
 	.disclaimer__container {
 		max-width: $width__overal;
