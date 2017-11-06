@@ -113,7 +113,9 @@
 			}
 		},
 		{
-			"content": "INT"
+			"content": "En",
+			"nav-title": "English",
+			"lang": "en"
 		}
 	],
 

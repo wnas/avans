@@ -1576,6 +1576,19 @@ a.btn--widget {
   .nav__item:first-child {
     padding-left: 0.9375rem; } }
 
+@media all and (max-width: 992px) {
+  .nav__link {
+    position: relative; }
+    .nav__link[title]:after {
+      content: attr(title);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background-color: #ffffff;
+      padding: 0.9375rem 0; } }
+
 @media all and (max-width: 768px) {
   .nav__item--sub {
     padding-left: 1.875rem; } }

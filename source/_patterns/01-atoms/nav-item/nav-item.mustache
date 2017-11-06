@@ -2,7 +2,13 @@
   class="nav__item nav__item--top-level {{# sub }}nav__item--has-sub {{# active }} nav__sub--opened{{/ active }}{{/ sub }}">
   <a
     class="nav__link nav__link--top-level {{# active }} nav__link--active{{/ active }}"
-    href="{{ href }}">
+    href="{{ href }}"
+	{{# lang }}
+		lang="{{ lang }}"
+	{{/ lang }}
+	{{# nav-title }}
+		title="{{ nav-title }}"
+	{{/ nav-title }}>
     {{ content }}
   </a>
   {{# sub }}
@@ -10,8 +16,14 @@
       {{# items }}
       <li class="nav__item nav__item--sub"><a
         class="nav__link nav__link--sub {{# sub-active }} nav__link--active{{/ sub-active }}"
-        href="{{ href }}">
-        {{ content }}
+        href="{{ href }}"
+		{{# lang }}
+			lang="{{ lang }}"
+		{{/ lang }}
+		{{# nav-title }}
+			title="{{ nav-title }}"
+		{{/ nav-title }}>
+			{{ content }}
       </a></li>
       {{/ items }}
     </ul>

@@ -99,11 +99,23 @@ $nav-link-active-color: $text-color;
 		padding-left: $spacing;
 	}
 }
-@media all and (max-width: $bp-m) {
-	.nav__item {
+@media all and (max-width: $bp-l) {
+	.nav__link {
 		//	margin: 0 $spacing;
+		position: relative;
+		&[title]:after {
+			content: attr(title);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: auto;
+			background-color: $white;
+			padding: $spacing 0;
+		}
 	}
-
+}
+@media all and (max-width: $bp-m) {
 	.nav__item--sub {
 		padding-left: $spacing-xl;
 	}
