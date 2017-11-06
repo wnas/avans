@@ -157,7 +157,12 @@ $side-column-width: 263px;
 	.content-page__content,
 	.disclaimer__container,
 	.header,
-	.page-menu {
+	.page-menu,
+	.resultpage__content,
+	.resultpage__header,
+	.resultpage__aside,
+	.active-filters__container,
+	.resultpage__footer {
 		max-width: 720px;
 	}
 
@@ -167,7 +172,12 @@ $side-column-width: 263px;
 	}
 
 	.content-page__aside-container,
-	.page-menu {
+	.page-menu,
+	.resultpage__content,
+	.resultpage__header,
+	.resultpage__aside,
+	.active-filters__container,
+	.resultpage__footer {
 		margin: 0 auto;
 	}
 

@@ -16,6 +16,7 @@
 
 .top-bar__container {
 	width: calc(100% - 163px);
+	transition: width 0.5s ease;
 }
 
 .skip-link {
@@ -125,6 +126,18 @@
 
 .close-icon {
 	background-image: url("../images/icons/close-search-icon.svg");
+}
+
+@media all and (max-width: $bp-m) {
+	.top-bar__container.js-open {
+		width: 100%;
+	}
+	.js-open + .logo {
+		width: 0;
+		.logo__img {
+			width : 0;
+		}
+	}
 }
 
 .nav,

@@ -189,7 +189,12 @@ section {
   .content-page__content,
   .disclaimer__container,
   .header,
-  .page-menu {
+  .page-menu,
+  .resultpage__content,
+  .resultpage__header,
+  .resultpage__aside,
+  .active-filters__container,
+  .resultpage__footer {
     max-width: 720px; }
   .content-page__aside-container {
     display: -webkit-box;
@@ -198,7 +203,12 @@ section {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .content-page__aside-container,
-  .page-menu {
+  .page-menu,
+  .resultpage__content,
+  .resultpage__header,
+  .resultpage__aside,
+  .active-filters__container,
+  .resultpage__footer {
     margin: 0 auto; }
   .widget {
     width: calc(50% - 1rem);
@@ -329,7 +339,9 @@ a.btn--widget {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 1.8125rem;
-  margin-left: 0.9375rem; }
+  margin-left: 0.9375rem;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease; }
 
 @media all and (max-width: 768px) {
   .logo {
@@ -351,8 +363,6 @@ a.btn--widget {
   color: #00ACEB; }
 
 .input--filter {
-  width: 20px;
-  heigth: 20px;
   display: inline-block;
   margin: 0.1rem 0.875rem 0 0; }
 
@@ -563,7 +573,8 @@ a.btn--widget {
 
 .filters {
   border: 0;
-  padding-left: 0; }
+  padding: 0;
+  margin: 0; }
 
 .filters__header {
   padding-top: 5px;
@@ -1253,7 +1264,9 @@ a.btn--widget {
   display: flex; }
 
 .top-bar__container {
-  width: calc(100% - 163px); }
+  width: calc(100% - 163px);
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease; }
 
 .skip-link {
   width: 3.8125rem;
@@ -1347,6 +1360,14 @@ a.btn--widget {
 
 .close-icon {
   background-image: url("../images/icons/close-search-icon.svg"); }
+
+@media all and (max-width: 768px) {
+  .top-bar__container.js-open {
+    width: 100%; }
+  .js-open + .logo {
+    width: 0; }
+    .js-open + .logo .logo__img {
+      width: 0; } }
 
 .nav,
 .top-search {
@@ -1868,7 +1889,7 @@ dkdkd
     display: none; } }
 
 .filter__button {
-  padding: .625rem 1.5rem;
+  padding: 0.625rem 1.5rem;
   background-repeat: no-repeat;
   background-position: left center;
   background-image: url("../images/icons/Icon-Filter.svg");
@@ -1879,7 +1900,7 @@ dkdkd
 .filter__button:after {
   content: '';
   position: absolute;
-  top: .625rem;
+  top: 0.625rem;
   right: 0;
   display: block;
   width: 9px;
@@ -1909,11 +1930,20 @@ dkdkd
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap; } }
+
+@media all and (min-width: 400px) and (max-width: 992px) {
   .filters {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 49%;
-            flex: 0 1 49%; } }
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    outline: 1px solid red; } }
+
+@media all and (max-width: 400px) {
+  .filters {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%; } }
 
 .hero {
   height: 300px;

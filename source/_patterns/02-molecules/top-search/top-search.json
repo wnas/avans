@@ -9,7 +9,7 @@
 		"class": "top-search__input",
 		"attributes": [{
 				"name": "placeholder",
-				"value": "Type hier je zoekvraag..."
+				"value": "Zoeken..."
 			},
 			{
 				"name": "required",

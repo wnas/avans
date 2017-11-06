@@ -5,6 +5,7 @@
 	flex-direction: column;
 	padding-top: 1.8125rem;
 	margin-left: $spacing;
+	transition: width 0.5s ease;
 }
 @media all and (max-width: $bp-m) {
 	.logo {

@@ -1,9 +1,7 @@
-.filter-block {
-
-}
+.filter-block {}
 
 .filter__button {
-	padding: .625rem 1.5rem;
+	padding: 0.625rem 1.5rem;
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-image: url('../images/icons/Icon-Filter.svg');
@@ -15,7 +13,7 @@
 .filter__button:after {
 	content: '';
 	position: absolute;
-	top: .625rem;
+	top: 0.625rem;
 	right: 0;
 	display: block;
 	width: 9px;
@@ -28,31 +26,40 @@
 .filter__button--hide:after {
 	transform: rotate(-135deg);
 }
-
-
 @media all and (max-width: $bp-l) {
 	.filter-block__container,
 	.filter__button--hide {
 		@include hideVisually
-
 	}
+
 	:target {
 		.filter-block__container,
 		.filter__button--hide {
-		left: 0;
-		position: relative;
-	}
+			left: 0;
+			position: relative;
+		}
+
 		.filter__button--show {
-	display: none;
+			display: none;
 		}
 	}
+
 	.filter-block__form {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	.filters {
-		flex: 0 1 49%;
-	}
 
+}
+@media all and (min-width: $bp-s1) and (max-width: $bp-l) {
+	.filters {
+		flex: 0 1 50%;
+		outline: 1px solid red;
+	}
+}
+
+@media all and (max-width: $bp-s1) {
+	.filters {
+		flex: 0 1 100%;
+	}
 }
