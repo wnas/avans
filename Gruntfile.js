@@ -14,6 +14,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+	grunt.loadNpmTasks('grunt-csscomb');
     grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-postcss');
 
@@ -66,6 +67,18 @@ module.exports = function(grunt) {
 
 
     grunt.initConfig({
+		/******************************************************
+         * Comb
+         ******************************************************/
+		 csscomb: {
+         dynamic_mappings: {
+             expand: true,
+             cwd: 'source/',
+             src: ['*.scss'],
+             dest: 'source/',
+             ext: ['*.scss']
+         }
+     }
         /******************************************************
          * SASS
          ******************************************************/
@@ -189,9 +202,9 @@ module.exports = function(grunt) {
      * COMPOUND TASKS
      ******************************************************/
 
-    grunt.registerTask('default', ['patternlab', 'sass', 'postcss:dist', 'copy:main']);
-    grunt.registerTask('patternlab:build', ['patternlab', 'sass', 'postcss:dist', 'copy:main']);
-    grunt.registerTask('patternlab:watch', ['patternlab', 'sass', 'postcss:dist', 'copy:main', 'watch:all']);
-    grunt.registerTask('patternlab:serve', ['patternlab', 'sass', 'postcss:dist', 'copy:main', 'browserSync', 'watch:all']);
+    grunt.registerTask('default', ['patternlab','csscomb', 'sass', 'postcss:dist', 'copy:main']);
+    grunt.registerTask('patternlab:build', ['patternlab','csscomb',  'sass', 'postcss:dist', 'copy:main']);
+    grunt.registerTask('patternlab:watch', ['patternlab','csscomb',  'sass', 'postcss:dist', 'copy:main', 'watch:all']);
+    grunt.registerTask('patternlab:serve', ['patternlab','csscomb',  'sass', 'postcss:dist', 'copy:main', 'browserSync', 'watch:all']);
 
 };
