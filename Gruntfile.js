@@ -73,9 +73,9 @@ module.exports = function(grunt) {
 		csscomb: {
 			dynamic_mappings: {
 				expand: true,
-				cwd: 'source/_patterns/01-atoms/button/',
-				src: ['*.scss'],
-				dest: 'source/_patterns/01-atoms/button/',
+				cwd: 'source/',
+				src: ['**/*.scss'],
+				dest: 'source/',
 				ext: ['.scss']
 			}
 		},
