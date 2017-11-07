@@ -1,23 +1,23 @@
 .btn {
-  padding: $spacing;
-  margin-right: $spacing;
-  border: 0;
-  font-size: $fs;
+	padding: $spacing;
+	margin-right: $spacing;
+	border: 0;
+	font-size: $fs;
 }
 
 .btn--image-block,
 .btn--primary {
-  color: $white;
+	color: $white;
 }
 .btn--primary {
-  background-color: $avans-red;
+	background-color: $avans-red;
 }
 .btn--image-block {
-  background-color: $text-color;
+	background-color: $text-color;
 }
 .btn--hidden {
 	position: absolute;
-	left:-999em;
+	left: -999em;
 }
 
 .btn--widget {
@@ -34,7 +34,7 @@ a.btn--widget {
 	.btn {
 		width: 100%;
 	}
-    .btn + .btn {
-        margin-top: 1rem;
-    }
+	.btn + .btn {
+		margin-top: 1rem;
+	}
 }
