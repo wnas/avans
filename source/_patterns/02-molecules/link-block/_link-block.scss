@@ -1,41 +1,49 @@
 
 .link-block {
-    .avans-homepage & {
-        float: left;
-        width: 50%;
-    }
+	.avans-homepage & {
+		float: left;
+
+		width: 50%;
+	}
 }
 
 .link-block__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+
+	flex-wrap: wrap;
 }
 
 .link-block__item {
-    flex:  0 1 auto;
-    padding-bottom: $spacing;
-    max-width: calc(50% - (15px / 2));
+	flex: 0 1 auto;
+
+	max-width: calc(50% - (15px / 2));
+	padding-bottom: $spacing;
 }
 .link-block__link {
-  display: flex;
-  flex-direction: column-reverse;
-  color: $text-color;
-  background-color: #ccc;
+	display: flex;
+	flex-direction: column-reverse;
+
+	color: $text-color;
+	background-color: #ccc;
 }
 
 .link-block__text {
-  padding: $spacing $spacing $spacing $spacing-l;
-  font-weight: 600;
-  @extend .blue-arrow;
-  margin-left: $spacing;
+	font-weight: 600;
+
+	margin-left: $spacing;
+	padding: $spacing $spacing $spacing $spacing-l;
+
+	@extend .blue-arrow;
 }
 .link-block__item:nth-child(odd) {
-  margin-right: $spacing;
+	margin-right: $spacing;
 }
 
 .link-block__item {
-  padding-left: 0;
+	padding-left: 0;
 }

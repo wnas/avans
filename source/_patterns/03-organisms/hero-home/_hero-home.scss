@@ -1,17 +1,20 @@
 :root {
---min-height: 348px;
---min-width: calc(--min-height * 1.5);
+	--min-height: 348px;
+	--min-width: calc(--min-height * 1.5);
 }
 
 
 
 .hero-home {
-	height: var(--min-height);
 	position: relative;
+
 	overflow: hidden;
+
 	width: 100%;
-	padding: 0;
+	height: var(--min-height);
 	margin: 0;
+	padding: 0;
+
 	@extend .testing;
 }
 
@@ -23,10 +26,11 @@
 	position: absolute;
 	top: 150px;
 	left: 0;
+
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 
+	justify-content: space-around;
 }
 
 .header--hero-home {
@@ -34,11 +38,13 @@
 	margin: 0 auto;
 }
 .header--hero-home .header__text {
-	color: $white;
 	max-width: 500px;
+
 	text-transform: uppercase;
+
+	color: $white;
 	&:after {
-		content : var(--min-height);
+		content: var(--min-height);
 	}
 }
 .hero-home__image {
@@ -50,15 +56,15 @@
 
 @media all and (min-width: $bp-s) and  (max-width: $bp-l) {
 	:root {
-	--min-height: 496px;
-	--min-width: calc(--min-height * 1.5);
+		--min-height: 496px;
+		--min-width: calc(--min-height * 1.5);
 	}
 }
 
 @media all and (min-width: $bp-l) {
 	:root {
-	--min-height: 600px;
-	--min-width: calc(--min-height * 1.5);
+		--min-height: 600px;
+		--min-width: calc(--min-height * 1.5);
 	}
 	.hero-home__image {
 		margin-top: -50px;

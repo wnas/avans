@@ -1,14 +1,16 @@
 // scss
 
 .schedule {
-	border-collapse: collapse;
 	width: 100%;
+
+	border-collapse: collapse;
 	//@extend .testing;
 }
 
 .schedule__header,
 .schedule__slot {
 	padding: $spacing-xs 0;
+
 	border-bottom: 1px solid #eee;
 }
 
@@ -17,16 +19,19 @@
 }
 
 .schedule__header--head {
-	text-transform: uppercase;
-	color: #999;
 	font-size: $table-header;
+
+	text-transform: uppercase;
+
+	color: #999;
 	border-top: 0;
 }
 
 .schedule__header--line {
+	font-weight: normal;
+
 	width: 50%;
 	min-width: 400px;
-	font-weight: normal;
 }
 
 .schedule__header--line,
@@ -35,10 +40,12 @@
 }
 
 .schedule__slot--active .schedule__slot-content {
-	background-color: #999;
 	display: block;
-	margin: 0.5rem 0;
+
+	margin: .5rem 0;
+
 	color: #999;
+	background-color: #999;
 }
 @media all and (max-width: $bp-m) {
 	.schedule {
@@ -47,11 +54,13 @@
 	.schedule__row--head {
 		position: sticky;
 		top: 0;
-		background-color: $white;
+
 		border-bottom: 1px solid #ccc;
+		background-color: $white;
 	}
 	.schedule__row {
 		display: flex;
+
 		flex-wrap: wrap;
 	}
 

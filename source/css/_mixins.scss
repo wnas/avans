@@ -1,55 +1,57 @@
 .testing {
-    outline: 1px solid red;
-    * {
-        outline: 1px solid green;
-        * {
-            outline: 1px solid pink;
-            * {
-                outline: 1px solid blue;
-                * {
-                    outline: 1px solid orange;
-                    * {
-                        outline: 1px solid teal;
-                    }
-                }
-            }
-        }
-    }
+	outline: 1px solid red;
+	* {
+		outline: 1px solid green;
+		* {
+			outline: 1px solid pink;
+			* {
+				outline: 1px solid blue;
+				* {
+					outline: 1px solid orange;
+					* {
+						outline: 1px solid teal;
+					}
+				}
+			}
+		}
+	}
 }
 
 /*
   mixins
   */
 .blue-arrow {
-  background-repeat: no-repeat;
-  background-image: url('../images/icons/ICON-Arrow-Right-Blue.svg');
-  background-position: 0 50%;
+	background-image: url('../images/icons/ICON-Arrow-Right-Blue.svg');
+	background-repeat: no-repeat;
+	background-position: 0 50%;
 }
 
 .gray-arrow {
-  background-repeat: no-repeat;
-  background-image: url('../images/icons/ICON-Arrow-Right-Gray.svg');
-  background-position: 0 50%;
+	background-image: url('../images/icons/ICON-Arrow-Right-Gray.svg');
+	background-repeat: no-repeat;
+	background-position: 0 50%;
 }
 
 .white-arrow {
-  background-repeat: no-repeat;
-  background-image: url('../images/icons/ICON-Arrow-Right-White.svg');
-  background-position: 0 50%;
+	background-image: url('../images/icons/ICON-Arrow-Right-White.svg');
+	background-repeat: no-repeat;
+	background-position: 0 50%;
 }
 
-@mixin hideVisually(){
+@mixin hideVisually() {
 	position: absolute;
 	left: -999em;
 }
 
 .small-arrow {
-	content: "";
-    width: 5px;
-    height: 5px;
-    border: 1px solid #00ACEB;
-    border-width: 1px 1px 0 0;
-    transform: rotate(45deg);
-    position: absolute;
+	position: absolute;
 
+	width: 5px;
+	height: 5px;
+
+	content: '';
+	transform: rotate(45deg);
+
+	border: 1px solid #00aceb;
+	border-width: 1px 1px 0 0;
 }

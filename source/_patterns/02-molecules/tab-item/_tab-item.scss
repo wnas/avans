@@ -1,19 +1,24 @@
 // stuff
 .tab__item {
-	border: 1px solid $lighter-gray;
 	margin: 0 1rem -1px 0;
+
+	border: 1px solid $lighter-gray;
 }
 
 .tab__link {
-	color: $avans-blue;
-	padding: 1rem;
 	display: inline-block;
+
+	padding: 1rem;
+
+	color: $avans-blue;
 }
 
 @media (max-width: $bp-m ) {
 	.tab__item {
 		display: block;
+
 		margin-bottom: 0;
+
 		border-bottom: 0;
 	}
 	.tab__item:last-child {

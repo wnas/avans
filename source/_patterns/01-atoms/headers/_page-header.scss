@@ -1,7 +1,8 @@
 // page-header
 .page-header__container {
-//	@extend .testing;
+	//	@extend .testing;
 	display: flex;
+
 	align-items: center;
 }
 .page-header {
@@ -9,15 +10,18 @@
 }
 
 .page-header__switch {
+	overflow: hidden;
+
 	width: $spacing-xl;
 	height: $spacing-xl;
-	overflow: hidden;
+
 	white-space: nowrap;
 	text-indent: 4rem;
+
+	background-color: $light-gray;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: $spacing;
-	background-color: $light-gray;
 }
 
 .page-header__switch + .page-header__switch {

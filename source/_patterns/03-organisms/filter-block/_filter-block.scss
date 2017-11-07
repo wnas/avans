@@ -1,24 +1,31 @@
-.filter-block {}
+
 
 .filter__button {
-	padding: 0.625rem 1.5rem;
+	position: relative;
+
+	display: inline-block;
+
+	padding: .625rem 1.5rem;
+
+	color: $avans-blue;
+	background-image: url('../images/icons/Icon-Filter.svg');
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-image: url('../images/icons/Icon-Filter.svg');
-	position: relative;
-	display: inline-block;
-	color: $avans-blue;
 }
 
 .filter__button:after {
-	content: '';
 	position: absolute;
-	top: 0.625rem;
+	top: .625rem;
 	right: 0;
+
 	display: block;
+
 	width: 9px;
 	height: 9px;
+
+	content: '';
 	transform: rotate(45deg);
+
 	border: 1px solid $avans-blue;
 	border-width: 0 1px 1px 0;
 }
@@ -29,14 +36,14 @@
 @media all and (max-width: $bp-l) {
 	.filter-block__container,
 	.filter__button--hide {
-		@include hideVisually
+		@include hideVisually;
 	}
 
 	:target {
 		.filter-block__container,
 		.filter__button--hide {
-			left: 0;
 			position: relative;
+			left: 0;
 		}
 
 		.filter__button--show {
@@ -46,15 +53,13 @@
 
 	.filter-block__form {
 		display: flex;
+
 		flex-wrap: wrap;
 	}
-
-
 }
 @media all and (min-width: $bp-s1) and (max-width: $bp-l) {
 	.filters {
 		flex: 0 1 50%;
-		outline: 1px solid red;
 	}
 }
 

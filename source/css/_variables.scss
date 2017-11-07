@@ -1,16 +1,15 @@
-$width__overal : 1140px;
-$sidebar : 263px;
+$width__overal: 1140px;
+$sidebar: 263px;
 
 /*
 	spacings
 */
-$spacing-xs    : 0.3125rem ;
-$spacing-s    : .625rem;
-$spacing    : 0.9375rem;
-$spacing-l  : 1.25rem;
-$spacing-xl : 1.875rem;
-$spacing-xxl : 4rem;
-
+$spacing-xs: .3125rem ;
+$spacing-s: .625rem;
+$spacing: .9375rem;
+$spacing-l: 1.25rem;
+$spacing-xl: 1.875rem;
+$spacing-xxl: 4rem;
 $content__margin: $spacing;
 $hero__padding: calc($spacing * 2);
 
@@ -18,27 +17,25 @@ $hero__padding: calc($spacing * 2);
 	font-sizes
 */
 
-$fs-s:					0.875rem;
-$fs: 					1.0rem;
-$fs-l:					1.5rem;
-$fs-xl:					2.0rem;
-
-$header-icon-text: 		0.675rem;
-$page-menu-header:		0.75rem;
-$footer-links:			0.8125rem;
-$footer-header:			0.9rem;
-$result-block__header: 	1.25rem;
-$table-header: 			0.75rem;
+$fs-s: .875rem;
+$fs: 1.0rem;
+$fs-l: 1.5rem;
+$fs-xl: 2.0rem;
+$header-icon-text: .675rem;
+$page-menu-header: .75rem;
+$footer-links: .8125rem;
+$footer-header: .9rem;
+$result-block__header: 1.25rem;
+$table-header: .75rem;
 /*
     breakpoints
 */
-$bp-xl : 1200px;
-$bp-l  : 992px;
-$bp-m  : 768px;
-
-$bp-s  : 540px;
-$bp-s1 : 400px;
-$bp-xs : 320px;
+$bp-xl: 1200px;
+$bp-l: 992px;
+$bp-m: 768px;
+$bp-s: 540px;
+$bp-s1: 400px;
+$bp-xs: 320px;
 
 /*
   timing

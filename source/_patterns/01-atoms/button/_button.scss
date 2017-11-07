@@ -1,8 +1,10 @@
 .btn {
-	padding: $spacing;
-	margin-right: $spacing;
-	border: 0;
 	font-size: $fs;
+
+	margin-right: $spacing;
+	padding: $spacing;
+
+	border: 0;
 }
 
 .btn--image-block,
@@ -26,6 +28,7 @@
 
 a.btn--widget {
 	display: block;
+
 	text-align: center;
 }
 

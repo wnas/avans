@@ -2,15 +2,18 @@ $attention-spacing: $spacing-l;
 
 .attention-block__container {
 	display: flex;
+
 	align-items: stretch;
 }
 
 .attention-block {
-	padding: $spacing-l;
 	display: inline-flex;
 	flex-direction: column;
-	align-items: stretch;
+
 	width: 355px;
+	padding: $spacing-l;
+
+	align-items: stretch;
 }
 @media all and (max-width: $bp-l) {
 	.attention-block--alpha {
@@ -38,8 +41,8 @@ $attention-spacing: $spacing-l;
 }
 
 .attention-block--charlie {
-	background-color: $text-color;
 	color: $white;
+	background-color: $text-color;
 
 	a {
 		color: $white;

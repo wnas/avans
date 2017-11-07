@@ -3,31 +3,38 @@ dkdkd
 */
 .page-menu-block__header {
 	font-size: $page-menu-header;
+
 	text-transform: uppercase;
 }
 
 .page-menu__list {
-	list-style: none;
-	padding-left: 0;
 	margin-bottom: $spacing-xxl;
+	padding-left: 0;
+
+	list-style: none;
 }
 
 .page-menu__item {
-	border-top: 1px solid $lighter-gray;
-	padding: $spacing 0 $spacing $spacing-xl;
 	position: relative;
+
+	padding: $spacing 0 $spacing $spacing-xl;
+
+	border-top: 1px solid $lighter-gray;
 }
 
 .page-menu__item:before {
-	content: "";
-	width: 5px;
-	height: 5px;
-	border: 1px solid $avans-blue;
-	border-width: 1px 1px 0 0;
-	transform: rotate(45deg);
 	position: absolute;
 	top: 23px;
 	left: 8px;
+
+	width: 5px;
+	height: 5px;
+
+	content: '';
+	transform: rotate(45deg);
+
+	border: 1px solid $avans-blue;
+	border-width: 1px 1px 0 0;
 }
 
 .page-menu__item:last-child {
@@ -36,6 +43,7 @@ dkdkd
 
 .page-menu__link {
 	font-size: $fs-s;
+
 	color: $light-gray;
 }
 
@@ -60,19 +68,23 @@ dkdkd
 }
 @media all and (max-width: $bp-xl) {
 	.page-menu__container {
-		width: 100vw;
-		order: 2;
 		position: relative;
-		height: 0;
 		left: -999em;
+
+		width: 100vw;
+		height: 0;
+
+		order: 2;
 
 		&.js-open,
 		:target & {
+			z-index: 0;
 			left: 0;
+
 			height: auto;
 			margin-top: 1rem;
+
 			border-top: 1px solid $lighter-gray;
-			z-index: 0;
 		}
 	}
 
@@ -82,53 +94,66 @@ dkdkd
 
 	.page-menu {
 		display: flex;
-		flex-wrap: wrap;
+		//margin: 1rem 0;
+
+		padding-top: 0;
+
 		border: 1px solid $lighter-gray;
 		border-width: 1px 0;
-		//margin: 1rem 0;
-		padding-top: 0;
+
+		flex-wrap: wrap;
 
 		.btn,
 		.close-icon {
 			display: inline-block;
+
 			max-height: 3rem;
 		}
 
 		.close-icon {
 			position: absolute;
-			left: 0;
 			top: -4rem;
-			border-right: 0;
+			left: 0;
+
 			visibility: hidden;
+
+			border-right: 0;
 		}
 
 		.btn {
 			position: absolute;
-			right: 0;
 			top: 1rem;
+			right: 0;
+
 			order: 1;
 			align-self: flex-end;
 		}
 
 		.nav-link {
+			font-size: $fs;
+
 			width: auto;
 			height: 4.3rem;
 			padding-top: 1.5rem;
-			text-transform: none;
-			font-size: $fs;
 			padding-left: 3rem;
-			background-position: 1rem;
+
+			text-transform: none;
+
 			border-right: none;
+			background-position: 1rem;
 		}
 
 		.nav-link:after {
-			content: '';
-			border: 1px solid $avans-blue;
+			display: inline-block;
+
 			width: 9px;
 			height: 9px;
-			transform: rotate(45deg);
-			display: inline-block;
 			margin-left: 1rem;
+
+			content: '';
+			transform: rotate(45deg);
+
+			border: 1px solid $avans-blue;
 			border-width: 0 1px 1px 0;
 		}
 		.clicked:after {
@@ -149,6 +174,7 @@ dkdkd
 
 	.page-menu__container {
 		left: 0;
+
 		height: auto;
 	}
 }

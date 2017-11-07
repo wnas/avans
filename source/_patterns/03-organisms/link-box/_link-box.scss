@@ -1,12 +1,14 @@
 .link-box {
 	padding: $spacing-xl;
+
 	background-color: $white;
 }
 
 .link-box--opleidingen {
+	display: inline-block;
+
 	width: 748px;
 	margin-right: $spacing-xl;
-	display: inline-block;
 }
 @media all and (max-width: $bp-l) {
 	.link-box--opleidingen {
@@ -31,42 +33,55 @@
 }
 
 .link-box__list {
-	list-style: none;
+	display: flex;
+
 	margin: 0;
 	padding-left: 0;
-	display: flex;
-	flex-wrap: wrap;
+
+	list-style: none;
+
 	border-top: 1px solid #ccc;
+
+	flex-wrap: wrap;
 }
 
 .link-box__item {
+	flex: 1 0 auto;
+
 	width: 100%;
+	padding-left: 0;
+
+	border-bottom: 1px solid #ccc;
 
 	.col-2 & {
 		width: 50%;
 	}
-	flex: 1 0 auto;
-	padding-left: 0;
-	border-bottom: 1px solid #ccc;
 }
 
 .link-box__link {
-	text-decoration: none;
-	color: $text-color;
 	display: block;
+
 	padding: $spacing 0 0;
+
+	text-decoration: none;
+
+	color: $text-color;
 }
 
 .link-box__content {
-	padding: 0 $spacing 0 $spacing-l;
-	margin-left: $spacing;
 	margin-bottom: $spacing;
+	margin-left: $spacing;
+	padding: 0 $spacing 0 $spacing-l;
+
 	@extend .blue-arrow;
 }
 
 .link-box__date {
-	display: block;
-	padding: 0 $spacing $spacing $spacing-xl;
-	color: $light-gray;
 	font-weight: normal;
+
+	display: block;
+
+	padding: 0 $spacing $spacing $spacing-xl;
+
+	color: $light-gray;
 }

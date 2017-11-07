@@ -4,12 +4,12 @@
 }
 
 .widget.links__list-block {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .widget__content {
-	font-size: 0.875rem;
+	font-size: .875rem;
 }
 
 .widget__content,
@@ -19,27 +19,28 @@
 
 .widget .links__header,
 .widget__header {
-	border-bottom: 1px solid $lighter-gray;
-	color: $text-color;
 	padding: $spacing 0;
+
+	color: $text-color;
+	border-bottom: 1px solid $lighter-gray;
 	background-repeat: no-repeat;
 	background-position: center right;
 }
 
 .widget__header--apply {
-	background-image: url("../images/icons/widgets/Icon-Aanmelden.svg");
+	background-image: url('../images/icons/widgets/Icon-Aanmelden.svg');
 }
 
 .widget__header--open {
-	background-image: url("../images/icons/widgets/Icon-Open.svg");
+	background-image: url('../images/icons/widgets/Icon-Open.svg');
 }
 
 .widget__header--cijfers {
-	background-image: url("../images/icons/widgets/Icon-StudieInCijfers.svg");
+	background-image: url('../images/icons/widgets/Icon-StudieInCijfers.svg');
 }
 
 .widget__header--duurzaam {
-	background-image: url("../images/icons/widgets/Icon-Duurzaam.svg");
+	background-image: url('../images/icons/widgets/Icon-Duurzaam.svg');
 }
 
 .durability,
@@ -48,22 +49,26 @@
 }
 
 .widget__list {
-	list-style: none;
 	padding-left: 0;
+
+	list-style: none;
 }
 
 .widget__link--solo,
 .widget__list-item {
 	position: relative;
+
 	padding: $spacing-s 0 $spacing-s $spacing-l;
+
 	border-bottom: 1px solid $lighter-gray;
 }
 
 .widget__link--solo:before,
 .widget__list-item:before {
-	@extend .small-arrow;
 	top: $spacing;
 	left: 4px;
+
+	@extend .small-arrow;
 }
 
 .widget__list-item:before {
@@ -83,10 +88,11 @@
 }
 
 .star {
-	fill: #ccc;
 	display: inline-block;
+
+	fill: #ccc;
 }
 
-.star[data-rating="checked"] {
+.star[data-rating='checked'] {
 	fill: $text-color;
 }

@@ -1,21 +1,23 @@
 .logo {
-	width: 163px;
-	height: 100px;
 	display: flex;
 	flex-direction: column;
-	padding-top: 1.8125rem;
+
+	width: 163px;
+	height: 100px;
 	margin-left: $spacing;
-	transition: width 0.5s ease;
+	padding-top: 1.8125rem;
+
+	transition: width .5s ease;
 }
 @media all and (max-width: $bp-m) {
 	.logo {
-		height: 60px;
 		width: 122px;
+		height: 60px;
 		padding-top: 18px;
 	}
 
 	.logo__img {
-		height: 36px;
 		width: 122px;
+		height: 36px;
 	}
 }

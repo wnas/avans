@@ -1,54 +1,53 @@
 // avans
-@import "base";
-@import "variables";
-@import "colors";
-@import "mixins";
-@import "layout";
-@import "typography";
+@import 'base';
+@import 'variables';
+@import 'colors';
+@import 'mixins';
+@import 'layout';
+@import 'typography';
 
 
 body {
-
-  //  @extend .testing;
+	//  @extend .testing;
 }
 
 // atoms
-@import "../_patterns/01-atoms/form-elements/input";
-@import "../_patterns/01-atoms/button/button";
-@import "../_patterns/01-atoms/logo/logo";
-@import "../_patterns/01-atoms/filter/filter";
-@import "../_patterns/01-atoms/headers/page-header";
+@import '../_patterns/01-atoms/form-elements/input';
+@import '../_patterns/01-atoms/button/button';
+@import '../_patterns/01-atoms/logo/logo';
+@import '../_patterns/01-atoms/filter/filter';
+@import '../_patterns/01-atoms/headers/page-header';
 
 // molecules
-@import "../_patterns/02-molecules/button-bar/button-bar";
-@import "../_patterns/02-molecules/result-block/result-block";
-@import "../_patterns/02-molecules/link-block/link-block";
-@import "../_patterns/02-molecules/filters/filters";
-@import "../_patterns/02-molecules/image-block/image-block";
-@import "../_patterns/02-molecules/top-search/top-search";
-@import "../_patterns/02-molecules/pagination/pagination";
-@import "../_patterns/02-molecules/attention-block/attention-block";
-@import "../_patterns/02-molecules/widget/widget";
-@import "../_patterns/02-molecules/tab-item/tab-item";
+@import '../_patterns/02-molecules/button-bar/button-bar';
+@import '../_patterns/02-molecules/result-block/result-block';
+@import '../_patterns/02-molecules/link-block/link-block';
+@import '../_patterns/02-molecules/filters/filters';
+@import '../_patterns/02-molecules/image-block/image-block';
+@import '../_patterns/02-molecules/top-search/top-search';
+@import '../_patterns/02-molecules/pagination/pagination';
+@import '../_patterns/02-molecules/attention-block/attention-block';
+@import '../_patterns/02-molecules/widget/widget';
+@import '../_patterns/02-molecules/tab-item/tab-item';
 
 // organisms
-@import "../_patterns/03-organisms/link-box/link-box";
-@import "../_patterns/03-organisms/footer/footer";
-@import "../_patterns/03-organisms/header/header";
-@import "../_patterns/03-organisms/active-filter/active-filter";
-@import "../_patterns/03-organisms/course-schedule/course-schedule";
-@import "../_patterns/03-organisms/results-list/results-list";
-@import "../_patterns/03-organisms/main-nav/main-nav";
-@import "../_patterns/03-organisms/submenu/submenu";
-@import "../_patterns/03-organisms/page-menu/page-menu";
-@import "../_patterns/03-organisms/filter-block/filter-block";
-@import "../_patterns/03-organisms/hero/hero";
+@import '../_patterns/03-organisms/link-box/link-box';
+@import '../_patterns/03-organisms/footer/footer';
+@import '../_patterns/03-organisms/header/header';
+@import '../_patterns/03-organisms/active-filter/active-filter';
+@import '../_patterns/03-organisms/course-schedule/course-schedule';
+@import '../_patterns/03-organisms/results-list/results-list';
+@import '../_patterns/03-organisms/main-nav/main-nav';
+@import '../_patterns/03-organisms/submenu/submenu';
+@import '../_patterns/03-organisms/page-menu/page-menu';
+@import '../_patterns/03-organisms/filter-block/filter-block';
+@import '../_patterns/03-organisms/hero/hero';
 
-@import "../_patterns/03-organisms/hero-simple/hero-simple";
-@import "../_patterns/03-organisms/hero-home/hero-home";
-@import "../_patterns/03-organisms/tabs/tabs";
-@import "../_patterns/03-organisms/vertical-hero/vertical-hero";
+@import '../_patterns/03-organisms/hero-simple/hero-simple';
+@import '../_patterns/03-organisms/hero-home/hero-home';
+@import '../_patterns/03-organisms/tabs/tabs';
+@import '../_patterns/03-organisms/vertical-hero/vertical-hero';
 /* templates */
-@import "../_patterns/04-templates/list-page/list-page";
-@import "../_patterns/04-templates/home-page/home-page";
-@import "../_patterns/04-templates/subhome-page/subhome-page";
+@import '../_patterns/04-templates/list-page/list-page';
+@import '../_patterns/04-templates/home-page/home-page';
+@import '../_patterns/04-templates/subhome-page/subhome-page';

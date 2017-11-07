@@ -1,7 +1,6 @@
 $footer-text-color: $light-gray;
 $footer-background-color: $light-gray-background;
 $disclaimer-background-color: $text-color;
-
 $footer-link-animation-duration: .5s;
 /*
 	for testing purposes
@@ -21,11 +20,14 @@ $footer-link-animation-duration: .5s;
 .footer-links {
 	display: flex;
 	flex-direction: column;
-	color: $footer-text-color;
-	justify-content: space-between;
-	padding: 0;
+
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	padding: 0;
+
+	color: $footer-text-color;
+
+	justify-content: space-between;
 }
 
 .links__list-block {
@@ -39,6 +41,7 @@ $footer-link-animation-duration: .5s;
 	// vul de ruimte en zet een beetje marge links
 	.links__list-block {
 		flex: 0 1 33%;
+
 		margin-left: $spacing;
 	}
 
@@ -48,16 +51,17 @@ $footer-link-animation-duration: .5s;
 }
 
 .links__list {
-	padding-left: 0;
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
+
 	margin-top: .75rem;
+	padding-left: 0;
+
+	flex-wrap: wrap;
 }
 @media all and (max-width: $bp-xl) {
 	.links__list-block {
 		padding: 0 $spacing;
-
 	}
 }
 
@@ -66,18 +70,22 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item {
-	list-style: none;
-	padding: 0 $spacing-s $spacing-xs 0;
 	flex: 0 1 auto;
+
+	padding: 0 $spacing-s $spacing-xs 0;
+
+	list-style: none;
 	.nav & {
 		padding-bottom: $spacing-s;
 	}
 }
 
 .footer-link__link {
-	color: $footer-text-color;
 	font-size: $footer-links;
+
 	transition: background $footer-link-animation-duration ease;
+
+	color: $footer-text-color;
 }
 
 .footer-link__link:hover {
@@ -85,13 +93,15 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--discover {
-	padding-left: $spacing;
 	position: relative;
+
+	padding-left: $spacing;
+
 	transition: border-color $footer-link-animation-duration ease;
 }
 
 .footer-link__item--discover .footer-link__link {
-		transition: color $footer-link-animation-duration ease;
+	transition: color $footer-link-animation-duration ease;
 }
 
 .footer-link__item--discover .footer-link__link:hover,
@@ -103,16 +113,20 @@ $footer-link-animation-duration: .5s;
 	make mixin
 	*/
 .footer-link__item--discover:before {
-	content: '';
+	position: absolute;
+	top: 7px;
+	left: 2px;
+
+	display: inline-block;
+
 	width: 5px;
 	height: 5px;
-	display: inline-block;
+
+	content: '';
+	transform: rotate(45deg);
+
 	border: 1px solid $light-gray;
 	border-width: 1px 1px 0 0;
-	transform: rotate(45deg);
-	position: absolute;
-	left: 2px;
-	top: 7px;
 }
 
 .footer-link__item--discover:hover:before,
@@ -121,16 +135,20 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__link--icon {
+	position: relative;
+
+	display: inline-block;
+	overflow: hidden;
+
 	width: 2.5rem;
 	height: 2.5rem;
-	overflow: hidden;
+
 	white-space: nowrap;
 	text-indent: 3rem;
-//	margin: 0 $spacing-xs $spacing-xs 0;
+	//	margin: 0 $spacing-xs $spacing-xs 0;
+
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	display: inline-block;
-	position: relative;
 }
 
 .footer-link__item--share {
@@ -138,21 +156,23 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--share:after {
-	content: '';
-	width: 2.5rem;
-	height: 0.125rem;
 	position: absolute;
 	z-index: 5;
 	top: 2.4875rem;
 	left: 0;
+
+	width: 2.5rem;
+	height: .125rem;
+
+	content: '';
 }
 
 .footer-link__item--linkedin:after {
-	background-color: #0077B5;
+	background-color: #0077b5;
 }
 
 .footer-link__item--twitter:after {
-	background-color: #1DA1F2;
+	background-color: #1da1f2;
 }
 
 .footer-link__item--mail:after {
@@ -160,7 +180,7 @@ $footer-link-animation-duration: .5s;
 }
 
 .footer-link__item--facebook:after {
-	background-color: #3B5998;
+	background-color: #3b5998;
 }
 // if the screen is really tiny :)
 @media all and (max-width: $bp-xs) {
@@ -240,11 +260,12 @@ $footer-link-animation-duration: .5s;
 	background-image: url('../images/icons/Icon-SocialHover-Facebook.svg');
 }
 
-.links__list-block {}
+
 
 .links__header {
-	color: $footer-text-color;
 	margin: 1.3rem 0 0;
+
+	color: $footer-text-color;
 	.nav & {
 		display: none;
 	}
@@ -259,17 +280,22 @@ $footer-link-animation-duration: .5s;
 
 
 .disclaimer {
-	display: block;
-	background-color: $disclaimer-background-color;
-	color: $footer-text-color;
-	padding: 1rem 0;
 	font-size: $footer-links;
+
+	display: block;
+
+	padding: 1rem 0;
+
+	color: $footer-text-color;
+	background-color: $disclaimer-background-color;
 }
 // < 768px
 @media all and (max-width: $bp-m) {
 	.disclaimer__container {
 		flex-direction: column;
+
 		padding: $spacing-l;
+
 		text-align: left;
 	}
 	.page-footer__logo-link {
@@ -285,6 +311,7 @@ $footer-link-animation-duration: .5s;
 	.page-footer__logo-link {
 		display: inline;
 		flex-direction: row;
+
 		justify-content: space-around;
 	}
 }
@@ -305,6 +332,7 @@ $footer-link-animation-duration: .5s;
 
 .disclaimer__container {
 	display: flex;
+
 	margin: 0 auto;
 
 	justify-content: space-between;
@@ -321,7 +349,7 @@ $footer-link-animation-duration: .5s;
 	}
 
 	.disclaimer__link {
-	//	padding-top: $spacing;
+		//	padding-top: $spacing;
 		display: inline-block;
 	}
 
@@ -331,9 +359,11 @@ $footer-link-animation-duration: .5s;
 }
 
 .disclaimer__link {
-	color: $footer-text-color;
 	margin-right: .5rem;
+
 	text-decoration: underline;
+
+	color: $footer-text-color;
 }
 .disclaimer__link:hover {
 	color: $white;

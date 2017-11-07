@@ -6,8 +6,9 @@
 	}
 }
 .submenu__list {
-	list-style: none;
 	padding: 0;
+
+	list-style: none;
 }
 
 .submenu__item {
@@ -15,10 +16,13 @@
 }
 
 .submenu__link {
-	color: $light-gray;
-	display: block;
-	padding: 1rem 1rem 1rem 0;
 	font-size: $fs-s;
+
+	display: block;
+
+	padding: 1rem 1rem 1rem 0;
+
+	color: $light-gray;
 }
 
 .submenu__link--active {
@@ -26,8 +30,9 @@
 }
 
 .submenu__link:hover {
-	color: $avans-blue;
 	text-decoration: underline;
+
+	color: $avans-blue;
 }
 
 @media all and (max-width: $bp-l) {

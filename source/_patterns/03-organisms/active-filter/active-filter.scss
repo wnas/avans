@@ -1,15 +1,18 @@
 .active-filters__list {
+	display: flex;
+
+	margin: 0;
+	padding: .625rem 0;
+
 	border: 1px solid $lighter-gray ;
 	border-width: 1px 0;
-	padding: .625rem 0;
-	display: flex;
+
 	flex-wrap: wrap;
-	margin: 0;
 }
 
 .active-filters__label {
-	padding-top: .625rem;
 	margin-right: 1rem;
+	padding-top: .625rem;
 }
 
 .active-filters__item {
@@ -17,18 +20,23 @@
 }
 
 .btn--filter {
+	position: relative;
+
+	margin-bottom: .625rem;
+	padding: .625rem 2.5rem .625rem 1rem;
+
 	border-radius: 30px;
 	background-color: $lighter-gray;
-	position: relative;
-	padding: .625rem 2.5rem .625rem 1rem;
-	margin-bottom: .625rem;
 }
 
 .btn--filter:after {
-	content:'x';
-	color: $light-gray;
-	position: absolute;
-	right: .8rem;
-	top: .2rem;
 	font-size: $fs-l;
+
+	position: absolute;
+	top: .2rem;
+	right: .8rem;
+
+	content: 'x';
+
+	color: $light-gray;
 }

@@ -1,8 +1,9 @@
 .page__header {
 	position: relative;
 	z-index: 25;
+
 	border-top: 5px solid $avans-red;
-	border-bottom :1px solid $lighter-gray;
+	border-bottom: 1px solid $lighter-gray;
 }
 
 .top-bar {
@@ -16,30 +17,36 @@
 
 .top-bar__container {
 	width: calc(100% - 163px);
-	transition: width 0.5s ease;
+
+	transition: width .5s ease;
 }
 
 .skip-link {
+	display: inline-block;
+	overflow: hidden;
+
 	width: 3.8125rem;
 	height: 6.3rem;
-	text-indent: 6rem;
 	padding-top: 1.5rem;
-	overflow: hidden;
+
 	white-space: nowrap;
+	text-indent: 6rem;
+
+	border-right: 1px solid $lighter-gray;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 1.3125rem;
-	display: inline-block;
-	border-right: 1px solid $lighter-gray;
 }
 
 .nav.js-open .skip-link,
 .nav:target .skip-link {
 	position: absolute;
+	z-index: 5;
 	top: -6rem;
 	left: 1rem;
-	z-index: 5;
+
 	height: 6rem;
+
 	background-color: $white;
 }
 @media all and (min-width: $bp-l) {
@@ -57,35 +64,41 @@
 }
 
 .nav-link {
-	background-image: url("../images/icons/nav-icon.svg");
-	order: 0;
-	text-indent: 0;
-	text-align: center;
-	padding-top: 4rem;
-	transition: color 0.4s ease;
-	color: $light-gray;
 	font-size: $header-icon-text;
+
 	overflow: visible;
+
 	width: 6rem;
+	padding-top: 4rem;
+
+	transition: color .4s ease;
+	text-align: center;
+	text-indent: 0;
 	//background-position: 2rem;
 	text-transform: uppercase;
+
+	color: $light-gray;
+	background-image: url('../images/icons/nav-icon.svg');
 	background-size: 30px 19px;
+
+	order: 0;
 }
 
 .nav-link.clicked {
-	background-image: url("../images/icons/close-search-icon.svg");
-	text-indent: 6rem;
 	overflow: hidden;
+
+	text-indent: 6rem;
+
+	background-image: url('../images/icons/close-search-icon.svg');
 }
 
 .nav-link.clicked:hover {
-	background-image: url("../images/icons/close-search-icon-blue.svg");
+	background-image: url('../images/icons/close-search-icon-blue.svg');
 }
 
 .nav-link:hover {
-	background-image: url("../images/icons/nav-icon-blue.svg");
 	color: $avans-blue;
-
+	background-image: url('../images/icons/nav-icon-blue.svg');
 }
 
 @media all and (max-width: $bp-m) {
@@ -97,11 +110,11 @@
 }
 
 .search-link {
-	background-image: url("../images/icons/search-icon.svg");
+	background-image: url('../images/icons/search-icon.svg');
 }
 
 .search-link:hover {
-	background-image: url("../images/icons/search-icon-blue.svg");
+	background-image: url('../images/icons/search-icon-blue.svg');
 }
 @media all and (min-width: $bp-l) {
 	.search-link {
@@ -109,9 +122,10 @@
 	}
 
 	:target .search-link {
-		order: 0;
 		border-right: 0;
 		border-left: 1px solid #ccc;
+
+		order: 0;
 	}
 
 	.js-open .input--search,
@@ -125,7 +139,7 @@
 }
 
 .close-icon {
-	background-image: url("../images/icons/close-search-icon.svg");
+	background-image: url('../images/icons/close-search-icon.svg');
 }
 
 @media all and (max-width: $bp-m) {
@@ -135,22 +149,25 @@
 	.js-open + .logo {
 		width: 0;
 		.logo__img {
-			width : 0;
+			width: 0;
 		}
 	}
 }
 
 .nav,
 .top-search {
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	transition: width 0.2s easein;
+
+	transition: width .2s easein;
 }
 @media all and (min-width: $bp-l) {
 	.nav {
 		width: auto;
 		height: auto;
+
 		order: 1;
 	}
 }

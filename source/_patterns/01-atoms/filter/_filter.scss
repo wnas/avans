@@ -2,9 +2,11 @@
 $filter-size: .875rem;
 
 .filter__item {
-	display: flex;
-	padding: 0 0 $filter-size;
 	font-size: $filter-size;
+
+	display: flex;
+
+	padding: 0 0 $filter-size;
 }
 
 .filter__item:hover {
@@ -13,5 +15,6 @@ $filter-size: .875rem;
 
 .input--filter {
 	display: inline-block;
+
 	margin: .1rem $filter-size 0 0;
 }
