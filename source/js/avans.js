@@ -46,7 +46,7 @@ var avans = (function() {
 					 if ( elem === config.topMenu && config.topmenuheight === true) {
 						console.log('un-setting');
 						config.topmenuheight = false;
-						config.topMenu.container.style.height = 0;
+						config.topMenu.container.style.height = '';
 						return false;
 					}
 				}, false);
