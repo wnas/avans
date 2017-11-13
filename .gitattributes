@@ -1,0 +1,6 @@
+# git attributes...
+
+*.eot     -text diff
+*.woff    -text diff
+*.ttf     -text diff
+*.woff2   -text diff
