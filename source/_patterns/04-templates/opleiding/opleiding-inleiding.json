@@ -56,6 +56,16 @@
 		"link-href": "shouldiuseajavascriptframework.com"
 	},
 	"article-content": "<figure class='program-image'><img src='/binaries/content/gallery/nextweb/opleidingen/ahb/headers_introductiepagina/opleidingsfoto2_bedrijfskundemer_db_450x150.jpg'></figure><p>Jij bent een teamspeler en bruggenbouwer. Analytisch en creatief. In de opleiding Bedrijfskunde, voorheen Bedrijfskunde MER, speel je in op veranderingen in organisaties. Je zet innovaties in gang.</p><p>Een bedrijf wil 'het nieuwe werken' invoeren. Een andere manier van werken en samenwerken. Ondersteund door de laatste technologie. Ze vragen jou om het proces te begeleiden. Jij bent in staat om met jouw kennis en persoonlijkheid een brug te slaan tussen mensen. Afdelingen. Organisaties en middelen.</p><!-- Youtube video --><h3>Jij</h3><p>Je wilt het beste uit organisaties halen. Je ziet jezelf als verbinder. Je vindt het leuk om problemen op te lossen. Je bent goed in organiseren. En je houdt ervan om in een team te werken. Je bent analytisch. Veelzijdig en nieuwsgierig.</p><h3>De opleiding Bedrijfskunde</h3><p>Je ontwikkelt jezelf tot allround bedrijfskundige. Je leert alle vaardigheden die nodig zijn als toekomstig adviseur. Zoals communicatieve vaardigheden en gesprekstechnieken. Je verdiept je in belastingstelsels. Duikt in wetten en regels. En maakt marketingactieplannen en financiële scenario's.</p><p>Ben je geslaagd, dan mag je je Bachelor of Science (BSc) noemen.</p><h3>Kenmerkend voor deze opleiding</h3><p>Bedrijfskunde&nbsp;richt zich nadrukkelijk op het bedrijfsleven. En ontwikkelt lesmateriaal en praktijkcases in samenwerking met bedrijven en organisaties. Jij gaat regelmatig op bedrijfsbezoek. En volgt lessen van gastsprekers uit de praktijk. Vanaf je eerste jaar werk je aan praktijkopdrachten.</p><p><img align='right' alt='Topopleiding_Keuzegids_Hbo2018_Avans' src='/binaries/content/gallery/nextweb/opleidingen/beeldmerken/hbo_keuzegids_2018_topopleiding.png'>Deze opleiding behoort tot de beste opleidingen Bedrijfskunde&nbsp;van Nederland door Keuzegids Hbo 2018. De Keuzegids gebruikt de oude naam Bedrijfskunde MER nog.</p><p>Bekijk de <a href='/binaries/content/assets/nextweb/opleidingen/kies-een-opleiding/vergelijkingskaarten-economisch-domein/072-1617243-dig-vergelijkingskaart-bk-db_v1.pdf' target='_blank'>verschillen met andere opleidingen in het interessegebied Economie en Bedrijf</a> (pdf).</p>",
+	"open-dag": {
+		"header": "Mbo-middag 13 december 2017",
+		"datum": "13 dec",
+		"time": "18:00 - 21:00",
+		"location": "Breda, Tilburg",
+		"call-to-action":{
+			"text": "Meer informatie",
+			"href": "nos.nl"
+		}
+	},
 	"widgets": [{
 			"type": "apply",
 			"header": "Is dit jouw opleiding",
@@ -93,7 +103,7 @@
 			"header": "Duurzaamheid",
 			"text": "Score van deze opleiding",
 			"title": "Two out of three stars",
-			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star rating__checked' data-rating='checked'><title>2 out of 3 stars</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating__checked' data-rating='checked'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
+			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star'><title>2 van de 3 sterren</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
 			"widget-link": [{
 				"text": "Uitleg score",
 				"href": "nu.nl"

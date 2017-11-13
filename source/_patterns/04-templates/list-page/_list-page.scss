@@ -4,6 +4,8 @@
 .resultpage__list {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
+
+	//	@extend .testing;
 }
 @media all and (min-width: $bp-l) {
 	.resultpage__list {
@@ -58,9 +60,9 @@
 			height: 100%;
 
 			grid-gap: 20px;
-			grid-template-columns: $sidebar calc(100% - 283px);
-			grid-template-rows: 50px 1fr calc(100% - 300px) 100px;
-			grid-template-areas: '. header ' 'aside sub-header' 'aside content' '. footer';
+			grid-template-columns: $sidebar 1fr;
+			grid-template-rows: 50px auto 1fr 1fr;
+			grid-template-areas: '. header ' 'aside sub-header' 'aside content' 'aside footer';
 		}
 
 		.active-filters__container,

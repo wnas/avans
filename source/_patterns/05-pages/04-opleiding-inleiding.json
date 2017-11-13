@@ -96,7 +96,7 @@
 			"header": "Duurzaamheid",
 			"text": "Score van deze opleiding",
 			"title": "Two out of three stars",
-			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star rating__checked' data-rating='checked'><title>2 out of 3 stars</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating__checked' data-rating='checked'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star rating'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
+			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star'><title>2 out of 3 stars</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
 			"widget-link": [{
 				"text": "Uitleg score",
 				"href": "nu.nl"
