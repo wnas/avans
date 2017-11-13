@@ -1471,18 +1471,21 @@ a.btn--widget {
     position: absolute;
     z-index: 20;
     top: 100px;
+    bottom: 0;
     left: 0;
-    overflow: auto;
-    overflow: auto;
     width: 100%;
-    height: calc(100vh + 100px);
+    height: auto;
     margin-left: 0; } }
+
+@media all and (min-width: 992px) {
+  .nav.js-open,
+  .nav:target {
+    height: auto !important; } }
 
 @media all and (max-width: 768px) {
   .nav.js-open,
   .nav:target {
     top: 70px;
-    height: calc(100vh + 70px);
     padding: 0.9375rem; } }
 
 .nav {
@@ -1494,7 +1497,6 @@ a.btn--widget {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 0;
-  min-height: 0;
   margin-left: -0.9375rem;
   background-color: rgba(255, 255, 255, 0.98); }
 

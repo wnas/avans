@@ -1,5 +1,5 @@
 // avans
-var avans = (function() {
+;var avans = (function() {
 	var config = {
 			"topSearch": {
 				"buttonOpen": document.querySelector('.search-link'),
@@ -36,15 +36,13 @@ var avans = (function() {
 					if (elem === config.topSearch) {
 						focusSearch(elem);
 					}
-// debugger;
-					if ( elem === config.topMenu && config.topmenuheight === false) {
-						console.log('setting');
+					// debugger;
+					if (elem === config.topMenu && config.topmenuheight === false) {
 						config.topmenuheight = true;
-						config.topMenu.container.style.height = document.body.clientHeight+'px';
+						config.topMenu.container.style.height = document.body.clientHeight + 'px';
 						return false;
 					}
-					 if ( elem === config.topMenu && config.topmenuheight === true) {
-						console.log('un-setting');
+					if (elem === config.topMenu && config.topmenuheight === true) {
 						config.topmenuheight = false;
 						config.topMenu.container.style.height = '';
 						return false;
@@ -53,9 +51,9 @@ var avans = (function() {
 
 				buttonClose.addEventListener('click', function(evt) {
 					toggleClass(evt, elem);
-					if ( elem=== config.topMenu) {
+					if (elem === config.topMenu) {
 						var h = 0;
-						config.topMenu.container.style.height = h+'px';
+						config.topMenu.container.style.height = h + 'px';
 					}
 				}, false);
 
@@ -128,10 +126,10 @@ var avans = (function() {
 		},
 		tabs = function() {
 			// Get relevant elements and collections
-			var tabbed = document.querySelector('.tabs__container');
-			var tablist = tabbed.querySelector('.tabs');
-			var tabs = tablist.querySelectorAll('a');
-			var panels = tabbed.querySelectorAll('[id^="section"]');
+			var tabbed = document.querySelector('.tabs__container'),
+				tablist = tabbed.querySelector('.tabs'),
+				tabs = tablist.querySelectorAll('a'),
+				panels = tabbed.querySelectorAll('[id^="section"]');
 
 			// The tab switching function
 			var switchTab = function switchTab(oldTab, newTab) {
@@ -222,7 +220,7 @@ var avans = (function() {
 					var line = lineHeaders[i];
 					var clone = cloneHeader;
 					console.log(clone);
-					placeClone(line,clone);
+					placeClone(line, clone);
 				}
 			}
 		},
@@ -248,7 +246,6 @@ var avans = (function() {
 			if (document.getElementById('page-menu') !== null) {
 				pageMenu();
 			}
-		//	responsiveSchedule();
 		};
 	return {
 		init: init
