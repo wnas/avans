@@ -1,0 +1,21 @@
+.open-dag {
+	padding: $spacing-l;
+
+	color: $white;
+	background-color: $avans-red;
+}
+
+.open-dag__header {
+	font-size: $fs-l;
+
+	margin: .5rem 0;
+}
+
+.open-dag__location {
+	font-style: normal;
+
+	margin-left: $spacing;
+	padding-left: $spacing;
+
+	border-left: 1px solid $white;
+}
