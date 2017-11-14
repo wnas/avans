@@ -325,7 +325,7 @@ a.btn--widget {
   text-align: center; }
 
 @media all and (max-width: 320px) {
-  .btn {
+  .btn:not(.btn--page-menu) {
     width: 100%; }
   .btn + .btn {
     margin-top: 1rem; } }
@@ -1887,6 +1887,9 @@ dkdkd
     padding-top: 0;
     border: 1px solid #eee;
     border-width: 1px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .page-menu .btn,
@@ -1900,14 +1903,7 @@ dkdkd
       visibility: hidden;
       border-right: 0; }
     .page-menu .btn {
-      position: absolute;
-      top: 1rem;
-      right: 0;
-      -webkit-box-ordinal-group: 2;
-          -ms-flex-order: 1;
-              order: 1;
-      -ms-flex-item-align: end;
-          align-self: flex-end; }
+      margin-top: .625rem; }
     .page-menu .nav-link {
       font-size: 1rem;
       width: auto;
@@ -1944,6 +1940,14 @@ dkdkd
 @media all and (min-width: 1200px) {
   .page-menu--clone {
     display: none; } }
+
+@media all and (max-width: 768px) {
+  .page-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    outline: 1px solid red; } }
 
 .filter__button {
   position: relative;

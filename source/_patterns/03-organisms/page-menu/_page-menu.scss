@@ -101,7 +101,9 @@ dkdkd
 		border: 1px solid $lighter-gray;
 		border-width: 1px 0;
 
+		justify-content: space-between;
 		flex-wrap: wrap;
+
 
 		.btn,
 		.close-icon {
@@ -121,12 +123,12 @@ dkdkd
 		}
 
 		.btn {
-			position: absolute;
-			top: 1rem;
-			right: 0;
-
-			order: 1;
-			align-self: flex-end;
+			// position: absolute;
+			// top: 1rem;
+			// right: 0;
+			//
+			// order: 1;
+			margin-top: .625rem;
 		}
 
 		.nav-link {
@@ -181,5 +183,13 @@ dkdkd
 @media all and (min-width: $bp-xl) {
 	.page-menu--clone {
 		display: none;
+	}
+}
+
+@media all and (max-width: $bp-m) {
+	.page-menu {
+		flex-direction: row;
+
+		outline: 1px solid red;
 	}
 }

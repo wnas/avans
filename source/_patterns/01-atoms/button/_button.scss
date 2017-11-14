@@ -39,7 +39,7 @@ a.btn--widget {
 
 
 @media all and (max-width: $bp-xs) {
-	.btn {
+	.btn:not(.btn--page-menu) {
 		width: 100%;
 	}
 	.btn + .btn {
