@@ -1,8 +1,13 @@
-{{> organisms-header }} {{> organisms-submenu }} {{> organisms-hero }}
+{{> organisms-header }}
+{{> organisms-submenu }}
+{{> organisms-hero }}
 
-<main class="layout-full-width-block main-content layout-full-width-block--content-page">
-	<div class="layout-full-width-block__content content-page">
+<main class="layout-full-width-block main-content {{^ wide-article-header }}layout-full-width-block--content-page{{/ wide-article-header }} {{# wide-article-header }}layout-full-width-block--service-page{{/ wide-article-header }}">
+	<div class="layout-full-width-block__content {{^ wide-article-header }}content-page{{/ wide-article-header }}{{# wide-article-header }}service-page{{/ wide-article-header }}">
 		{{> organisms-page-menu}}
+		{{# wide-article-header }}
+			{{> atoms-image }}
+		{{/ wide-article-header }}
 		<article class="main-content content-page__content">
 			{{> atoms-article-header }}
 			<!-- /article-header -->

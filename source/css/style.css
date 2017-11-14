@@ -156,11 +156,21 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+  .service-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .service-page * {
+      outline: 1px solid red; }
   .content-page__menu {
     padding-left: 0; }
   .content-page__aside,
   .content-page__menu {
     width: 263px; }
+  .service-page-header {
+    width: 819px; }
   .content-page__content {
     width: 556px;
     margin-bottom: 1.875rem;
@@ -1946,8 +1956,7 @@ dkdkd
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    outline: 1px solid red; } }
+            flex-direction: row; } }
 
 .filter__button {
   position: relative;
