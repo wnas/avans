@@ -318,7 +318,7 @@ p a {
   left: -999em; }
 
 .btn--widget {
-  width: 100%; }
+  width: 248px; }
 
 a.btn--widget {
   display: block;
@@ -1946,8 +1946,7 @@ dkdkd
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
-    outline: 1px solid red; } }
+            flex-direction: row; } }
 
 .filter__button {
   position: relative;
