@@ -18,6 +18,10 @@
 .btn--image-block {
 	background-color: $text-color;
 }
+
+.btn--open-dag {
+	display: inline-block;
+}
 .btn--hidden {
 	position: absolute;
 	left: -999em;

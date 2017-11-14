@@ -1,4 +1,5 @@
 .open-dag {
+	margin-top: $spacing;
 	padding: $spacing-l;
 
 	color: $white;
@@ -18,4 +19,11 @@
 	padding-left: $spacing;
 
 	border-left: 1px solid $white;
+
+	span {
+		white-space: nowrap;
+		&:not(:last-child):after {
+			content: ',';
+		}
+	}
 }

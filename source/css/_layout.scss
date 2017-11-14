@@ -81,7 +81,20 @@ $side-column-width: 263px;
 }
 @media all and (min-width: $bp-xl) {
 	.layout-full-width-block--content-page {
-		background: linear-gradient(90deg, #fff 0%, #fff calc( 50% + 293px ), $light-gray-background calc( 50.01% + 293px ), $light-gray-background 100%);
+		position: relative;
+
+		&:after {
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: calc( 50.01% + 293px );
+
+			content: '';
+
+			background-color: $light-gray-background ;
+		}
 	}
 }
 

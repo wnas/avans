@@ -1,7 +1,11 @@
 <div class="open-dag">
 	<h4 class="open-dag__header">{{header}}</h4>
-	<p class="open-dag__time">{{ datum }},<time>{{time}}</time>
-	<em class="open-dag__location">{{ location }}</em></p>
+	<p class="open-dag__content">{{ datum }}, <time>{{time}}</time>
+	<em class="open-dag__location">{{# locations }}
+		{{# location }}
+			<span>{{ location }}</span>
+		{{/ location }}
+	{{/ locations}}</em></p>
 	<a href="{{ call-to-action.href }}" class="btn btn--primary btn--open-dag">
 		{{ call-to-action.text }}
 	</a>
