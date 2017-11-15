@@ -61,3 +61,7 @@ To watch for changes, re-generate the front-end, and server it via a BrowserSync
     grunt patternlab:serve
 
 BrowserSync should open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Mustache
+
+the templates are rendered using the 'mustache' templating language, go [https://mustache.github.io/mustache.5.html](https://mustache.github.io/mustache.5.html) to find out more...

@@ -232,7 +232,7 @@ $nav-link-active-color: $text-color;
 
 	.nav__item--has-sub:hover:after {
 		position: absolute;
-		bottom: -5px;
+		bottom: -6px;
 		left: calc(50% - 11px);
 
 		display: block;

@@ -245,7 +245,7 @@ legend,
 .page-menu-block__header,
 .page-menu__link--active,
 .schedule__header--head {
-  font-family: 'Frutiger LT W01_65 Bold1475746', helvetica, sans-serif;
+  font-family: 'Frutiger LT W01 65 Bold', helvetica, sans-serif;
   font-weight: normal; }
 
 body,
@@ -253,7 +253,7 @@ input,
 .btn--filter,
 .nav__link--sub,
 .result-block__location {
-  font-family: 'Frutiger LT W01_55 Roma1475738', helvetica, sans-serif;
+  font-family: 'FrutigerLTW01-55Roman', helvetica, sans-serif;
   font-weight: normal; }
 
 .main-content p {
@@ -1708,7 +1708,7 @@ a.btn--widget {
     border-color: #00aceb; }
   .nav__item--has-sub:hover:after {
     position: absolute;
-    bottom: -5px;
+    bottom: -6px;
     left: calc(50% - 11px);
     display: block;
     width: 11px;
@@ -1906,26 +1906,30 @@ dkdkd
       margin-top: .625rem; }
     .page-menu .nav-link {
       font-size: 1rem;
+      position: relative;
       width: auto;
       height: 4.3rem;
-      padding-top: 1.5rem;
-      padding-left: 3rem;
+      margin-right: 1rem;
+      padding: 1.5rem 2rem 0 3rem;
       text-transform: none;
       border-right: none;
       background-position: 1rem; }
     .page-menu .nav-link:after {
+      position: absolute;
+      top: 1.625rem;
+      right: 2px;
       display: inline-block;
       width: 9px;
       height: 9px;
-      margin-left: 1rem;
       content: '';
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       border: 1px solid #00aceb;
       border-width: 0 1px 1px 0; }
     .page-menu .clicked:after {
-      -webkit-transform: rotate(135deg);
-              transform: rotate(135deg); }
+      top: 1.825rem;
+      -webkit-transform: rotate(-135deg);
+              transform: rotate(-135deg); }
     .page-menu .skip-link {
       background-size: 1rem; } }
 

@@ -134,10 +134,12 @@ dkdkd
 		.nav-link {
 			font-size: $fs;
 
+			position: relative;
+
 			width: auto;
 			height: 4.3rem;
-			padding-top: 1.5rem;
-			padding-left: 3rem;
+			margin-right: 1rem;
+			padding: 1.5rem 2rem 0 3rem;
 
 			text-transform: none;
 
@@ -146,11 +148,14 @@ dkdkd
 		}
 
 		.nav-link:after {
+			position: absolute;
+			top: 1.625rem;
+			right: 2px;
+
 			display: inline-block;
 
 			width: 9px;
 			height: 9px;
-			margin-left: 1rem;
 
 			content: '';
 			transform: rotate(45deg);
@@ -159,7 +164,9 @@ dkdkd
 			border-width: 0 1px 1px 0;
 		}
 		.clicked:after {
-			transform: rotate(135deg);
+			top: 1.825rem;
+
+			transform: rotate(-135deg);
 		}
 
 		.skip-link {
