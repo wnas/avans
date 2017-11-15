@@ -59,6 +59,7 @@
 	},
 	"article-header": "Voltijd opleiding in Breda",
 	"tabs":[
+
 		{
 			"tab-id": "a",
 			"tab-item": "Specialisaties",
@@ -76,7 +77,7 @@
 		},
 		{
 			"tab-id": "b",
-			"tab-item": "Tab B",
+			"tab-item": "Studieprogramma",
 			"data-default": "true",
 			"tab-content": "<h3>De opleiding Communication & Multimedia Design</h3><p>De opleiding is net zo veelzijdig als jij. Een mix van wetenschap, kunst, design en engineering. Je leert om deze disciplines met elkaar te verbinden. En je komt alles te weten over communicatie, interactie en strategie. Jij ontwerpt interactieve producten en diensten die werkgevers vaak nog niet kennen. Je doet projecten en opdrachten. Gaat op excursie. Je experimenteert in de werkplaats en exposeert je eigen werk.</p><p><a href='#'>Lees meer</a> over deze en andere opleidingen uit het domein Creative Technologies.</p><p>Ben je geslaagd, dan mag je de titel Bachelor of Science voeren.</p><h3>Kenmerkend voor deze opleiding</h3><p>Je volgt de opleiding Communicatie & Multimedia Design in Breda of 's-Hertogenbosch. De eerste collegejaren zijn gelijk op beide locaties. Het derde jaar volg je in Breda eerst de verdieping, daarna loop je stage. In 's-Hertogenbosch is dit omgekeerd.</p><p>Je krijgt les van docenten uit de vakgebieden informatie en techniek, communicatie en multimedia vormgeving.</p><p>Deze opleiding is gekozen tot beste opleiding Communication & Multimedia Design, door Keuzegids HBO 2017.</p><h3>Faciliteiten</h3><p>In ons medialab vind je de faciliteiten die je nodig hebt tijdens je opleiding. Zoals Apple- en Windowscomputers, een film- en fotostudio, een houtwerkplaats, een grootformaatprinter en een 3D-printer. En een snijplotter en lasersnijder. Je kunt er ook speciale apparatuur lenen. Denk aan elektronica, audio-apparatuur en camera's.</p>"
 		}

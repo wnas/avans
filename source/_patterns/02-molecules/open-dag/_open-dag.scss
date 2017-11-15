@@ -27,3 +27,14 @@
 		}
 	}
 }
+
+@media all and (max-width: $bp-s) {
+	.open-dag__location {
+		display: block;
+
+		margin-left: 0;
+		padding-left: 0;
+
+		border-left: 0;
+	}
+}

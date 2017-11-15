@@ -258,7 +258,8 @@ input,
   font-family: 'FrutigerLTW01-55Roman', helvetica, sans-serif;
   font-weight: normal; }
 
-.main-content p {
+.main-content p,
+.main-content li {
   font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif; }
 
 html,
@@ -275,7 +276,8 @@ h2 {
   font-size: 1.5rem;
   margin: 0; }
 
-p {
+p,
+.main-content li {
   line-height: 2rem; }
 
 a {
@@ -313,7 +315,8 @@ p a {
   background-color: #000001; }
 
 .btn--open-dag {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: .625rem; }
 
 .btn--hidden {
   position: absolute;
@@ -915,6 +918,13 @@ a.btn--widget {
     white-space: nowrap; }
     .open-dag__location span:not(:last-child):after {
       content: ','; }
+
+@media all and (max-width: 540px) {
+  .open-dag__location {
+    display: block;
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0; } }
 
 .link-box {
   padding: 1.875rem;

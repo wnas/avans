@@ -25,7 +25,8 @@ input,
 	font-weight: normal;
 }
 
-.main-content p {
+.main-content p,
+.main-content li {
 	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
 }
 
@@ -49,7 +50,8 @@ h2 {
 	margin: 0;
 }
 
-p {
+p,
+.main-content li {
 	line-height: 2rem;
 }
 
