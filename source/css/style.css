@@ -180,7 +180,9 @@ section {
 
 @media all and (max-width: 1200px) {
   .content-page__aside {
-    background-color: rgba(238, 238, 238, 0.5); } }
+    background-color: rgba(238, 238, 238, 0.5); }
+  .content-page__menu {
+    padding-bottom: 0; } }
 
 @media all and (max-width: 1200px) and (min-width: 768px) {
   .content-page__aside-container,
@@ -1907,10 +1909,11 @@ dkdkd
     .page-menu .nav-link {
       font-size: 1rem;
       position: relative;
+      display: block;
       width: auto;
       height: 4.3rem;
       margin-right: 1rem;
-      padding: 1.5rem 2rem 0 3rem;
+      padding: 1.6rem 2rem 0 3rem;
       text-transform: none;
       border-right: none;
       background-position: 1rem; }

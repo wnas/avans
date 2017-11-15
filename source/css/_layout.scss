@@ -159,6 +159,9 @@ $side-column-width: 263px;
 	.content-page__aside {
 		background-color: $light-gray-background;
 	}
+	.content-page__menu {
+		padding-bottom: 0;
+	}
 }
 @media all and (max-width: $bp-xl) and (min-width: $bp-m) {
 	.content-page__aside-container,
