@@ -5,10 +5,14 @@ body {
 	background-color: #fff;
 }
 
+/*
+	if those are not set to block, after will not work...
+*/
 article,
 aside,
 body,
-section {
+section,
+main {
 	display: block;
 }
 
@@ -79,6 +83,7 @@ $side-column-width: 263px;
 	//	@extend .testing;
 	position: relative;
 }
+
 @media all and (min-width: $bp-xl) {
 	.layout-full-width-block--content-page {
 		position: relative;

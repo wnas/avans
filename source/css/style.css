@@ -75,10 +75,14 @@ body {
   height: 100%;
   background-color: #fff; }
 
+/*
+	if those are not set to block, after will not work...
+*/
 article,
 aside,
 body,
-section {
+section,
+main {
   display: block; }
 
 .hero,
@@ -277,7 +281,7 @@ h2 {
   margin: 0; }
 
 p,
-.main-content li {
+.content-page__content li {
   line-height: 2rem; }
 
 a {
@@ -1721,7 +1725,7 @@ a.btn--widget {
   .nav__item--has-sub:hover:after {
     position: absolute;
     bottom: -6px;
-    left: calc(50% - 11px);
+    left: calc(50% - 9px);
     display: block;
     width: 11px;
     height: 11px;
@@ -2323,8 +2327,7 @@ dkdkd
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    outline: 1px dotted red; }
+    width: 100%; }
     .main-content .fooBar .image-block__header-block {
       top: 5%;
       right: -110%;
@@ -2373,8 +2376,6 @@ dkdkd
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-  .subhome__content--top .vertical-hero {
-    outline: 1px solid red; }
   .layout-full-width-block__content--subhome .content {
     max-width: 750px; }
   .layout-full-width-block__content--subhome .vertical-hero {
@@ -2389,8 +2390,7 @@ dkdkd
             flex-direction: column; }
   .subhome__content--top .vertical-hero {
     height: 300px;
-    margin: 0 -1rem;
-    outline: 1px solid green; }
+    margin: 0 -1rem; }
   .layout-full-width-block__content--subhome .content {
     max-width: 100%; } }
 /*# sourceMappingURL=style.css.map */
