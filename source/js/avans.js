@@ -135,18 +135,19 @@ var avans = (function() {
         },
         changeHistory = function(e) {
             if (window.history.pushState) {
-                window.history.pushState('', '/', window.location.pathname)
+                window.history.pushState('', '/', window.location.pathname);
             } else {
                 window.location.hash = '';
             }
             var url = window.location.href;
 
-            window.location.href = url + e.target.hash;
+            window.location.href = url + '#activeTab=' + e.target.hash.slice(1);
         },
         switchTab = function(e) {
             console.log(e);
             var tabLink = e.target,
                 tabTarget = e.target.hash.slice(1),
+                activeTab = document.getElementById(tabTarget),
                 tabGroup = e.target.dataset.tabgroup,
                 tabList = tabLink.parentElement.parentElement,
                 tabs = tabList.nextElementSibling.querySelectorAll('.tab__content[data-tabgroup="' + tabGroup + '"]'),
@@ -155,13 +156,26 @@ var avans = (function() {
                 i;
 
             for (i = 0; i < len; i++) {
-                tabItems[i].classList.remove('tab__item--selected');
-                tabs[i].setAttribute('hidden', '');
-            }
-            tabLink.parentElement.classList.toggle('tab__item--selected');
+                hideTabs(tabItems[i], tabs[i]);
 
-            document.getElementById(tabTarget).removeAttribute('hidden');
-            console.log(tabGroup);
+            }
+            showTab(tabLink, activeTab);
+        },
+        showTab = function(link, tab) {
+            // show the selected link
+            link.parentElement.classList.add('tab__item--selected');
+            link.setAttribute('aria-selected', 'true');
+            // show the correct tab
+            tab.removeAttribute('hidden');
+        },
+        hideTabs = function(links, tabs) {
+            // hide all the links
+            links.classList.remove('tab__item--selected');
+
+            links.removeAttribute('aria-selected');
+            links.setAttribute('tabindex', '-1');
+            // we go to work on the old tabs...
+            tabs.setAttribute('hidden', '');
         },
         tabs = function() {
             var container = document.querySelector('.tabs__container');
