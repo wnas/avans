@@ -1,109 +1,114 @@
 {
 
-	"hero-class": "hero--pattern",
-	"page-menu-class": "content-page__menu",
-	"page-menu-block": [{
-			"block-title": "Voltijd in Breda",
-			"items": [{
-					"href": "#",
-					"text": "Introductie"
-				},
-				{
-					"href": "#",
-					"text": "Opbouw",
-					"active": "true"
-				},
-				{
-					"href": "#",
-					"text": "Buitenland"
-				},
-				{
-					"href": "#",
-					"text": "Wat anderen zeggen"
-				},
-				{
-					"href": "#",
-					"text": "Projecten"
-				},
-				{
-					"href": "#",
-					"text": "Studie in cijfers"
-				},
-				{
-					"href": "#",
-					"text": "Verenigingen"
-				},
-				{
-					"href": "#",
-					"text": "Nieuws"
-				}
-			]
-		},
-		{
-			"block-title": "Na de opleiding",
-			"items": [{
-					"href": "#",
-					"text": "Beroepen"
-				},
-				{
-					"href": "#",
-					"text": "Vervolgstudies"
-				}
-			]
-		}
-	],
-	"more-info-button": {
-		"link-class": "btn btn--primary",
-		"link-text": "Meld je aan",
-		"link-href": "shouldiuseajavascriptframework.com"
-	},
-	"article-header": "Voltijd opleiding in Breda",
-	"tabs":[
+    "hero-class": "hero--pattern",
+    "page-menu-class": "content-page__menu",
+    "page-menu-block": [{
+            "block-title": "Voltijd in Breda",
+            "items": [{
+                    "href": "#",
+                    "text": "Introductie"
+                },
+                {
+                    "href": "#",
+                    "text": "Opbouw",
+                    "active": "true"
+                },
+                {
+                    "href": "#",
+                    "text": "Buitenland"
+                },
+                {
+                    "href": "#",
+                    "text": "Wat anderen zeggen"
+                },
+                {
+                    "href": "#",
+                    "text": "Projecten"
+                },
+                {
+                    "href": "#",
+                    "text": "Studie in cijfers"
+                },
+                {
+                    "href": "#",
+                    "text": "Verenigingen"
+                },
+                {
+                    "href": "#",
+                    "text": "Nieuws"
+                }
+            ]
+        },
+        {
+            "block-title": "Na de opleiding",
+            "items": [{
+                    "href": "#",
+                    "text": "Beroepen"
+                },
+                {
+                    "href": "#",
+                    "text": "Vervolgstudies"
+                }
+            ]
+        }
+    ],
+    "more-info-button": {
+        "link-class": "btn btn--primary",
+        "link-text": "Meld je aan",
+        "link-href": "shouldiuseajavascriptframework.com"
+    },
+    "article-header": "Voltijd opleiding in Breda",
+    "tabs": [
 
-		{
-			"tab-id": "a",
-			"tab-item": "Specialisaties",
-			"tab-content": "<h3>Tab A title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p><div class='breakout-box'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>"
-		},
-		{
-			"tab-id": "c",
-			"tab-item": "Stages",
-			"tab-content": "<h3>Tab C title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p>"
-		},
-		{
-			"tab-id": "d",
-			"tab-item": "Afstuderen",
-			"tab-content": "<h3>Tab afstuderen title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p>"
-		},
-		{
-			"tab-id": "b",
-			"tab-item": "Studieprogramma",
-			"data-default": "true",
-			"tab-content": "<h3>De opleiding Communication & Multimedia Design</h3><p>De opleiding is net zo veelzijdig als jij. Een mix van wetenschap, kunst, design en engineering. Je leert om deze disciplines met elkaar te verbinden. En je komt alles te weten over communicatie, interactie en strategie. Jij ontwerpt interactieve producten en diensten die werkgevers vaak nog niet kennen. Je doet projecten en opdrachten. Gaat op excursie. Je experimenteert in de werkplaats en exposeert je eigen werk.</p><p><a href='#'>Lees meer</a> over deze en andere opleidingen uit het domein Creative Technologies.</p><p>Ben je geslaagd, dan mag je de titel Bachelor of Science voeren.</p><h3>Kenmerkend voor deze opleiding</h3><p>Je volgt de opleiding Communicatie & Multimedia Design in Breda of 's-Hertogenbosch. De eerste collegejaren zijn gelijk op beide locaties. Het derde jaar volg je in Breda eerst de verdieping, daarna loop je stage. In 's-Hertogenbosch is dit omgekeerd.</p><p>Je krijgt les van docenten uit de vakgebieden informatie en techniek, communicatie en multimedia vormgeving.</p><p>Deze opleiding is gekozen tot beste opleiding Communication & Multimedia Design, door Keuzegids HBO 2017.</p><h3>Faciliteiten</h3><p>In ons medialab vind je de faciliteiten die je nodig hebt tijdens je opleiding. Zoals Apple- en Windowscomputers, een film- en fotostudio, een houtwerkplaats, een grootformaatprinter en een 3D-printer. En een snijplotter en lasersnijder. Je kunt er ook speciale apparatuur lenen. Denk aan elektronica, audio-apparatuur en camera's.</p>"
-		}
-	],
-	"widgets": [{
-			"type": "apply",
-			"header": "Is dit jouw opleiding",
-			"button": {
-				"button-text": "Meld je aan",
-				"button-class": "btn--primary btn--widget"
-			}
-		},
-		{
-			"type": "open",
-			"header": "Kom langs",
-			"widget-list": {
-				"items": [{
-						"text": "Open dag 4 november 2017",
-						"href": "nu.nl"
-					},
-					{
-						"text": "Open dag 27 januari 2018",
-						"href": "nuzakelijk.nl"
-					}
-				]
-			}
-		}
-	]
+        {
+            "tab-id": "a",
+            "tab-item": "Specialisaties",
+            "tab-group": "groep",
+            "tab-selected": true,
+            "tab-content": "<h3>Tab A title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><div class='breakout-box'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div><div class='tabs__container'><ul class='tabs ' role='tablist'><li class='tab__item tab__item--selected'><a href='#section-as' data-tabgroup='bar' id='tab1s' class='tab__link' aria-selected='true'>Specialisaties</a></li><li class='tab__item'><a href='#section-cs' data-tabgroup='bar' id='tab2s' class='tab__link'>Stages</a></li><li class='tab__item'><a href='#section-ds' data-tabgroup='bar' id='tab3s' class='tab__link'>Afstuderen</a></li><li class='tab__item'><a href='#section-bs' data-tabgroup='bar' id='tab4s' class='tab__link' role='tab' tabindex='-1'>Studieprogramma</a></li></ul><div class='tabs__content'><div role='tabpanel' data-tabgroup='bar' aria-labelledby='tab1s' id='section-as' class='tab__content'><h3>Tab A title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication &amp; Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p><div class='breakout-box'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div><div role='tabpanel' data-tabgroup='bar' aria-labelledby='tab2s' class='tab__content' id='section-cs' tabindex='-1' hidden=''><h3>Tab C title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication &amp; Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p></div><div role='tabpanel' data-tabgroup='bar' aria-labelledby='tab3s' class='tab__content' id='section-ds' tabindex='-1' hidden=''><h3>Tab afstuderen title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication &amp; Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p></div><div role='tabpanel' data-tabgroup='bar' aria-labelledby='tab4s' class='tab__content' id='section-bs' tabindex='-1'><h3>De opleiding Communication &amp; Multimedia Design</h3><p>De opleiding is net zo veelzijdig als jij. Een mix van wetenschap, kunst, design en engineering. Je leert om deze disciplines met elkaar te verbinden. En je komt alles te weten over communicatie, interactie en strategie. Jij ontwerpt interactieve producten en diensten die werkgevers vaak nog niet kennen. Je doet projecten en opdrachten. Gaat op excursie. Je experimenteert in de werkplaats en exposeert je eigen werk.</p><p><a href='#'>Lees meer</a> over deze en andere opleidingen uit het domein Creative Technologies.</p><p>Ben je geslaagd, dan mag je de titel Bachelor of Science voeren.</p><h3>Kenmerkend voor deze opleiding</h3><p>Je volgt de opleiding Communicatie &amp; Multimedia Design in Breda of 's-Hertogenbosch. De eerste collegejaren zijn gelijk op beide locaties. Het derde jaar volg je in Breda eerst de verdieping, daarna loop je stage. In 's-Hertogenbosch is dit omgekeerd.</p><p>Je krijgt les van docenten uit de vakgebieden informatie en techniek, communicatie en multimedia vormgeving.</p><p>Deze opleiding is gekozen tot beste opleiding Communication &amp; Multimedia Design, door Keuzegids HBO 2017.</p><h3>Faciliteiten</h3><p>In ons medialab vind je de faciliteiten die je nodig hebt tijdens je opleiding. Zoals Apple- en Windowscomputers, een film- en fotostudio, een houtwerkplaats, een grootformaatprinter en een 3D-printer. En een snijplotter en lasersnijder. Je kunt er ook speciale apparatuur lenen. Denk aan elektronica, audio-apparatuur en camera's.</p></div></div></div>"
+        },
+        {
+            "tab-id": "c",
+            "tab-item": "Stages",
+            "tab-group": "groep",
+            "tab-content": "<h3>Tab C title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p>"
+        },
+        {
+            "tab-id": "d",
+            "tab-item": "Afstuderen",
+            "tab-group": "groep",
+            "tab-content": "<h3>Tab afstuderen title</h3><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p>"
+        },
+        {
+            "tab-id": "b",
+            "tab-item": "Studieprogramma",
+            "data-default": "true",
+            "tab-group": "groep",
+            "tab-content": "<h3>De opleiding Communication & Multimedia Design</h3><p>De opleiding is net zo veelzijdig als jij. Een mix van wetenschap, kunst, design en engineering. Je leert om deze disciplines met elkaar te verbinden. En je komt alles te weten over communicatie, interactie en strategie. Jij ontwerpt interactieve producten en diensten die werkgevers vaak nog niet kennen. Je doet projecten en opdrachten. Gaat op excursie. Je experimenteert in de werkplaats en exposeert je eigen werk.</p><p><a href='#'>Lees meer</a> over deze en andere opleidingen uit het domein Creative Technologies.</p><p>Ben je geslaagd, dan mag je de titel Bachelor of Science voeren.</p><h3>Kenmerkend voor deze opleiding</h3><p>Je volgt de opleiding Communicatie & Multimedia Design in Breda of 's-Hertogenbosch. De eerste collegejaren zijn gelijk op beide locaties. Het derde jaar volg je in Breda eerst de verdieping, daarna loop je stage. In 's-Hertogenbosch is dit omgekeerd.</p><p>Je krijgt les van docenten uit de vakgebieden informatie en techniek, communicatie en multimedia vormgeving.</p><p>Deze opleiding is gekozen tot beste opleiding Communication & Multimedia Design, door Keuzegids HBO 2017.</p><h3>Faciliteiten</h3><p>In ons medialab vind je de faciliteiten die je nodig hebt tijdens je opleiding. Zoals Apple- en Windowscomputers, een film- en fotostudio, een houtwerkplaats, een grootformaatprinter en een 3D-printer. En een snijplotter en lasersnijder. Je kunt er ook speciale apparatuur lenen. Denk aan elektronica, audio-apparatuur en camera's.</p>"
+        }
+    ],
+    "widgets": [{
+            "type": "apply",
+            "header": "Is dit jouw opleiding",
+            "button": {
+                "button-text": "Meld je aan",
+                "button-class": "btn--primary btn--widget"
+            }
+        },
+        {
+            "type": "open",
+            "header": "Kom langs",
+            "widget-list": {
+                "items": [{
+                        "text": "Open dag 4 november 2017",
+                        "href": "nu.nl"
+                    },
+                    {
+                        "text": "Open dag 27 januari 2018",
+                        "href": "nuzakelijk.nl"
+                    }
+                ]
+            }
+        }
+    ]
 }
