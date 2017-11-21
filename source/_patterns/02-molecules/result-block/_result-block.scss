@@ -13,7 +13,6 @@
 		margin-bottom: 1rem;
 		padding-bottom: 1rem;
 	}
-
 	.result-block__header {
 		margin-bottom: $spacing;
 	}
@@ -30,11 +29,11 @@
 
 	color: $text-color;
 }
+
 @media all and (max-width: $bp-xs) {
 	.result-block__link {
 		flex-direction: column;
 	}
-
 	.result-block__image-container {
 		margin-bottom: $spacing;
 	}
@@ -69,6 +68,7 @@
 	display: inline-block;
 
 	width: 30%;
+	height: auto;
 
 	order: 0;
 }
@@ -87,6 +87,7 @@
 		height: auto;
 	}
 }
+
 @media all and (min-width: $bp-xl) {
 	.result-block__image-container {
 		min-width: 263px;
@@ -110,17 +111,13 @@
 }
 
 .result-block__image {
-	//	max-width: 200px;
 	width: 100%;
-	//height: 100%;
 }
-
-
 
 .result-block__header {
 	font-size: $result-block__header;
 
-	margin-top: 0;
+	margin: 0 0 .5rem;
 
 	transition: color $time-s ease;
 }
@@ -129,17 +126,18 @@
 	text-decoration: underline;
 }
 
-
 .result-block__location {
 	display: inline-block;
 
 	margin-left: 1.25rem;
-	padding-left: 1.5rem;
+	padding-top: 2px;
+	padding-left: 1rem;
 
 	background-image: url('../images/icons/icon-locationMarker.svg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 11px 17px;
 }
+
 @media all and (max-width: $bp-m) {
 	.result-block__location {
 		display: block;
