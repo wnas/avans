@@ -149,6 +149,9 @@ main {
 .content-page__menu {
   padding: 1.875rem 0.9375rem 0.9375rem; }
 
+.content-page__aside-container {
+  padding-right: 0; }
+
 .breakout-box {
   z-index: 5;
   width: 100%;
@@ -313,7 +316,7 @@ p a {
 .btn {
   font-size: 1rem;
   margin-right: 0.9375rem;
-  padding: 0.9375rem;
+  padding: 0.5rem 0.9375rem;
   border: 0; }
 
 .btn--image-block,
@@ -336,7 +339,9 @@ p a {
   left: -999em; }
 
 .btn--widget {
-  width: 248px; }
+  width: 248px;
+  max-width: 100%;
+  margin-top: 1rem; }
 
 a.btn--widget {
   display: block;
@@ -806,7 +811,12 @@ a.btn--widget {
   margin-left: 1.25rem; }
 
 .widget {
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 0.9375rem;
+  border-bottom: 1px solid #eee; }
+
+.widget,
+.widget p {
+  line-height: 1.5; }
 
 .widget.links__list-block {
   margin: 0;
@@ -822,7 +832,8 @@ a.btn--widget {
 .widget .links__header,
 .widget__header {
   position: relative;
-  padding: 0.9375rem 0;
+  margin-bottom: 0;
+  padding: 0.9375rem 0 0.5rem 0;
   color: #000001;
   border-bottom: 1px solid #eee;
   background-repeat: no-repeat;
@@ -865,13 +876,17 @@ a.btn--widget {
   margin-bottom: 0.9375rem; }
 
 .widget__list {
+  margin-top: 0;
   padding-left: 0;
   list-style: none; }
 
 .widget__link--solo,
 .widget__list-item {
   position: relative;
-  padding: 0.625rem 0 0.625rem 1.25rem;
+  display: block;
+  padding: 0.625rem 0 0.625rem 1.25rem; }
+
+.widget__list-item:not(last-child) {
   border-bottom: 1px solid #eee; }
 
 .widget__link--solo:before,

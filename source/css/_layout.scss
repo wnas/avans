@@ -107,6 +107,10 @@ $side-column-width: 263px;
 	padding: $spacing-xl $spacing $spacing;
 }
 
+.content-page__aside-container {
+	padding-right: 0;
+}
+
 .breakout-box {
 	z-index: 5;
 

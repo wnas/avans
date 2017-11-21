@@ -2,7 +2,7 @@
 	font-size: $fs;
 
 	margin-right: $spacing;
-	padding: $spacing;
+	padding: .5rem $spacing;
 
 	border: 0;
 }
@@ -32,6 +32,8 @@
 .btn--widget {
 	// size matters
 	width: 248px;
+	max-width: 100%;
+	margin-top: 1rem;
 }
 
 a.btn--widget {

@@ -1,5 +1,11 @@
 .widget {
 	margin-bottom: $spacing;
+
+	border-bottom: 1px solid $lighter-gray;
+}
+.widget,
+.widget p {
+	line-height: 1.5;
 	//@extend .testing;
 }
 
@@ -21,7 +27,8 @@
 .widget__header {
 	position: relative;
 
-	padding: $spacing 0;
+	margin-bottom: 0;
+	padding: $spacing 0 .5rem 0;
 
 	color: $text-color;
 	border-bottom: 1px solid $lighter-gray;
@@ -80,6 +87,7 @@
 }
 
 .widget__list {
+	margin-top: 0;
 	padding-left: 0;
 
 	list-style: none;
@@ -89,8 +97,11 @@
 .widget__list-item {
 	position: relative;
 
-	padding: $spacing-s 0 $spacing-s $spacing-l;
+	display: block;
 
+	padding: $spacing-s 0 $spacing-s $spacing-l;
+}
+.widget__list-item:not(last-child) {
 	border-bottom: 1px solid $lighter-gray;
 }
 
