@@ -539,6 +539,9 @@ a.btn--widget {
 .result-block__alert {
   font-size: 0.875rem; }
 
+.result-block__alert p {
+  line-height: 1.5rem; }
+
 .alert__header {
   padding-right: .5rem;
   color: #c6002a; }
