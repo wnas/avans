@@ -2,12 +2,16 @@ $footer-text-color: $light-gray;
 $footer-background-color: $light-gray-background;
 $disclaimer-background-color: $text-color;
 $footer-link-animation-duration: .5s;
+
 /*
 	for testing purposes
 */
+
+
 /*
 	/ end testing
 */
+
 .page-footer {
 	background-color: $footer-background-color;
 }
@@ -33,6 +37,7 @@ $footer-link-animation-duration: .5s;
 .links__list-block {
 	flex: 0 1 auto;
 }
+
 @media all and (min-width: $bp-m) {
 	// blokken naast elkaar
 	.footer-links {
@@ -44,7 +49,6 @@ $footer-link-animation-duration: .5s;
 
 		margin-left: $spacing;
 	}
-
 	.links__list-block:first-child {
 		margin-left: 0;
 	}
@@ -59,6 +63,7 @@ $footer-link-animation-duration: .5s;
 
 	flex-wrap: wrap;
 }
+
 @media all and (max-width: $bp-xl) {
 	.links__list-block {
 		padding: 0 $spacing;
@@ -108,10 +113,13 @@ $footer-link-animation-duration: .5s;
 .footer-link__item--discover .footer-link__link:focus {
 	color: $avans-blue;
 }
+
+
 /*
 	@#todo
 	make mixin
 	*/
+
 .footer-link__item--discover:before {
 	position: absolute;
 	top: 7px;
@@ -182,6 +190,7 @@ $footer-link-animation-duration: .5s;
 .footer-link__item--facebook:after {
 	background-color: #3b5998;
 }
+
 // if the screen is really tiny :)
 @media all and (max-width: $bp-xs) {
 	.links__list {
@@ -233,7 +242,9 @@ $footer-link-animation-duration: .5s;
 .footer-link__link--instagram:focus {
 	background-image: url('../images/icons/Icon-SocialHover-Instagram.png');
 }
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
 	/* Retina-specific stuff here */
 	.footer-link__link--instagram:hover,
 	.footer-link__link--instagram:focus {
@@ -260,8 +271,6 @@ $footer-link-animation-duration: .5s;
 	background-image: url('../images/icons/Icon-SocialHover-Facebook.svg');
 }
 
-
-
 .links__header {
 	margin: 1.3rem 0 0;
 
@@ -277,8 +286,6 @@ $footer-link-animation-duration: .5s;
 	}
 }
 
-
-
 .disclaimer {
 	font-size: $footer-links;
 
@@ -289,6 +296,7 @@ $footer-link-animation-duration: .5s;
 	color: $footer-text-color;
 	background-color: $disclaimer-background-color;
 }
+
 // < 768px
 @media all and (max-width: $bp-m) {
 	.disclaimer__container {
@@ -307,15 +315,13 @@ $footer-link-animation-duration: .5s;
 }
 
 // 768px >
-@media all and (min-width: $bp-m) {
-	.page-footer__logo-link {
-		display: inline;
-		flex-direction: row;
-
-		justify-content: space-around;
-	}
-}
-
+// @media all and (min-width: $bp-m) {
+// 	.page-footer__logo-link {
+// 		display: inline;
+// 		flex-direction: row;
+// 		justify-content: space-around;
+// 	}
+// }
 // < 1200px
 @media all and (max-width: $bp-xl) {
 	.disclaimer__container {
@@ -327,6 +333,12 @@ $footer-link-animation-duration: .5s;
 @media all and (min-width: $bp-xl) {
 	.disclaimer__container {
 		max-width: $width__overal;
+	}
+}
+
+@media all and (min-width: $bp-m) {
+	.disclaimer__container {
+		align-items: center;
 	}
 }
 
@@ -342,17 +354,16 @@ $footer-link-animation-duration: .5s;
 	width: 125px;
 	height: 36px;
 }
-@media all and (max-width: $bp-s) {
+
+@media all and (max-width: $bp-m) {
 	.disclaimer__text {
 		display: flex;
 		flex-direction: column;
 	}
-
 	.disclaimer__link {
 		//	padding-top: $spacing;
 		display: inline-block;
 	}
-
 	.page-footer__logo {
 		margin-top: $spacing-l;
 	}
@@ -365,6 +376,7 @@ $footer-link-animation-duration: .5s;
 
 	color: $footer-text-color;
 }
+
 .disclaimer__link:hover {
 	color: $white;
 }

@@ -6,6 +6,9 @@
 	list-style: none;
 
 	border-bottom: $lighter-gray 1px solid;
+	&:nth-child(last) {
+		margin-bottom: 0;
+	}
 }
 
 @media all and (max-width: $bp-m) {
