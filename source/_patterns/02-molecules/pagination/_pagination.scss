@@ -18,7 +18,7 @@
 
 	width: 2rem;
 	height: 2rem;
-	margin-right: .625rem;
+	margin-right: .725rem;
 	padding-top: .4rem;
 
 	transition: background-color .5s ease;
@@ -53,12 +53,12 @@
 
 	&:before {
 		position: absolute;
-		top: .625rem;
+		top: .75rem;
 
 		display: block;
 
-		width: .625rem;
-		height: .625rem;
+		width: 7px;
+		height: 7px;
 
 		content: '';
 		transform-origin: center;
@@ -70,7 +70,7 @@
 }
 
 .pagination__link--next:before {
-	left: .425rem;
+	left: .625rem;
 
 	transform: rotate(45deg);
 }

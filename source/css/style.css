@@ -278,7 +278,16 @@ input {
 
 h2 {
   font-size: 1.5rem;
-  margin: 0; }
+  margin: .75rem 0; }
+
+h3 {
+  margin: 1.5rem 0 .75rem 0; }
+
+p {
+  margin: 0 0 2rem 0; }
+
+p + h3 {
+  margin-top: 3rem; }
 
 p,
 .content-page__content li {
@@ -695,7 +704,7 @@ a.btn--widget {
   display: block;
   width: 2rem;
   height: 2rem;
-  margin-right: .625rem;
+  margin-right: .725rem;
   padding-top: .4rem;
   -webkit-transition: background-color .5s ease;
   transition: background-color .5s ease;
@@ -723,10 +732,10 @@ a.btn--widget {
   .pagination__link--next:before,
   .pagination__link--previous:before {
     position: absolute;
-    top: .625rem;
+    top: .75rem;
     display: block;
-    width: .625rem;
-    height: .625rem;
+    width: 7px;
+    height: 7px;
     content: '';
     -webkit-transform-origin: center;
             transform-origin: center;
@@ -735,7 +744,7 @@ a.btn--widget {
     border-width: 1px 1px 0 0; }
 
 .pagination__link--next:before {
-  left: .425rem;
+  left: .625rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
 
@@ -1484,7 +1493,7 @@ a.btn--widget {
 .btn--filter:after {
   font-size: 1.5rem;
   position: absolute;
-  top: .2rem;
+  top: .3rem;
   right: .8rem;
   content: '+';
   -webkit-transform: rotate(45deg);

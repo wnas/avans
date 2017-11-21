@@ -47,9 +47,19 @@ input {
 h2 {
 	font-size: $fs-l;
 
-	margin: 0;
+	margin: .75rem 0;
 }
 
+h3 {
+	margin: 1.5rem 0 .75rem 0;
+}
+p {
+	margin: 0 0 2rem 0;
+}
+
+p + h3 {
+	margin-top: 3rem;
+}
 p,
 .content-page__content li {
 	line-height: 2rem;
