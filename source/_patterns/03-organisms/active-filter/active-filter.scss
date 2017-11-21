@@ -2,7 +2,7 @@
 	display: flex;
 
 	margin: 0;
-	padding: .625rem 0;
+	padding: .625rem 0 0 0;
 
 	border: 1px solid $lighter-gray;
 	border-width: 1px 0;
@@ -12,12 +12,13 @@
 
 .active-filters__label {
 	margin-right: 1rem;
+	margin-bottom: .625rem;
 	padding-top: .75rem;
 }
 
 .active-filters__item {
 	height: 2.5rem;
-	margin: 0;
+	margin: 0 0 .625rem;
 }
 
 .active-filters__label,
@@ -28,7 +29,6 @@
 .btn--filter {
 	position: relative;
 
-	margin-bottom: .625rem;
 	padding: .75rem 2.5rem .75rem 1rem;
 
 	border-radius: 30px;

@@ -176,8 +176,7 @@ $side-column-width: 263px;
 		flex-wrap: wrap;
 	}
 	.content-page__aside-container,
-	.page-menu,
-	.resultpage__aside {
+	.page-menu {
 		margin: 0 auto;
 	}
 	.widget {
@@ -190,6 +189,7 @@ $side-column-width: 263px;
 }
 
 @media all and (max-width: $bp-xl) and (min-width: $bp-l) {
+	.layout-full-width-block__content,
 	.page-footer__content,
 	.top-bar__content,
 	.hero__content,
@@ -206,6 +206,7 @@ $side-column-width: 263px;
 	.active-filters__container,
 	.resultpage__header,
 	.resultpage__content,
+	.resultpage__aside,
 	.resultpage__footer,
 	.disclaimer__container {
 		max-width: 720px;

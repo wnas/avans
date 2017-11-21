@@ -203,8 +203,7 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .content-page__aside-container,
-  .page-menu,
-  .resultpage__aside {
+  .page-menu {
     margin: 0 auto; }
   .widget {
     width: calc(50% - 1rem);
@@ -213,6 +212,7 @@ main {
     margin-left: 1.875rem; } }
 
 @media all and (max-width: 1200px) and (min-width: 992px) {
+  .layout-full-width-block__content,
   .page-footer__content,
   .top-bar__content,
   .hero__content,
@@ -227,6 +227,7 @@ main {
   .active-filters__container,
   .resultpage__header,
   .resultpage__content,
+  .resultpage__aside,
   .resultpage__footer,
   .disclaimer__container {
     max-width: 720px;
@@ -1452,7 +1453,7 @@ a.btn--widget {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: .625rem 0;
+  padding: .625rem 0 0 0;
   border: 1px solid #eee;
   border-width: 1px 0;
   -ms-flex-wrap: wrap;
@@ -1460,11 +1461,12 @@ a.btn--widget {
 
 .active-filters__label {
   margin-right: 1rem;
+  margin-bottom: .625rem;
   padding-top: .75rem; }
 
 .active-filters__item {
   height: 2.5rem;
-  margin: 0; }
+  margin: 0 0 .625rem; }
 
 .active-filters__label,
 .btn--filter {
@@ -1472,7 +1474,6 @@ a.btn--widget {
 
 .btn--filter {
   position: relative;
-  margin-bottom: .625rem;
   padding: .75rem 2.5rem .75rem 1rem;
   border-radius: 30px;
   background-color: #eee; }
