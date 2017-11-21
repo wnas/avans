@@ -1459,7 +1459,12 @@ a.btn--widget {
   padding-top: .625rem; }
 
 .active-filters__item {
+  height: 2.5rem;
   margin: 0; }
+
+.active-filters__label,
+.btn--filter {
+  font-size: 0.875rem; }
 
 .btn--filter {
   position: relative;
@@ -1976,6 +1981,9 @@ dkdkd
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
+
+.filter-block__header {
+  padding-bottom: 1rem; }
 
 .filter__button {
   position: relative;

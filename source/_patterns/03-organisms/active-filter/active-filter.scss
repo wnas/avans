@@ -16,7 +16,13 @@
 }
 
 .active-filters__item {
+	height: 2.5rem;
 	margin: 0;
+}
+
+.active-filters__label,
+.btn--filter {
+	font-size: $fs-s;
 }
 
 .btn--filter {

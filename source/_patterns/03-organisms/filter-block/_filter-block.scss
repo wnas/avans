@@ -1,4 +1,6 @@
-
+.filter-block__header {
+	padding-bottom: 1rem;
+}
 
 .filter__button {
 	position: relative;
@@ -33,30 +35,29 @@
 .filter__button--hide:after {
 	transform: rotate(-135deg);
 }
+
 @media all and (max-width: $bp-l) {
 	.filter-block__container,
 	.filter__button--hide {
 		@include hideVisually;
 	}
-
 	:target {
 		.filter-block__container,
 		.filter__button--hide {
 			position: relative;
 			left: 0;
 		}
-
 		.filter__button--show {
 			display: none;
 		}
 	}
-
 	.filter-block__form {
 		display: flex;
 
 		flex-wrap: wrap;
 	}
 }
+
 @media all and (min-width: $bp-s1) and (max-width: $bp-l) {
 	.filters {
 		flex: 0 1 50%;
