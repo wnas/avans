@@ -167,10 +167,7 @@ $side-column-width: 263px;
 	.header,
 	.page-menu,
 	.resultpage__content,
-	.resultpage__header,
-	.resultpage__aside,
-	.active-filters__container,
-	.resultpage__footer {
+	.resultpage__aside {
 		max-width: 720px;
 	}
 	.content-page__aside-container {
@@ -180,11 +177,7 @@ $side-column-width: 263px;
 	}
 	.content-page__aside-container,
 	.page-menu,
-	.resultpage__content,
-	.resultpage__header,
-	.resultpage__aside,
-	.active-filters__container,
-	.resultpage__footer {
+	.resultpage__aside {
 		margin: 0 auto;
 	}
 	.widget {
@@ -210,8 +203,13 @@ $side-column-width: 263px;
 	.page-footer__content,
 	.hero__content,
 	.top-bar__content,
+	.active-filters__container,
+	.resultpage__header,
+	.resultpage__content,
+	.resultpage__footer,
 	.disclaimer__container {
 		max-width: 720px;
+		margin: 0 auto;
 	}
 }
 

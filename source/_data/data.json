@@ -115,7 +115,10 @@
 		{
 			"content": "En",
 			"nav-title": "English",
-			"lang": "en"
+			"lang": "en",
+			"sub": [{
+				"content": "NL"
+				}]
 		}
 	],
 

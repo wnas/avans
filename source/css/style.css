@@ -194,10 +194,7 @@ main {
   .header,
   .page-menu,
   .resultpage__content,
-  .resultpage__header,
-  .resultpage__aside,
-  .active-filters__container,
-  .resultpage__footer {
+  .resultpage__aside {
     max-width: 720px; }
   .content-page__aside-container {
     display: -webkit-box;
@@ -207,11 +204,7 @@ main {
         flex-wrap: wrap; }
   .content-page__aside-container,
   .page-menu,
-  .resultpage__content,
-  .resultpage__header,
-  .resultpage__aside,
-  .active-filters__container,
-  .resultpage__footer {
+  .resultpage__aside {
     margin: 0 auto; }
   .widget {
     width: calc(50% - 1rem);
@@ -231,8 +224,13 @@ main {
   .page-footer__content,
   .hero__content,
   .top-bar__content,
+  .active-filters__container,
+  .resultpage__header,
+  .resultpage__content,
+  .resultpage__footer,
   .disclaimer__container {
-    max-width: 720px; } }
+    max-width: 720px;
+    margin: 0 auto; } }
 
 @media all and (min-width: 556px) {
   .content-page__content {
@@ -1070,6 +1068,10 @@ a.btn--widget {
   .links__list-block {
     padding: 0 0.9375rem; } }
 
+@media all and (min-width: 768px) {
+  .links__list-block {
+    padding-left: 0; } }
+
 .links__list--discover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1724,7 +1726,7 @@ a.btn--widget {
   .nav__item--has-sub:before {
     position: absolute;
     bottom: 24px;
-    left: calc(50% - 5px);
+    left: calc(50% - 4px);
     display: block;
     width: 5px;
     height: 5px;
@@ -1740,7 +1742,7 @@ a.btn--widget {
   .nav__item--has-sub:hover:after {
     position: absolute;
     bottom: -6px;
-    left: calc(50% - 9px);
+    left: calc(50% - 7px);
     display: block;
     width: 11px;
     height: 11px;

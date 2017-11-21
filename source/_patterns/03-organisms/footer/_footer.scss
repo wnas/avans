@@ -70,6 +70,12 @@ $footer-link-animation-duration: .5s;
 	}
 }
 
+@media all and (min-width: $bp-m) {
+	.links__list-block {
+		padding-left: 0;
+	}
+}
+
 .links__list--discover {
 	flex-direction: column;
 }
