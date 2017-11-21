@@ -129,19 +129,38 @@ var avans = (function() {
             if (e.target.className === 'tab__link') {
                 // don't go there
                 e.preventDefault();
-                changeHistory(e);
                 switchTab(e);
             }
         },
         changeHistory = function(e) {
-            if (window.history.pushState) {
-                window.history.pushState('', '/', window.location.pathname);
-            } else {
-                window.location.hash = '';
-            }
-            var url = window.location.href;
+            var url = window.location.href.split('#');
+            url = url[0] + e.target.hash;
+            var stateObj = { foo: "bar" };
 
-            window.location.href = url + '#activeTab=' + e.target.hash.slice(1);
+            history.pushState(stateObj, e.target.innerText, url);
+            return e.preventDefault();
+        },
+        showHistoricTab = function() {
+            var url = window.location.href.split('#'),
+                tabLink = document.querySelector('[href="#' + url[1] + '"]');
+            console.log(window.location.href, url[1], tabLink);
+            if (tabLink !== null) {
+                var activeTab = document.getElementById(url[1]),
+                    tabGroup = tabLink.dataset.tabgroup,
+                    tabList = tabLink.parentElement.parentElement,
+                    tabs = tabList.nextElementSibling.querySelectorAll('.tab__content[data-tabgroup="' + tabGroup + '"]'),
+                    tabItems = tabList.querySelectorAll('.tab__item'),
+                    len = tabItems.length,
+                    i;
+
+                for (i = 0; i < len; i++) {
+                    hideTabs(tabItems[i], tabs[i]);
+
+                }
+                console.log(url[1]);
+                console.log(tabLink);
+                showTab(tabLink, activeTab);
+            }
         },
         switchTab = function(e) {
             console.log(e);
@@ -154,12 +173,13 @@ var avans = (function() {
                 tabItems = tabList.querySelectorAll('.tab__item'),
                 len = tabItems.length,
                 i;
-
+            // comments
             for (i = 0; i < len; i++) {
                 hideTabs(tabItems[i], tabs[i]);
 
             }
             showTab(tabLink, activeTab);
+            changeHistory(e);
         },
         showTab = function(link, tab) {
             // show the selected link
@@ -178,8 +198,14 @@ var avans = (function() {
             tabs.setAttribute('hidden', '');
         },
         tabs = function() {
+
             var container = document.querySelector('.tabs__container');
             container.addEventListener('click', activate, false);
+
+            window.onpopstate = function(event) {
+                showHistoricTab();
+            };
+
         },
         init = function() {
             if (config.topMenu.container !== undefined) {

@@ -1,19 +1,19 @@
 .resultpage__content {
 	display: flex;
 }
+
 .resultpage__list {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-
 	//	@extend .testing;
 }
+
 @media all and (min-width: $bp-l) {
 	.resultpage__list {
 		display: flex;
 
 		flex-wrap: wrap;
 	}
-
 	.active-filters__container,
 	.resultpage__footer,
 	.resultpage__header {
@@ -21,19 +21,15 @@
 
 		padding-left: $sidebar;
 	}
-
 	.resultpage__header {
 		order: 0;
 	}
-
 	.active-filters__container {
 		order: 1;
 	}
-
 	.filter__button {
 		display: none;
 	}
-
 	.resultpage__aside {
 		flex: 0 1 $sidebar;
 
@@ -41,14 +37,12 @@
 
 		order: 2;
 	}
-
 	.resultpage__content {
 		//flex: 0 1 calc(100% - 285px);
 		flex: 1;
 
 		order: 3;
 	}
-
 	.resultpage__footer {
 		order: 4;
 	}
@@ -61,30 +55,26 @@
 
 			grid-gap: 20px;
 			grid-template-columns: $sidebar 1fr;
-			grid-template-rows: 50px auto 1fr 1fr;
+			grid-template-rows: 50px auto 1fr 100px;
 			grid-template-areas: '. header ' 'aside sub-header' 'aside content' 'aside footer';
 		}
-
 		.active-filters__container,
 		.resultpage__footer,
 		.resultpage__header {
 			padding-left: 0;
 		}
-
 		.resultpage__header {
 			grid-area: header;
 			// only for edge
 			-ms-grid-row: 1;
 			-ms-grid-column: 2;
 		}
-
 		.active-filters__container {
 			grid-area: sub-header;
 			// only for edge
 			-ms-grid-row: 2;
 			-ms-grid-column: 2;
 		}
-
 		.resultpage__aside {
 			margin-top: 0;
 
@@ -94,14 +84,12 @@
 			-ms-grid-column: 1;
 			-ms-grid-row-span: 2;
 		}
-
 		.resultpage__content {
 			grid-area: content;
 			// only for edge
 			-ms-grid-row: 3;
 			-ms-grid-column: 2;
 		}
-
 		.resultpage__footer {
 			grid-area: footer;
 			// only for edge
@@ -110,28 +98,29 @@
 		}
 	}
 }
+
 @media all and (max-width: $bp-l) {
 	.filter__button {
 		display: inline-block;
 	}
-
 	.resultpage__filters {
 		display: none;
 
 		column-count: 2;
 	}
-
 	.resultpage__filters:target {
 		display: block;
 	}
-
 	.filter__header {
 		column-span: all;
 	}
 }
+
+
 /*
 	testing
 */
+
 // .resultpage__filters {
 // 	background-image: url('../images/test-bgs/filters.png');
 // 	background-position: -130px -60px;

@@ -4,7 +4,7 @@
 	margin: 0;
 	padding: .625rem 0;
 
-	border: 1px solid $lighter-gray ;
+	border: 1px solid $lighter-gray;
 	border-width: 1px 0;
 
 	flex-wrap: wrap;
@@ -36,7 +36,16 @@
 	top: .2rem;
 	right: .8rem;
 
-	content: 'x';
+	content: '+';
+	transform: rotate(45deg);
 
 	color: $light-gray;
+}
+
+.btn--filter:hover {
+	cursor: pointer;
+}
+
+.btn--filter:hover:after {
+	color: $avans-blue;
 }

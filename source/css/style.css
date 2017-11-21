@@ -1473,8 +1473,16 @@ a.btn--widget {
   position: absolute;
   top: .2rem;
   right: .8rem;
-  content: 'x';
+  content: '+';
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   color: #999; }
+
+.btn--filter:hover {
+  cursor: pointer; }
+
+.btn--filter:hover:after {
+  color: #00aceb; }
 
 .schedule {
   width: 100%;
@@ -2269,7 +2277,7 @@ dkdkd
       height: 100%;
       grid-gap: 20px;
       grid-template-columns: 263px 1fr;
-      grid-template-rows: 50px auto 1fr 1fr;
+      grid-template-rows: 50px auto 1fr 100px;
       grid-template-areas: '. header ' 'aside sub-header' 'aside content' 'aside footer'; }
     .active-filters__container,
     .resultpage__footer,
