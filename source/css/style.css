@@ -488,8 +488,7 @@ a.btn--widget {
           order: 1; }
 
 .result-block__image-hover-overlay {
-  position: relative;
-  outline: 1px solid #ccc; }
+  position: relative; }
 
 @media all and (max-width: 320px) {
   .result-block__content-container {
