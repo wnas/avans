@@ -1,8 +1,14 @@
-<li class="result-block">
+<li class="result-block {{# result-class }} result-block--{{ result-class }}{{/ result-class }}">
 	<a class="result-block__link" href="{{ href }}">
 		<div class="result-block__content-container">
 			<h3 class="result-block__header">
-				{{ header }}
+				{{# name }}
+					{{ name }}
+				{{/ name }}
+				{{# header }}
+					{{ header }}
+				{{/	 header }}
+
 				{{# location }}
 				<span class="result-block__location">
 					{{ location }}
@@ -17,7 +23,12 @@
 				{{/ header-extra }}
 
 			</h3>
-			<div class="result-block__content">
+
+
+			<p class="result-block__title">
+				{{ title }}
+			</p>
+			<div class="result-block__content{{# result-class }} result-block__content--{{ result-class }}{{/ result-class }}">
 				<p>{{{ content }}}</p>
 			</div>
 			<!-- / result block content -->
@@ -29,14 +40,16 @@
 			{{/ alert }}
 			{{# readmore }}
 				<div class="result-block__link">
-					<a href="{{href}}">{{ text }}</a>
+					{{ text }}
 				</div>
 				<!-- / result block link -->
 			{{/ readmore }}
 
 		</div>
-		<div class="result-block__image-container">
-			<img class="result-block__image" src="{{ src }}" srcset="{{# srcset }} {{src}} {{res}},  {{/ srcset }}" />
+		<div class="result-block__image-container {{# result-class }} result-block__image-container--{{ result-class }}{{/ result-class }}">
+			<div class="result-block__image-hover-overlay">
+			<img class="result-block__image" src="{{ src }}"  />
+		</div>
 		</div>
 		<!-- / result block image -->
 	</a>

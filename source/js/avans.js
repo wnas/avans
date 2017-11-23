@@ -143,8 +143,9 @@ var avans = (function() {
         showHistoricTab = function() {
             var url = window.location.href.split('#'),
                 tabLink = document.querySelector('[href="#' + url[1] + '"]');
-            console.log(window.location.href, url[1], tabLink);
-            if (tabLink !== null) {
+console.log(url);
+console.log("tabLink",tabLink);
+		    if (tabLink !== null) {
                 var activeTab = document.getElementById(url[1]),
                     tabGroup = tabLink.dataset.tabgroup,
                     tabList = tabLink.parentElement.parentElement,
@@ -157,13 +158,11 @@ var avans = (function() {
                     hideTabs(tabItems[i], tabs[i]);
 
                 }
-                console.log(url[1]);
-                console.log(tabLink);
                 showTab(tabLink, activeTab);
             }
         },
         switchTab = function(e) {
-            console.log(e);
+
             var tabLink = e.target,
                 tabTarget = e.target.hash.slice(1),
                 activeTab = document.getElementById(tabTarget),
@@ -182,6 +181,7 @@ var avans = (function() {
             changeHistory(e);
         },
         showTab = function(link, tab) {
+			console.log('showTab ',link,tab);
             // show the selected link
             link.parentElement.classList.add('tab__item--selected');
             link.setAttribute('aria-selected', 'true');
@@ -200,9 +200,10 @@ var avans = (function() {
         tabs = function() {
 
             var container = document.querySelector('.tabs__container');
-            container.addEventListener('click', activate, false);
+            container.addEventListener('click', activate, true);
 
             window.onpopstate = function(event) {
+				console.log(' on pop state');
                 showHistoricTab();
             };
 
@@ -221,7 +222,9 @@ var avans = (function() {
                 subMenu();
             }
             if (document.querySelector('.tabs__container') !== null) {
-                tabs();
+showHistoricTab();
+				tabs();
+
             }
             if (document.getElementById('page-menu') !== null) {
                 pageMenu();

@@ -253,7 +253,8 @@ legend,
 .paragraph--intro,
 .page-menu-block__header,
 .page-menu__link--active,
-.schedule__header--head {
+.schedule__header--head,
+.result-block__title {
   font-family: 'Frutiger LT W01 65 Bold', helvetica, sans-serif;
   font-weight: normal; }
 
@@ -319,6 +320,7 @@ p a {
   padding: 0.5rem 0.9375rem;
   border: 0; }
 
+.btn--open-dag,
 .btn--image-block,
 .btn--primary {
   color: #fff; }
@@ -453,6 +455,10 @@ a.btn--widget {
   .result-block {
     padding-bottom: .5rem; } }
 
+.result-block__title {
+  font-size: .875rem;
+  margin-bottom: 0; }
+
 .result-block__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +487,10 @@ a.btn--widget {
       -ms-flex-order: 1;
           order: 1; }
 
+.result-block__image-hover-overlay {
+  position: relative;
+  outline: 1px solid #ccc; }
+
 @media all and (max-width: 320px) {
   .result-block__content-container {
     margin-left: 0; } }
@@ -497,7 +507,7 @@ a.btn--widget {
 .result-block__content-container {
   width: 70%; }
 
-.result-block__link:hover .result-block__image-container:after {
+.result-block__link:hover .result-block__image-hover-overlay:after {
   height: 100%; }
 
 @media all and (max-width: 320px) {
@@ -509,18 +519,24 @@ a.btn--widget {
   .result-block__image-container {
     min-width: 263px; } }
 
-.result-block__image-container:after {
+.result-block__image-container--person {
+  width: 165px;
+  min-width: auto; }
+
+.result-block__image-hover-overlay:after {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 0;
-  content: ''; }
-  @media all and (min-width: 1200px) {
-    .result-block__image-container:after {
-      -webkit-transition: background-color 2s ease;
-      transition: background-color 2s ease;
-      background-color: rgba(0, 172, 235, 0.2); } }
+  content: '';
+  -webkit-transition: background-color 2s ease;
+  transition: background-color 2s ease;
+  background-color: rgba(0, 172, 235, 0.2); }
+
+.result-block__image-container--person,
+.result-block__image-container--person:hover:after {
+  height: 165px; }
 
 .result-block__image {
   width: 100%; }
@@ -814,6 +830,13 @@ a.btn--widget {
   margin-bottom: 0.9375rem;
   border-bottom: 1px solid #eee; }
 
+.widget--openAvond {
+  margin-top: -4rem;
+  margin-left: -1.875rem;
+  padding-left: 1.875rem;
+  color: #fff;
+  background-color: #c6002a; }
+
 .widget,
 .widget p {
   line-height: 1.5; }
@@ -838,6 +861,14 @@ a.btn--widget {
   border-bottom: 1px solid #eee;
   background-repeat: no-repeat;
   background-position: center right; }
+
+.widget__header--openAvond {
+  font-size: 1.5rem;
+  border-bottom: 0; }
+
+.widget--openAvond .widget__content,
+.widget__header--openAvond {
+  color: #fff; }
 
 .widget__header:after {
   position: absolute;

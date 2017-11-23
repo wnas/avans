@@ -1,8 +1,27 @@
 {{> organisms-header }}
 {{> organisms-submenu }}
-<main class="layout-full-width-block main-content">
-	<div class="layout-full-width-block__content">
-		inleiding voor opleieing
+ {{> organisms-hero-simple }}
+<main class="layout-full-width-block main-content layout-full-width-block--content-page">
+	<div class="layout-full-width-block__content content-page">
+		{{> organisms-page-menu}}
+		<article class="main-content content-page__content">
+			<!-- <section class="resultpage__content"> -->
+			{{# results-list }}
+				{{> organisms-results-list }}
+			{{/ results-list }}
+			<!-- </section> -->
+
+		</article>
+		<aside class="content-page__aside">
+			<div class="content-page__aside-container">
+
+
+			{{# widgets }}
+				{{> molecules-widget }}
+			{{/ widgets }}
+
+				</div>
+		</aside>
 	</div>
 </main>
 <!-- /main -->

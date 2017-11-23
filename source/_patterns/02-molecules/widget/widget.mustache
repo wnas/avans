@@ -1,6 +1,11 @@
-<div class="widget widget--sidebar">
+<div class="widget widget--sidebar widget--{{type}}">
 	<h4 class="widget__header widget__header--{{type}}">{{header}}</h4>
 	<div class="widget__content">
+		{{# when }}
+			<p class="widget__when">
+				<time>{{date}}</time>, <time>{{time.start}} - {{time.end}}</time>
+			</p>
+		{{/ when }}
 		{{# call-to-action }}
 			<a href="{{href}}" class="{{class}}">{{text}}</a>
 		{{/ call-to-action }}
