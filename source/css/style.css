@@ -16,6 +16,9 @@ a {
 input[type='search']::-webkit-search-cancel-button {
   display: none; }
 
+p img {
+  width: 100%; }
+
 /*
 	spacings
 */
