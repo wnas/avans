@@ -25,8 +25,11 @@ $header-icon-text: .675rem;
 $page-menu-header: .75rem;
 $footer-links: .8125rem;
 $footer-header: .9rem;
-$result-block__header: 1.25rem;
+$h3fs: 1.25rem;
+$h4fs: 1.125rem;
 $table-header: .75rem;
+
+$result-block__header: $h3fs;
 /*
     breakpoints
 */

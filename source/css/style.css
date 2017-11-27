@@ -258,6 +258,12 @@ legend,
   font-family: 'Frutiger LT W01 65 Bold', helvetica, sans-serif;
   font-weight: normal; }
 
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1.125rem; }
+
 body,
 input,
 .btn--filter,
