@@ -41,10 +41,10 @@ main {
 }
 
 .hero__content,
+.header__sub-title,
 .layout-full-width-block__content,
 .top-bar__content,
-.submenu__list,
-.hero__content {
+.submenu__list {
 	width: 100%;
 	max-width: $width__overal;
 	margin: 0 auto;
@@ -79,8 +79,9 @@ main {
 
 $side-column-width: 263px;
 .content-page {
-	//	@extend .testing;
 	position: relative;
+
+	@extend .testing;
 }
 
 @media all and (min-width: $bp-xl) {
@@ -108,6 +109,7 @@ $side-column-width: 263px;
 }
 
 .content-page__aside-container {
+	padding-top: 0;
 	padding-right: 0;
 }
 
@@ -124,6 +126,31 @@ $side-column-width: 263px;
 	.content-page {
 		display: flex;
 	}
+}
+@supports(display: grid) {
+	$nav: 263px;
+	$main: 556px;
+	@media all and (min-width: $bp-xl) {
+		.content-page {
+			display: grid;
+
+			grid-gap: 0 20px;
+			grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
+			grid-template-columns: $nav $main $sidebar;
+			grid-template-rows: auto 1fr;
+		}
+		.page-menu {
+			grid-area: nav;
+		}
+		.main-content {
+			grid-area: main;
+		}
+		.content-page__aside {
+			grid-area: aside;
+		}
+	}
+}
+@media all and (min-width: $bp-xl) {
 	.content-page__menu {
 		padding-left: 0;
 	}
@@ -165,10 +192,11 @@ $side-column-width: 263px;
 	}
 }
 
-@media all and (max-width: $bp-xl) and (min-width: $bp-m) {
+@media all and (max-width: $bp-l) and (min-width: $bp-m) {
 	.content-page__aside-container,
 	.content-page__content,
 	.header,
+	.header__sub-title,
 	.page-menu,
 	.resultpage__content,
 	.resultpage__aside {
@@ -197,6 +225,7 @@ $side-column-width: 263px;
 	.page-footer__content,
 	.top-bar__content,
 	.hero__content,
+	.header__sub-title,
 	.submenu__list,
 	.disclaimer__container {
 		max-width: 960px;
@@ -206,6 +235,7 @@ $side-column-width: 263px;
 @media all and (max-width: $bp-l) and (min-width: $bp-m) {
 	.page-footer__content,
 	.hero__content,
+	.header__sub-title,
 	.top-bar__content,
 	.active-filters__container,
 	.resultpage__header,

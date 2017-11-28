@@ -1,6 +1,8 @@
 {
-	"hero-class": "hero--pattern",
+	"hero-class": "hero--simple",
 	"page-menu-class": "content-page__menu",
+	"hero-title": "Environmental Science for Sustainable Energy and Technology of Milieukunde",
+	"hero-sub-title": "Full-time programme in Breda",
 	"page-menu-block": [{
 			"block-title": "Voltijd in Breda",
 			"items": [{

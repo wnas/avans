@@ -8,15 +8,19 @@
 }
 
 .schedule__header,
-.schedule__slot {
+.schedule__slot,
+td,
+th {
 	padding: $spacing-xs 0;
 
 	border-bottom: 1px solid #eee;
 }
 
-.schedule__header {
+.schedule__header,
+th {
 	text-align: left;
 }
+
 
 .schedule__header--head {
 	font-size: $table-header;
@@ -37,9 +41,15 @@
 .schedule__header--line,
 .schedule__slot {
 	font-size: $fs-s;
+	line-height: 1.5;
+
+	padding: .5rem 1.5rem .5rem 0;
+
+	vertical-align: top;
 }
 
-.schedule__slot--active .schedule__slot-content {
+.schedule__slot--active .schedule__slot-content,
+td span {
 	display: block;
 
 	margin: .5rem 0;

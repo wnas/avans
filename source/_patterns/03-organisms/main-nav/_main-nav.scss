@@ -34,7 +34,7 @@ $nav-link-active-color: $text-color;
 	}
 }
 
-.nav {
+header .nav {
 	display: flex;
 	flex-direction: column;
 
@@ -46,7 +46,7 @@ $nav-link-active-color: $text-color;
 	//@extend .testing;
 }
 @media all and (max-width: $bp-m) {
-	.nav {
+	header  .nav {
 		margin-left: 0;
 	}
 
@@ -246,7 +246,8 @@ $nav-link-active-color: $text-color;
 		background-color: $avans-blue;
 	}
 
-	.nav__sub-opener {
+	// made more specific to account for 2016 css
+	.nav .nav__sub-opener {
 		display: none;
 	}
 

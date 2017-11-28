@@ -4,7 +4,6 @@
 	overflow: hidden;
 
 	max-width: 1920px;
-	height: 300px;
 	margin: 0 auto;
 
 	// @extend .testing;
@@ -33,12 +32,19 @@
 .hero__content {
 	position: relative;
 	z-index: 10;
-	//max-width: $width__overal;
-	//	width: 100%;
 
-	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	min-height: 150px;
+	max-height: 300px;
 	margin: 0 auto;
-	padding: 0 $spacing-l;
+
+	align-content: flex-end;
+	justify-content: flex-end;
+	@media all and (min-width: $bp-xl) {
+		padding: 0 $spacing-l;
+	}
 }
 
 .hero:after {
@@ -70,21 +76,33 @@
 }
 
 
-.header--hero {
-	position: relative;
-	position: absolute;
+.header--hero,
+.header__sub-title {
 	z-index: 15;
-	bottom: 1rem;
 	left: 0;
 
+	width: 100%;
 	margin: 0 auto;
 
+	text-align: left;
+
 	color: $white;
+}
+.header__text {
+	display: block;
+
+	padding-bottom: .5rem;
+}
+
+.header__sub-title {
+	font-size: $fs-xs;
+
+	text-transform: uppercase;
 }
 
 .header--hero:after {
 	position: absolute;
-	bottom: -21px;
+	bottom: -5px;
 	left: 0;
 
 	width: 11px;

@@ -30,6 +30,7 @@
 	color: $text-color;
 }
 
+.active,
 .tab__item--selected {
 	border-bottom-color: $white;
 	.tab__link {

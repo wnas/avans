@@ -125,86 +125,6 @@ var avans = (function() {
             }
 
         },
-        activate = function(e) {
-            if (e.target.className === 'tab__link') {
-                // don't go there
-                e.preventDefault();
-                switchTab(e);
-            }
-        },
-        changeHistory = function(e) {
-            var url = window.location.href.split('#');
-            url = url[0] + e.target.hash;
-            var stateObj = { foo: "bar" };
-
-            history.pushState(stateObj, e.target.innerText, url);
-            return e.preventDefault();
-        },
-        showHistoricTab = function() {
-            var url = window.location.href.split('#'),
-                tabLink = document.querySelector('[href="#' + url[1] + '"]');
-
-		    if (tabLink !== null) {
-                var activeTab = document.getElementById(url[1]),
-                    tabGroup = tabLink.dataset.tabgroup,
-                    tabList = tabLink.parentElement.parentElement,
-                    tabs = tabList.nextElementSibling.querySelectorAll('.tab__content[data-tabgroup="' + tabGroup + '"]'),
-                    tabItems = tabList.querySelectorAll('.tab__item'),
-                    len = tabItems.length,
-                    i;
-
-                for (i = 0; i < len; i++) {
-                    hideTabs(tabItems[i], tabs[i]);
-
-                }
-                showTab(tabLink, activeTab);
-            }
-        },
-        switchTab = function(e) {
-
-            var tabLink = e.target,
-                tabTarget = e.target.hash.slice(1),
-                activeTab = document.getElementById(tabTarget),
-                tabGroup = e.target.dataset.tabgroup,
-                tabList = tabLink.parentElement.parentElement,
-                tabs = tabList.nextElementSibling.querySelectorAll('.tab__content[data-tabgroup="' + tabGroup + '"]'),
-                tabItems = tabList.querySelectorAll('.tab__item'),
-                len = tabItems.length,
-                i;
-            // comments
-            for (i = 0; i < len; i++) {
-                hideTabs(tabItems[i], tabs[i]);
-
-            }
-            showTab(tabLink, activeTab);
-            changeHistory(e);
-        },
-        showTab = function(link, tab) {
-            // show the selected link
-            link.parentElement.classList.add('tab__item--selected');
-            link.setAttribute('aria-selected', 'true');
-            // show the correct tab
-            tab.removeAttribute('hidden');
-        },
-        hideTabs = function(links, tabs) {
-            // hide all the links
-            links.classList.remove('tab__item--selected');
-
-            links.removeAttribute('aria-selected');
-            links.setAttribute('tabindex', '-1');
-            // we go to work on the old tabs...
-            tabs.setAttribute('hidden', '');
-        },
-        tabs = function() {
-
-            var container = document.querySelector('.tabs__container');
-            container.addEventListener('click', activate, true);
-
-            window.onpopstate = function(event) {
-                showHistoricTab();
-            };
-
-        },
         init = function() {
             if (config.topMenu.container !== undefined) {
                 toggle(config.topMenu);
@@ -217,11 +137,6 @@ var avans = (function() {
             }
             if (document.querySelectorAll('.nav__item--has-sub') !== null) {
                 subMenu();
-            }
-            if (document.querySelector('.tabs__container') !== null) {
-showHistoricTab();
-				tabs();
-
             }
             if (document.getElementById('page-menu') !== null) {
                 pageMenu();

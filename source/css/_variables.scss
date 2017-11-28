@@ -17,17 +17,18 @@ $hero__padding: calc($spacing * 2);
 	font-sizes
 */
 
+$fs-xs: .75rem;
 $fs-s: .875rem;
 $fs: 1.0rem;
 $fs-l: 1.5rem;
 $fs-xl: 2.0rem;
 $header-icon-text: .675rem;
-$page-menu-header: .75rem;
+$page-menu-header: $fs-xs;
 $footer-links: .8125rem;
 $footer-header: .9rem;
 $h3fs: 1.25rem;
 $h4fs: 1.125rem;
-$table-header: .75rem;
+$table-header: $fs-xs;
 
 $result-block__header: $h3fs;
 /*
