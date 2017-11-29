@@ -67,18 +67,18 @@ th {
 	position: sticky;
 	top: 0;
 
-	outline: 1px solid red;
+	// outline: 1px solid red;
 }
 .schedule__head th {
 	position: sticky;
 	top: 0;
 
-	outline: 1px solid green;
+	// outline: 1px solid green;
 }
 
 @media all and (max-width: $bp-m) {
 	.schedule__row {
-		// display: flex;
+		display: flex;
 		//
 		// flex-wrap: wrap;
 		//	display: block;
@@ -86,17 +86,17 @@ th {
 
 	.schedule__header,
 	.schedule__slot {
-		// flex: 0 1 25%;
-		display: inline-block;
+		flex: 0 1 25%;
+		// display: inline-block;
 
-		width: 24%;
+		// width: 24%;
 	}
 
 	.schedule__header--head:first-of-type,
 	.schedule__header--line {
-		// flex-basis: 100%;
-		display: block;
+		flex-basis: 100%;
+		// display: block;
 
-		width: 100%;
+		// width: 100%;
 	}
 }
