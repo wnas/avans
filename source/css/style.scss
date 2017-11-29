@@ -52,3 +52,18 @@ body {
 @import '../_patterns/04-templates/list-page/list-page';
 @import '../_patterns/04-templates/home-page/home-page';
 @import '../_patterns/04-templates/subhome-page/subhome-page';
+
+/*
+	stuff to combat 2017 and before css
+*/
+
+::selection {
+	color: inherit;
+	background-color: transparent;
+}
+
+a[class]:hover {
+	text-decoration: none;
+
+	color: inherit;
+}

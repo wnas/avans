@@ -63,6 +63,8 @@ th {
 .schedule {
 	position: relative;
 }
+
+.schedule__row--head,
 .schedule__head {
 	position: sticky;
 	top: 0;
@@ -80,7 +82,8 @@ th {
 	.schedule__row {
 		display: flex;
 		//
-		// flex-wrap: wrap;
+
+		flex-wrap: wrap;
 		//	display: block;
 	}
 

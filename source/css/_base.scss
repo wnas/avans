@@ -14,8 +14,9 @@ body {
 
 	background-color: #fff;
 }
-//
-a {
+
+a:not([class]) {
+	// override for 2017 code
 	text-decoration: underline;
 }
 

@@ -27,7 +27,7 @@ body {
   min-width: 100%;
   background-color: #fff; }
 
-a {
+a:not([class]) {
   text-decoration: underline; }
 
 input[type='search']::-webkit-search-cancel-button {
@@ -521,7 +521,18 @@ a.btn--widget {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-decoration: none;
   color: #000001; }
+
+.result-block__link:hover .result-block__header {
+  color: #00aceb; }
+
+.result-block__link:hover * {
+  text-decoration: none !important;
+  color: #000001; }
+
+.result-block__link:hover * {
+  text-decoration: none; }
 
 @media all and (max-width: 320px) {
   .result-block__link {
@@ -531,13 +542,6 @@ a.btn--widget {
             flex-direction: column; }
   .result-block__image-container {
     margin-bottom: 0.9375rem; } }
-
-.result-block__link:hover .result-block__header {
-  color: #00aceb; }
-
-.result-block__link:hover .result-block__location {
-  text-decoration: none;
-  color: #000001; }
 
 .result-block__content-container {
   margin-left: 1.875rem;
@@ -603,9 +607,6 @@ a.btn--widget {
   margin: 0 0 .5rem;
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease; }
-
-.result-block__header:hover {
-  text-decoration: underline; }
 
 .result-block__location {
   display: inline-block;
@@ -976,7 +977,7 @@ a.btn--widget {
   display: block;
   padding: 0.625rem 0 0.625rem 1.25rem; }
 
-.widget__list-item:not(last-child) {
+.widget__list-item:not(:last-child) {
   border-bottom: 1px solid #eee; }
 
 .widget__link--solo:before,
@@ -1660,6 +1661,7 @@ th {
 .schedule {
   position: relative; }
 
+.schedule__row--head,
 .schedule__head {
   position: -webkit-sticky;
   position: sticky;
@@ -1674,7 +1676,9 @@ th {
   .schedule__row {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .schedule__header,
   .schedule__slot {
     -webkit-box-flex: 0;
@@ -2578,4 +2582,18 @@ dkdkd
     margin: 0 -1rem; }
   .layout-full-width-block__content--subhome .content {
     max-width: 100%; } }
+
+/*
+	stuff to combat 2017 and before css
+*/
+::-moz-selection {
+  color: inherit;
+  background-color: transparent; }
+::selection {
+  color: inherit;
+  background-color: transparent; }
+
+a[class]:hover {
+  text-decoration: none;
+  color: inherit; }
 /*# sourceMappingURL=style.css.map */
