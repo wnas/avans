@@ -42,8 +42,8 @@
 
 	align-content: flex-end;
 	justify-content: flex-end;
-	@media all and (min-width: $bp-xl) {
-		padding: 0 $spacing-l;
+	@media all and (max-width: $bp-xl) {
+		//padding: 0 $spacing-l;
 	}
 }
 

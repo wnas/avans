@@ -6,3 +6,8 @@ $text-color: #000001;
 $light-gray: #999;
 $lighter-gray: #eee;
 $light-gray-background: rgba(238,238,238,.5);
+
+body,
+input {
+	color: $text-color;
+}

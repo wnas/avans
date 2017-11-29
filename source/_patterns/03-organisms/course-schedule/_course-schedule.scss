@@ -29,6 +29,8 @@ th {
 
 	color: #999;
 	border-top: 0;
+	border-bottom: 1px solid #ccc;
+	background-color: $white;
 }
 
 .schedule__header--line {
@@ -36,6 +38,7 @@ th {
 
 	width: 50%;
 	min-width: 400px;
+	max-width: 100%;
 }
 
 .schedule__header--line,
@@ -48,8 +51,7 @@ th {
 	vertical-align: top;
 }
 
-.schedule__slot--active .schedule__slot-content,
-td span {
+.schedule__slot--active .schedule__slot-content {
 	display: block;
 
 	margin: .5rem 0;
@@ -57,30 +59,44 @@ td span {
 	color: #999;
 	background-color: #999;
 }
+
+.schedule {
+	position: relative;
+}
+.schedule__head {
+	position: sticky;
+	top: 0;
+
+	outline: 1px solid red;
+}
+.schedule__head th {
+	position: sticky;
+	top: 0;
+
+	outline: 1px solid green;
+}
+
 @media all and (max-width: $bp-m) {
-	.schedule {
-		position: relative;
-	}
-	.schedule__row--head {
-		position: sticky;
-		top: 0;
-
-		border-bottom: 1px solid #ccc;
-		background-color: $white;
-	}
 	.schedule__row {
-		display: flex;
-
-		flex-wrap: wrap;
+		// display: flex;
+		//
+		// flex-wrap: wrap;
+		//	display: block;
 	}
 
 	.schedule__header,
 	.schedule__slot {
-		flex: 0 1 25%;
+		// flex: 0 1 25%;
+		display: inline-block;
+
+		width: 24%;
 	}
 
 	.schedule__header--head:first-of-type,
 	.schedule__header--line {
-		flex-basis: 100%;
+		// flex-basis: 100%;
+		display: block;
+
+		width: 100%;
 	}
 }

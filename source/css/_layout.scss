@@ -81,7 +81,7 @@ $side-column-width: 263px;
 .content-page {
 	position: relative;
 
-	@extend .testing;
+	// @extend .testing;
 }
 
 @media all and (min-width: $bp-xl) {

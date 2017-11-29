@@ -7,10 +7,18 @@
 	border: 0;
 }
 
+a.btn {
+	text-decoration: none;
+}
+
 .btn--open-dag,
 .btn--image-block,
 .btn--primary {
 	color: $white;
+
+	&:hover {
+		color: $white;
+	}
 }
 .btn--primary {
 	background-color: $avans-red;

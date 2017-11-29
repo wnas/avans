@@ -59,6 +59,256 @@
 		"link-href": "shouldiuseajavascriptframework.com"
 	},
 	"article-content": "<h2>Voltijd opleiding in Breda</h2><p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p>",
+	"course-schedule": {
+		"caption": "Course schedule",
+		"headers": [
+			{
+				"content": "vak"
+			},
+			{
+				"content": "Blok 1"
+			},
+			{
+				"content": "Blok 2"
+			},
+			{
+				"content": "Blok 3"
+			},
+			{
+				"content": "Blok 4"
+			}
+		],
+		"rows": [
+			{
+				"line-header": "Beeldbewerking  & onderzoek",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Creative technology",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Gebruikersscenario",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			},
+			{
+				"line-header": "Grafisch ontwerp",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			},
+			{
+				"line-header": "Beeldbewerking  & onderzoek",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Creative technology",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Gebruikersscenario",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			},
+			{
+				"line-header": "Grafisch ontwerp",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			},
+			{
+				"line-header": "Beeldbewerking  & onderzoek",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Creative technology",
+				"slots": [
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					}
+				]
+			},
+			{
+				"line-header": "Gebruikersscenario",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			},
+			{
+				"line-header": "Grafisch ontwerp",
+				"slots": [
+					{
+						"content": ""
+					},
+					{
+						"content": ""
+					},
+					{
+						"content": "les",
+						"active": "true"
+					},
+					{
+						"content": "les",
+						"active": "true"
+					}
+				]
+			}
+		]
+	},
 	"widgets": [{
 			"type": "apply",
 			"header": "Is dit jouw opleiding",

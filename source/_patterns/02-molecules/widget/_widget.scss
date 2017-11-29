@@ -18,6 +18,10 @@
 	//@extend .testing;
 }
 
+.widget a {
+	text-decoration: none;
+}
+
 .widget.links__list-block {
 	margin: 0;
 	padding: 0;
@@ -127,7 +131,7 @@
 
 .widget__link--solo:before,
 .widget__list-item:before {
-	top: $spacing;
+	top: 17px;
 	left: 4px;
 
 	@extend .small-arrow;

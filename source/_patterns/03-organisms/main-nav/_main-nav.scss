@@ -4,54 +4,56 @@ $nav-gray: $light-gray;
 $nav-gray-arrow-color: $nav-gray;
 $nav-link-color: $nav-gray;
 $nav-link-active-color: $text-color;
-@media all and (max-width: $bp-l) {
-	.nav.js-open,
-	.nav:target {
-		position: absolute;
-		z-index: 20;
-		top: 100px;
-		bottom: 0;
-		left: 0;
+header {
+	@media all and (max-width: $bp-l) {
+		.nav.js-open,
+		.nav:target {
+			position: absolute;
+			z-index: 20;
+			top: 100px;
+			bottom: 0;
+			left: 0;
 
-		width: 100%;
-		height: auto;
-		margin-left: 0;
+			width: 100%;
+			height: auto;
+			margin-left: 0;
+		}
 	}
-}
-@media all and (min-width: $bp-l) {
-	.nav.js-open,
-	.nav:target {
-		height: auto !important;
+	@media all and (min-width: $bp-l) {
+		.nav.js-open,
+		.nav:target {
+			height: auto !important;
+		}
 	}
-}
-@media all and (max-width: $bp-m) {
-	// on smaller screen we are not as heigh.
-	.nav.js-open,
-	.nav:target {
-		top: 70px;
+	@media all and (max-width: $bp-m) {
+		// on smaller screen we are not as heigh.
+		.nav.js-open,
+		.nav:target {
+			top: 70px;
 
-		padding: $spacing;
-	}
-}
-
-header .nav {
-	display: flex;
-	flex-direction: column;
-
-	height: 0;
-	//min-height: 0;
-	margin-left: -$spacing;
-
-	background-color: rgba(255,255,255,.98);
-	//@extend .testing;
-}
-@media all and (max-width: $bp-m) {
-	header  .nav {
-		margin-left: 0;
+			padding: $spacing;
+		}
 	}
 
-	.nav__list {
-		margin: $spacing;
+	.nav {
+		display: flex;
+		flex-direction: column;
+
+		height: 0;
+		//min-height: 0;
+		margin-left: -$spacing;
+
+		background-color: rgba(255,255,255,.98);
+		//@extend .testing;
+	}
+	@media all and (max-width: $bp-m) {
+		.nav {
+			margin-left: 0;
+		}
+
+		.nav__list {
+			margin: $spacing;
+		}
 	}
 }
 
@@ -175,7 +177,7 @@ header .nav {
 }
 // big screen
 @media all and (min-width: $bp-l) {
-	.nav {
+	header .nav {
 		overflow: visible;
 		flex-direction: row;
 
@@ -285,6 +287,8 @@ header .nav {
 
 	.nav__link--sub:hover {
 		text-decoration: underline;
+
+		color: $white;
 	}
 
 	.lang-nav {

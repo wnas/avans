@@ -95,6 +95,7 @@ $footer-link-animation-duration: .5s;
 	font-size: $footer-links;
 
 	transition: background $footer-link-animation-duration ease;
+	text-decoration: none;
 
 	color: $footer-text-color;
 }
