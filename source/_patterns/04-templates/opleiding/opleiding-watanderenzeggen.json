@@ -1,0 +1,118 @@
+{
+	"hero-class": "hero--simple",
+	"page-menu-class": "content-page__menu",
+	"page-menu-block": [{
+			"block-title": "Voltijd in Breda",
+			"items": [{
+					"href": "#",
+					"text": "Introductie",
+					"active": "true"
+				},
+				{
+					"href": "#",
+					"text": "Opbouw"
+				},
+				{
+					"href": "#",
+					"text": "Buitenland"
+				},
+				{
+					"href": "#",
+					"text": "Wat anderen zeggen"
+				},
+				{
+					"href": "#",
+					"text": "Projecten"
+				},
+				{
+					"href": "#",
+					"text": "Studie in cijfers"
+				},
+				{
+					"href": "#",
+					"text": "Verenigingen"
+				},
+				{
+					"href": "#",
+					"text": "Nieuws"
+				}
+			]
+		},
+		{
+			"block-title": "Na de opleiding",
+			"items": [{
+					"href": "#",
+					"text": "Beroepen"
+				},
+				{
+					"href": "#",
+					"text": "Vervolgstudies"
+				}
+			]
+		}
+	],
+	"more-info-button": {
+		"link-class": "btn btn--primary",
+		"link-text": "Meld je aan",
+		"link-href": "shouldiuseajavascriptframework.com"
+	},
+	"results-list": [
+		{
+			"name": "Gertjan Kooy",
+			"title": "Student informatica en interactie",
+			"content": "Door de stimulans van mijn docenten koos ik voor een nieuwe richting en vond mijn passie in user experience design",
+			"result-class":"person",
+			"src": "http://www.avans.nl/binaries/content/gallery/nextweb/personen/testimonials-en-blogs/breda/voltijd/communicatie/100x100-docent-communicatie-harold-tiesing-avans-hogeschool-breda.jpg",
+			"readmore": {
+				"text": "Lees verder",
+				"href": "nu.nl"
+				}
+		},
+		{
+			"name": "Jan Gerritsen",
+			"title": "Student informatica en interactie",
+			"content": "Door de stimulans van mijn docenten koos ik voor een nieuwe richting en vond mijn passie in user experience design",
+			"result-class":"person",
+			"src": "http://www.avans.nl/binaries/content/gallery/nextweb/personen/testimonials-en-blogs/breda/voltijd/communicatie/gytha_muller.jpg",
+			"readmore": {
+				"text": "Lees verder",
+				"href": "nuzakelijk.nl"
+			}
+		}
+	],
+	"widgets": [
+		{
+			"type": "openAvond",
+			"header": "Open avond",
+			"when": {
+				"date": "7 juni",
+				"time": {
+					"start": "18:00",
+					"end": "21:00"
+				}
+			},
+			"call-to-action": {
+				"text": "Meer informatie",
+				"class": "btn btn--open-dag"
+			}
+		},
+		{
+			"type": "open",
+			"header": "Kom langs",
+			"widget-list": {
+				"items": [{
+						"text": "Open dag 4 november 2017",
+						"href": "nu.nl"
+					},
+					{
+						"text": "Open dag 27 januari 2018",
+						"href": "nuzakelijk.nl"
+					},
+					{
+						"text": "Open avond 21 maart 2018"
+					}
+				]
+			}
+		}
+	]
+}
