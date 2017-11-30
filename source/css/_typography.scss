@@ -13,6 +13,7 @@ h3,
 h4,
 .content__header,
 button,
+.btn,
 legend,
 .nav__link,
 .header-font,
@@ -24,6 +25,14 @@ legend,
 .header__sub-title {
 	font-family: 'Frutiger LT W01_65 Bold1475746', helvetica, sans-serif;
 	font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: inherit;
+	text-shadow: none;
 }
 
 h3 {
@@ -45,7 +54,7 @@ input,
 
 .main-content p,
 .main-content li,
-.main-content a {
+.main-content a:not([class]) {
 	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
 }
 

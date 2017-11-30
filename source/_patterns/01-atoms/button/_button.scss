@@ -22,10 +22,16 @@ a.btn {
 }
 .btn--primary {
 	background-color: $avans-red;
+	&:hover {
+		background-color: $text-color;
+	}
 }
 .btn--open-dag,
 .btn--image-block {
 	background-color: $text-color;
+	&:hover {
+		background-color: $avans-blue;
+	}
 }
 
 .btn--open-dag {
