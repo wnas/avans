@@ -10,29 +10,34 @@
 a.btn {
 	text-decoration: none;
 }
-
-.btn--open-dag,
-.btn--image-block,
-.btn--primary {
-	color: $white;
-
-	&:hover {
-		color: $white;
-	}
-}
 .btn--primary {
 	background-color: $avans-red;
 	&:hover {
 		background-color: $text-color;
 	}
 }
+a,
+button {
+	&.btn--open-dag,
+	&.btn--image-block,
+	&.btn--primary {
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
 .btn--open-dag,
 .btn--image-block {
 	background-color: $text-color;
 	&:hover {
-		background-color: $avans-blue;
+		background-color: $white;
 	}
 }
+
+.btn--open
 
 .btn--open-dag {
 	display: inline-block;

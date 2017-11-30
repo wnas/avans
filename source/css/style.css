@@ -391,28 +391,30 @@ a {
 a.btn {
   text-decoration: none; }
 
-.btn--open-dag,
-.btn--image-block,
-.btn--primary {
-  color: #fff; }
-  .btn--open-dag:hover,
-  .btn--image-block:hover,
-  .btn--primary:hover {
-    color: #fff; }
-
 .btn--primary {
   background-color: #c6002a; }
   .btn--primary:hover {
     background-color: #000001; }
+
+a.btn--open-dag, a.btn--image-block, a.btn--primary,
+button.btn--open-dag,
+button.btn--image-block,
+button.btn--primary {
+  color: #fff; }
+  a.btn--open-dag:hover, a.btn--image-block:hover, a.btn--primary:hover,
+  button.btn--open-dag:hover,
+  button.btn--image-block:hover,
+  button.btn--primary:hover {
+    color: #fff; }
 
 .btn--open-dag,
 .btn--image-block {
   background-color: #000001; }
   .btn--open-dag:hover,
   .btn--image-block:hover {
-    background-color: #00aceb; }
+    background-color: #fff; }
 
-.btn--open-dag {
+.btn--open .btn--open-dag {
   display: inline-block;
   margin-bottom: .625rem; }
 
@@ -2617,6 +2619,5 @@ dkdkd
   background-color: transparent; }
 
 a[class]:hover {
-  text-decoration: none;
-  color: inherit; }
+  text-decoration: none; }
 /*# sourceMappingURL=style.css.map */
