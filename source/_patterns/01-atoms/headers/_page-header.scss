@@ -12,6 +12,11 @@
 	flex: 1;
 }
 
+@media all and (max-width: $bp-m) {
+	.page-header {
+		font-size: $fs-l;
+	}
+}
 .page-header__switch {
 	overflow: hidden;
 

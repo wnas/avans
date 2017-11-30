@@ -96,7 +96,7 @@
 			"header": "Duurzaamheid",
 			"text": "Score van deze opleiding",
 			"title": "Two out of three stars",
-			"widget-durability": "<span class='rating__stars'><svg height='25' width='23' class='star'><title>2 out of 3 stars</title><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg><svg height='25' width='23' class='star'><polygon points='9.9, 1.1, 3.3, 21.78, 19.8, 8.58, 0, 8.58, 16.5, 21.78'/></svg></span>",
+			"widget-durability": "<span class='rating__stars'><?xml encoding='UTF-8'?><svg width='16px' height='15px' viewBox='0 0 16 15' version='1.1' xmlns='http:\/\/www.w3.org\/2000\/svg' xmlns:xlink='http:\/\/www.w3.org/1999/xlink'><g id='star' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='004-OpleidingInleiding-XL-1200+' transform='translate(-1302.000000, -1128.000000)' fill='#000000'><polygon id='Star' points='1310 1140 1305.29772 1142.47214 1306.19577 1137.23607 1302.39155 1133.52786 1307.64886 1132.76393 1310 1128 1312.35114 1132.76393 1317.60845 1133.52786 1313.80423 1137.23607 1314.70228 1142.47214'></polygon></g></g></svg><svg width='16px' height='15px' viewBox='0 0 16 15' version='1.1' xmlns='http:\/\/www.w3.org\/2000\/svg' xmlns:xlink='http:\/\/www.w3.org/1999/xlink'><g id='star' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='004-OpleidingInleiding-XL-1200+' transform='translate(-1302.000000, -1128.000000)' fill='#000000'><polygon id='Star' points='1310 1140 1305.29772 1142.47214 1306.19577 1137.23607 1302.39155 1133.52786 1307.64886 1132.76393 1310 1128 1312.35114 1132.76393 1317.60845 1133.52786 1313.80423 1137.23607 1314.70228 1142.47214'></polygon></g></g></svg></span>",
 			"widget-link": [{
 				"text": "Uitleg score",
 				"href": "nu.nl"
