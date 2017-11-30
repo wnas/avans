@@ -1,5 +1,5 @@
 {
-	"filter-label": "active filter",
+	"filter-label": "Actief filter:",
 	"filters": [
 		{
 			"button-class": "btn--filter",
