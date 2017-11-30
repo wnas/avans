@@ -154,6 +154,11 @@
 	transition: color $time-s ease;
 }
 
+@media all and (max-width: $bp-s) {
+	.result-block__header {
+		font-size: $fs;
+	}
+}
 
 
 .result-block__location {

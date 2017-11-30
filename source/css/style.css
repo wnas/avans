@@ -632,6 +632,10 @@ a.btn--widget {
   -webkit-transition: color 0.1s ease;
   transition: color 0.1s ease; }
 
+@media all and (max-width: 540px) {
+  .result-block__header {
+    font-size: 1rem; } }
+
 .result-block__location {
   display: inline-block;
   margin-left: 1.25rem;
@@ -930,7 +934,8 @@ a.btn--widget {
   padding: 0; }
 
 .widget__content {
-  font-size: .875rem; }
+  font-size: .875rem;
+  margin-top: 0.625rem; }
 
 .widget__content,
 .widget__link--solo {
