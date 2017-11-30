@@ -33,7 +33,8 @@ a:not([class]) {
 input[type='search']::-webkit-search-cancel-button {
   display: none; }
 
-p img {
+p img,
+figure img {
   width: 100%; }
 
 table {
@@ -392,29 +393,27 @@ a.btn {
   text-decoration: none; }
 
 .btn--primary {
+  color: #fff;
   background-color: #c6002a; }
   .btn--primary:hover {
+    color: #fff;
     background-color: #000001; }
 
-a.btn--open-dag, a.btn--image-block, a.btn--primary,
-button.btn--open-dag,
-button.btn--image-block,
-button.btn--primary {
-  color: #fff; }
-  a.btn--open-dag:hover, a.btn--image-block:hover, a.btn--primary:hover,
-  button.btn--open-dag:hover,
-  button.btn--image-block:hover,
-  button.btn--primary:hover {
-    color: #fff; }
-
-.btn--open-dag,
-.btn--image-block {
+.btn--secondary {
+  color: #fff;
   background-color: #000001; }
-  .btn--open-dag:hover,
-  .btn--image-block:hover {
+  .btn--secondary:hover {
+    color: #fff;
+    background-color: #00aceb; }
+
+.btn--tertiary {
+  color: #fff;
+  background-color: #000001; }
+  .btn--tertiary:hover {
+    color: #000001;
     background-color: #fff; }
 
-.btn--open .btn--open-dag {
+.btn--open .btn--secondary {
   display: inline-block;
   margin-bottom: .625rem; }
 

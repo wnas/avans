@@ -6,6 +6,6 @@
 	  "button-class":"btn--secondary"}
 	  ,
         {"button-text":"text on button 3",
-  	  "button-class":"btn--open-dag"}
+  	  "button-class":"btn--tertiary"}
   ]
 }

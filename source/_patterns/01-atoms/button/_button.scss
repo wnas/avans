@@ -11,35 +11,36 @@ a.btn {
 	text-decoration: none;
 }
 .btn--primary {
+	color: $white;
 	background-color: $avans-red;
 	&:hover {
+		color: $white;
 		background-color: $text-color;
 	}
 }
-a,
-button {
-	&.btn--open-dag,
-	&.btn--image-block,
-	&.btn--primary {
-		color: $white;
 
-		&:hover {
-			color: $white;
-		}
+.btn--secondary {
+	color: $white;
+	background-color: $text-color;
+	&:hover {
+		color: $white;
+		background-color: $avans-blue;
 	}
 }
 
-.btn--open-dag,
-.btn--image-block {
+
+.btn--tertiary {
+	color: $white;
 	background-color: $text-color;
 	&:hover {
+		color: $text-color;
 		background-color: $white;
 	}
 }
 
 .btn--open
 
-.btn--open-dag {
+.btn--secondary {
 	display: inline-block;
 
 	margin-bottom: .625rem;

@@ -93,7 +93,7 @@
 			},
 			"call-to-action": {
 				"text": "Meer informatie",
-				"class": "btn btn--open-dag"
+				"class": "btn btn--secondary"
 			}
 		},
 		{
