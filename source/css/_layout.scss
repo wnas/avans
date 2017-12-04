@@ -252,8 +252,14 @@ $side-column-width: 263px;
 	.content-page__content {
 		min-width: 556px;
 		margin: 0 auto;
-		.breakout-box {
-			//	width: calc(556px + ( (100vw - 556px )/ 2));
-		}
+	}
+}
+
+@media all and (max-width: $bp-m) {
+	.breakout-box {
+		overflow: scroll;
+		//	width: calc(556px + ( (100vw - 556px )/ 2));
+
+		width: 100%;
 	}
 }
