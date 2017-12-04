@@ -176,7 +176,7 @@ main {
   padding: 1.875rem 0.9375rem 0.9375rem; }
 
 .content-page__aside-container {
-  padding-top: 0;
+  padding-top: 2.1rem;
   padding-right: 0; }
 
 .breakout-box {
@@ -429,7 +429,7 @@ a.btn {
 .btn--widget {
   width: 248px;
   max-width: 100%;
-  margin-top: 1rem; }
+  margin: 0.625rem 0; }
 
 a.btn--widget {
   display: block;
@@ -922,8 +922,7 @@ a.btn--widget {
   margin-left: 1.25rem; }
 
 .widget {
-  margin-bottom: 0.9375rem;
-  border-bottom: 1px solid #eee; }
+  margin-bottom: 0.9375rem; }
 
 .widget--openAvond {
   margin-left: -1.875rem;
@@ -944,7 +943,9 @@ a.btn--widget {
 
 .widget__content {
   font-size: .875rem;
-  margin-top: 0.625rem; }
+  margin: 0.625rem 1rem 3rem 0;
+  border: 1px solid #eee;
+  border-width: 1px 0; }
 
 .widget__content,
 .widget__link--solo {
@@ -954,11 +955,8 @@ a.btn--widget {
 .widget__header {
   position: relative;
   margin-bottom: 0;
-  padding: 0.9375rem 0 0.5rem 0;
-  color: #000001;
-  border-bottom: 1px solid #eee;
-  background-repeat: no-repeat;
-  background-position: center right; }
+  padding: 0;
+  color: #000001; }
 
 .widget__header--openAvond {
   font-size: 1.5rem;
@@ -985,7 +983,7 @@ a.btn--widget {
 
 @media all and (max-width: 539px) {
   .widget__header:after {
-    right: 0; } }
+    right: 0.9375rem; } }
 
 .widget__header--apply:after {
   background-image: url("../images/icons/widgets/Icon-Aanmelden.svg"); }
@@ -1002,11 +1000,12 @@ a.btn--widget {
 
 .durability,
 .widget__paragraph {
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 0.9375rem;
+  padding-top: 0.625rem; }
 
 .widget__list {
-  margin-top: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
   list-style: none; }
 
 .widget__link--solo,
@@ -1039,6 +1038,16 @@ a.btn--widget {
   display: inline-block;
   fill: #000001; }
 
+/*
+	as we get our follow list icons from the footer, here we will do some customizing...
+	*/
+.links__list--follow {
+  padding: 0.625rem 0;
+  border: 1px solid #eee;
+  border-width: 1px 0; }
+  .links__list--follow .footer-link__item--follow {
+    padding-bottom: 0; }
+
 .tab__item {
   margin: 0 1rem -1px 0;
   border: 1px solid #eee; }
@@ -1046,6 +1055,7 @@ a.btn--widget {
 .tab__link {
   display: inline-block;
   padding: 1rem;
+  text-decoration: none;
   color: #00aceb; }
 
 @media (max-width: 767px) {
@@ -2010,6 +2020,7 @@ header .nav {
   font-size: 0.875rem;
   display: block;
   padding: 1rem 1rem 1rem 0;
+  text-decoration: none;
   color: #999; }
 
 .submenu__link--active {
@@ -2298,15 +2309,23 @@ dkdkd
   width: 100%;
   margin: 0 auto;
   text-align: left;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   color: #fff; }
 
 .header__text {
+  font-size: 2rem;
   display: block;
   padding-bottom: .5rem; }
 
 .header__sub-title {
   font-size: 0.75rem;
   text-transform: uppercase; }
+
+@media all and (max-width: 767px) {
+  .header__text {
+    font-size: 1.5rem; } }
 
 .header--hero:after {
   position: absolute;
