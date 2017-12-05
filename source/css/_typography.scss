@@ -60,6 +60,7 @@ input,
 
 .main-content p {
 	// make sure words break nicer...
+	// doesn't work in all browsers. see caniuse.com
 	hyphens: auto;
 }
 
