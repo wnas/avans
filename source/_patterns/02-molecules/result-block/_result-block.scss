@@ -42,11 +42,20 @@
 	color: $text-color;
 }
 
+
+
 .result-block__link:hover {
-	.result-block__header {
+	.result-block__header,
+	.result-block__link-more {
+		text-decoration: underline;
+
 		color: $avans-blue;
 	}
-	* {
+	.result-block__link-more:after {
+		border-color: $avans-blue;
+	}
+
+	*:not(.result-block__link-more):not(.result-block__header) {
 		text-decoration: none !important;
 
 		color: $text-color;
@@ -56,6 +65,21 @@
 
 .result-block__link:hover * {
 	text-decoration: none;
+}
+
+.result-block__link-more {
+	position: relative;
+
+	padding-left: $spacing-l;
+
+	color: $avans-blue;
+
+	&:before {
+		top: 14px;
+		left: 4px;
+
+		@include small-arrow($text-color);
+	}
 }
 
 @media all and (max-width: $bp-xs) {

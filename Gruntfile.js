@@ -281,6 +281,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['patternlab', 'csscomb', 'sass', 'postcss:dist', 'copy:main']);
 	grunt.registerTask('patternlab:build', ['patternlab', 'csscomb', 'sass', 'postcss:dist', 'copy:main']);
 	grunt.registerTask('patternlab:watch', ['patternlab', 'csscomb', 'sass', 'postcss:dist', 'copy:main', 'watch:all']);
-	grunt.registerTask('patternlab:serve', ['patternlab', 'csscomb', 'sass', 'postcss:dist', 'copy:main', 'browserSync', 'watch:all']);
+	grunt.registerTask('patternlab:serve', ['patternlab', 'sass', 'postcss:dist', 'copy:main', 'browserSync', 'watch:all']);
 
 };

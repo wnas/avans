@@ -52,6 +52,19 @@
 	content: '';
 	transform: rotate(45deg);
 
-	border: 1px solid #00aceb;
+	border: 1px solid $avans-blue;
+	border-width: 1px 1px 0 0;
+}
+
+@mixin small-arrow($border-color: $avans-blue) {
+	position: absolute;
+
+	width: 5px;
+	height: 5px;
+
+	content: '';
+	transform: rotate(45deg);
+
+	border: 1px solid $border-color;
 	border-width: 1px 1px 0 0;
 }
