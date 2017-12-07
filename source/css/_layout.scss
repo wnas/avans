@@ -44,7 +44,8 @@ main {
 .header__sub-title,
 .layout-full-width-block__content,
 .top-bar__content,
-.submenu__list {
+.submenu__list,
+div.content > .container {
 	width: 100%;
 	max-width: $width__overal;
 	margin: 0 auto;

@@ -131,7 +131,8 @@ main {
 .header__sub-title,
 .layout-full-width-block__content,
 .top-bar__content,
-.submenu__list {
+.submenu__list,
+div.content > .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto; }
@@ -2733,4 +2734,49 @@ dkdkd
 
 a[class]:hover {
   text-decoration: none; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.col-md-4 {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: calc(33% - (.5 * 1.25rem));
+  min-height: 200px;
+  margin-right: 1.25rem;
+  margin-bottom: 1.25rem;
+  }
+  .col-md-4 .interessegebied {
+    height: 100%;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .col-md-4 .interessegebied:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-color: rgba(238, 238, 238, 0.5); }
+  .col-md-4 h2,
+  .col-md-4 p {
+    padding: 0.9375rem 0.9375rem 0; }
+  .col-md-4 a {
+    position: absolute;
+    right: 0.9375rem;
+    bottom: 0;
+    padding: 0.9375rem;
+    color: #fff;
+    background-color: #c6002a; }
+  .col-md-4:nth-child(3n) {
+    margin-right: 0; }
 /*# sourceMappingURL=style.css.map */
