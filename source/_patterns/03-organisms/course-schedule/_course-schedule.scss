@@ -39,14 +39,15 @@ th {
 	width: 40%;
 	min-width: 200px;
 	max-width: 100%;
+	padding: .25rem 1.5rem .25rem 0;
 }
-
+.schedule__slot {
+	padding: .25rem 0 .25rem 0;
+}
 .schedule__header--line,
 .schedule__slot {
 	font-size: $fs-s;
 	line-height: 1;
-
-	padding: .25rem 1.5rem .25rem 0;
 
 	vertical-align: center;
 }

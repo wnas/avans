@@ -1,8 +1,13 @@
 .btn {
 	font-size: $fs;
 
+	display: inline-block;
+
 	margin-right: $spacing;
+	margin-bottom: .5rem;
 	padding: .5rem $spacing;
+
+	white-space: nowrap;
 
 	border: 0;
 }

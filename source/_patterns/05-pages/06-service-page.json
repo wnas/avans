@@ -1,6 +1,7 @@
 {
     "bodyClass": "content-page--top",
     "page-menu-class": "content-page__menu",
+	"hero-class": "hero--simple",
 	"page-menu-block": [{
 			"block-title": "Voltijd in Breda",
 			"items": [{
@@ -56,7 +57,7 @@
 		"link-text": "Meld je aan",
 		"link-href": "shouldiuseajavascriptframework.com"
 	},
-	"wide-article-header": {
+	"article-header-image": {
 		"container-class": "service-page-header",
 		"img-src": "../../images/service-page/studiekeuze-l.png"
 	},

@@ -97,10 +97,11 @@
 	padding-bottom: .5rem;
 }
 
-.header__sub-title {
+//  extra class to combat 2017 css.
+.hero .header__sub-title {
 	font-size: $fs-xs;
 
-	text-transform: uppercase;
+	margin-bottom: .5rem;
 }
 
 @media all and (max-width: $bp-m) {

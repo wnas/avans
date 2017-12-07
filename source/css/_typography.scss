@@ -51,11 +51,13 @@ input,
 	font-family: 'Frutiger LT W01_55 Roma1475738', helvetica, sans-serif;
 	font-weight: normal;
 }
-
-.main-content p,
-.main-content li,
-.main-content a:not([class]) {
-	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
+.main-content {
+	p,
+	li,
+	a:not([class]),
+	table {
+		font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
+	}
 }
 
 .main-content p {
@@ -76,7 +78,8 @@ input {
 .content__header {
 	font-size: $fs-xl;
 }
-
+// 2017 css
+.entry-title,
 h2 {
 	font-size: $fs-l;
 
@@ -98,8 +101,13 @@ p,
 	line-height: 2rem;
 }
 
-
-
 a {
 	color: $text-color;
+}
+
+// 2017 css
+#main table,
+.entry-content {
+	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
+	font-size: $fs;
 }

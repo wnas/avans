@@ -3,6 +3,11 @@
 <main class="layout-full-width-block main-content layout-full-width-block--content-page">
 	<div class="layout-full-width-block__content content-page">
 		{{> organisms-page-menu}}
+		{{# article-header-image }}
+		<div class="header-image service-page-header {{ container-class }}">
+			<img class="header-image__image" src="{{ img-src }}" alt="{{ img-alt }}"/>
+		</div>
+		{{/ article-header-image }}
 		<article class="main-content content-page__content">
 			{{> atoms-article-header }}
 			<!-- /article-header -->
@@ -19,6 +24,7 @@
 				{{/ widget-follow }}
 			</div>
 		</aside>
+
 	</div>
 </main>
 <!-- /main -->

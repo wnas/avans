@@ -84,6 +84,11 @@ $side-column-width: 263px;
 	// @extend .testing;
 }
 
+div#main .container_12 {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
 @media all and (min-width: $bp-xl) {
 	.layout-full-width-block--content-page {
 		position: relative;
@@ -105,11 +110,11 @@ $side-column-width: 263px;
 .content-page__aside-container,
 .content-page__content,
 .content-page__menu {
-	padding: $spacing-xl $spacing $spacing;
+	padding: $spacing-xl $spacing-l $spacing;
 }
 
 .content-page__aside-container {
-	padding-top: 2.1rem;
+	padding-top: 3rem;
 	padding-right: 0;
 }
 
@@ -131,6 +136,8 @@ $side-column-width: 263px;
 	$nav: 263px;
 	$main: 556px;
 	@media all and (min-width: $bp-xl) {
+		// fix for 2017 css
+		div#main > .container_12,
 		.content-page {
 			display: grid;
 
@@ -138,6 +145,25 @@ $side-column-width: 263px;
 			grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
 			grid-template-columns: $nav $main $sidebar;
 			grid-template-rows: auto 1fr;
+		}
+
+		div#main > #contact-locations-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto;
+
+			&:before {
+				display: none;
+
+				content: '';
+			}
+			.grid_4 {
+				float: none;
+
+				width: 100%;
+			}
+			.equal-heights {
+				height: auto !important;
+			}
 		}
 		.page-menu {
 			grid-area: nav;
@@ -147,6 +173,17 @@ $side-column-width: 263px;
 		}
 		.content-page__aside {
 			grid-area: aside;
+		}
+		.service-page-header {
+			grid-area: wide-header;
+		}
+		// fix for 2016 css
+		div#main .container_12 > .grid_3 {
+			grid-area: nav;
+		}
+
+		div#main .container_12 > .grid_9 {
+			grid-area: wide-header;
 		}
 	}
 }
@@ -179,7 +216,7 @@ $side-column-width: 263px;
 		margin-right: $spacing-xl;
 	}
 	.content-page__aside {
-		margin-left: $spacing-xl;
+		//	margin-left: $spacing-xl;
 	}
 }
 

@@ -9,17 +9,27 @@ dkdkd
 
 .page-menu__list {
 	margin-bottom: $spacing-xxl;
-	padding-left: 0;
 
-	list-style: none;
+	@include reset-list();
 }
-
+// combat 2017 css
 .page-menu__item {
 	position: relative;
 
 	padding: $spacing 0 $spacing $spacing-xl;
 
 	border-top: 1px solid $lighter-gray;
+}
+
+.page-menu__item {
+	ul {
+		@include reset-list();
+	}
+	.toggle {
+		position: absolute;
+		top: 11px;
+		right: 0;
+	}
 }
 
 .page-menu__item:before {

@@ -52,6 +52,11 @@ $widget-spacing: $spacing-s;
 	color: $text-color;
 }
 
+.widget__header {
+	margin-top: 0;
+	margin-right: 1rem;
+}
+
 .widget__header--openAvond {
 	font-size: $fs-l;
 
@@ -110,9 +115,14 @@ $widget-spacing: $spacing-s;
 
 .durability,
 .widget__paragraph {
-	margin-bottom: $spacing;
 	padding-top: $widget-spacing;
 }
+
+.widget__content p,
+.widget__paragraph {
+	margin-bottom: 0;
+}
+
 
 .widget__list {
 	margin: 0;
