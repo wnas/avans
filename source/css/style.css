@@ -19,7 +19,8 @@ input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-body {
+body,
+figure {
   margin: 0;
   padding: 0; }
 
@@ -447,6 +448,7 @@ a.btn--widget {
     margin-top: 1rem; } }
 
 .logo {
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
