@@ -114,7 +114,9 @@ $widget-spacing: $spacing-s;
 }
 
 .durability,
-.widget__paragraph {
+.widget__paragraph,
+.widget p {
+	margin-bottom: $spacing;
 	padding-top: $widget-spacing;
 }
 

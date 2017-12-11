@@ -51,13 +51,13 @@ input,
 	font-family: 'Frutiger LT W01_55 Roma1475738', helvetica, sans-serif;
 	font-weight: normal;
 }
-.main-content {
-	p,
-	li,
-	a:not([class]),
-	table {
-		font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
-	}
+
+.main-content p,
+.main-content li,
+.main-content a:not([class]),
+.widget__link,
+table {
+	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
 }
 
 .main-content p {
