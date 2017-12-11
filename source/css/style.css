@@ -221,7 +221,7 @@ main {
     .content-page__content .breakout-box {
       width: calc(556px + 298px); }
   .breakout-box {
-    padding: 1rem 0; }
+    padding: 0 0 1rem 0; }
     .content-page__content .breakout-box {
       padding-right: 1rem;
       background-color: #fff; }
@@ -345,7 +345,8 @@ input,
 
 .main-content p,
 .main-content li,
-.main-content a:not([class]) {
+.main-content a:not([class]),
+.widget__link {
   font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif; }
 
 .main-content p {
@@ -396,8 +397,11 @@ a {
 
 .btn {
   font-size: 1rem;
+  display: inline-block;
   margin-right: 0.9375rem;
+  margin-bottom: 0.9375rem;
   padding: 0.5rem 0.9375rem;
+  white-space: nowrap;
   border: 0; }
 
 a.btn {
@@ -1078,7 +1082,7 @@ a.btn--widget {
     padding-bottom: 0; }
 
 .tab__item {
-  margin: 0 1rem -1px 0;
+  margin: 0 0 -1px 0;
   border: 1px solid #eee; }
 
 .tab__link {
