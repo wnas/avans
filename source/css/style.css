@@ -2166,6 +2166,15 @@ dkdkd
 .page-menu .close-icon {
   display: none; }
 
+.toggle {
+  overflow: HIDDEN;
+  width: 1rem;
+  height: 1rem;
+  white-space: nowrap;
+  text-indent: 2rem;
+  border-radius: 1rem;
+  background-color: #999; }
+
 @media all and (max-width: 1199px) {
   .page-menu__container {
     position: relative;
