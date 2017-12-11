@@ -73,16 +73,30 @@ a[class]:hover {
 .row {
 	display: flex;
 
+	padding: 0;
+
 	flex-wrap: wrap;
 }
 
 .col-md-4 {
 	flex: 0 1 auto;
 
-	width: calc(33% - (.5 * 1.25rem));
+	width: calc(50% - (1.9rem));
 	min-height: 200px;
-	margin-right: $spacing-l;
-	margin-bottom: $spacing-l;
+	margin: $spacing;
+
+	outline: 1px solid red;
+	@media all and (min-width: $bp-l) {
+		width: calc(33% - (1.8rem));
+
+		outline-color: green;
+	}
+
+	@media all and (max-width: $bp-s) {
+		width: 100%;
+
+		outline-color: blue;
+	}
 
 
 	.interessegebied {
@@ -125,12 +139,6 @@ a[class]:hover {
 		color: transparent;
 		outline: 1px solid red;
 		background-color: transparent;
-	}
-
-	&:nth-child(3n) {
-		margin-right: 0;
-
-		//outline: 1px solid red;
 	}
 }
 
