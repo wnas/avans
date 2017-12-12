@@ -1,3 +1,8 @@
+input[type='submit'] {
+	background: none;
+}
+
+input[type='submit'],
 .btn {
 	font-size: $fs;
 
@@ -15,6 +20,7 @@
 a.btn {
 	text-decoration: none;
 }
+input[type='submit'],
 .btn--primary {
 	color: $white;
 	background-color: $avans-red;

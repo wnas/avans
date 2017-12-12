@@ -1,12 +1,91 @@
 
 
 
-.avans-homepage .main-content {
-	margin-top: -100px;
+.avans-homepage {
+	.main-content > div {
+		position: relative;
+		z-index: 5;
+
+		display: grid;
+
+		margin-top: -100px;
+
+		outline: 1px solid red;
+
+		grid-gap: 20px;
+		grid-template-areas: 'linkbox-1'
+		'image-block-1'
+		'image-block-2'
+		'image-block-3'
+		'linkblock'
+		'linkbox-2';
+	}
+	.link-box--top {
+		grid-area: linkbox-1;
+	}
+	.open-dag {
+		margin-top: 0;
+		padding: 0;
+
+		grid-area: image-block-1;
+	}
+	.foo {
+		grid-area: image-block-2;
+	}
+	.bar {
+		grid-area: image-block-3;
+	}
+
+	.link-block {
+		grid-area: linkblock;
+	}
+	.link-box--news {
+		padding: 0;
+
+		grid-area: linkbox-2;
+	}
+}
+@media all and (min-width: $bp-s) {
+	.avans-homepage {
+		.main-content > div {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto 369px 369px auto 1fr;
+			grid-template-areas: 'linkbox-1 linkbox-1'
+			'image-block-1 	image-block-1'
+			'image-block-2 	image-block-3'
+			'linkblock 	linkblock'
+			'linkbox-2 		linkbox-2';
+		}
+	}
 }
 
+@media all and (min-width: $bp-m) {
+	.avans-homepage {
+		.main-content > div {
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto 369px 1fr;
+			grid-template-areas: 'linkbox-1 linkbox-1 linkbox-1 linkbox-1 image-block-1 image-block-1'
+			'image-block-2 image-block-2 image-block-2 image-block-3 image-block-3 image-block-3'
+			'linkblock linkblock linkbox-2 linkbox-2 linkbox-2 linkbox-2';
+		}
+	}
+}
 
-
+/*
+.link-block__item--a {
+	grid-area: link-block-1;
+}
+.link-block__item--b {
+	grid-area: link-block-2;
+}
+.link-block__item--c {
+	grid-area: link-block-3;
+}
+.link-block__item--d {
+	grid-area: link-block-4;
+}
+*/
+/*
 @media all and (max-width: $bp-m) {
 	.layout-full-width-block__content--intro {
 		flex-direction: column;
@@ -39,3 +118,4 @@
 		margin-right: 0;
 	}
 }
+*/

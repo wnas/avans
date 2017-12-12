@@ -59,14 +59,6 @@ div.content > .container {
 	}
 }
 
-.layout-full-width-block__content--image-blocks {
-	.image-block {
-		width: 50%;
-		&:first-child {
-			margin-right: $spacing-xl;
-		}
-	}
-}
 
 .content {
 	padding-bottom: 2rem;

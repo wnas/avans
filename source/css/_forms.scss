@@ -1,4 +1,5 @@
-.field.field {
+.field.field,
+form {
 	input,
 	textarea {
 		font-size: 1rem;
@@ -6,10 +7,16 @@
 		display: block;
 
 		width: 100%;
+		margin-bottom: 2rem;
 		padding: $spacing;
 
 		border: 1px solid $lighter-gray;
-		border-bottom: 1px solid $avans-blue;
+		border-bottom: 2px solid $avans-blue;
 		background-color: $white;
+	}
+	label {
+		display: block;
+
+		margin-bottom: 1rem;
 	}
 }
