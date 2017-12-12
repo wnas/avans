@@ -4,34 +4,6 @@
 	background-color: $white;
 }
 
-.link-box--opleidingen {
-	display: inline-block;
-
-	width: 748px;
-	margin-right: $spacing-xl;
-}
-@media all and (max-width: $bp-l) {
-	.link-box--opleidingen {
-		width: calc(100% - 2rem);
-		margin: 1rem;
-	}
-}
-
-.link-box--top {
-	width: 60%;
-	margin-right: $spacing-xl;
-}
-@media all and (max-width: $bp-m) {
-	.link-box--top {
-		width: 100%;
-	}
-}
-
-.link-box--news {
-	width: 50%;
-	margin-left: $spacing-l;
-}
-
 .link-box__list {
 	display: flex;
 

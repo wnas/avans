@@ -23,7 +23,19 @@
             { "link": "avans.nl", "content": "Techniek" }
         ]
     },
-    "image-block-class": "fooBar",
+	"image-blocks": [
+		{
+			"class": "foo",
+			"header": "Open avond deeltijd",
+			"time": "7 juni, 18.00 - 21.00"
+		},
+		{
+			"class": "bar",
+			"header": "Open avond voltijd",
+			"time": "23 juni, 18.00 - 21.00"
+		}
+	],
+    "image-block-class": "open-dag",
     "link-box-news": {
         "header": "Nieuws",
         "items": [{

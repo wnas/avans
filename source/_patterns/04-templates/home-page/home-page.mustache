@@ -19,37 +19,34 @@
       {{> molecules-image-block }}
       {{/ image-block-class }}
 
-      </div>
-      <div class="layout-full-width-block__content layout-full-width-block__content--image-blocks">
-        {{> molecules-image-block-sans-footer }}
-        {{> molecules-image-block-sans-footer }}
-      </div>
-      <div class="layout-full-width-block__content ">
+	  {{# image-blocks }}
+	  {{> molecules-image-block-sans-footer }}
+	  {{/ image-blocks }}
+
         <div class="link-block">
-          <h3 class="link-block__header">Meer avans</h3>
+ 		<h3 class="link-block__header">Meer avans</h3>
           <ul class="link-block__list">
-            <li class="link-block__item">
+            <li class="link-block__item link-block__item--a">
               <a class="link-block__link" href="#">
                  <span class="link-block__text">Vacatures</span>
                  <img class='link-block__image' src="../images/link-block/link-block__lady@1x.png"
                  alt="lady" />
               </a>
            </li>
-            <li class="link-block__item"> <a class="link-block__link" href="#">
+            <li class="link-block__item link-block__item--b"> <a class="link-block__link" href="#">
             <span class="link-block__text">Avans duurzaam</span>
             <img class='link-block__image' src="../images/link-block/link-block__lady@1x.png"
              alt="lady" />
           </a></li>
-            <li class="link-block__item"> <a class="link-block__link" href="#">
+            <li class="link-block__item link-block__item--c"> <a class="link-block__link" href="#">
              <span class="link-block__text">Ambitie 2020</span>
              <img class='link-block__image' src="../images/link-block/link-block__lady@1x.png" alt="lady" />
            </a></li>
-            <li class="link-block__item"> <a class="link-block__link" href="#">
+            <li class="link-block__item link-block__item--d"> <a class="link-block__link" href="#">
               <span class="link-block__text">Evenementen</span>
               <img class='link-block__image' src="../images/link-block/link-block__lady@1x.png" alt="lady" />
             </a></li>
           </ul>
-
         </div>
         <article class="link-box link-box--news">
           {{# link-box-news }}
