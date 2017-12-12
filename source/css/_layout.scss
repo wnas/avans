@@ -51,12 +51,6 @@ div.content > .container {
 	margin: 0 auto;
 }
 
-.layout-full-width-block__content {
-	position: relative;
-	.image-block {
-		width: 40%;
-	}
-}
 
 @media all and (max-width: 1140px) and (min-width: $bp-xl) {
 	.layout-full-width-block__content {
@@ -237,7 +231,8 @@ div#main .container_12 {
 	.header__sub-title,
 	.page-menu,
 	.resultpage__content,
-	.resultpage__aside {
+	.resultpage__aside,
+	div.content > .container {
 		max-width: 720px;
 	}
 	.content-page__aside-container {
@@ -265,7 +260,8 @@ div#main .container_12 {
 	.hero__content,
 	.header__sub-title,
 	.submenu__list,
-	.disclaimer__container {
+	.disclaimer__container,
+	div.content > .container {
 		max-width: 960px;
 	}
 }
