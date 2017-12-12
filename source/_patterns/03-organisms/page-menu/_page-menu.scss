@@ -112,6 +112,11 @@ dkdkd
 		transition: top .2s ease, transform .2s ease;
 	}
 
+	.page-menu__item &:after {
+		top: 5px;
+		left: 5px;
+	}
+
 	.open &,
 	&:hover {
 		background-color: $avans-blue;

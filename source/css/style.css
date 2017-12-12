@@ -2183,11 +2183,10 @@ dkdkd
   height: 17px;
   white-space: nowrap;
   text-indent: 2rem;
-  border-radius: 17px;
+  border-radius: 8px;
   background-color: #999;
   background-image: none;
-  position: relative;
-  }
+  position: relative; }
   .toggle:after {
     position: absolute;
     width: 5px;
@@ -2204,6 +2203,9 @@ dkdkd
     transition: top .2s ease, -webkit-transform .2s ease;
     transition: top .2s ease, transform .2s ease;
     transition: top .2s ease, transform .2s ease, -webkit-transform .2s ease; }
+  .page-menu__item .toggle:after {
+    top: 5px;
+    left: 5px; }
   .open .toggle, .toggle:hover {
     background-color: #00aceb; }
     .open .toggle:after, .toggle:hover:after {
@@ -2861,4 +2863,7 @@ a[class]:hover {
     color: transparent;
     outline: 1px solid red;
     background-color: transparent; }
+
+.grid_9 {
+  width: auto; }
 /*# sourceMappingURL=style.css.map */
