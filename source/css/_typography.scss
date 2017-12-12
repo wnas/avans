@@ -13,6 +13,7 @@ h3,
 h4,
 .content__header,
 button,
+label,
 .btn,
 legend,
 .nav__link,
@@ -68,7 +69,9 @@ table {
 
 html,
 body,
-input {
+input,
+button,
+select {
 	font-size: 1em;
 	font-weight: normal;
 

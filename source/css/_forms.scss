@@ -1,0 +1,15 @@
+.field.field {
+	input,
+	textarea {
+		font-size: 1rem;
+
+		display: block;
+
+		width: 100%;
+		padding: $spacing;
+
+		border: 1px solid $lighter-gray;
+		border-bottom: 1px solid $avans-blue;
+		background-color: $white;
+	}
+}

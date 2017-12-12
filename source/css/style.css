@@ -327,6 +327,7 @@ h3,
 h4,
 .content__header,
 button,
+label,
 .btn,
 legend,
 .nav__link,
@@ -375,7 +376,9 @@ table {
 
 html,
 body,
-input {
+input,
+button,
+select {
   font-size: 1em;
   font-weight: normal;
   -webkit-font-smoothing: antialiased; }
@@ -408,6 +411,16 @@ a {
 .entry-content {
   font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
   font-size: 1rem; }
+
+.field.field input,
+.field.field textarea {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.9375rem;
+  border: 1px solid #eee;
+  border-bottom: 1px solid #00aceb;
+  background-color: #fff; }
 
 .input:not([type='checkbox']) {
   display: block;
