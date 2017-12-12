@@ -56,17 +56,20 @@
 	border-width: 1px 1px 0 0;
 }
 
-@mixin small-arrow($border-color: $avans-blue) {
-	position: absolute;
+@mixin small-arrow($border-color: $avans-blue, $rotate: 45deg) {
+	position: relative;
+	&:after {
+		position: absolute;
 
-	width: 5px;
-	height: 5px;
+		width: 5px;
+		height: 5px;
 
-	content: '';
-	transform: rotate(45deg);
+		content: '';
+		transform: rotate($rotate);
 
-	border: 1px solid $border-color;
-	border-width: 1px 1px 0 0;
+		border: 1px solid $border-color;
+		border-width: 1px 1px 0 0;
+	}
 }
 
 @mixin reset-list() {
