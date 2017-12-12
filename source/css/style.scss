@@ -85,17 +85,12 @@ a[class]:hover {
 	min-height: 200px;
 	margin: $spacing;
 
-	outline: 1px solid red;
 	@media all and (min-width: $bp-l) {
 		width: calc(33% - (1.8rem));
-
-		outline-color: green;
 	}
 
 	@media all and (max-width: $bp-s) {
 		width: 100%;
-
-		outline-color: blue;
 	}
 
 
@@ -118,6 +113,13 @@ a[class]:hover {
 			padding: 0 $spacing-l;
 
 			background-color: gray;
+
+			.interessegebied:hover & {
+				background-color: $avans-blue;
+			}
+		}
+		.interessegebied:hover {
+			outline: 1px solid red;
 		}
 		h2 {
 			padding-top: $spacing-s;

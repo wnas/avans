@@ -138,11 +138,6 @@ div.content > .container {
   max-width: 1140px;
   margin: 0 auto; }
 
-.layout-full-width-block__content {
-  position: relative; }
-  .layout-full-width-block__content .image-block {
-    width: 40%; }
-
 @media all and (max-width: 1140px) and (min-width: 1199px) {
   .layout-full-width-block__content {
     padding-right: 0.9375rem;
@@ -264,7 +259,8 @@ div#main .container_12 {
   .header__sub-title,
   .page-menu,
   .resultpage__content,
-  .resultpage__aside {
+  .resultpage__aside,
+  div.content > .container {
     max-width: 720px; }
   .content-page__aside-container {
     display: -webkit-box;
@@ -288,7 +284,8 @@ div#main .container_12 {
   .hero__content,
   .header__sub-title,
   .submenu__list,
-  .disclaimer__container {
+  .disclaimer__container,
+  div.content > .container {
     max-width: 960px; } }
 
 @media all and (max-width: 991px) and (min-width: 767px) {
@@ -618,14 +615,16 @@ a.btn--widget {
   .result-block__link-more:before {
     top: 14px;
     left: 4px;
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    content: '';
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    border: 1px solid #000001;
-    border-width: 1px 1px 0 0; }
+    position: relative; }
+    .result-block__link-more:before:after {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      content: '';
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border: 1px solid #000001;
+      border-width: 1px 1px 0 0; }
 
 @media all and (max-width: 319px) {
   .result-block__link {
@@ -2129,6 +2128,8 @@ dkdkd
   position: relative;
   padding: 0.9375rem 0 0.9375rem 1.875rem;
   border-top: 1px solid #eee; }
+  .page-menu__item.has-sublevel.open {
+    padding-bottom: 0; }
 
 .page-menu__item ul {
   padding-left: 0;
@@ -2136,7 +2137,7 @@ dkdkd
 
 .page-menu__item .toggle {
   position: absolute;
-  top: 11px;
+  top: 1rem;
   right: 0; }
 
 .page-menu__item:before {
@@ -2153,6 +2154,8 @@ dkdkd
 
 .page-menu__item:last-child {
   border-bottom: 1px solid #eee; }
+  .has-sublevel .page-menu__item:last-child {
+    border-bottom: 0; }
 
 .page-menu__link {
   font-size: 0.875rem;
@@ -2167,19 +2170,57 @@ dkdkd
 
 .page-menu {
   position: relative; }
+  .page-menu ul {
+    margin-top: 1rem; }
 
 .page-menu .btn,
 .page-menu .close-icon {
   display: none; }
 
 .toggle {
-  overflow: HIDDEN;
-  width: 1rem;
-  height: 1rem;
+  overflow: hidden;
+  width: 17px;
+  height: 17px;
   white-space: nowrap;
   text-indent: 2rem;
-  border-radius: 1rem;
-  background-color: #999; }
+  border-radius: 17px;
+  background-color: #999;
+  background-image: none;
+  position: relative;
+  }
+  .toggle:after {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    content: '';
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    border: 1px solid #fff;
+    border-width: 1px 1px 0 0; }
+  .toggle:after {
+    top: 3px;
+    left: 4px;
+    -webkit-transition: top .2s ease, -webkit-transform .2s ease;
+    transition: top .2s ease, -webkit-transform .2s ease;
+    transition: top .2s ease, transform .2s ease;
+    transition: top .2s ease, transform .2s ease, -webkit-transform .2s ease; }
+  .open .toggle, .toggle:hover {
+    background-color: #00aceb; }
+    .open .toggle:after, .toggle:hover:after {
+      top: 5px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .accordion .toggle {
+    top: 1rem; }
+
+.accordion a.active {
+  background-color: transparent; }
+
+.accordion ul {
+  padding-left: 0; }
+
+.accordion a {
+  text-decoration: none; }
 
 @media all and (max-width: 1199px) {
   .page-menu__container {
@@ -2773,16 +2814,13 @@ a[class]:hover {
           flex: 0 1 auto;
   width: calc(50% - (1.9rem));
   min-height: 200px;
-  margin: 0.9375rem;
-  outline: 1px solid red; }
+  margin: 0.9375rem; }
   @media all and (min-width: 991px) {
     .col-md-4 {
-      width: calc(33% - (1.8rem));
-      outline-color: green; } }
+      width: calc(33% - (1.8rem)); } }
   @media all and (max-width: 539px) {
     .col-md-4 {
-      width: 100%;
-      outline-color: blue; } }
+      width: 100%; } }
   .col-md-4 .interessegebied {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2805,6 +2843,11 @@ a[class]:hover {
       margin: 0;
       padding: 0 1.25rem;
       background-color: gray; }
+      .interessegebied:hover .col-md-4 .interessegebied h2, .interessegebied:hover
+      .col-md-4 .interessegebied p {
+        background-color: #00aceb; }
+    .col-md-4 .interessegebied .interessegebied:hover {
+      outline: 1px solid red; }
     .col-md-4 .interessegebied h2 {
       padding-top: 0.625rem; }
     .col-md-4 .interessegebied p {

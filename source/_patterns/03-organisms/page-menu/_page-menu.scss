@@ -21,6 +21,9 @@ dkdkd
 	padding: $spacing 0 $spacing $spacing-xl;
 
 	border-top: 1px solid $lighter-gray;
+	&.has-sublevel.open {
+		padding-bottom: 0;
+	}
 }
 
 .page-menu__item {
@@ -29,7 +32,7 @@ dkdkd
 	}
 	.toggle {
 		position: absolute;
-		top: 11px;
+		top: 1rem;
 		right: 0;
 	}
 }
@@ -51,6 +54,10 @@ dkdkd
 
 .page-menu__item:last-child {
 	border-bottom: 1px solid $lighter-gray;
+	// 2017
+	.has-sublevel & {
+		border-bottom: 0;
+	}
 }
 
 .page-menu__link {
@@ -71,7 +78,9 @@ dkdkd
 
 .page-menu {
 	position: relative;
-	//@extend .testing;
+	ul {
+		margin-top: 1rem;
+	}
 }
 
 .page-menu {
@@ -82,16 +91,54 @@ dkdkd
 }
 
 .toggle {
-	overflow: HIDDEN;
+	overflow: hidden;
 
-	width: 1rem;
-	height: 1rem;
+	width: 17px;
+	height: 17px;
 
 	white-space: nowrap;
 	text-indent: 2rem;
 
-	border-radius: 1rem;
+	border-radius: 8px;
 	background-color: $light-gray;
+	background-image: none;
+
+	@include small-arrow(#fff, 135deg);
+
+	&:after {
+		top: 3px;
+		left: 4px;
+
+		transition: top .2s ease, transform .2s ease;
+	}
+
+	.open &,
+	&:hover {
+		background-color: $avans-blue;
+		&:after {
+			top: 5px;
+
+			transform: rotate(-45deg);
+		}
+	}
+	// 2017
+	.accordion & {
+		top: 1rem;
+	}
+}
+
+
+// combatting 2017 code
+.accordion {
+	a.active {
+		background-color: transparent;
+	}
+	ul {
+		padding-left: 0;
+	}
+	a {
+		text-decoration: none;
+	}
 }
 @media all and (max-width: $bp-xl) {
 	.page-menu__container {
