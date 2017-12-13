@@ -13,7 +13,8 @@ dkdkd
 	@include reset-list();
 }
 // combat 2017 css
-.page-menu__item {
+.page-menu__item,
+.spacer {
 	line-height: 1.2;
 
 	position: relative;
@@ -24,6 +25,10 @@ dkdkd
 	&.has-sublevel.open {
 		padding-bottom: 0;
 	}
+}
+
+.spacer {
+	height: 2.5rem;
 }
 
 .page-menu__item {

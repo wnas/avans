@@ -19,7 +19,7 @@ $widget-spacing: $spacing-s;
 	//@extend .testing;
 }
 
-.widget a {
+.widget li a {
 	text-decoration: none;
 }
 
@@ -180,7 +180,7 @@ $widget-spacing: $spacing-s;
 	*/
 
 
-.links__list--follow {
+.widget .links__list--follow {
 	padding: $widget-spacing 0;
 
 	border: 1px solid $lighter-gray;

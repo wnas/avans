@@ -39,7 +39,7 @@ main {
 		padding: 0;
 	}
 }
-
+.slides_container,
 .hero__content,
 .header__sub-title,
 .layout-full-width-block__content,
@@ -105,6 +105,9 @@ div#main .container_12 {
 	padding-right: 0;
 }
 
+.service-page-header {
+	margin-top: 1.875rem;
+}
 .breakout-box {
 	z-index: 5;
 

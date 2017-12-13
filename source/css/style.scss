@@ -145,9 +145,36 @@ a[class]:hover {
 		background-color: transparent;
 	}
 }
-
+.box-program-courses {
+	overflow: visible;
+}
+.box-teaser-list {
+	padding: 0;
+}
 // locaties
-.grid_9 {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	float: none;
+
 	width: auto;
+	padding: 0;
+}
+.group:before,
+.group:after,
+.nav:before,
+.nav:after,
+.container_12:before,
+.container_12:after {
+	display: none;
 }
 // see in layout.scss

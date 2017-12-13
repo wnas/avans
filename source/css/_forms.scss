@@ -1,6 +1,6 @@
 .field.field,
 form {
-	input,
+	input:not([class]),
 	textarea {
 		font-size: 1rem;
 
@@ -14,7 +14,7 @@ form {
 		border-bottom: 2px solid $avans-blue;
 		background-color: $white;
 	}
-	label {
+	label:not([class]) {
 		display: block;
 
 		margin-bottom: 1rem;

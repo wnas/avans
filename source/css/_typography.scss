@@ -13,7 +13,7 @@ h3,
 h4,
 .content__header,
 button,
-label,
+label:not([class]),
 .btn,
 input[type='submit'],
 legend,
@@ -54,6 +54,7 @@ input,
 	font-weight: normal;
 }
 
+.main-content,
 .main-content p,
 .main-content li,
 .main-content a:not([class]),
