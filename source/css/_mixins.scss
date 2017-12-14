@@ -58,7 +58,7 @@
 
 @mixin small-arrow($border-color: $avans-blue, $rotate: 45deg) {
 	position: relative;
-	&:after {
+	&:before {
 		position: absolute;
 
 		width: 5px;

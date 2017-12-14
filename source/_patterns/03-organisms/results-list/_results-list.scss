@@ -2,3 +2,28 @@
 .result__list {
 	padding-left: 0;
 }
+
+.result__list--grid {
+	display: flex;
+
+	flex-wrap: wrap;
+	.result-block {
+		flex: 0 1 auto;
+
+		max-width: 50%;
+		padding-bottom: 0;
+	}
+	.result-block__link {
+		display: flex;
+		flex-direction: column;
+
+		padding: $spacing;
+	}
+	.result-block__content-container {
+		width: 100%;
+		margin-left: 0;
+	}
+	.result-block__image-container {
+		min-width: 100%;
+	}
+}

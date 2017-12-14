@@ -128,7 +128,10 @@ main {
   .layout-full-width-block {
     padding: 0; } }
 
-.slides_container,
+.box-carousel {
+  background-color: #c6002a; }
+
+.box-carousel .slide.text,
 .hero__content,
 .header__sub-title,
 .layout-full-width-block__content,
@@ -138,6 +141,9 @@ div.content > .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto; }
+
+.box-carousel .slide.text {
+  position: static; }
 
 @media all and (max-width: 1140px) and (min-width: 1199px) {
   .layout-full-width-block__content {
@@ -308,11 +314,19 @@ div#main .container_12 {
     overflow: scroll;
     width: 100%; } }
 
-@media all and (min-width: 767px) {
-  .layout-2col .container_12 {
+@media all and (min-width: 991px) {
+  .landing-page {
     display: grid;
-    outline: 1px solid red;
-    grid-template-columns: 60% 40%; } }
+    grid-template-columns: 40% 60%; }
+    .landing-page #main {
+      max-width: 750px; }
+    .landing-page .box-carousel {
+      margin-bottom: 0; }
+    .landing-page .box-carousel .slide.text .outer {
+      position: static;
+      display: block;
+      padding-top: 2rem;
+      text-align: right; } }
 
 /*
 font-family:'Frutiger LT W01_66 Bold Italic';
@@ -331,9 +345,11 @@ h4,
 button,
 label:not([class]),
 .btn,
+.btn-black,
 input[type='submit'],
 legend,
 .slide p,
+.widget h1,
 .nav__link,
 .header-font,
 .paragraph--intro,
@@ -627,8 +643,10 @@ a.btn--widget {
 
 .result-block__link:hover .result-block__header,
 .result-block__link:hover .result-block__link-more {
-  text-decoration: underline;
   color: #00aceb; }
+
+.result-block__link:hover .result-block__link-more {
+  text-decoration: underline; }
 
 .result-block__link:hover .result-block__link-more:after {
   border-color: #00aceb; }
@@ -643,20 +661,21 @@ a.btn--widget {
 .result-block__link-more {
   position: relative;
   padding-left: 1.25rem;
-  color: #00aceb; }
+  color: #00aceb;
+  position: relative; }
   .result-block__link-more:before {
-    top: 14px;
-    left: 4px;
-    position: relative; }
-    .result-block__link-more:before:after {
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      content: '';
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg);
-      border: 1px solid #000001;
-      border-width: 1px 1px 0 0; }
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    content: '';
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    border: 1px solid #000001;
+    border-width: 1px 1px 0 0; }
+
+.result-block__link-more:before {
+  top: 12px;
+  left: 4px; }
 
 @media all and (max-width: 319px) {
   .result-block__link {
@@ -1825,6 +1844,33 @@ th {
 .result__list {
   padding-left: 0; }
 
+.result__list--grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .result__list--grid .result-block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    max-width: 50%;
+    padding-bottom: 0; }
+  .result__list--grid .result-block__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0.9375rem; }
+  .result__list--grid .result-block__content-container {
+    width: 100%;
+    margin-left: 0; }
+  .result__list--grid .result-block__image-container {
+    min-width: 100%; }
+
 @media all and (max-width: 991px) {
   header .nav.js-open,
   header .nav:target {
@@ -2199,7 +2245,7 @@ dkdkd
   background-color: #999;
   background-image: none;
   position: relative; }
-  .toggle:after {
+  .toggle:before {
     position: absolute;
     width: 5px;
     height: 5px;
@@ -2963,4 +3009,6 @@ a[class]:hover {
 
 .foo {
   outline: 1px solid green; }
+  .foo.bar {
+    outline: 3px dotted red; }
 /*# sourceMappingURL=style.css.map */

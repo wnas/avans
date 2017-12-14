@@ -47,9 +47,10 @@
 .result-block__link:hover {
 	.result-block__header,
 	.result-block__link-more {
-		text-decoration: underline;
-
 		color: $avans-blue;
+	}
+	.result-block__link-more {
+		text-decoration: underline;
 	}
 	.result-block__link-more:after {
 		border-color: $avans-blue;
@@ -74,12 +75,11 @@
 
 	color: $avans-blue;
 
-	&:before {
-		top: 14px;
-		left: 4px;
-
-		@include small-arrow($text-color);
-	}
+	@include small-arrow($text-color);
+}
+.result-block__link-more:before {
+	top: 12px;
+	left: 4px;
 }
 
 @media all and (max-width: $bp-xs) {

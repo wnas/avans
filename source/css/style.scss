@@ -178,8 +178,12 @@ a[class]:hover {
 .container_12:after {
 	display: none;
 }
+
 // see in layout.scss
 
 .foo {
 	outline: 1px solid green;
+	&.bar {
+		outline: 3px dotted red;
+	}
 }

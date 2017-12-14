@@ -1,11 +1,27 @@
 // landing-page
 
-@media all and (min-width: $bp-m) {
+@media all and (min-width: $bp-l) {
 	.layout-2col .container_12 {
+	}
+
+	.landing-page {
 		display: grid;
 
-		outline: 1px solid red;
+		grid-template-columns: 40% 60%;
+		#main {
+			max-width: 750px;
+		}
+		.box-carousel {
+			margin-bottom: 0;
+		}
+		.box-carousel .slide.text .outer {
+			position: static;
 
-		grid-template-columns: 60% 40%;
+			display: block;
+
+			padding-top: 2rem;
+
+			text-align: right;
+		}
 	}
 }

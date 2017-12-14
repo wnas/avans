@@ -39,7 +39,10 @@ main {
 		padding: 0;
 	}
 }
-.slides_container,
+.box-carousel {
+	background-color: #c6002a;
+}
+.box-carousel .slide.text,
 .hero__content,
 .header__sub-title,
 .layout-full-width-block__content,
@@ -49,6 +52,10 @@ div.content > .container {
 	width: 100%;
 	max-width: $width__overal;
 	margin: 0 auto;
+}
+
+.box-carousel .slide.text {
+	position: static;
 }
 
 
