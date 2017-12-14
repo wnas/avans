@@ -4,6 +4,7 @@
 @import 'base';
 @import 'mixins';
 @import 'layout';
+@import 'landing-page';
 @import 'typography';
 @import 'forms';
 
@@ -178,3 +179,7 @@ a[class]:hover {
 	display: none;
 }
 // see in layout.scss
+
+.foo {
+	outline: 1px solid green;
+}

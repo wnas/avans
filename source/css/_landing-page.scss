@@ -1,0 +1,11 @@
+// landing-page
+
+@media all and (min-width: $bp-m) {
+	.layout-2col .container_12 {
+		display: grid;
+
+		outline: 1px solid red;
+
+		grid-template-columns: 60% 40%;
+	}
+}
