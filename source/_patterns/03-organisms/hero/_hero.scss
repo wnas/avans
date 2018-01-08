@@ -112,9 +112,8 @@
 .header__sub-title.header__sub-title {
 	font-size: $fs-xs;
 
-	margin-bottom: .5rem;
+	margin-bottom: .1rem;
 
-	text-transform: uppercase;
 	@media all and (min-width: $bp-xl) {
 		display: none;
 	}
