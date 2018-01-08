@@ -10,3 +10,5 @@ Thumbs.db
 .idea/
 public
 source/archive
+// no more css in git...
+*.css
