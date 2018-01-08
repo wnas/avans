@@ -20,6 +20,7 @@
 /*
   mixins
   */
+// extend
 .blue-arrow {
 	background-image: url('../images/icons/ICON-Arrow-Right-Blue.svg');
 	background-repeat: no-repeat;
@@ -37,6 +38,8 @@
 	background-repeat: no-repeat;
 	background-position: 0 50%;
 }
+
+// mixin
 
 @mixin hideVisually() {
 	position: absolute;

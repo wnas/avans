@@ -112,8 +112,10 @@ div#main .container_12 {
 	padding-right: 0;
 }
 
-.service-page-header {
-	margin-top: 1.875rem;
+@media all and (min-width: $bp-xl) {
+	.service-page-header {
+		margin-top: 1.875rem;
+	}
 }
 .breakout-box {
 	z-index: 5;
