@@ -25,3 +25,9 @@
 		}
 	}
 }
+@media all and (max-width: $bp-m) {
+	.box-carousel.large .slide.text p,
+	.box-carousel.medium .slide.text p {
+		font-size: 2rem;
+	}
+}

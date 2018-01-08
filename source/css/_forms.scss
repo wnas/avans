@@ -1,5 +1,6 @@
 .field.field,
 form {
+	.input,
 	input:not([class]),
 	textarea {
 		font-size: 1rem;
@@ -7,12 +8,16 @@ form {
 		display: block;
 
 		width: 100%;
+		margin: 0;
 		margin-bottom: 2rem;
 		padding: $spacing;
 
 		border: 1px solid $lighter-gray;
 		border-bottom: 2px solid $avans-blue;
 		background-color: $white;
+	}
+	input.input--checkbox {
+		width: auto;
 	}
 	label:not([class]) {
 		display: block;

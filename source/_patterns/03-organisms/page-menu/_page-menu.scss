@@ -1,5 +1,5 @@
 /*
-dkdkd
+
 */
 .page-menu-block__header {
 	font-size: $page-menu-header;
@@ -110,14 +110,14 @@ dkdkd
 
 	@include small-arrow(#fff, 135deg);
 
-	&:after {
+	&:before {
 		top: 3px;
 		left: 4px;
 
 		transition: top .2s ease, transform .2s ease;
 	}
 
-	.page-menu__item &:after {
+	.page-menu__item &:before {
 		top: 5px;
 		left: 5px;
 	}
@@ -125,7 +125,7 @@ dkdkd
 	.open &,
 	&:hover {
 		background-color: $avans-blue;
-		&:after {
+		&:before {
 			top: 5px;
 
 			transform: rotate(-45deg);

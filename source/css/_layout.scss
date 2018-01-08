@@ -248,9 +248,14 @@ div#main .container_12 {
 	.page-menu {
 		margin: 0 auto;
 	}
+	.hst-container-item,
 	.widget {
 		width: calc(50% - 1rem);
 		max-width: calc(50% - 1rem);
+	}
+	.hst-container-item .widget {
+		width: 100%;
+		max-width: 100%;
 	}
 	.widget:nth-child(even) {
 		margin-left: $spacing-xl;
@@ -289,7 +294,7 @@ div#main .container_12 {
 @media all and (min-width: 556px) {
 	.content-page__content {
 		min-width: 556px;
-		margin: 0 auto;
+		margin: 0 auto $spacing-xl auto;
 	}
 }
 

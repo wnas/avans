@@ -21,7 +21,6 @@ label:not([class]),
 input[type='submit'],
 // fix
 legend,
-.slide p,
 // fix
 .widget h1,
 // fix
@@ -35,6 +34,10 @@ legend,
 .header__sub-title {
 	font-family: 'Frutiger LT W01_65 Bold1475746', helvetica, sans-serif;
 	font-weight: normal;
+}
+
+.slide p {
+	font-family: 'Frutiger LT W01_77 Black Cond', helvetica, sans-serif;
 }
 
 h1,
@@ -110,6 +113,7 @@ p + h3 {
 	margin-top: 3rem;
 }
 p,
+.content-page__content,
 .content-page__content li:not(.pagination__item) {
 	line-height: 2rem;
 }
