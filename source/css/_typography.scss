@@ -11,6 +11,7 @@ h1,
 h2,
 h3,
 h4,
+b,
 .content__header,
 button,
 label:not([class]),
@@ -31,7 +32,8 @@ legend,
 .page-menu__link--active,
 .schedule__header--head,
 .result-block .result-block__title,
-.header__sub-title {
+.header__sub-title,
+.skip-link {
 	font-family: 'Frutiger LT W01_65 Bold1475746', helvetica, sans-serif;
 	font-weight: normal;
 }

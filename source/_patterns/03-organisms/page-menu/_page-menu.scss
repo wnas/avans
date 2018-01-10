@@ -256,6 +256,7 @@
 		}
 
 		.skip-link {
+			color: $text-color;
 			background-size: 1rem;
 		}
 	}
@@ -282,5 +283,30 @@
 @media all and (max-width: $bp-m) {
 	.page-menu {
 		flex-direction: row;
+
+		margin: 1rem 0 0 0;
+		padding: 0;
+
+		border-color: transparent;
+
+		.skip-link {
+			width: 100%;
+			margin-right: 0;
+
+			text-align: left;
+
+			border: 1px solid $lighter-gray;
+			border-width: 1px 0;
+			&:after {
+				right: 1rem;
+			}
+		}
+
+		.btn {
+			margin: $spacing;
+		}
+	}
+	.page-menu-block__header {
+		padding: 0 1rem;
 	}
 }
