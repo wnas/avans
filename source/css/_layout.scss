@@ -133,68 +133,77 @@ div#main .container_12 {
 	background-color: #fff;
 }
 
+$nav: 263px;
+$main: 556px;
 
-
+//@supports(display: grid) {
 @media all and (min-width: $bp-xl) {
+	// fix for 2017 css
+	div#main:not(.layout-2col) > .container_12,
 	.content-page {
-		display: flex;
+		display: -ms-grid;
+		display:     grid;
+
+		grid-gap: 0 20px;
+		grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
+		grid-template-columns: $nav $main $sidebar;
+		grid-template-rows: auto 1fr;
 	}
-}
-@supports(display: grid) {
-	$nav: 263px;
-	$main: 556px;
-	@media all and (min-width: $bp-xl) {
-		// fix for 2017 css
-		div#main:not(.layout-2col) > .container_12,
-		.content-page {
-			display: grid;
 
-			grid-gap: 0 20px;
-			grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
-			grid-template-columns: $nav $main $sidebar;
-			grid-template-rows: auto 1fr;
-		}
+	div#main > #contact-locations-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto;
 
-		div#main > #contact-locations-grid {
-			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: auto;
+		&:before {
+			display: none;
 
-			&:before {
-				display: none;
-
-				content: '';
-			}
-			// .grid_4 {
-			// 	float: none;
-			//
-			// 	width: 100%;
-			// }
-			.equal-heights {
-				height: auto !important;
-			}
+			content: '';
 		}
-		.page-menu {
-			grid-area: nav;
-		}
-		.main-content {
-			grid-area: main;
-		}
-		.content-page__aside {
-			grid-area: aside;
-		}
-		.service-page-header {
-			grid-area: wide-header;
-		}
-		// fix for 2016 css
-		div#main .container_12 > .grid_3 {
-			grid-area: nav;
-		}
-
-		div#main .container_12 > .grid_9 {
-			grid-area: wide-header;
+		// .grid_4 {
+		// 	float: none;
+		//
+		// 	width: 100%;
+		// }
+		.equal-heights {
+			height: auto !important;
 		}
 	}
+	.page-menu {
+		grid-area: nav;
+		// only for edge
+		-ms-grid-row: 1;
+		-ms-grid-row-span: 5;
+		-ms-grid-column: 1;
+	}
+	.main-content {
+		grid-area: main;
+		// only for edge
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+	}
+	.content-page__aside {
+		grid-area: aside;
+		// only for edge
+		-ms-grid-row: 3;
+		-ms-grid-column: 5;
+	}
+	.service-page-header {
+		grid-area: wide-header;
+		// only for edge
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+		-ms-grid-column-span: 3;
+	}
+	// fix for 2016 css
+	div#main .container_12 > .grid_3 {
+		grid-area: nav;
+	}
+
+	div#main .container_12 > .grid_9 {
+		grid-area: wide-header;
+	}
 }
+//}
 @media all and (min-width: $bp-xl) {
 	.content-page__menu {
 		padding-left: 0;
