@@ -1,0 +1,20 @@
+//
+.grid {
+	display: flex;
+
+	margin: 0;
+	padding-left: 0;
+
+	list-style: none;
+
+	justify-content: space-between;
+}
+
+.grid__item {
+	color: $text-color;
+	background-color: $lighter-gray;
+
+	&:hover {
+		background-color: $avans-blue;
+	}
+}

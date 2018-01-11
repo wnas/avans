@@ -1,0 +1,21 @@
+//
+.grid__link:hover {
+	color: $white;
+}
+
+.grid__content {
+	width: 263px;
+}
+
+.grid__caption {
+	padding: $spacing;
+	&:before {
+		content: '> ';
+
+		color: $avans-blue;
+
+		.grid__item:hover & {
+			color: $white;
+		}
+	}
+}

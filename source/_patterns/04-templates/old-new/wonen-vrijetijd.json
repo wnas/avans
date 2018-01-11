@@ -1,0 +1,76 @@
+{
+	"article-header": "Wonen en vrije tijd",
+	"page-menu-class": "content-page__menu",
+	"page-menu-block": [{
+			"block-title": "Wonen en vrijetijd",
+			"items": [{
+					"href": "#",
+					"text": "Introductie",
+					"active": "true"
+				},
+				{
+					"href": "#",
+					"text": "Opbouw"
+				},
+				{
+					"href": "#",
+					"text": "Buitenland"
+				},
+				{
+					"href": "#",
+					"text": "Wat anderen zeggen"
+				},
+				{
+					"href": "#",
+					"text": "Projecten"
+				},
+				{
+					"href": "#",
+					"text": "Studie in cijfers"
+				},
+				{
+					"href": "#",
+					"text": "Verenigingen"
+				},
+				{
+					"href": "#",
+					"text": "Nieuws"
+				}
+			]
+		},
+		{
+			"block-title": "Na de opleiding",
+			"items": [{
+					"href": "#",
+					"text": "Beroepen"
+				},
+				{
+					"href": "#",
+					"text": "Vervolgstudies"
+				}
+			]
+		}
+	],
+
+		"items": [
+			{
+				"href": "#",
+				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-markt-gezellig.jpg",
+				"alt": "alt tekst",
+				"caption": "Leven in Breda"
+			},
+			{
+	"href": "#",
+				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/denbosch-220x140.jpg",
+				"alt": "alt tekst",
+				"caption": "Leven in 's-Hertogenbosch'"
+			},
+			{
+				"href": "#",
+				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/tilburg-g-220x140-.jpg",
+				"alt": "alt tekst",
+				"caption": "Leven in Tilburg"
+			}
+		]
+
+}

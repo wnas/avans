@@ -1,0 +1,37 @@
+//
+.accordion .has-sublevel {
+	position: relative;
+}
+.accordion .toggle.toggle {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 2rem;
+
+	text-indent: 999em;
+
+	outline: 1px solid red;
+	background: none;
+
+	whitespace: no-wrap;
+	&:after {
+		position: absolute;
+		top: 1rem;
+		right: 5px;
+
+		display: block;
+		overflow: hidden;
+
+		width: 13px;
+		height: 13px;
+
+		content: '';
+
+		outline: 1px solid green;
+		background-image: url(../img/sprites/site.png);
+		background-repeat: no-repeat;
+		background-position: -546px -467px;
+	}
+}

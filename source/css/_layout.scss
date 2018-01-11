@@ -135,19 +135,26 @@ div#main .container_12 {
 
 $nav: 263px;
 $main: 556px;
-
+$extendmain: 839px;
 //@supports(display: grid) {
 @media all and (min-width: $bp-xl) {
 	// fix for 2017 css
 	div#main:not(.layout-2col) > .container_12,
-	.content-page {
+	.content-page,
+	.service-page {
 		display: -ms-grid;
 		display:     grid;
 
 		grid-gap: 0 20px;
+	}
+	.content-page {
 		grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
 		grid-template-columns: $nav $main $sidebar;
 		grid-template-rows: auto 1fr;
+	}
+	.service-page {
+		grid-template-areas: 'nav main';
+		grid-template-columns: $nav $extendmain;
 	}
 
 	div#main > #contact-locations-grid {
