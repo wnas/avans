@@ -14,7 +14,8 @@
 	color: $text-color;
 	background-color: $lighter-gray;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-color: $avans-blue;
 	}
 }

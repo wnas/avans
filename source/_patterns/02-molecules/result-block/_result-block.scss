@@ -34,6 +34,11 @@
 	margin-bottom: 0;
 }
 
+.result-block__date-news {
+	font-size: $fs-s;
+
+	color: $light-gray;
+}
 .result-block__link {
 	display: flex;
 
@@ -47,10 +52,9 @@
 .result-block__link:hover {
 	.result-block__header,
 	.result-block__link-more {
-		color: $avans-blue;
-	}
-	.result-block__link-more {
 		text-decoration: underline;
+
+		color: $avans-blue;
 	}
 	.result-block__link-more:after {
 		border-color: $avans-blue;
@@ -69,6 +73,8 @@
 }
 
 .result-block__link-more {
+	line-height: initial;
+
 	position: relative;
 
 	padding-left: $spacing-l;
