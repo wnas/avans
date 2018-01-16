@@ -15,11 +15,13 @@ body {
 }
 */
 // atoms
-@import '../_patterns/01-atoms/form-elements/input';
 @import '../_patterns/01-atoms/button/button';
-@import '../_patterns/01-atoms/grid-item/grid-item';
 @import '../_patterns/01-atoms/filter/filter';
+@import '../_patterns/01-atoms/form-elements/input';
+@import '../_patterns/01-atoms/googlemaps/googlemaps';
+@import '../_patterns/01-atoms/grid-item/grid-item';
 @import '../_patterns/01-atoms/headers/page-header';
+@import '../_patterns/01-atoms/image/image';
 @import '../_patterns/01-atoms/logo/logo';
 
 // molecules

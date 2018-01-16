@@ -1,0 +1,21 @@
+/*
+	for iframes with google maps
+
+	https://www.labnol.org/internet/embed-responsive-google-maps/28333/
+*/
+.google-maps {
+	position: relative;
+
+	overflow: hidden;
+
+	height: 0;
+	padding-bottom: 75%; // This is the aspect ratio
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100% !important;
+	height: 100% !important;
+}
