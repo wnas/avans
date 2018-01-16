@@ -107,6 +107,7 @@ div#main .container_12 {
 	padding: $spacing-xl $spacing-l $spacing;
 }
 @media all and (max-width: $bp-m) {
+	.simple-content-page__content,
 	.content-page__content {
 		padding-top: $spacing;
 	}
@@ -141,7 +142,7 @@ $extendmain: 839px;
 	// fix for 2017 css
 	div#main:not(.layout-2col) > .container_12,
 	.content-page,
-	.service-page {
+	.content-page-simple {
 		display: -ms-grid;
 		display:     grid;
 
@@ -152,7 +153,7 @@ $extendmain: 839px;
 		grid-template-columns: $nav $main $sidebar;
 		grid-template-rows: auto 1fr;
 	}
-	.service-page {
+	.content-page-simple {
 		grid-template-areas: 'nav main';
 		grid-template-columns: $nav $extendmain;
 	}
@@ -256,6 +257,7 @@ $extendmain: 839px;
 @media all and (max-width: $bp-l) and (min-width: $bp-m) {
 	.content-page__aside-container,
 	.content-page__content,
+	.simple-content-page__content,
 	.header,
 	.header__sub-title,
 	.page-menu,
@@ -317,7 +319,8 @@ $extendmain: 839px;
 }
 
 @media all and (min-width: 556px) {
-	.content-page__content {
+	.content-page__content,
+	.simple-content-page__content {
 		min-width: 556px;
 		margin: 0 auto $spacing-xl auto;
 	}

@@ -9,11 +9,11 @@
 @import 'forms';
 
 @import 'accordion';
-
+/*
 body {
-	//  @extend .testing;
+	@extend .testing;
 }
-
+*/
 // atoms
 @import '../_patterns/01-atoms/form-elements/input';
 @import '../_patterns/01-atoms/button/button';
@@ -24,6 +24,7 @@ body {
 
 // molecules
 @import '../_patterns/02-molecules/button-bar/button-bar';
+@import '../_patterns/02-molecules/faq-item/faq-item';
 @import '../_patterns/02-molecules/result-block/result-block';
 @import '../_patterns/02-molecules/link-block/link-block';
 @import '../_patterns/02-molecules/filters/filters';

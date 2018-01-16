@@ -74,7 +74,8 @@ input,
 .main-content li,
 .main-content a:not([class]),
 .widget__link,
-table {
+table,
+.grid__caption:before {
 	font-family: 'Frutiger LT W01_45 Ligh1475730', helvetica, sans-serif;
 }
 

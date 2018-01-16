@@ -3,10 +3,12 @@
 .grid__link:focus {
 	color: $white;
 }
-
-.grid__content {
-	width: 263px;
+@media all and (min-width: $bp-l) {
+	.grid__link {
+		max-width: 263px;
+	}
 }
+
 
 .grid__image-container {
 	position: relative;
@@ -29,7 +31,7 @@
 	}
 }
 .grid__image {
-	height: 175px;
+	max-height: 175px;
 }
 .grid__caption {
 	padding: $spacing;
