@@ -13,7 +13,12 @@ td,
 th {
 	padding: $spacing-xs 0;
 
-	border-bottom: 1px solid #eee;
+	border: 1px solid #eee;
+	border-width: 0 0 1px 0;
+}
+// 2017 css
+.box-program-courses .block {
+	border-left-width: 0;
 }
 
 .schedule__header,
@@ -53,12 +58,16 @@ th {
 }
 
 .schedule__slot--active .schedule__slot-content {
+	position: static;
+
 	display: block;
 
+	width: calc(100% - 1rem);
+	height: auto;
 	margin: .25rem 0;
 
 	color: #999;
-	background-color: #999;
+	background: #999;
 }
 
 .schedule {
@@ -69,14 +78,10 @@ th {
 .schedule__head {
 	position: sticky;
 	top: 0;
-
-	// outline: 1px solid red;
 }
 .schedule__head th {
 	position: sticky;
 	top: 0;
-
-	// outline: 1px solid green;
 }
 
 @media all and (max-width: $bp-m) {
@@ -103,4 +108,9 @@ th {
 
 		// width: 100%;
 	}
+}
+
+.box-program-courses table span,
+.box-program-courses .block {
+	width: auto;
 }

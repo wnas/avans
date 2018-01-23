@@ -1,15 +1,18 @@
-<div class="image-block image-block--sans-footer {{ class }}">
-  <figure class="image-block__figure">
-    <img class='image-block__image' src="../../images/image-block/samenwerken/samenwerken.png" alt="samenwerken" />
-    <figcaption class="image-block__header-block">
-      <h3 class=="image-block__header">{{ header}}</h3>
-      <!-- /image-block__header -->
-      <p class="image-block__sub-text">{{ time }}</p>
-      <!-- /image-block__sub-text -->
-    </figcaption>
-    <!-- /image-block__header-block -->
-    <a href="#" class="btn btn--image-block">Meer informatie</a>
-  </figure>
-  <!-- /image-block__figure -->
+<div class="image-block image-block--sans-footer {{ image-block-class }}" style="background-image: url({{ image-block-image }})">
+	<div class="image-block__content">
+		<h3 class="image-block__header">{{ image-block-header}}</h3>
+		<!-- /image-block__header -->
+
+		<p class="image-block__sub-text ">{{ image-block-sub }}</p>
+		<!-- /image-block__sub-text -->
+	</div>
+	<!-- /image-block__header-block -->
+
+	<div class="image-block__buttons">
+	{{# image-block-button }}
+		{{> atoms-button }}
+	{{/ image-block-button }}
+</div>
+
 </div>
 <!-- /image-block -->

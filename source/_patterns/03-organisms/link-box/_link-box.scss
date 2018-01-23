@@ -2,6 +2,9 @@
 	padding: $spacing-xl;
 
 	background-color: $white;
+	& .link-box {
+		padding: 0;
+	}
 }
 
 .link-box__list {
@@ -27,6 +30,9 @@
 
 	.col-2 & {
 		width: 50%;
+		@media all and (max-width: $bp-s) {
+			width: 100%;
+		}
 	}
 }
 

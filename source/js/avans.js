@@ -75,7 +75,7 @@ var avans = (function() {
             var w = document.querySelector('body').clientWidth;
             var aside = document.querySelector('.content-page__aside')
             var pm = document.getElementById('page-menu');
-            if (w < config.screensizes.xl) {
+            if (w < config.screensizes.xl && aside !== null) {
                 var cloneMenu = pm.cloneNode(true);
                 cloneMenu.id = 'clone';
                 cloneMenu.classList.add('page-menu--clone');

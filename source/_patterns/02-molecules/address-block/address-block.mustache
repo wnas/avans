@@ -1,0 +1,22 @@
+{{> atoms-googlemaps }}
+<section class="h-cards__container">
+	{{# addresses }}
+	<div class="h-card address">
+		<h2 class="address__header">{{ header }}</h2>
+		<ul class="address__list">
+			{{# items }}
+			 <li class="address__item">
+				 {{# h-adr }}
+				 	{{> atoms-address }}
+				 {{/ h-adr }}
+				 {{# link }}
+				 	<a href="{{ href }}" class="avans-link">
+						{{ value }}
+					</a>
+				 {{/ link }}
+			 </li>
+			{{/ items }}
+		</ul>
+	</div>
+	{{/ addresses }}
+</section>

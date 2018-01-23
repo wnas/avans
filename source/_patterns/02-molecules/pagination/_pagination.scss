@@ -14,6 +14,9 @@
 }
 
 .pagination__link {
+	// fix 2017 css
+	line-height: initial;
+
 	display: block;
 
 	width: 2rem;

@@ -2,6 +2,7 @@
 
 
 .avans-homepage {
+	background-color: lightblue;
 	.main-content > div {
 		position: relative;
 		z-index: 5;
@@ -10,8 +11,6 @@
 
 		margin-top: -100px;
 
-		outline: 1px solid red;
-
 		grid-gap: 20px;
 		grid-template-areas: 'linkbox-1'
 		'image-block-1'
@@ -19,37 +18,50 @@
 		'image-block-3'
 		'linkblock'
 		'linkbox-2';
+		@media all and (max-width: $bp-s) {
+			margin-top: .9375rem;
+		}
 	}
 	.link-box--top {
 		grid-area: linkbox-1;
 	}
-	.open-dag {
+	.image-block {
+		min-width: 100%;
+	}
+	.image-block--open-dag {
 		margin-top: 0;
-		padding: 0;
 
 		grid-area: image-block-1;
 	}
-	.foo {
+	.image-block--samenwerken {
 		grid-area: image-block-2;
 	}
-	.bar {
+	.image-block--bedrijven {
 		grid-area: image-block-3;
 	}
 
 	.link-block {
 		grid-area: linkblock;
 	}
+	@media all and (max-width: $bp-l) {
+		.grid__content {
+			display: flex;
+		}
+		.grid__image {
+			max-width: 95px;
+		}
+	}
 	.link-box--news {
-		padding: 0;
-
 		grid-area: linkbox-2;
 	}
 }
 @media all and (min-width: $bp-s) {
 	.avans-homepage {
 		.main-content > div {
+			margin-top: -50px;
+
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: auto 369px 369px auto 1fr;
+			grid-template-rows: auto 379px 309px auto 1fr;
 			grid-template-areas: 'linkbox-1 linkbox-1'
 			'image-block-1 	image-block-1'
 			'image-block-2 	image-block-3'
@@ -59,14 +71,17 @@
 	}
 }
 
-@media all and (min-width: $bp-m) {
+@media all and (min-width: $bp-l) {
 	.avans-homepage {
 		.main-content > div {
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto 369px 1fr;
+			grid-template-rows: auto 309px 1fr;
 			grid-template-areas: 'linkbox-1 linkbox-1 linkbox-1 linkbox-1 image-block-1 image-block-1'
 			'image-block-2 image-block-2 image-block-2 image-block-3 image-block-3 image-block-3'
 			'linkblock linkblock linkbox-2 linkbox-2 linkbox-2 linkbox-2';
+		}
+		.grid__link {
+			max-width: 100%;
 		}
 	}
 }

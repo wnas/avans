@@ -1,8 +1,8 @@
 // avans
 @import 'variables';
 @import 'colors';
-@import 'base';
 @import 'mixins';
+@import 'base';
 @import 'layout';
 @import 'landing-page';
 @import 'typography';
@@ -15,6 +15,7 @@ body {
 }
 */
 // atoms
+@import '../_patterns/01-atoms/address/address';
 @import '../_patterns/01-atoms/button/button';
 @import '../_patterns/01-atoms/filter/filter';
 @import '../_patterns/01-atoms/form-elements/input';
@@ -25,38 +26,39 @@ body {
 @import '../_patterns/01-atoms/logo/logo';
 
 // molecules
+@import '../_patterns/02-molecules/address-block/address-block';
+@import '../_patterns/02-molecules/attention-block/attention-block';
 @import '../_patterns/02-molecules/button-bar/button-bar';
 @import '../_patterns/02-molecules/faq-item/faq-item';
-@import '../_patterns/02-molecules/result-block/result-block';
-@import '../_patterns/02-molecules/link-block/link-block';
 @import '../_patterns/02-molecules/filters/filters';
-@import '../_patterns/02-molecules/image-block/image-block';
-@import '../_patterns/02-molecules/top-search/top-search';
-@import '../_patterns/02-molecules/pagination/pagination';
-@import '../_patterns/02-molecules/attention-block/attention-block';
 @import '../_patterns/02-molecules/grid/grid';
-@import '../_patterns/02-molecules/tab-item/tab-item';
-@import '../_patterns/02-molecules/open-dag/open-dag';
 @import '../_patterns/02-molecules/header-image/header-image';
+@import '../_patterns/02-molecules/image-block/image-block';
+@import '../_patterns/02-molecules/image-row/image-row';
+@import '../_patterns/02-molecules/link-block/link-block';
+@import '../_patterns/02-molecules/open-dag/open-dag';
+@import '../_patterns/02-molecules/pagination/pagination';
+@import '../_patterns/02-molecules/result-block/result-block';
+@import '../_patterns/02-molecules/tab-item/tab-item';
+@import '../_patterns/02-molecules/top-search/top-search';
 @import '../_patterns/02-molecules/widget/widget';
 
 // organisms
-@import '../_patterns/03-organisms/link-box/link-box';
-@import '../_patterns/03-organisms/footer/footer';
-@import '../_patterns/03-organisms/header/header';
 @import '../_patterns/03-organisms/active-filter/active-filter';
 @import '../_patterns/03-organisms/course-schedule/course-schedule';
-@import '../_patterns/03-organisms/results-list/results-list';
-@import '../_patterns/03-organisms/main-nav/main-nav';
-@import '../_patterns/03-organisms/submenu/submenu';
-@import '../_patterns/03-organisms/page-menu/page-menu';
+@import '../_patterns/03-organisms/footer/footer';
 @import '../_patterns/03-organisms/filter-block/filter-block';
+@import '../_patterns/03-organisms/header/header';
 @import '../_patterns/03-organisms/hero/hero';
-
-@import '../_patterns/03-organisms/hero-simple/hero-simple';
 @import '../_patterns/03-organisms/hero-home/hero-home';
+@import '../_patterns/03-organisms/hero-simple/hero-simple';
+@import '../_patterns/03-organisms/link-box/link-box';
+@import '../_patterns/03-organisms/main-nav/main-nav';
+@import '../_patterns/03-organisms/page-menu/page-menu';
+@import '../_patterns/03-organisms/results-list/results-list';
+@import '../_patterns/03-organisms/submenu/submenu';
 @import '../_patterns/03-organisms/tabs/tabs';
-@import '../_patterns/03-organisms/vertical-hero/vertical-hero';
+// @import '../_patterns/03-organisms/vertical-hero/vertical-hero';
 /* templates */
 @import '../_patterns/04-templates/list-page/list-page';
 @import '../_patterns/04-templates/home-page/home-page';
@@ -128,7 +130,7 @@ a[class]:hover {
 			}
 		}
 		.interessegebied:hover {
-			outline: 1px solid red;
+			//outline: 1px solid red;
 		}
 		h2 {
 			padding-top: $spacing-s;
@@ -136,6 +138,10 @@ a[class]:hover {
 		p {
 			padding-bottom: $spacing-s;
 		}
+	}
+
+	.col-md-4 .interessegebied {
+		position: relative;
 	}
 
 

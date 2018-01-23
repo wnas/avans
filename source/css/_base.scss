@@ -21,6 +21,30 @@ a:not([class]) {
 	text-decoration: underline;
 }
 
+.avans-link {
+	line-height: initial;
+
+	display: block;
+
+	padding-left: $spacing-l;
+
+	color: $avans-blue;
+
+	@include small-arrow($text-color);
+	&:before {
+		top: calc(50% - 3px);
+		left: 0;
+	}
+
+	&:hover {
+		text-decoration: underline;
+
+		&:before {
+			border-color: $avans-blue;
+		}
+	}
+}
+
 input[type='search']::-webkit-search-cancel-button {
 	display: none;
 }
@@ -28,6 +52,25 @@ input[type='search']::-webkit-search-cancel-button {
 p img,
 figure img {
 	width: 100%;
+}
+
+// 2017 css fix
+img[align] {
+	width: auto;
+	margin: 1rem;
+}
+img[align='right'] {
+	margin-right: 0;
+}
+img[align='left'] {
+	margin-left: 0;
+}
+
+img[align]:after {
+	display: table;
+	clear: both;
+
+	content: '';
 }
 
 table {

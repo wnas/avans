@@ -1,9 +1,10 @@
-<figure class="image__container {{ container-class }}">
+<div class="image__container {{ container-class }}">
 	<img
 		src="{{ img-src }}"
 		class="image {{ image-class }}"
+		alt="{{ alt }}"
 		srcset="{{# srcSet }} {{ src }} {{ res }}, {{/ srcSet }}"
 		{{# sizes }}
 		 	sizes=" {{# sizes }} {{ mq }} {{ len }},{{/ sizes }} 100vw"
 		{{/ sizes }}/>
-</figure>
+</div>

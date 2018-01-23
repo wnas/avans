@@ -5,31 +5,22 @@
 	border: 1px solid $lighter-gray;
 }
 
-.tab__link {
+.tab__link.tab__link,
+.nav-tabs > li > a {
 	font-size: $fs-s;
 	line-height: 1;
 
-	display: inline-block;
+	display: block;
 
 	padding: .825rem 1rem;
 
 	text-decoration: none;
 
 	color: $avans-blue;
+	background: transparent;
 }
 
-@media (max-width: $bp-m ) {
-	.tab__item {
-		display: block;
 
-		margin-bottom: 0;
-
-		border-bottom: 0;
-	}
-	.tab__item:last-child {
-		border-bottom: 1px solid $lighter-gray;
-	}
-}
 
 .tab__link:active {
 	color: $text-color;
@@ -38,7 +29,8 @@
 .active,
 .tab__item--selected {
 	border-bottom-color: $white;
-	.tab__link {
+	.tab__link.tab__link {
 		color: $text-color;
+		background: $white;
 	}
 }

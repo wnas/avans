@@ -1,0 +1,13 @@
+{
+	"images": [{
+			"alt": "alt text",
+			"img-src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-park.jpg",
+			"img-srcSet": [{}]
+		},
+		{
+			"alt": "alt text",
+			"img-src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-park.jpg",
+			"img-srcSet": [{}]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"parts": [{
+			"type": "p-street-address",
+			"value": "Van does de willebois singel 103"
+		},
+		{
+			"type": "p-postal-code",
+			"value": "5212 NA"
+		},
+		{
+			"type": "p-locality",
+			"value": "Heerhugowaard"
+		},
+		{
+			"type": "p-tel",
+			"value": "072-6124173"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+// make it float
+
+.image-row {
+	display: flex;
+	flex-direction: column;
+	.image__container:first-child {
+		margin-bottom: 1rem;
+	}
+	@media all and (min-width: $bp-s) {
+		flex-direction: row;
+
+		.image__container:first-child {
+			margin-right: 1rem;
+			margin-bottom: 0;
+		}
+	}
+}

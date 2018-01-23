@@ -34,7 +34,8 @@ legend,
 .schedule__header--head,
 .result-block .result-block__title,
 .header__sub-title,
-.skip-link {
+.skip-link,
+.address__header {
 	font-family: 'Frutiger LT W01_65 Bold1475746', helvetica, sans-serif;
 	font-weight: normal;
 }
@@ -51,16 +52,10 @@ h4 {
 	text-shadow: none;
 }
 
-h3 {
-	font-size: $h3fs;
-}
-
-h4 {
-	font-size: $h4fs;
-}
 
 body,
 input,
+.tab__link,
 .btn--filter,
 .nav__link--sub,
 .result-block__location {
@@ -99,10 +94,27 @@ select {
 .content__header {
 	font-size: $fs-xl;
 }
+
+h3 {
+	font-size: $h3fs;
+}
+
+h4 {
+	font-size: $h4fs;
+}
+
+.main-content > h1,
+.article-header {
+	font-size: $fs-l;
+}
+.main-content > h1 ~ h2 {
+	font-size: $h4fs;
+}
 // 2017 css
 .entry-title,
+.address__header,
 h2 {
-	font-size: $fs-l;
+	font-size: $fs-m;
 
 	margin: .75rem 0;
 }
@@ -113,11 +125,12 @@ h3 {
 p {
 	margin: 0 0 2rem 0;
 }
-
+.main-content p + h4,
 p + h3 {
 	margin-top: 3rem;
 }
 p,
+.main-content h4
 .content-page__content,
 .content-page__content li:not(.pagination__item) {
 	line-height: 2rem;

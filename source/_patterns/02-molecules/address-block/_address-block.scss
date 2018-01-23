@@ -1,0 +1,23 @@
+.h-cards__container {
+	display: flex;
+	@media all and (max-width: $bp-s) {
+		flex-direction: column;
+	}
+	@media all and (min-width: $bp-s) {
+		flex-direction: row;
+	}
+}
+.address {
+	width: 95%;
+	margin-right: 5%;
+}
+
+.address__list {
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.address__item .avans-link {
+	line-height: 2;
+}

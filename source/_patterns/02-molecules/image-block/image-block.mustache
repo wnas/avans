@@ -1,17 +1,20 @@
-<div class="image-block {{ image-block-class }}">
-  <figure class="image-block__figure">
-    <img class='image-block__image {{ image-class }}' src="../../images/image-block/lady/lady.png" alt="lady" />
-    <figcaption class="image-block__header-block">
-      <h3 class=="image-block__header">Open avond deeltijd</h3>
-      <!-- /image-block__header -->
-      <p class="image-block__sub-text">7 juni, 18.00 - 21.00</p>
-      <!-- /image-block__sub-text -->
-    </figcaption>
-    <!-- /image-block__header-block -->
-  </figure>
-  <!-- /image-block__figure -->
-  <footer class="image-block__footer">
-    <a href="#" class="btn btn--image-block">Meer informatie</a>
-  </footer>
+<div class="image-block {{ image-block-class }}" style="background-image: url({{ image-block-image }})">
+	<div class="image-block__content">
+		<h3 class="image-block__header">{{ image-block-header}}</h3>
+		<!-- /image-block__header -->
+		{{# image-block-time }}
+			<time datetime="{{image-block-time.datetime}}">{{ image-block-time.text}}</time>
+		{{/ image-block-time }}
+		<!-- /image-block__sub-text -->
+	</div>
+	<div class="image-block__buttons image-block__buttons--open-dag">
+	{{# image-block-button }}
+		{{> atoms-button }}
+	{{/ image-block-button }}
+</div>
+	<!-- /image-block__button -->
+
+
+
 </div>
 <!-- /image-block -->
