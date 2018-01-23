@@ -1,0 +1,13 @@
+{
+	"header": "Ervaar hoe het is om te studeren bij Avans",
+	"button": {
+		"button-text": "Kom proefstuderen",
+		"button-class": "btn btn--primary"
+	},
+	"img": [
+		{
+			"src": "foo.jpg",
+			"bp": "m"
+		}
+	]
+}

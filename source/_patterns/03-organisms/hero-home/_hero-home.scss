@@ -6,15 +6,6 @@
 
 
 .hero-home {
-	position: relative;
-
-	overflow: hidden;
-
-	width: 100%;
-	height: var(--min-height);
-	margin: 0;
-	padding: 0;
-
 	@extend .testing;
 }
 
@@ -22,16 +13,7 @@
 }
 
 
-.hero-home__content {
-	position: absolute;
-	top: 150px;
-	left: 0;
 
-	display: flex;
-	flex-direction: column;
-
-	justify-content: space-around;
-}
 
 .header--hero-home {
 	max-width: $width__overal;
