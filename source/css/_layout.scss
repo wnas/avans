@@ -18,6 +18,7 @@ main {
 	display: block;
 }
 
+.l-container,
 .hero,
 .layout-full-width-block,
 .top-bar {
@@ -42,6 +43,7 @@ main {
 .box-carousel {
 	background-color: #c6002a;
 }
+.l-container,
 .box-carousel .slide.text,
 .hero__content,
 .header__sub-title,
@@ -60,6 +62,7 @@ div.content > .container {
 
 
 @media all and (max-width: 1140px) and (min-width: $bp-xl) {
+	.l-container,
 	.layout-full-width-block__content {
 		padding-right: $spacing;
 		padding-left: $spacing;

@@ -6,6 +6,41 @@
 		"label-text": "Zoek binnen avans",
 		"class": "top-search__label"
 	},
+	"slider": {
+		"items": [
+			{
+				"header": "Ervaar hoe het is om te studeren bij Avans",
+				"button": {
+					"button-text": "Kom proefstuderen",
+					"button-class": "btn btn--primary"
+				},
+				"img-src": "../../images/hero/hero-home.png",
+				"srcSet": [
+					{"src": "../../images/hero/hero-home.png",
+					"res": "1x"},
+					{"src": "../../images/hero/hero-home@2x.png",
+					"res": "2x"}
+				]
+
+			},
+			{
+				"header": "Tweede slide, jippie",
+				"button": {
+					"button-text": "Kom proefstuderen",
+					"button-class": "btn btn--primary"
+				},
+				"img-src": "../../images/hero/hero-opleidingen.png",
+				"srcSet": [
+					{"src": "../../images/hero/hero-opleidingen.png",
+					"res": "1x"},
+					{"src": "../../images/hero/hero-opleidingen@2x.png",
+					"res": "2x"}
+				]
+
+			}
+
+		]
+	},
 	"link-box-top": {
 		"class": "col-2",
 		"header": "Kies je opleiding",

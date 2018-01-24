@@ -1,0 +1,14 @@
+.slider {
+	position: relative;
+	.slide {
+		position: absolute;
+		top: 0;
+		left: -100vw;
+
+		width: 100vw;
+		max-width: 1920px;
+	}
+	.slide:first-child {
+		left: 0;
+	}
+}

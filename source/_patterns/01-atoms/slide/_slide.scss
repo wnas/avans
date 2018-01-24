@@ -1,1 +1,80 @@
+:root {
+	--min-height: 348px;
+	--min-width: calc(--min-height * 1.5);
+	--side-padding: $spacing;
+	--bottom-padding: $spacing-xxl;
+}
+
+@media all and (min-width: $bp-s) and  (max-width: $bp-l) {
+	:root {
+		--min-height: 496px;
+		--min-width: calc(--min-height * 1.5);
+		--bottom-padding: 140px;
+	}
+}
+
+
+
+@media all and (min-width: $bp-l) {
+	:root {
+		--min-height: 600px;
+		--min-width: calc(--min-height * 1.5);
+		--bottom-padding: 200px;
+	}
+	.slide {
+		background-position: calc(50% - 50px) 50%;
+	}
+}
+
 // slide
+.slide {
+	position: relative;
+
+	max-width: 1920px;
+	height: 348px;
+	height: var(--min-height);
+	margin: 0 auto;
+
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.slide:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	content: '';
+
+	background: linear-gradient(to bottom, rgba(0,0,0,.25) 0%,rgba(0,0,0,.6) 100%);
+}
+.slide__container {
+	position: relative;
+	z-index: 2;
+
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+	padding: 0 3rem 4rem;
+	padding: 0 var(--side-padding) var(--bottom-padding);
+
+	justify-content: flex-end;
+}
+
+.slide__header {
+	font-size: $fs-xl;
+
+	text-transform: uppercase;
+
+	color: $white;
+}
+
+@media all and (min-width: $bp-m) {
+	.slide__header {
+		font-size: 2.5rem;
+	}
+}

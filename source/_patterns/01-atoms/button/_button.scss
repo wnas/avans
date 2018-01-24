@@ -66,6 +66,9 @@ input[type='submit'],
 	width: 248px;
 	max-width: 100%;
 	margin: $spacing-s 0;
+	@media all and (max-width: $bp-s) {
+		width: 100%;
+	}
 }
 
 a.btn--widget {
