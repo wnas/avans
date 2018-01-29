@@ -1,11 +1,11 @@
 <div class="layout-full-width-block submenu">
 	<div class="layout-full-width-block__content">
 		<ul class="submenu__list">
-			<li class="submenu__item"><a class="submenu__link submenu__link--active" href="#">Alle opleidingen</a></li>
-			<li class="submenu__item"><a class="submenu__link" href="#">Interessegebieden</a></li>
-			<li class="submenu__item"><a class="submenu__link" href="#">Studiekeuze</a></li>
-			<li class="submenu__item"><a class="submenu__link" href="#">Aanmelden</a></li>
-			<li class="submenu__item"><a class="submenu__link" href="#">Voorzieningen</a></li>
+			{{# submenu }}
+				<li class="submenu__item">
+					<a class="submenu__link {{# active }} submenu__link--active {{/ active }}" href="{{ href }}">{{ text }}</a>
+				</li>
+			{{/ submenu }}
 		</ul>
 	</div>
 </div>

@@ -89,6 +89,11 @@ table,
 	}
 }
 
+p:empty {
+	display: none;
+}
+
+
 html,
 body,
 input,

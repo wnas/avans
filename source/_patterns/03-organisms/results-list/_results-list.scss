@@ -10,7 +10,7 @@
 		.result-block {
 			flex: 0 1 auto;
 
-			max-width: 50%;
+			max-width: 33%;
 			padding-bottom: 0;
 		}
 		.result-block__link {
@@ -29,6 +29,9 @@
 		.result-block__image-container {
 			min-width: 100%;
 		}
+	}
+	.result__list--narrow .result-block {
+		max-width: 50%;
 	}
 }
 

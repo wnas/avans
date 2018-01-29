@@ -1,0 +1,25 @@
+{
+	"submenu": [
+		{
+			"href": "#",
+			"text":"Alle opleidingen",
+			"active": "true"
+		},
+		{
+			"href": "#",
+			"text":"Interessegebieden"
+		},
+		{
+			"href": "#",
+			"text":"Studiekeuze"
+		},
+		{
+			"href": "#",
+			"text":"Aanmelden"
+		},
+		{
+			"href": "#",
+			"text":"Voorzieningen"
+		}
+	]
+}
