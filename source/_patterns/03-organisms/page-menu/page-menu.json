@@ -1,12 +1,14 @@
 {
 	"page-menu-class": "page-menu-class",
+	"page-menu-title": "Wat anderen zeggen",
 	"page-menu-block": [
 		{
 			"block-title": "Voltijd in Breda",
 			"items": [
 				{
 					"href": "#",
-					"text": "Introductie pieter"
+					"text": "Introductie",
+					"active": "true"
 				},
 				{
 					"href": "#",
