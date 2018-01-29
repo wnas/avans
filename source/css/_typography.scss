@@ -29,6 +29,7 @@ legend,
 .nav__link,
 .header-font,
 .paragraph--intro,
+.intro,
 .page-menu-block__header,
 .page-menu__link--active,
 .schedule__header--head,
@@ -79,6 +80,13 @@ table,
 	// make sure words break nicer...
 	// doesn't work in all browsers. see caniuse.com
 	hyphens: auto;
+	// add clearfix to fix the old images css 2017
+	&:after {
+		display: table;
+		clear: both;
+
+		content: '';
+	}
 }
 
 html,

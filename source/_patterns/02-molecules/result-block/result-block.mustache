@@ -24,10 +24,11 @@
 
 			</h3>
 
-
-			<p class="result-block__title">
-				{{ title }}
-			</p>
+			<!-- {{# title }}
+				<p class="result-block__title">
+					{{ title }}
+				</p>
+			{{/ title }} -->
 			<div class="result-block__content{{# result-class }} result-block__content--{{ result-class }}{{/ result-class }}">
 				<p>{{{ content }}}</p>
 			</div>
@@ -48,8 +49,8 @@
 		</div>
 		<div class="result-block__image-container {{# result-class }} result-block__image-container--{{ result-class }}{{/ result-class }}">
 			<div class="result-block__image-hover-overlay">
-			<img class="result-block__image" src="{{ src }}"  />
-		</div>
+				<img class="result-block__image" src="{{ src }}" />
+			</div>
 		</div>
 		<!-- / result block image -->
 	</a>
