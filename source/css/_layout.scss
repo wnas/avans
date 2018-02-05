@@ -204,6 +204,9 @@ $extendmain: 839px;
 		// current spec
 		grid-area: main;
 	}
+	.simple-content-page__content {
+		-ms-grid-row: 1;
+	}
 	.content-page__aside {
 		// old spec
 		-ms-grid-row: 2;
