@@ -13,5 +13,14 @@
 		{ "link": "avans.nl", "content": "Taal en Communicatie" },
 		{ "link": "avans.nl", "content": "Gezondheid" },
 		{ "link": "avans.nl", "content": "Techniek" }
+	],
+	"buttons": [{
+			"button-text": "Bekijk alle 2 opleidingen",
+			"button-class": "btn--primary"
+		},
+		{
+			"button-text": "Hulp bij je studiekeuze",
+			"button-class": "avans-link"
+		}
 	]
 }

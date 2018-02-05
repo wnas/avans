@@ -129,7 +129,7 @@ $footer-link-animation-duration: .5s;
 
 .footer-link__item--discover:before {
 	position: absolute;
-	top: 7px;
+	top: calc(50% - 4px);
 	left: 2px;
 
 	display: inline-block;

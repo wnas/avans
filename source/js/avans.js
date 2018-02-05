@@ -105,7 +105,10 @@ var avans = (function() {
                 toggler.textContent = 'Open the submenu.';
 
                 // put the link in the dom after the first one, the toplevel one
+                console.log( typeof link);
+                if( link ){
                 link.after(toggler);
+            }
 
                 // add an event listener... duh.
                 toggler.addEventListener('click', function(e) {

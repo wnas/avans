@@ -42,6 +42,9 @@ legend,
 	font-weight: normal;
 }
 
+.banner-title,
+.banner-subtitle,
+.header-title,
 .slide p {
 	font-family: 'Frutiger LT W01_77 Black Cond', helvetica, sans-serif;
 }
@@ -104,9 +107,14 @@ select {
 
 	-webkit-font-smoothing: antialiased;
 }
-
+.resultpage__header h1,
 .content__header {
 	font-size: $fs-xl;
+}
+@media all and (max-width: $bp-m) {
+	.resultpage__header h1 {
+		font-size: $fs-l;
+	}
 }
 
 h3 {
@@ -121,7 +129,7 @@ h4 {
 .article-header {
 	font-size: $fs-l;
 }
-.main-content > h1 ~ h2 {
+.main-content > h1 ~ h2:not([class]) {
 	font-size: $h4fs;
 }
 // 2017 css

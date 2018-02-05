@@ -1,14 +1,11 @@
 {
-	"image-block-class": "image-block--open-dag",
-	"image-block-image":  "../../images/image-block/lady/lady.png",
+	"image-block-class": "bar",
+	"image-block-image":  "../../images/image-block/samenwerken/samenwerken.png",
 
-	"image-block-header": "Open avond deeltijd",
-	"image-block-time": {
-		"text": "7 juni, 18:00 - 21:00",
-		"datetime": "2018-07-07T18:00"
-	},
+	"image-block-header": "Bedrijven & instellingen",
+	"image-block-sub": "Handen uit de mouwen voor de regio",
 	"image-block-button": {
-		"button-text": "Meer informatie",
+		"button-text": "Samen werken met avans",
 		"button-class": "btn btn--tertiary"
 	}
 }

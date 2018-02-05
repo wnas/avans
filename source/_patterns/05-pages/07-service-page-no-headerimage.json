@@ -1,0 +1,119 @@
+{
+    "bodyClass": "content-page--top",
+    "page-menu-class": "content-page__menu",
+	"hero-class": "hero--simple",
+	"page-menu-block": [{
+			"block-title": "Voltijd in Breda",
+			"items": [{
+					"href": "#",
+					"text": "Introductie",
+					"active": "true"
+				},
+				{
+					"href": "#",
+					"text": "Opbouw"
+				},
+				{
+					"href": "#",
+					"text": "Buitenland"
+				},
+				{
+					"href": "#",
+					"text": "Wat anderen zeggen"
+				},
+				{
+					"href": "#",
+					"text": "Projecten"
+				},
+				{
+					"href": "#",
+					"text": "Studie in cijfers"
+				},
+				{
+					"href": "#",
+					"text": "Verenigingen"
+				},
+				{
+					"href": "#",
+					"text": "Nieuws"
+				}
+			]
+		},
+		{
+			"block-title": "Na de opleiding",
+			"items": [{
+					"href": "#",
+					"text": "Beroepen"
+				},
+				{
+					"href": "#",
+					"text": "Vervolgstudies"
+				}
+			]
+		}
+	],
+	"more-info-button": {
+		"link-class": "btn btn--primary",
+		"link-text": "Meld je aan",
+		"link-href": "shouldiuseajavascriptframework.com"
+	},
+
+	"article-header": "Voltijd opleiding in Breda",
+	"article-content": "<p>De wereld van multimedia fascineert jou. Je bent analytisch en creatief. Je experimenteert bij de opleiding Communication & Multimedia Design (CMD) met de media van de toekomst.</p><p>Als strategische duizendpoot bedenk en ontwikkel je waardevolle innovaties. Een virtual reality experience waarin je ervaart hoe het is om als vluchteling in Calais te overleven. Een serious game in 3D over gezond eten. Een communicatiecampagne via mobiel voor een festival. Of een app die ondersteuning biedt aan mensen met psychische problemen.</p><h3>Jij</h3><p>Jij bent een creatieve duizendpoot met een brede interesse. Je hebt een fascinatie voor nieuwe media. En bent niet bang voor techniek. Je zoekt graag inventieve oplossingen voor grote en kleine problemen. Je kunt goed communiceren en samenwerken. Hebt oog voor detail, bent kritisch en analytisch sterk. Afwisseling vind je belangrijk.</p><h3>De opleiding Communication & Multimedia Design</h3><p>De opleiding is net zo veelzijdig als jij. Een mix van wetenschap, kunst, design en engineering. Je leert om deze disciplines met elkaar te verbinden. En je komt alles te weten over communicatie, interactie en strategie. Jij ontwerpt interactieve producten en diensten die werkgevers vaak nog niet kennen. Je doet projecten en opdrachten. Gaat op excursie. Je experimenteert in de werkplaats en exposeert je eigen werk.</p><p><a href='#'>Lees meer</a> over deze en andere opleidingen uit het domein Creative Technologies.</p><p>Ben je geslaagd, dan mag je de titel Bachelor of Science voeren.</p><h3>Kenmerkend voor deze opleiding</h3><p>Je volgt de opleiding Communicatie & Multimedia Design in Breda of 's-Hertogenbosch. De eerste collegejaren zijn gelijk op beide locaties. Het derde jaar volg je in Breda eerst de verdieping, daarna loop je stage. In 's-Hertogenbosch is dit omgekeerd.</p><p>Je krijgt les van docenten uit de vakgebieden informatie en techniek, communicatie en multimedia vormgeving.</p><p>Deze opleiding is gekozen tot beste opleiding Communication & Multimedia Design, door Keuzegids HBO 2017.</p><h3>Faciliteiten</h3><p>In ons medialab vind je de faciliteiten die je nodig hebt tijdens je opleiding. Zoals Apple- en Windowscomputers, een film- en fotostudio, een houtwerkplaats, een grootformaatprinter en een 3D-printer. En een snijplotter en lasersnijder. Je kunt er ook speciale apparatuur lenen. Denk aan elektronica, audio-apparatuur en camera's.</p>",
+	"widgets": [{
+			"type": "apply",
+			"header": "Is dit jouw opleiding",
+			"call-to-action": {
+				"text": "Meld je aan",
+				"class": "btn btn--primary btn--widget",
+				"href": "guardian.co.uk"
+			}
+		},
+		{
+			"type": "open",
+			"header": "Kom langs",
+			"widget-list": {
+				"items": [{
+						"text": "Open dag 4 november 2017",
+						"href": "nu.nl"
+					},
+					{
+						"text": "Open dag 27 januari 2018",
+						"href": "nuzakelijk.nl"
+					}
+				]
+			}
+		},
+		{
+			"type": "cijfers",
+			"header": "Studie in cijfers",
+			"text": "Vergelijk deze opleiding met het landelijke gemiddelde",
+			"widget-link": [{
+				"text": "Bekijk de cijfers",
+				"href": "nu.nl"
+			}]
+		},
+		{
+			"type": "duurzaam",
+			"header": "Duurzaamheid",
+			"text": "Score van deze opleiding",
+			"title": "Two out of three stars",
+			"widget-durability": "<span class='rating__stars'><?xml encoding='UTF-8'?><svg width='16px' height='15px' viewBox='0 0 16 15' version='1.1' xmlns='http:\/\/www.w3.org\/2000\/svg' xmlns:xlink='http:\/\/www.w3.org/1999/xlink'><g id='star' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='004-OpleidingInleiding-XL-1200+' transform='translate(-1302.000000, -1128.000000)' fill='#000000'><polygon id='Star' points='1310 1140 1305.29772 1142.47214 1306.19577 1137.23607 1302.39155 1133.52786 1307.64886 1132.76393 1310 1128 1312.35114 1132.76393 1317.60845 1133.52786 1313.80423 1137.23607 1314.70228 1142.47214'></polygon></g></g></svg><svg width='16px' height='15px' viewBox='0 0 16 15' version='1.1' xmlns='http:\/\/www.w3.org\/2000\/svg' xmlns:xlink='http:\/\/www.w3.org/1999/xlink'><g id='star' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g id='004-OpleidingInleiding-XL-1200+' transform='translate(-1302.000000, -1128.000000)' fill='#000000'><polygon id='Star' points='1310 1140 1305.29772 1142.47214 1306.19577 1137.23607 1302.39155 1133.52786 1307.64886 1132.76393 1310 1128 1312.35114 1132.76393 1317.60845 1133.52786 1313.80423 1137.23607 1314.70228 1142.47214'></polygon></g></g></svg></span>",
+			"widget-link": [{
+				"text": "Uitleg score",
+				"href": "nu.nl"
+			}]
+		}
+	],
+	"widget-follow": {
+		"class": "widget widget--follow",
+		"follow-header": "Volg onze opleiding",
+		"follow": [{
+				"item": "facebook"
+			},
+			{
+				"item": "instagram"
+			}
+		]
+	}
+}

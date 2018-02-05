@@ -2,6 +2,7 @@
     "bodyClass": "content-page--top",
     "page-menu-class": "content-page__menu",
 	"hero-class": "hero--simple",
+	"page-menu-title": "Wat anderen zeggen",
 	"page-menu-block": [{
 			"block-title": "Voltijd in Breda",
 			"items": [{

@@ -1,136 +1,36 @@
-
-
-
 .avans-homepage {
-	background-color: lightblue;
-	.main-content > div {
-		position: relative;
-		z-index: 5;
-
-		display: grid;
-
-		margin-top: -100px;
-
-		grid-gap: 20px;
-		grid-template-areas: 'linkbox-1'
-		'image-block-1'
-		'image-block-2'
-		'image-block-3'
-		'linkblock'
-		'linkbox-2';
-		@media all and (max-width: $bp-s) {
-			margin-top: .9375rem;
-		}
-	}
-	.link-box--top {
-		grid-area: linkbox-1;
-	}
-	.image-block {
-		min-width: 100%;
-	}
-	.image-block--open-dag {
-		margin-top: 0;
-
-		grid-area: image-block-1;
-	}
-	.image-block--samenwerken {
-		grid-area: image-block-2;
-	}
-	.image-block--bedrijven {
-		grid-area: image-block-3;
-	}
-
-	.link-block {
-		grid-area: linkblock;
-	}
-	@media all and (max-width: $bp-l) {
-		.grid__content {
-			display: flex;
-		}
-		.grid__image {
-			max-width: 95px;
-		}
-	}
-	.link-box--news {
-		grid-area: linkbox-2;
-	}
-}
-@media all and (min-width: $bp-s) {
-	.avans-homepage {
-		.main-content > div {
-			margin-top: -50px;
-
-			grid-template-columns: 1fr 1fr;
-			grid-template-rows: auto 379px 309px auto 1fr;
-			grid-template-areas: 'linkbox-1 linkbox-1'
-			'image-block-1 	image-block-1'
-			'image-block-2 	image-block-3'
-			'linkblock 	linkblock'
-			'linkbox-2 		linkbox-2';
+	@media all and (min-width: $bp-s) {
+		* {
+			//outline: 1px solid #ccc;
 		}
 	}
 }
 
-@media all and (min-width: $bp-l) {
-	.avans-homepage {
-		.main-content > div {
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: auto 309px 1fr;
-			grid-template-areas: 'linkbox-1 linkbox-1 linkbox-1 linkbox-1 image-block-1 image-block-1'
-			'image-block-2 image-block-2 image-block-2 image-block-3 image-block-3 image-block-3'
-			'linkblock linkblock linkbox-2 linkbox-2 linkbox-2 linkbox-2';
+
+.homepage__top {
+	background-color: $lighter-gray;
+	.l-container {
+		@media all and (min-width: $bp-s) {
+			display: grid;
+
+			padding: $spacing;
+
+			grid-gap: 20px;
+			grid-template-areas: 'linkbox linkbox'
+			'open-dag open-dag'
+			'bedrijven samenwerken';
 		}
-		.grid__link {
-			max-width: 100%;
+		.link-box {
+			grid-area: linkbox;
 		}
-	}
-}
-
-/*
-.link-block__item--a {
-	grid-area: link-block-1;
-}
-.link-block__item--b {
-	grid-area: link-block-2;
-}
-.link-block__item--c {
-	grid-area: link-block-3;
-}
-.link-block__item--d {
-	grid-area: link-block-4;
-}
-*/
-/*
-@media all and (max-width: $bp-m) {
-	.layout-full-width-block__content--intro {
-		flex-direction: column;
-	}
-
-	.main-content .fooBar {
-		display: flex;
-
-		width: 100%;
-		.image-block__header-block {
-			top: 5%;
-			right: -110%;
-			bottom: initial;
+		.open-dag-block {
+			grid-area: open-dag;
+		}
+		.image-block--bedrijven {
+			grid-area: bedrijven;
+		}
+		.image-block--samenwerken {
+			grid-area: samenwerken;
 		}
 	}
-	.link-block__item {
-		width: 100%;
-		max-width: 100%;
-		margin-right: 0;
-
-		justify-content: space-between;
-	}
-	.link-block__link {
-		flex-direction: row-reverse;
-	}
-	.link-block__text {
-		width: 50%;
-	}
-	.link-block__item:nth-child(odd) {
-		margin-right: 0;
-	}
 }
-*/

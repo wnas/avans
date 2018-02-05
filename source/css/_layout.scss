@@ -18,7 +18,6 @@ main {
 	display: block;
 }
 
-.l-container,
 .hero,
 .layout-full-width-block,
 .top-bar {
@@ -106,6 +105,7 @@ div#main .container_12 {
 
 .content-page__aside-container,
 .content-page__content,
+.simple-content-page__content,
 .content-page__menu {
 	padding: $spacing-xl $spacing-l $spacing;
 }
@@ -150,20 +150,28 @@ $extendmain: 839px;
 		display:     grid;
 
 		grid-gap: 0 20px;
+		align-items: flex-start;
 	}
 	.content-page {
+		// old spec
+		-ms-grid-columns: $nav 20px $main 20px $sidebar;
+		-ms-grid-rows: auto 1fr;
+		// current spec
 		grid-template-areas: 'nav wide-header wide-header' 'nav main aside';
 		grid-template-columns: $nav $main $sidebar;
 		grid-template-rows: auto 1fr;
 	}
 	.content-page-simple {
 		grid-template-areas: 'nav main';
+		-ms-grid-columns: $nav 20px $extendmain;
 		grid-template-columns: $nav $extendmain;
 	}
 
 	div#main > #contact-locations-grid {
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: auto;
+		grid-template-rows: auto 1fr;
+		-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+		-ms-grid-rows: auto 1fr;
 
 		&:before {
 			display: none;
@@ -179,38 +187,38 @@ $extendmain: 839px;
 			height: auto !important;
 		}
 	}
+	// fix for 2016 css
+	div#main .container_12 > .grid_3,
 	.page-menu {
-		grid-area: nav;
-		// only for edge
+		// old spec
 		-ms-grid-row: 1;
-		-ms-grid-row-span: 5;
+		-ms-grid-row-span: 2;
 		-ms-grid-column: 1;
+		// current spec
+		grid-area: nav;
 	}
 	.main-content {
-		grid-area: main;
-		// only for edge
-		-ms-grid-row: 3;
+		// old spec
+		-ms-grid-row: 2;
 		-ms-grid-column: 3;
+		// current spec
+		grid-area: main;
 	}
 	.content-page__aside {
-		grid-area: aside;
-		// only for edge
-		-ms-grid-row: 3;
+		// old spec
+		-ms-grid-row: 2;
 		-ms-grid-column: 5;
+		// current spec
+		grid-area: aside;
 	}
+	// fix for 2016 css
+	div#main .container_12 > .grid_9,
 	.service-page-header {
-		grid-area: wide-header;
-		// only for edge
+		// old spec
 		-ms-grid-row: 1;
 		-ms-grid-column: 3;
 		-ms-grid-column-span: 3;
-	}
-	// fix for 2016 css
-	div#main .container_12 > .grid_3 {
-		grid-area: nav;
-	}
-
-	div#main .container_12 > .grid_9 {
+		// current spec
 		grid-area: wide-header;
 	}
 }
@@ -242,9 +250,6 @@ $extendmain: 839px;
 	}
 	.content-page__menu {
 		margin-right: $spacing-xl;
-	}
-	.content-page__aside {
-		//	margin-left: $spacing-xl;
 	}
 }
 
@@ -293,6 +298,7 @@ $extendmain: 839px;
 }
 
 @media all and (max-width: $bp-xl) and (min-width: $bp-l) {
+	.l-container,
 	.layout-full-width-block__content,
 	.page-footer__content,
 	.top-bar__content,

@@ -1,3 +1,3 @@
 # filter
 
-List item with a label and an input.
+a label and an input.

@@ -1,6 +1,23 @@
-{"alt": "alt text",
-	"img-src": "http://webcms-test.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-park.jpg",
-	"img-srcSet": [
-		{}
+{
+	"alt": "alt text",
+	"img-src": "http://www.placecage.com/c/400/200",
+	"img-srcSet": [{
+			"src": "http://www.placecage.com/c/800/400",
+			"res": "2x"
+		},
+		{
+			"src": "http://www.placecage.com/c/600/300",
+			"res": "1x"
+		}
+	],
+	"sizes": [
+		{
+			"mq": "(min-width: 480px)",
+			"len": "80vw"
+		},
+		{
+			"mq": "(min-width: 640px)",
+			"len": "50vw"
+		}
 	]
 }

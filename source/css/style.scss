@@ -19,6 +19,7 @@ body {
 @import '../_patterns/01-atoms/button/button';
 @import '../_patterns/01-atoms/filter/filter';
 @import '../_patterns/01-atoms/form-elements/input';
+@import '../_patterns/01-atoms/faq-item/faq-item';
 @import '../_patterns/01-atoms/googlemaps/googlemaps';
 @import '../_patterns/01-atoms/grid-item/grid-item';
 @import '../_patterns/01-atoms/headers/page-header';
@@ -30,7 +31,6 @@ body {
 @import '../_patterns/02-molecules/address-block/address-block';
 @import '../_patterns/02-molecules/attention-block/attention-block';
 @import '../_patterns/02-molecules/button-bar/button-bar';
-@import '../_patterns/02-molecules/faq-item/faq-item';
 @import '../_patterns/02-molecules/filters/filters';
 @import '../_patterns/02-molecules/grid/grid';
 @import '../_patterns/02-molecules/header-image/header-image';
@@ -66,6 +66,8 @@ body {
 @import '../_patterns/04-templates/home-page/home-page';
 @import '../_patterns/04-templates/subhome-page/subhome-page';
 
+@import '../_patterns/04-templates/404/404';
+
 
 /*
 	stuff to combat 2017 and before css
@@ -82,13 +84,6 @@ a[class]:hover {
 	// color: inherit;
 }
 
-.row {
-	display: flex;
-
-	padding: 0;
-
-	flex-wrap: wrap;
-}
 
 // interesse gebieden;
 .col-md-4 {
@@ -108,6 +103,8 @@ a[class]:hover {
 
 
 	.interessegebied {
+		position: relative;
+
 		display: flex;
 		flex-direction: column;
 
@@ -131,9 +128,7 @@ a[class]:hover {
 				background-color: $avans-blue;
 			}
 		}
-		.interessegebied:hover {
-			//outline: 1px solid red;
-		}
+
 		h2 {
 			padding-top: $spacing-s;
 		}
@@ -142,9 +137,7 @@ a[class]:hover {
 		}
 	}
 
-	.col-md-4 .interessegebied {
-		position: relative;
-	}
+
 
 
 	a {
@@ -156,7 +149,6 @@ a[class]:hover {
 		height: 100%;
 
 		color: transparent;
-		outline: 1px solid red;
 		background-color: transparent;
 	}
 }
@@ -167,33 +159,42 @@ a[class]:hover {
 	padding: 0;
 }
 // locaties
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-	float: none;
+body:not('.onderzoek-page') {
+	.row {
+		display: flex;
 
-	width: auto;
-	padding: 0;
-}
-.group:before,
-.group:after,
-.nav:before,
-.nav:after,
-.container_12:before,
-.container_12:after,
-.reveal-modal {
-	display: none;
-}
+		padding: 0;
 
+		flex-wrap: wrap;
+	}
+
+	.grid_1,
+	.grid_2,
+	.grid_3,
+	.grid_4,
+	.grid_5,
+	.grid_6,
+	.grid_7,
+	.grid_8,
+	.grid_9,
+	.grid_10,
+	.grid_11,
+	.grid_12 {
+		float: none;
+
+		width: auto;
+		padding: 0;
+	}
+	.group:before,
+	.group:after,
+	.nav:before,
+	.nav:after,
+	.container_12:before,
+	.container_12:after,
+	.reveal-modal {
+		display: none;
+	}
+}
 // see in layout.scss
 
 .foo {
@@ -201,4 +202,14 @@ a[class]:hover {
 	&.bar {
 		outline: 3px dotted red;
 	}
+}
+
+.testfloatheader {
+	display: flex;
+	flex-direction: column;
+
+	width: 800px;
+	padding: 1rem;
+
+	@extend .testing;
 }

@@ -5,7 +5,9 @@
 	</legend>
 	<ul class="filters__list">
 		{{# filters }}
+		<li class="filter__item {{ filter-class }}">
 			{{> atoms-filter }}
+		</li>
 		{{/ filters }}
 	</ul>
 </fieldset>

@@ -1,6 +1,4 @@
 
-
-
 .image-block {
 	position: relative;
 
@@ -13,12 +11,11 @@
 }
 
 .image-block--open-dag {
-	min-width: 300px;
 	max-width: 500px;
 	min-height: 328px;
 
 	justify-content: flex-end;
-	@media all and (min-width: $bp-s) and (max-width: $bp-m) {
+	@media all and (max-width: $bp-l) and (min-width: $bp-s) {
 		width: 100%;
 		padding-left: 50%;
 
@@ -29,21 +26,26 @@
 	}
 }
 .image-block--sans-footer {
-	max-width: 360px;
 	max-height: 239px;
 
 	justify-content: space-between;
+	@media all and (min-width: $bp-s) {
+		max-width: 360px;
+	}
 }
 
 .image-block__content {
+	position: relative;
+	z-index: 5;
+
 	padding: 1rem;
 
 	color: $white;
 }
 
-.image-block__content:before {
+.image-block:before {
 	position: absolute;
-	z-index: -1;
+	z-index: 1;
 	top: 0;
 	left: 0;
 

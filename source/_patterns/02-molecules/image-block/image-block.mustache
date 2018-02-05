@@ -2,19 +2,17 @@
 	<div class="image-block__content">
 		<h3 class="image-block__header">{{ image-block-header}}</h3>
 		<!-- /image-block__header -->
-		{{# image-block-time }}
-			<time datetime="{{image-block-time.datetime}}">{{ image-block-time.text}}</time>
-		{{/ image-block-time }}
+
+		<p class="image-block__sub-text ">{{{ image-block-sub }}}</p>
 		<!-- /image-block__sub-text -->
 	</div>
-	<div class="image-block__buttons image-block__buttons--open-dag">
+	<!-- /image-block__header-block -->
+
+	<div class="image-block__buttons">
 	{{# image-block-button }}
 		{{> atoms-button }}
 	{{/ image-block-button }}
 </div>
-	<!-- /image-block__button -->
-
-
 
 </div>
 <!-- /image-block -->

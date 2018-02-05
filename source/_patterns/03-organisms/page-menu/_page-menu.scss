@@ -231,12 +231,13 @@
 			text-transform: none;
 
 			border-right: none;
-			background-position: 1rem;
+			background-position: 1rem calc(50% + 1px);
 		}
 
 		.nav-link:after {
 			position: absolute;
-			top: 1.625rem;
+			// top: 1.625rem;
+			top: calc(50% - 7px);
 			right: 2px;
 
 			display: inline-block;
@@ -245,13 +246,14 @@
 			height: 9px;
 
 			content: '';
+			//	transition: transform .2s ease, top .2s ease;
 			transform: rotate(45deg);
 
 			border: 1px solid $avans-blue;
-			border-width: 0 1px 1px 0;
+			border-width: 0 2px 2px 0;
 		}
 		.clicked:after {
-			top: 1.825rem;
+			top: calc(50% - 2px);
 
 			transform: rotate(-135deg);
 		}

@@ -1,42 +1,33 @@
 {{> organisms-header }}
-{{# slider }}
 
-{{> molecules-slider }}
+<main class="main-content">
+	<section class="homepage__top">
+		<div class="l-container">
+			{{# link-box-top }}
+				{{> organisms-link-box }}
+			{{/ link-box-top }}
+			<div class="open-dag-block">
+				<h2>open dag</h2>
+			</div>
 
-{{/ slider }}
-<main class="layout-full-width-block main-content">
-  <div class="layout-full-width-block__content layout-full-width-block__content--intro">
+			{{# image-blocks }}
+				{{> molecules-image-block-sans-footer }}
+			{{/ image-blocks }}
 
+		</div>
+	</section>
+	<section class="homepage__bottom">
+		<div class="l-container">
+			{{# meer-avans }}
+				{{> molecules-grid }}
+			{{/ meer-avans }}
 
-      <article class="link-box link-box--top">
+			{{# link-box-news }}
+				{{> organisms-link-box }}
+			{{/ link-box-news }}
 
-        {{# link-box-top }}
-          {{> organisms-link-box }}
-        {{/ link-box-top }}
-		{{# link-box-top-buttons }}
-		{{> molecules-button-bar }}
-		{{/ link-box-top-buttons }}
-
-      </article>
-
-      <!-- /link box -->
-      {{# image-block-class }}
-      {{> molecules-image-block }}
-      {{/ image-block-class }}
-
-	  {{# image-blocks }}
-	  {{> molecules-image-block-sans-footer }}
-	  {{/ image-blocks }}
-
-	  {{# meer-avans }}
-	  	{{> molecules-grid }}
-	  {{/ meer-avans }}
-
-        <article class="link-box link-box--news">
-          {{# link-box-news }}
-            {{> organisms-link-box }}
-          {{/ link-box-news }}
-        </article>
-  </main>
-  <!-- /main -->
-  {{> organisms-footer }}
+		</div>
+	</section>
+</main>
+<!-- /main -->
+{{> organisms-footer }}

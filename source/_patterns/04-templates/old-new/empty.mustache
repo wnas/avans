@@ -1,4 +1,36 @@
 {{> organisms-header }}
 {{> organisms-submenu }}
 
+
+<style>
+	.grid {
+		width: 500px;
+		display: grid;
+		outline: 1px solid red;
+
+		// current spec
+grid-gap: 20px;
+		grid-template-columns: 200px 300px;
+		grid-template-rows: 100px 400px;
+		grid-template-areas: 'nav header'
+		'nav main';
+	}
+	.grid_row-1 {
+		grid-area: nav;
+		outline: 1px solid blue;
+	}
+	.grid_row-2 {
+		grid-area: main;
+		outline: 1px solid green;
+	}
+</style>
+<div class="grid l-container">
+	<div class="grid_row-1">
+		grid_row-1
+	</div>
+	<div class="grid_row-2">
+		grid_row-2
+	</div>
+</div>
+
 {{> organisms-footer }}
