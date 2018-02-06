@@ -1,197 +1,180 @@
 {
-	"bodyClass": "avans-homepage",
-	"title": "home page avans",
-	"searchlabel": {
-		"for": "for",
-		"label-text": "Zoek binnen avans",
-		"class": "top-search__label"
-	},
-	"slider": {
-		"items": [
-			{
-				"header": "Ervaar hoe het is om te studeren bij Avans",
-				"button": {
-					"button-text": "Kom proefstuderen",
-					"button-class": "btn btn--primary"
-				},
-				"img-src": "../../images/hero/hero-home.png",
-				"srcSet": [
-					{"src": "../../images/hero/hero-home.png",
-					"res": "1x"},
-					{"src": "../../images/hero/hero-home@2x.png",
-					"res": "2x"}
-				]
+    "bodyClass": "avans-homepage",
+    "title": "home page avans",
+    "searchlabel": {
+        "for": "for",
+        "label-text": "Zoek binnen avans",
+        "class": "top-search__label"
+    },
+    "slider": {
+        "items": [
+            {
+                "header": "Tweede slide, jippie",
+                "button": {
+                    "button-text": "Kom proefstuderen meiske...",
+                    "button-class": "btn btn--primary"
+                },
+                "img-src": "../../images/hero/hero-opleidingen.png",
+                "srcSet": [{
+                        "src": "../../images/hero/hero-opleidingen.png",
+                        "res": "1x"
+                    },
+                    {
+                        "src": "../../images/hero/hero-opleidingen@2x.png",
+                        "res": "2x"
+                    }
+                ]
 
-			},
-			{
-				"header": "Tweede slide, jippie",
-				"button": {
-					"button-text": "Kom proefstuderen",
-					"button-class": "btn btn--primary"
-				},
-				"img-src": "../../images/hero/hero-opleidingen.png",
-				"srcSet": [
-					{"src": "../../images/hero/hero-opleidingen.png",
-					"res": "1x"},
-					{"src": "../../images/hero/hero-opleidingen@2x.png",
-					"res": "2x"}
-				]
+            }
 
-			}
+        ]
+    },
+    "link-box-top": {
+        "class": "col-2",
+        "header": "Kies je opleiding",
+        "sub-header": "Zoek op interessegebied",
+        "items": [{
+                "link": "avans.nl",
+                "content": "Aarde en Milieu"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Kunst en Cultuur"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Economie en Bedrijf"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Onderwijs en Opvoeding"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Exact en Informatica"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Recht en Bestuur"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Gedrag en Maatschappij"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Taal en Communicatie"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Gezondheid"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Techniek"
+            }
+        ],
+        "buttons": [{
+                "button-text": "Bekijk alle 234 opleidingen",
+                "button-class": "btn--primary"
+            },
+            {
+                "button-text": "Hulp bij je studiekeuze",
+                "button-class": "avans-link"
+            }
+        ]
+    },
+    "image-blocks": [{
+            "image-block-class": "image-block--open-dag",
+            "image-block-header": "Open avond deeltijd",
+			"image-block-style": "background-image:url('../../images/image-block/lady/lady.png')",
+            "image-block-sub": "<time datetime='2018-07-07T18:00'>7 juni, 18:00 - 21:00</time>",
+            "image-block-button": {
+                "button-text": "Meer informatie",
+                "button-class": "btn btn--tertiary"
+            }
+        }, {
+            "image-block-class": "image-block--bedrijven",
+            "image-block-style": "background-image: url('../../images/image-block/samenwerken/samenwerken.png')",
 
-		]
-	},
-	"link-box-top": {
-		"class": "col-2",
-		"header": "Kies je opleiding",
-		"sub-header": "Zoek op interessegebied",
-		"items": [{
-				"link": "avans.nl",
-				"content": "Aarde en Milieu"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Kunst en Cultuur"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Economie en Bedrijf"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Onderwijs en Opvoeding"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Exact en Informatica"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Recht en Bestuur"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Gedrag en Maatschappij"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Taal en Communicatie"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Gezondheid"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Techniek"
-			}
-		],
-		"buttons": [{
-				"button-text": "Bekijk alle 234 opleidingen",
-				"button-class": "btn--primary"
-			},
-			{
-				"button-text": "Hulp bij je studiekeuze",
-				"button-class": "avans-link"
-			}
-		]
-	},
-	"open-dag": {
-		"block-class": "open-dag",
-		"block-image":  "../../images/image-block/lady/lady.png",
-		"block-header": "Open avond deeltijd",
-		"block-time": {
-			"text": "7 juni, 18:00 - 21:00",
-			"datetime": "2018-07-07T18:00"
-		},
-		"block-button": {
-			"button-text": "Meer informatie",
-			"button-class": "btn btn--tertiary"
-		}
-	},
-	"image-blocks": [
+            "image-block-header": "Bedrijven & instellingen",
+            "image-block-sub": "Handen uit de mouwen voor de regio",
+            "image-block-button": {
+                "button-text": "Samen werken met avans",
+                "button-class": "btn btn--tertiary"
+            }
+        },
 
-		{
-			"image-block-class": "image-block--bedrijven",
-			"image-block-image":  "../../images/image-block/samenwerken/samenwerken.png",
+        {
+            "image-block-class": "image-block--samenwerken",
+            "image-block-style": "background-image: url('../../images/image-block/samenwerken/samenwerken.png')",
 
-			"image-block-header": "Bedrijven & instellingen",
-			"image-block-sub": "Handen uit de mouwen voor de regio",
-			"image-block-button": {
-				"button-text": "Samen werken met avans",
-				"button-class": "btn btn--tertiary"
-			}
-		},
-
-		{
-			"image-block-class": "image-block--samenwerken",
-			"image-block-image":  "../../images/image-block/samenwerken/samenwerken.png",
-
-			"image-block-header": "Bedrijven & instellingen",
-			"image-block-sub": "Handen uit de mouwen voor de regio",
-			"image-block-button": {
-				"button-text": "Samen werken met avans",
-				"button-class": "btn btn--tertiary"
-			}
-		}
-	],
-	"meer-avans": {
-		"class": "link-block",
-		"items": [
-			{
-				"href": "#",
-				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-markt-gezellig.jpg",
-				"alt": "alt tekst",
-				"caption": "Vacatures"
-			},
-			{
-	"href": "#",
-				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/denbosch-220x140.jpg",
-				"alt": "alt tekst",
-				"caption": "Avans duurzaam"
-			},
-			{
-				"href": "#",
-				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/tilburg-g-220x140-.jpg",
-				"alt": "alt tekst",
-				"caption": "Ambitie 2020"
-			},
-			{
-				"href": "#",
-				"src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/tilburg-g-220x140-.jpg",
-				"alt": "alt tekst",
-				"caption": "Evenementen"
-			}
-		]
-	},
-	"link-box-news": {
-		"header": "Nieuws",
-		"items": [{
-				"link": "avans.nl",
-				"content": "Energie winnen via de uitlaat",
-				"date": "9 mei 2017"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Nederlandse primeur: Avans Tilburg gastheer internationale Ecowek",
-				"date": "9 mei 2017"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Opinie: 'Voorkom sociale mileiuramp in Brabant'",
-				"date": "9 mei 2017"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Energietransietie en de rol van de burger",
-				"date": "9 mei 2017"
-			},
-			{
-				"link": "avans.nl",
-				"content": "Opini: Ouderen niet serious genomen bij ontwikkeling zorgtechnologie",
-				"date": "19 april 2017"
-			}
-		]
-	}
+            "image-block-header": "Bedrijven & instellingen",
+            "image-block-sub": "Handen uit de mouwen voor de regio",
+            "image-block-button": {
+                "button-text": "Samen werken met avans",
+                "button-class": "btn btn--tertiary"
+            }
+        }
+    ],
+    "meer-avans": {
+		"header": "Meer avans",
+        "class": "link-block meer",
+        "items": [{
+                "href": "#",
+                "src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-markt-gezellig.jpg",
+                "alt": "alt tekst",
+                "caption": "Vacatures"
+            },
+            {
+                "href": "#",
+                "src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/denbosch-220x140.jpg",
+                "alt": "alt tekst",
+                "caption": "Avans duurzaam"
+            },
+            {
+                "href": "#",
+                "src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/tilburg-g-220x140-.jpg",
+                "alt": "alt tekst",
+                "caption": "Ambitie 2020"
+            },
+            {
+                "href": "#",
+                "src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/tilburg-g-220x140-.jpg",
+                "alt": "alt tekst",
+                "caption": "Evenementen"
+            }
+        ]
+    },
+    "link-box-news": {
+		"class": "nieuws",
+        "header": "Nieuws",
+        "items": [{
+                "link": "avans.nl",
+                "content": "Energie winnen via de uitlaat",
+                "date": "9 mei 2017"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Nederlandse primeur: Avans Tilburg gastheer internationale Ecowek",
+                "date": "9 mei 2017"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Opinie: 'Voorkom sociale mileiuramp in Brabant'",
+                "date": "9 mei 2017"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Energietransietie en de rol van de burger",
+                "date": "9 mei 2017"
+            },
+            {
+                "link": "avans.nl",
+                "content": "Opini: Ouderen niet serious genomen bij ontwikkeling zorgtechnologie",
+                "date": "19 april 2017"
+            }
+        ]
+    }
 
 }

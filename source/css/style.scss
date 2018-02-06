@@ -159,50 +159,45 @@ a[class]:hover {
 	padding: 0;
 }
 // locaties
-body:not('.onderzoek-page') {
-	.row {
-		display: flex;
+// body:not('.onderzoek-page') {
+.row {
+	display: flex;
 
-		padding: 0;
+	padding: 0;
 
-		flex-wrap: wrap;
-	}
-
-	.grid_1,
-	.grid_2,
-	.grid_3,
-	.grid_4,
-	.grid_5,
-	.grid_6,
-	.grid_7,
-	.grid_8,
-	.grid_9,
-	.grid_10,
-	.grid_11,
-	.grid_12 {
-		float: none;
-
-		width: auto;
-		padding: 0;
-	}
-	.group:before,
-	.group:after,
-	.nav:before,
-	.nav:after,
-	.container_12:before,
-	.container_12:after,
-	.reveal-modal {
-		display: none;
-	}
+	flex-wrap: wrap;
 }
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	float: none;
+
+	width: auto;
+	padding: 0;
+}
+.group:before,
+.group:after,
+.nav:before,
+.nav:after,
+.container_12:before,
+.container_12:after,
+.reveal-modal {
+	display: none;
+}
+// }
 // see in layout.scss
 
-.foo {
-	outline: 1px solid green;
-	&.bar {
-		outline: 3px dotted red;
-	}
-}
+
 
 .testfloatheader {
 	display: flex;

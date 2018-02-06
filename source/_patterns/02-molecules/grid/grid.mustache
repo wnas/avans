@@ -1,7 +1,12 @@
-<ul class="grid {{ class }}">
-	{{# items }}
-	<li class="grid__item">
-		{{> atoms-grid-item }}
-	</li>
-	{{/ items }}
-</ul>
+<div class="grid__container {{ class }}">
+	{{# header }}
+		<h3>{{ header }}</h3>
+	{{/ header }}
+	<ul class="grid">
+		{{# items }}
+			<li class="grid__item">
+				{{> atoms-grid-item }}
+			</li>
+		{{/ items }}
+	</ul>
+</div>

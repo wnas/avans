@@ -1,15 +1,9 @@
 .slider {
-	position: absolute;
-	top: 90px;
-	.slide {
-		position: absolute;
-		top: 0;
-		left: -100vw;
+	//	@extend .testing;
 
-		width: 100vw;
-		max-width: 1920px;
-	}
-	.slide:first-child {
-		left: 0;
+	.slide__container {
+		position: relative;
+
+		overflow: hidden;
 	}
 }

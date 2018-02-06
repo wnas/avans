@@ -1,4 +1,4 @@
-<div class="link-box link-box--{{ type }}">
+<div class="link-box link-box--{{ type }}  {{ class }}">
 <div class="link-box__header-containe">
   <h2 class="link-box__header">{{ header }}</h2>
   {{# sub-header }}
@@ -6,7 +6,7 @@
   {{/ sub-header }}
 </div>
 <!-- /link-box__header -->
-<ul class="link-box__list {{ class }}">
+<ul class="link-box__list">
   {{# items }}
   <li class="link-box__item">
     <a class="link-box__link" href=" {{ link }}">

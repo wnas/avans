@@ -9,6 +9,9 @@
 
 	flex-wrap: wrap;
 	justify-content: space-between;
+	.homepage & {
+		//flex-wrap: nowrap;
+	}
 }
 
 .grid__item {
@@ -61,5 +64,28 @@
 	.grid__item {
 		width: 100%;
 		max-width: 100%;
+	}
+}
+
+.homepage {
+	.grid__item {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: $spacing-xl;
+		@media all and (min-width: $bp-l) {
+			width: calc(50% - 1rem);
+			min-width: inherit;
+			&:nth-child(odd) {
+				margin-right: 1rem;
+			}
+		}
+	}
+	@media all and (max-width: $bp-l) {
+		.grid__content {
+			display: flex;
+		}
+		.grid__image-container {
+			max-width: 95px;
+		}
 	}
 }

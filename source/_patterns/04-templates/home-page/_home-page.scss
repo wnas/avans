@@ -6,31 +6,124 @@
 	}
 }
 
-
-.homepage__top {
-	background-color: $lighter-gray;
+.homepage__top,
+.homepage__bottom {
 	.l-container {
 		@media all and (min-width: $bp-s) {
-			display: grid;
+			display: -ms-grid;
+			display:     grid;
 
-			padding: $spacing;
+			padding: 0 20px;
 
 			grid-gap: 20px;
+		}
+	}
+}
+
+.homepage__top {
+	padding-bottom: 20px;
+
+	background-color: $lighter-gray;
+	.image-block {
+		margin-top: 20px;
+	}
+	.l-container {
+		@media all and (min-width: $bp-s) {
 			grid-template-areas: 'linkbox linkbox'
-			'open-dag open-dag'
+			'opendag opendag'
 			'bedrijven samenwerken';
+			-ms-grid-columns: 1fr 20px 1fr;
+			-ms-grid-rows: auto 20px auto 20px auto 20px;
+
+			.image-block {
+				margin-top: 0;
+			}
+		}
+		@media all and (min-width: $bp-l) {
+			grid-template-areas: 'linkbox linkbox linkbox linkbox opendag opendag'
+
+			'bedrijven bedrijven bedrijven samenwerken samenwerken samenwerken';
+			// grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			//-ms-grid-columns: repeat(5, 1fr 20px) 1fr;
+			grid-template-columns: repeat(6, 1fr);
+			-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+
+			.link-box,
+			.image-block--open-dag {
+				z-index: 50;
+
+				margin-top: -100px;
+			}
 		}
 		.link-box {
+			-ms-grid-row: 1;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
 			grid-area: linkbox;
+			@media all and (min-width: $bp-l) {
+				-ms-grid-column-span: 7;
+			}
 		}
-		.open-dag-block {
-			grid-area: open-dag;
+		.image-block--open-dag {
+			-ms-grid-row: 3;
+			-ms-grid-column: 1;
+			-ms-grid-column-span: 3;
+			grid-area: opendag;
+			@media all and (min-width: $bp-l) {
+				-ms-grid-row: 1;
+				-ms-grid-column: 9;
+			}
 		}
 		.image-block--bedrijven {
+			-ms-grid-row: 5;
+			-ms-grid-column: 1;
 			grid-area: bedrijven;
+			@media all and (min-width: $bp-l) {
+				-ms-grid-column-span: 5;
+			}
 		}
 		.image-block--samenwerken {
+			-ms-grid-row: 5;
+			-ms-grid-column: 3;
 			grid-area: samenwerken;
+			@media all and (min-width: $bp-l) {
+				-ms-grid-column: 7;
+				-ms-grid-column-span: 5;
+			}
 		}
+	}
+}
+
+.homepage__bottom {
+	padding-top: 2rem;
+	.l-container {
+		@media all and (min-width: $bp-s) {
+			-ms-grid-rows: 1fr 1fr;
+
+			.meer {
+				-ms-grid-row: 1;
+			}
+			.nieuws {
+				-ms-grid-row: 2;
+			}
+		}
+		@media all and (min-width: $bp-m) {
+			grid-template-areas: 'meeravans nieuws';
+			grid-template-columns: 1fr 1fr;
+			-ms-grid-columns: 1fr 20px 1fr;
+			-ms-grid-rows: auto;
+
+			.meer {
+				-ms-grid-column: 1;
+				-ms-grid-row: 1;
+			}
+			.nieuws {
+				-ms-grid-column: 3;
+				-ms-grid-row: 1;
+			}
+		}
+	}
+	.link-box {
+		padding: 0;
 	}
 }

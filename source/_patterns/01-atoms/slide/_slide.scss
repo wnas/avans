@@ -25,11 +25,19 @@
 		background-position: calc(50% - 50px) 50%;
 	}
 }
+// .slide {
+// 	position: absolute;
+// 	top: 0;
+// 	left: -100vw;
+//
+// 	max-width: 1920px;
+// }
 
 // slide
 .slide {
 	position: relative;
 
+	width: 100vw;
 	max-width: 1920px;
 	height: 348px;
 	height: var(--min-height);

@@ -178,11 +178,7 @@ $extendmain: 839px;
 
 			content: '';
 		}
-		// .grid_4 {
-		// 	float: none;
-		//
-		// 	width: 100%;
-		// }
+
 		.equal-heights {
 			height: auto !important;
 		}
@@ -276,6 +272,7 @@ $extendmain: 839px;
 	.resultpage__aside,
 	div.content > .container {
 		max-width: 720px;
+		margin: 0 auto;
 	}
 	.content-page__aside-container {
 		display: flex;

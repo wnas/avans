@@ -1,17 +1,17 @@
 {{> organisms-header }}
 
-<main class="main-content">
+<main class="main-content homepage">
+	{{# slider }}
+		{{> molecules-slider }}
+	{{/ slider }}
 	<section class="homepage__top">
 		<div class="l-container">
 			{{# link-box-top }}
 				{{> organisms-link-box }}
 			{{/ link-box-top }}
-			<div class="open-dag-block">
-				<h2>open dag</h2>
-			</div>
 
 			{{# image-blocks }}
-				{{> molecules-image-block-sans-footer }}
+				{{> molecules-image-block }}
 			{{/ image-blocks }}
 
 		</div>

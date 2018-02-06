@@ -11,28 +11,25 @@
 }
 
 .image-block--open-dag {
-	max-width: 500px;
+	position: relative;
+
+	width: 100%;
 	min-height: 328px;
+	padding-left: 50%;
+
+	background-color: $avans-red;
+	background-position: 0 0;
+	background-size: contain;
 
 	justify-content: flex-end;
-	@media all and (max-width: $bp-l) and (min-width: $bp-s) {
-		width: 100%;
-		padding-left: 50%;
-
-		background-color: $avans-red;
-		background-size: contain;
-
-		justify-content: space-between;
-	}
-}
-.image-block--sans-footer {
-	max-height: 239px;
-
 	justify-content: space-between;
-	@media all and (min-width: $bp-s) {
-		max-width: 360px;
+	@media all and (min-width: $bp-l) {
+		padding-left: $spacing;
+
+		justify-content: space-before;
 	}
 }
+
 
 .image-block__content {
 	position: relative;
@@ -61,6 +58,8 @@
 }
 
 .image-block__header {
+	font-size: $fs-xl;
+
 	margin-top: 0;
 }
 
@@ -81,7 +80,6 @@
 
 @media all  and (min-width: $bp-m) {
 	.image-block__buttons--open-dag {
-		outline: 1px solid red;
 		background-color: $avans-red;
 	}
 }
