@@ -9,13 +9,17 @@
 .homepage__top,
 .homepage__bottom {
 	.l-container {
+		padding: 0 10px;
 		@media all and (min-width: $bp-s) {
 			display: -ms-grid;
 			display:     grid;
 
 			padding: 0 20px;
 
-			grid-gap: 20px;
+			grid-gap: 15px;
+		}
+		@media all and (min-width: $bp-m) {
+			grid-gap: 30px;
 		}
 	}
 }
@@ -32,11 +36,18 @@
 			grid-template-areas: 'linkbox linkbox'
 			'opendag opendag'
 			'bedrijven samenwerken';
-			-ms-grid-columns: 1fr 20px 1fr;
-			-ms-grid-rows: auto 20px auto 20px auto 20px;
+			-ms-grid-columns: 1fr 30px 1fr;
+			-ms-grid-rows: auto 30px auto 30px auto 30px;
 
 			.image-block {
 				margin-top: 0;
+			}
+			.link-box,
+			.image-block--open-dag {
+				z-index: 50;
+			}
+			.link-box {
+				margin-top: -50px;
 			}
 		}
 		@media all and (min-width: $bp-l) {
@@ -46,12 +57,10 @@
 			// grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 			//-ms-grid-columns: repeat(5, 1fr 20px) 1fr;
 			grid-template-columns: repeat(6, 1fr);
-			-ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr 20px 1fr;
+			-ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
 
 			.link-box,
 			.image-block--open-dag {
-				z-index: 50;
-
 				margin-top: -100px;
 			}
 		}
@@ -91,6 +100,15 @@
 				-ms-grid-column-span: 5;
 			}
 		}
+		.image-block--samenwerken,
+		.image-block--bedrijven {
+			@media all and (min-width: $bp-m) {
+				height: 229px;
+			}
+			@media all and (min-width: $bp-l) {
+				height: 309px;
+			}
+		}
 	}
 }
 
@@ -110,7 +128,7 @@
 		@media all and (min-width: $bp-m) {
 			grid-template-areas: 'meeravans nieuws';
 			grid-template-columns: 1fr 1fr;
-			-ms-grid-columns: 1fr 20px 1fr;
+			-ms-grid-columns: 1fr 30px 1fr;
 			-ms-grid-rows: auto;
 
 			.meer {

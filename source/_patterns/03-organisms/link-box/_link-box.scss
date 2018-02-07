@@ -7,6 +7,9 @@
 	}
 }
 
+.link-box__header-payoff {
+	margin-bottom: $spacing-s;
+}
 .link-box__list {
 	display: flex;
 
@@ -39,7 +42,7 @@
 .link-box__link {
 	display: block;
 
-	padding: $spacing 0 0;
+	padding: $spacing-s 0 0;
 
 	text-decoration: none;
 
@@ -47,7 +50,7 @@
 }
 
 .link-box__content {
-	margin-bottom: $spacing;
+	margin-bottom: $spacing-s;
 	margin-left: $spacing;
 	padding: 0 $spacing 0 $spacing-l;
 
@@ -59,7 +62,7 @@
 
 	display: block;
 
-	padding: 0 $spacing $spacing $spacing-xl;
+	padding: 0 $spacing $spacing-s $spacing-xl;
 
 	color: $light-gray;
 }

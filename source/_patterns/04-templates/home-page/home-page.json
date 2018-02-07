@@ -87,8 +87,9 @@
     "image-blocks": [{
             "image-block-class": "image-block--open-dag",
             "image-block-header": "Open avond deeltijd",
-			"image-block-style": "background-image:url('../../images/image-block/lady/lady.png')",
+			"image-block-style": "background-image:url('../../images/openavond.png')",
             "image-block-sub": "<time datetime='2018-07-07T18:00'>7 juni, 18:00 - 21:00</time>",
+"image-block__button-class": "image-block__buttons--open-dag",
             "image-block-button": {
                 "button-text": "Meer informatie",
                 "button-class": "btn btn--tertiary"

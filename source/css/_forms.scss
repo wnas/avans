@@ -1,6 +1,6 @@
 .field.field,
 form {
-	.input,
+	.input:not(.input--checkbox),
 	input:not([class]),
 	textarea {
 		font-size: 1rem;

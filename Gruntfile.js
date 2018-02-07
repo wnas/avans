@@ -17,6 +17,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-csscomb');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-postcss');
+	grunt.loadNpmTasks('grunt-uncss');
+
 
 	/******************************************************
 	 * PATTERN LAB CONFIGURATION
@@ -105,6 +107,16 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: 'source/css/style.css'
+			}
+		},
+		/******************************************************
+		 * uncss
+		 ******************************************************/
+		uncss: {
+			dist: {
+				files: {
+					'source/css/tidy.css': ['http://localhost:3000/patterns/04-templates-home-page-home-page/04-templates-home-page-home-page.html', 'http://localhost:3000/patterns/05-pages-02-opleidingen/05-pages-02-opleidingen.html', 'http://localhost:3000/patterns/05-pages-06-service-page/05-pages-06-service-page.html']
+				}
 			}
 		},
 		/******************************************************

@@ -8,6 +8,8 @@
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: cover;
+
+	justify-content: space-between;
 }
 
 .image-block--open-dag {
@@ -15,18 +17,28 @@
 
 	width: 100%;
 	min-height: 328px;
-	padding-left: 50%;
 
 	background-color: $avans-red;
-	background-position: 0 0;
-	background-size: contain;
 
-	justify-content: flex-end;
 	justify-content: space-between;
 	@media all and (min-width: $bp-l) {
-		padding-left: $spacing;
+		background-position: top center;
+		background-size: 419px;
 
-		justify-content: space-before;
+		justify-content: flex-end;
+	}
+	@media all and (max-width: $bp-l) and (min-width: $bp-m) {
+		height: 290px;
+		min-height: auto;
+		padding-left: 50%;
+
+		background-position: 0 0;
+		background-size: 50%;
+	}
+	@media all and (max-width: $bp-m) {
+		height: 500px;
+
+		justify-content: flex-end;
 	}
 }
 
@@ -51,9 +63,14 @@
 
 	content: '';
 
-	background-color: rgba(0,0,0,.2);
+	background-color: rgba(0,0,0,.35);
 	.image-block--open-dag & {
 		height: calc(100% - 3.5rem);
+	}
+}
+@media all and (max-width: $bp-l)  and (min-width: $bp-m) {
+	.image-block--open-dag:before {
+		display: none;
 	}
 }
 
@@ -66,8 +83,9 @@
 
 
 .image-block__buttons {
-	padding: 1rem;
+	z-index: 5;
 
+	padding: 1rem;
 	.btn {
 		margin: 0;
 	}
@@ -82,4 +100,7 @@
 	.image-block__buttons--open-dag {
 		background-color: $avans-red;
 	}
+}
+.image-block__buttons--open-dag {
+	background-color: $avans-red;
 }

@@ -1,5 +1,8 @@
 .btn-bar {
 	margin: $spacing-xl 0;
+	.homepage__top & {
+		margin-bottom: 0;
+	}
 	@media all and (max-width: $bp-s) {
 		display: flex;
 		flex-direction: column;

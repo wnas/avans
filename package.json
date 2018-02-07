@@ -1,6 +1,6 @@
 {
-  "name": "edition-node-grunt / wnas",
-  "description": "The grunt wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.",
+  "name": "avans-styleguid",
+  "description": "avans styleguide, based on the grunt edition of patternlab.",
   "version": "1.1.0",
   "main": "./core/lib/patternlab.js",
   "dependencies": {
@@ -37,7 +37,7 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-	"IE 11"
+    "IE 11"
   ],
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -47,6 +47,7 @@
     "grunt-sass": "^2.0.0",
     "grunt-stylefmt": "^3.0.0",
     "grunt-stylelint": "^0.8.0",
+    "grunt-uncss": "^0.8.0",
     "stylelint-config-standard": "^16.0.0",
     "stylelint-no-unsupported-browser-features": "^1.0.0"
   }
