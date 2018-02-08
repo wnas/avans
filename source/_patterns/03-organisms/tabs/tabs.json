@@ -1,4 +1,5 @@
 {
+	"tabs-class": "foo",
 	"tabs":[
 		{
 			"tab-id": "a",

@@ -59,6 +59,7 @@
         "link-href": "shouldiuseajavascriptframework.com"
     },
     "article-header": "Voltijd opleiding in Breda",
+	"tabs-class": "nav-tabs",
     "tabs": [
 
         {
