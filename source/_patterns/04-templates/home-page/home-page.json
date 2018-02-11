@@ -25,12 +25,30 @@
                     }
                 ]
 
+            },
+			{
+                "header": "Urste slide, jippie",
+                "button": {
+                    "button-text": "Kom proefstuderen meiske...",
+                    "button-class": "btn btn--primary"
+                },
+                "img-src": "../../images/hero/hero-opleidingen.png",
+                "srcSet": [{
+                        "src": "../../images/hero/hero-opleidingen.png",
+                        "res": "1x"
+                    },
+                    {
+                        "src": "../../images/hero/hero-opleidingen@2x.png",
+                        "res": "2x"
+                    }
+                ]
+
             }
 
         ]
     },
     "link-box-top": {
-        "class": "col-2",
+        "link-box-class": "l-hp-1 col-2",
         "header": "Kies je opleiding",
         "sub-header": "Zoek op interessegebied",
         "items": [{
@@ -79,35 +97,36 @@
                 "button-class": "btn--primary"
             },
             {
-                "button-text": "Hulp bij je studiekeuze",
+                "button-text": "Ontdek hoe wij je kunnen helpen bij je studiekeuze.",
                 "button-class": "avans-link"
             }
         ]
     },
-    "image-blocks": [{
-            "image-block-class": "image-block--open-dag",
+    "image-blocks": [
+		{
+            "image-block-class": "l-hp-2",
+            "image-block-style": "background-image: url('../../images/image-block/samenwerken/samenwerken.png')",
+
+            "image-block-header": "Samenwerken met Ikea",
+            "image-block-sub": "Handen uit de mouwen voor de regio",
+			"image-block__button-class": "image-block__buttons--2",
+            "image-block-button": {
+                "button-text": "Samen werken met avans",
+                "button-class": "btn btn--tertiary"
+            }
+        },{
+            "image-block-class": "l-hp-4",
             "image-block-header": "Open avond deeltijd",
 			"image-block-style": "background-image:url('../../images/openavond.png')",
             "image-block-sub": "<time datetime='2018-07-07T18:00'>7 juni, 18:00 - 21:00</time>",
-"image-block__button-class": "image-block__buttons--open-dag",
             "image-block-button": {
                 "button-text": "Meer informatie",
-                "button-class": "btn btn--tertiary"
-            }
-        }, {
-            "image-block-class": "image-block--bedrijven",
-            "image-block-style": "background-image: url('../../images/image-block/samenwerken/samenwerken.png')",
-
-            "image-block-header": "Bedrijven & instellingen",
-            "image-block-sub": "Handen uit de mouwen voor de regio",
-            "image-block-button": {
-                "button-text": "Samen werken met avans",
                 "button-class": "btn btn--tertiary"
             }
         },
 
         {
-            "image-block-class": "image-block--samenwerken",
+            "image-block-class": "l-hp-3",
             "image-block-style": "background-image: url('../../images/image-block/samenwerken/samenwerken.png')",
 
             "image-block-header": "Bedrijven & instellingen",
@@ -120,7 +139,7 @@
     ],
     "meer-avans": {
 		"header": "Meer avans",
-        "class": "link-block meer",
+        "class": "link-block meer l-hp-5",
         "items": [{
                 "href": "#",
                 "src": "http://www.avans.nl/binaries/content/gallery/nextweb/stad-en-naast-je-studie/breda-markt-gezellig.jpg",
@@ -148,7 +167,7 @@
         ]
     },
     "link-box-news": {
-		"class": "nieuws",
+		"link-box-class": "nieuws l-hp-6",
         "header": "Nieuws",
         "items": [{
                 "link": "avans.nl",
@@ -157,23 +176,29 @@
             },
             {
                 "link": "avans.nl",
-                "content": "Nederlandse primeur: Avans Tilburg gastheer internationale Ecowek",
+                "content": "Nederlandse primeur: Avans Tilburg gastheer internationale Ecoweek",
                 "date": "9 mei 2017"
             },
             {
                 "link": "avans.nl",
-                "content": "Opinie: 'Voorkom sociale mileiuramp in Brabant'",
+                "content": "Opinie: 'Voorkom sociale milieuramp in Brabant'",
                 "date": "9 mei 2017"
             },
             {
                 "link": "avans.nl",
-                "content": "Energietransietie en de rol van de burger",
+                "content": "Energietransitie en de rol van de burger",
                 "date": "9 mei 2017"
             },
             {
                 "link": "avans.nl",
-                "content": "Opini: Ouderen niet serious genomen bij ontwikkeling zorgtechnologie",
+                "content": "Opinie: Ouderen niet serious genomen bij ontwikkeling zorgtechnologie",
                 "date": "19 april 2017"
+            }
+        ],
+		"buttons": [
+            {
+                "button-text": "Meer nieuws",
+                "button-class": "avans-link"
             }
         ]
     }

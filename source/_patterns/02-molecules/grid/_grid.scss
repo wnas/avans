@@ -67,7 +67,7 @@
 	}
 }
 
-.homepage {
+[class^='homepage'] {
 	.grid__item {
 		width: 100%;
 		margin-right: 0;
@@ -80,7 +80,7 @@
 			}
 		}
 	}
-	@media all and (max-width: $bp-l) {
+	@media all and (max-width: $bp-l) and (min-width: $bp-xs) {
 		.grid__content {
 			display: flex;
 		}

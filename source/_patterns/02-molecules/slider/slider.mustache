@@ -1,7 +1,10 @@
-<div class="slider {{ class }}">
-
+<div class="slider {{ class }}" id="slider">
+	<ul class="slider__list">
 		{{# items }}
-			{{> atoms-slide }}
+			<li class="slide">
+				{{> atoms-slide }}
+			</li>
 		{{/ items }}
-
+		</li>
+	</ul>
 </div>

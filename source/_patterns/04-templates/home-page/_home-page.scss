@@ -5,7 +5,13 @@
 		}
 	}
 }
+/*
+	Let op, er kunnen maar 6 items max op de homepage komen te staan.
+	Als er meer moeten staan moet ook in de jsp iets aangepast worden...
 
+	zie: createwidgetcounter-class.jsp
+
+*/
 .homepage__top,
 .homepage__bottom {
 	.l-container {
@@ -33,75 +39,75 @@
 	}
 	.l-container {
 		@media all and (min-width: $bp-s) {
-			grid-template-areas: 'linkbox linkbox'
-			'opendag opendag'
-			'bedrijven samenwerken';
+			grid-template-areas: 'a a'
+			'b b'
+			'c d';
 			-ms-grid-columns: 1fr 30px 1fr;
 			-ms-grid-rows: auto 30px auto 30px auto 30px;
 
 			.image-block {
 				margin-top: 0;
 			}
-			.link-box,
-			.image-block--open-dag {
+			.l-hp-1,
+			.l-hp-2 {
 				z-index: 50;
 			}
-			.link-box {
+			.l-hp-1 {
 				margin-top: -50px;
 			}
 		}
 		@media all and (min-width: $bp-l) {
-			grid-template-areas: 'linkbox linkbox linkbox linkbox opendag opendag'
+			grid-template-areas: 'a a a a b b'
 
-			'bedrijven bedrijven bedrijven samenwerken samenwerken samenwerken';
+			'c c c d d d';
 			// grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 			//-ms-grid-columns: repeat(5, 1fr 20px) 1fr;
 			grid-template-columns: repeat(6, 1fr);
 			-ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr 30px 1fr;
 
-			.link-box,
-			.image-block--open-dag {
+			.l-hp-1,
+			.l-hp-2 {
 				margin-top: -100px;
 			}
 		}
-		.link-box {
+		.l-hp-1 {
 			-ms-grid-row: 1;
 			-ms-grid-column: 1;
 			-ms-grid-column-span: 3;
-			grid-area: linkbox;
+			grid-area: a;
 			@media all and (min-width: $bp-l) {
 				-ms-grid-column-span: 7;
 			}
 		}
-		.image-block--open-dag {
+		.l-hp-2 {
 			-ms-grid-row: 3;
 			-ms-grid-column: 1;
 			-ms-grid-column-span: 3;
-			grid-area: opendag;
+			grid-area: b;
 			@media all and (min-width: $bp-l) {
 				-ms-grid-row: 1;
 				-ms-grid-column: 9;
 			}
 		}
-		.image-block--bedrijven {
+		.l-hp-3 {
 			-ms-grid-row: 5;
 			-ms-grid-column: 1;
-			grid-area: bedrijven;
+			grid-area: c;
 			@media all and (min-width: $bp-l) {
 				-ms-grid-column-span: 5;
 			}
 		}
-		.image-block--samenwerken {
+		.l-hp-4 {
 			-ms-grid-row: 5;
 			-ms-grid-column: 3;
-			grid-area: samenwerken;
+			grid-area: d;
 			@media all and (min-width: $bp-l) {
 				-ms-grid-column: 7;
 				-ms-grid-column-span: 5;
 			}
 		}
-		.image-block--samenwerken,
-		.image-block--bedrijven {
+		.l-hp-3,
+		.l-hp-4 {
 			@media all and (min-width: $bp-m) {
 				height: 229px;
 			}
@@ -118,26 +124,28 @@
 		@media all and (min-width: $bp-s) {
 			-ms-grid-rows: 1fr 1fr;
 
-			.meer {
+			.l-hp-5 {
 				-ms-grid-row: 1;
 			}
-			.nieuws {
+			.l-hp-6 {
 				-ms-grid-row: 2;
 			}
 		}
 		@media all and (min-width: $bp-m) {
-			grid-template-areas: 'meeravans nieuws';
+			grid-template-areas: 'e f';
 			grid-template-columns: 1fr 1fr;
 			-ms-grid-columns: 1fr 30px 1fr;
 			-ms-grid-rows: auto;
 
-			.meer {
+			.l-hp-5 {
 				-ms-grid-column: 1;
 				-ms-grid-row: 1;
+				grid-area: e;
 			}
-			.nieuws {
+			.l-hp-6 {
 				-ms-grid-column: 3;
 				-ms-grid-row: 1;
+				grid-area: f;
 			}
 		}
 	}
